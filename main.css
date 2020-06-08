@@ -110,6 +110,8 @@ body {
     right:0;
     animation:fade-in-right 1s ease-in
 }
+
+
 @keyframes fade-in-right {
     0% {
         opacity:0;
@@ -121,7 +123,15 @@ body {
     }
 }
 
-/* The typing effect */
+.typewriter {
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: type 3s steps(9, end), blinker .75s step-end infinite;
+}
+
 @keyframes type {
     from {
         width: 0
@@ -142,7 +152,6 @@ body {
         border-color: #008080;
     }
 }
-
 
 
 

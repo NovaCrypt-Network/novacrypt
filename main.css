@@ -1,3 +1,6 @@
+body {
+    background:#030303
+}
 .navbar.bg-dark {
     background:none/*background:rgba(6,6,6,.5)*/!important;
     border:none!important
@@ -174,7 +177,7 @@ body {
 }
 
 .navbar {
-    margin-top:30px!important
+    margin-top:20px!important
 }
 
 .nav-link {
@@ -691,6 +694,8 @@ h5 a {
     right: 0px;
     top: 165px;
 }
+
+
 
 .diamond6 > .sm-sq-1 {
 
@@ -1404,7 +1409,7 @@ GRID
         font-size: 16px;
     }
 
-    .right-box {}
+
 
 }
 
@@ -1895,6 +1900,14 @@ GRID
             width: 90%;
         }
 
+    }
+    .right-box {
+        background-repeat:no-repeat;
+        background-color:transparent
+    }
+    .stellar-grid * {
+        background-repeat:no-repeat;
+        background-color:transparent
     }
 /*
 STELLAR

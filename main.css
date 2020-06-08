@@ -123,36 +123,6 @@ body {
     }
 }
 
-.typewriter {
-    overflow: hidden; 
-    border-right: .15em; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: .15em; 
-    animation: type 5s steps(17, end), blinker .75s step-end infinite;
-}
-
-@keyframes type {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-/* The typewriter cursor effect */
-@keyframes blinker {
-    from, to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: #008080;
-    }
-}
-
 
 
 

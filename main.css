@@ -121,6 +121,28 @@ body {
     }
 }
 
+/* The typing effect */
+@keyframes type {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinker {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #008080;
+    }
+}
+
 
 
 

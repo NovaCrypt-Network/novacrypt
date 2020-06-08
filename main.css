@@ -128,7 +128,7 @@ body {
     border-right: .15em; 
     white-space: nowrap; 
     margin: 0 auto; 
-    letter-spacing: 3px; 
+    letter-spacing: .15em; 
     animation: type 5s steps(17, end), blinker .75s step-end infinite;
 }
 

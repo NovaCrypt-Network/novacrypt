@@ -163,6 +163,9 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+.gif {
+    text-align:center;
+}
 
 /* for About and Contact page */
 #aboutcontact {

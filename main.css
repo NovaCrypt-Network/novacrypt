@@ -5,12 +5,17 @@ body {
     background:none/*background:rgba(6,6,6,.5)*/!important;
     border:none!important
 }
+.comming-soon {
+ 
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    width:100%;
+}
 .gallery {
     display: block;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border: 5px solid black;
-    border-radius: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: right;
     width:100%;
     height:50%;

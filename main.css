@@ -5,14 +5,6 @@ body {
     background:none/*background:rgba(6,6,6,.5)*/!important;
     border:none!important
 }
-.comming-soon {
-    margin-top: 100px;
-    margin-bottom: 0;
-    padding: 20px 20px;
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-}
 
 /*.dontclick {
 cursor:not-allowed;
@@ -25,6 +17,20 @@ cursor:not-allowed;
     width:100%;
     height:50%;
 }
+.gallery2 {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 0;
+    text-align: right;
+    width: 100%;
+    height: 50%;
+}
+.comingsoon {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
 
 .navbar-collapse {
     position:relative;right:10px
@@ -174,6 +180,7 @@ body {
 /* for Home page */
 #home {
     background: url("https://cdn.pixabay.com/photo/2016/11/21/12/39/cosmos-1845140_1280.jpg") no-repeat center center fixed;
+    background-size:cover;
     display: table;
     height: 100%;
     position: relative;
@@ -184,8 +191,47 @@ body {
     background-size: cover;
 }
 .gif {
-    text-align:center;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
 }
+#articles {
+    background: url("b.jpg") no-repeat top fixed;
+    background-size: cover;
+    display: table;
+    height: 65%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+.btn-group button {
+    margin: 0 30px;
+    background: #fff;
+    color: #000;
+    font-size: 1.25em;
+    padding: 10px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .8s ease;
+    width: 200px;
+    float: left;
+}
+
+.btn:hover {
+    background: #ffc107;
+    color: #fff;
+}
+
 
 /* for About and Contact page */
 #aboutcontact {
@@ -222,6 +268,20 @@ body {
 #aboutcontainer {
     position:relative;
 }
+/* for Projects page */
+#blog {
+    background: url("blogbackground2.0.webp") no-repeat  center fixed;
+    background-size:contain;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 
 /* for Projects page */
 #projectmain {
@@ -335,6 +395,8 @@ hr.bruh {
 }
 
 .lcards-list {
+
+    text-align:center;
     z-index: 0;
     width: 100%;
     display: flex;
@@ -343,7 +405,8 @@ hr.bruh {
 }
 
 .lcard {
-    margin: 30px auto;
+
+    margin:  auto;
     width: 200px;
     height: 200px;
     border-radius: 40px;
@@ -366,6 +429,7 @@ hr.bruh {
 }
 
 .lcard .lcard_title {
+    margin-left:30%;
     text-align: center;
     border-radius: 0px 0px 40px 40px;
     font-family: Roboto;

@@ -1,0 +1,19 @@
+﻿.b {
+    margin: 0 5%;
+    background: #fff;
+    font-size: 1.25em;
+    padding: 10px 24px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .8s ease;
+    width: 90%;
+
+}
+
+    .b:hover {
+        background: #51b8f0;
+        color: #fff;
+    }

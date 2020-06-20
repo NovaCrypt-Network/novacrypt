@@ -1,5 +1,5 @@
 body {
-    background:#030303
+    background:#030303;
 }
 .navbar.bg-dark {
     background:none/*background:rgba(6,6,6,.5)*/!important;
@@ -8,7 +8,6 @@ body {
 .container {
     width: 90%;
     padding: 10px;
-    background-color: black;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -16,7 +15,6 @@ body {
 .container2 {
     width: 95%;
     padding: 10px;
-    background-color: black;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -24,7 +22,6 @@ body {
 .container3 {
     width: 100%;
     padding: 0;
-    background-color: black;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -33,7 +30,6 @@ body {
     text-align: center;
     height: 17%;
     width: 20%;
-    background: black;
     border-radius: 40px;
     margin: 25px 50px;
     transition: 1s;

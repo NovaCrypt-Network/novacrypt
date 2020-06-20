@@ -2,8 +2,8 @@ body {
     background:#030303;
 }
 .navbar.bg-dark {
-    background:none/*background:rgba(6,6,6,.5)*/!important;
-    border:none!important
+    background:none !important; /*background:rgba(6,6,6,.5)*/
+    border:none !important;
 }
 .container {
     width: 90%;

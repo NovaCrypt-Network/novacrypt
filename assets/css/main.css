@@ -303,7 +303,7 @@ body {
 
 #projectsheader {
     font-family:'Jost';
-    color:black
+    color:#fe330a
 }
 
 #aboutcontainer {
@@ -326,7 +326,6 @@ body {
 
 /* for Projects page */
 #projectmain {
-    background: url("../images/projectmain.png") no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;

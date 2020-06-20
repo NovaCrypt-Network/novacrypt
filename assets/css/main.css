@@ -504,14 +504,17 @@ hr.bruh {
 
     }
 }
+
 @media all and (max-width: 600px) {
     .container {
         /* On small screens, we are no longer using row direction but column */
         flex-direction: column;
-        margin-left:15%;
+        margin-left: auto;
+        margin-right: auto;
     
     }
 }
+
 @media all and (max-width: 500px) {
     .card-list {
         /* On small screens, we are no longer using row direction but column */

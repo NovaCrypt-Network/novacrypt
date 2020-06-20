@@ -238,7 +238,7 @@ body {
     text-align: center;
 }
 #articles {
-    background: url("b.jpg") no-repeat top fixed;
+    background: url("../images/b.jpg") no-repeat top fixed;
     background-size: cover;
     display: table;
     height: 65%;
@@ -276,7 +276,7 @@ body {
 
 /* for About and Contact page */
 #aboutcontact {
-    background: url("whowearetree-01.jpg") no-repeat center center fixed;
+    background: url("../images/whowearetree-01.jpg") no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -311,7 +311,7 @@ body {
 }
 /* for Projects page */
 #blog {
-    background: url("blogbackground2.0.webp") no-repeat  center fixed;
+    background: url("../images/blogbackground2.0.webp") no-repeat  center fixed;
     background-size:contain;
     display: table;
     height: 100%;
@@ -326,7 +326,7 @@ body {
 
 /* for Projects page */
 #projectmain {
-    background: url("projectmain.png") no-repeat center center fixed;
+    background: url("../images/projectmain.png") no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -339,7 +339,7 @@ body {
 
 /* for Projects page */
 #projectmediair {
-    background: url("projectmediair.png") no-repeat center center fixed;
+    background: url("../images/projectmediair.png") no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -352,7 +352,7 @@ body {
 
 /* for Interstellar page */
 #interstellarmain {
-    background: url("ibg.webp") no-repeat center center fixed;
+    background: url("../images/ibg.webp") no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -365,7 +365,7 @@ body {
 
 /* for AuraEdge page */
 #auramain {
-    background: url("auraedge_1.jpg") no-repeat center center fixed;
+    background: url("../images/auraedge_1.jpg") no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -378,7 +378,7 @@ body {
 
 /* for AuraEdge page */
 #covidmain {
-    background: url("covid19.png") no-repeat center center fixed;
+    background: url("../images/covid19.png") no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -1478,7 +1478,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_1.png");
+        background-image: url("../images/card_1.png");
     }
 
     .img-box2 {
@@ -1487,7 +1487,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_2.png");
+        background-image: url("../images/card_2.png");
 
     }
      .img-box3 {
@@ -1496,7 +1496,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_3.png");
+        background-image: url("../images/card_3.png");
     }
 
     .img-box4 {
@@ -1505,7 +1505,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_4.png");
+        background-image: url("../images/card_4.png");
 
     }
 
@@ -1515,7 +1515,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_5.png");
+        background-image: url("../images/card_5.png");
     }
 
     .img-box6 {
@@ -1524,7 +1524,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_6.png");
+        background-image: url("../images/card_6.png");
 
     }
 
@@ -1534,7 +1534,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_7.png");
+        background-image: url("../images/card_7.png");
     }
 
 
@@ -1638,7 +1638,7 @@ GRID
         margin-top: 100px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_1.png");
+        background-image: url("../images/card_1.png");
     }
 
     .img-box2 {
@@ -1647,7 +1647,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_2.png");
+        background-image: url("../images/card_2.png");
 
     }
 
@@ -1657,7 +1657,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_3.png");
+        background-image: url("../images/card_3.png");
     }
 
     .img-box4 {
@@ -1666,7 +1666,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_4.png");
+        background-image: url("../images/card_4.png");
 
     }
 
@@ -1676,7 +1676,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_5.png");
+        background-image: url("../images/card_5.png");
     }
 
     .img-box6 {
@@ -1685,7 +1685,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_6.png");
+        background-image: url("../images/card_6.png");
 
     }
 
@@ -1695,7 +1695,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_7.png");
+        background-image: url("../images/card_7.png");
     }
 
 
@@ -1797,7 +1797,7 @@ GRID
         margin-top: 100px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_1.png");
+        background-image: url("../images/card_1.png");
     }
 
     .img-box2 {
@@ -1806,7 +1806,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_2.png");
+        background-image: url("../images/card_2.png");
 
     }
 
@@ -1816,7 +1816,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_3.png");
+        background-image: url("../images/card_3.png");
     }
 
     .img-box4 {
@@ -1825,7 +1825,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_4.png");
+        background-image: url("../images/card_4.png");
 
     }
 
@@ -1835,7 +1835,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_5.png");
+        background-image: url("../images/card_5.png");
     }
 
     .img-box6 {
@@ -1844,7 +1844,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_6.png");
+        background-image: url("../images/card_6.png");
 
     }
 
@@ -1854,7 +1854,7 @@ GRID
         margin-top: 40px;
         margin-bottom: 20px;
         background-color: #262626;
-        background-image: url("card_7.png");
+        background-image: url("../images/card_7.png");
     }
 
     .d-title {
@@ -1961,7 +1961,7 @@ GRID
             margin-top: 100px;
             margin-bottom: 20px;
             background-color: #262626;
-            background-image: url("card_1.png");
+            background-image: url("../images/card_1.png");
         }
 
         .img-box2 {
@@ -1970,7 +1970,7 @@ GRID
             margin-top: 40px;
             margin-bottom: 20px;
             background-color: #262626;
-            background-image: url("card_2.png");
+            background-image: url("../images/card_2.png");
 
         }
 
@@ -1980,7 +1980,7 @@ GRID
             margin-top: 40px;
             margin-bottom: 20px;
             background-color: #262626;
-            background-image: url("card_3.png");
+            background-image: url("../images/card_3.png");
         }
 
         .img-box4 {
@@ -1989,7 +1989,7 @@ GRID
             margin-top: 40px;
             margin-bottom: 20px;
             background-color: #262626;
-            background-image: url("card_4.png");
+            background-image: url("../images/card_4.png");
 
         }
 
@@ -1999,7 +1999,7 @@ GRID
             margin-top: 40px;
             margin-bottom: 20px;
             background-color: #262626;
-            background-image: url("card_5.png");
+            background-image: url("../images/card_5.png");
         }
 
         .img-box6 {
@@ -2008,7 +2008,7 @@ GRID
             margin-top: 40px;
             margin-bottom: 20px;
             background-color: #262626;
-            background-image: url("card_6.png");
+            background-image: url("../images/card_6.png");
 
         }
 
@@ -2018,7 +2018,7 @@ GRID
             margin-top: 40px;
             margin-bottom: 20px;
             background-color: #262626;
-            background-image: url("card_7.png");
+            background-image: url("../images/card_7.png");
         }
 
 

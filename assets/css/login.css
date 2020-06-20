@@ -3,7 +3,7 @@
 body{
   padding: 0;
   margin: 0;
-  background-image: url(login.webp);
+  background-image: url(../images/login.webp);
   height: 100vh;
   background-size: cover;
   background-position: center;

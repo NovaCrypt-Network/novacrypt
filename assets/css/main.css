@@ -2058,3 +2058,7 @@ BROKEN
 GRID
 END
 */
+
+.stacked {
+    flex-direction: column;
+}

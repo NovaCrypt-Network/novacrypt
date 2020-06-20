@@ -5,6 +5,51 @@ body {
     background:none/*background:rgba(6,6,6,.5)*/!important;
     border:none!important
 }
+.container {
+    width: 90%;
+    padding: 10px;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.container2 {
+    width: 95%;
+    padding: 10px;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.container3 {
+    width: 100%;
+    padding: 0;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.box {
+    text-align: center;
+    height: 17%;
+    width: 20%;
+    background: black;
+    border-radius: 40px;
+    margin: 25px 50px;
+    transition: 1s;
+    font-family: 'Jost', sans-serif;
+    object-fit: cover;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+
+.constant {
+    font-family: 'Jost', sans-serif;
+
+}
+
+.box:hover {
+    transform: scale(1.2);
+}
 
 /*.dontclick {
 cursor:not-allowed;
@@ -311,7 +356,7 @@ body {
 
 /* for Interstellar page */
 #interstellarmain {
-    background: url("interstellar.jpg") no-repeat center center fixed;
+    background: url("ibg.webp") no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -400,7 +445,7 @@ hr.bruh {
     z-index: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -456,7 +501,21 @@ hr.bruh {
 .title-black {
     color: black;
 }
+@media all and (max-width: 500px) {
+    .container3 {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
 
+    }
+}
+@media all and (max-width: 600px) {
+    .container {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+        margin-left:15%;
+    
+    }
+}
 @media all and (max-width: 500px) {
     .card-list {
         /* On small screens, we are no longer using row direction but column */

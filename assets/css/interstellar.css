@@ -1,0 +1,34 @@
+.container3 {
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.container3 > div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width:50%;
+}
+
+.container3 div.wave {
+    width: 10%;
+}
+
+img[src="assets/images/interstellarwave-01.png"] {
+    height: 100%;
+    width: 50%;
+}
+@media only screen and (orientation: portrait) {
+    .container3 {
+        flex-direction: column;
+    }
+
+    .container3 > div {
+        margin-top: initial;
+        margin-bottom: initial;
+        width:100%;
+    }
+
+    .container3 div.wave {
+        display: none;
+    }
+}

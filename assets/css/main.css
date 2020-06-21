@@ -78,7 +78,19 @@ cursor:not-allowed;
     margin-top: 10%;
     margin-bottom: 10%;
 }
-
+.announcements-container {
+    background:rgba(50,53,56,0.5);
+    padding-top:10px;
+    padding-bottom:5px;
+    min-height:450px;
+    margin-left:300px;
+    margin-right:300px;
+    border-radius:30px;
+    text-align:center
+}
+.announcements-container p {
+    color:white
+}
 
 .navbar-collapse {
     position:relative;right:10px

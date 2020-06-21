@@ -26,6 +26,13 @@ body {
     display: flex;
     justify-content: center;
 }
+.container4 {
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    display: contents;
+    justify-content: center;
+}
 .box {
     text-align: center;
     height: 17%;

@@ -18,6 +18,10 @@
     width: 150px;
 }
 
+.icon {
+    padding:30px;
+}
+
 img[src="assets/images/interstellarwave-01.png"] {
     height: 100%;
     width: 50%;

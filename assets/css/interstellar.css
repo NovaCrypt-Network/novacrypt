@@ -18,14 +18,11 @@
     width: 150px;
 }
 
-.icon {
-    margin: 15px;
-}
-
 img[src="assets/images/interstellarwave-01.png"] {
     height: 100%;
     width: 50%;
 }
+
 @media only screen and (orientation: portrait) {
     .container {
         justify-content: center;

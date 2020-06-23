@@ -20,7 +20,8 @@ section#announcements, aside#discord {
     padding-top: 10px;
     padding-bottom: 5px;
     margin: 30px;
-    max-height: 450px;
+    height: 100vh;
+    max-height: 600px;
     overflow: auto;
     border-radius: 30px;
     text-align: center;
@@ -32,7 +33,6 @@ section#announcements {
 
 aside#discord {
     width: 20%;
-    min-width: 300px;
 }
 
 section#announcements h2 {

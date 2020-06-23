@@ -99,11 +99,11 @@ body {
 }
 
 .card:nth-child(1):before {
-    background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url('../images/ncblack3.jpg');
 }
 
 .card:nth-child(2):before {
-    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    background-image: url('../images/MediAIrCropped.jpg');
 }
 
 .card:nth-child(3):before {
@@ -150,7 +150,7 @@ body {
     line-height: 1.35;
 }
 
-.btn {
+.btn2 {
     cursor: pointer;
     margin-top: 1.5rem;
     padding: 0.75rem 1.5rem;
@@ -163,11 +163,11 @@ body {
     border: none;
 }
 
-    .btn:hover {
+    .btn2:hover {
         background-color: #0d0d0d;
     }
 
-    .btn:focus {
+    .btn2:focus {
         outline: 1px dashed yellow;
         outline-offset: 3px;
     }

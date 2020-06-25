@@ -8,8 +8,9 @@
   transform: translateY(-50%);
 }
 
+
 /* Style the icon bar links */
-.icon-bar a {
+.icon-bar a,.test-css {
   display: block;
   text-align: center;
   padding: 16px;
@@ -61,4 +62,10 @@
 .youtube {
   background: #bb0000;
   color: white;
+}
+
+@media only screen and (max-width: 480px) 
+{
+    .icon-bar {display:none
+}
 }

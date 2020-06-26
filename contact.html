@@ -93,31 +93,31 @@
   <div class="container">
   <div class="row">
     <div class="col-md-8">
-     <form>
+     <form action="contactSubmit" method="post">
       <fieldset>
         <legend>Contact Us</legend>
 		<div class="form-group">
 		  <label for="exampleInputEmail1">Name</label>
-		  <input type="text" class="form-control" id="exampleInputEmail1" size="30" maxlength="30" aria-describedby="emailHelp" placeholder="Enter Name">
+		  <input type="text" name="name" class="form-control" id="exampleInputEmail1" size="30" maxlength="30" aria-describedby="emailHelp" placeholder="Enter Name">
 		</div>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" size="30" maxlength="30" aria-describedby="emailHelp" placeholder="Enter Email">
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" size="30" maxlength="30" aria-describedby="emailHelp" placeholder="Enter Email">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="exampleTextarea">Subject/Query</label>
-          <textarea class="form-control" id="exampleTextarea" rows="1" cols="50"></textarea>
+          <textarea class="form-control" name="subject" id="exampleTextarea" rows="1" cols="50"></textarea>
         </div>
         <div class="form-group">
           <label for="exampleTextarea">Contact Form</label>
-          <textarea class="form-control" id="exampleTextarea" rows="6" cols="300"></textarea>
+          <textarea class="form-control" name="message" id="exampleTextarea" rows="6" cols="300"></textarea>
         </div>
         <fieldset class="form-group">
           <legend>News Letter / Updates and Information</legend>
           <div class="form-check">
             <label class="form-check-label">
-              <input class="form-check-input" type="checkbox" value="" checked="">
+              <input class="form-check-input" name="newsSignup" type="checkbox" value="" checked="">
               Would you like to sign up for our News Letter?
             </label>
           </div>

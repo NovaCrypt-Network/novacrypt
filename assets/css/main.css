@@ -26,6 +26,13 @@ body {
     display: flex;
     justify-content: center;
 }
+
+
+
+
+
+
+
 .container4 {
     width: 90%;
     padding: 10px;
@@ -140,6 +147,7 @@ body {
 .subnav {
     position:absolute;
     left:-43px;
+    z-index:1000;
     display:none;
 }
 
@@ -2069,4 +2077,12 @@ END
 
 .stacked {
     flex-direction: column;
+}
+
+@media (max-width: 992px)
+{
+    .nav-item {
+        background:black;
+        padding:5px
+    }
 }

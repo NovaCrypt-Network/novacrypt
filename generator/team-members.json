@@ -1,0 +1,447 @@
+[
+    {
+        "name": "Adam Rueda",
+        "image": "1",
+        "team": {
+            "art": {
+                "position": "Blender",
+                "order": "5"
+            }
+        }    
+    },
+    {
+        "name": "Alex Lam",
+        "image": "1",
+        "team": {
+            "project": {
+                "position": "FAA Advisor",
+                "order": "6"
+            }
+        }    
+    },
+    {
+        "name": "Ameya Singh",
+        "image": "1",
+        "team": {
+            "executive": {
+                "position": {
+                    "long": "Chief Web Officer",
+                    "abbr": "CWO",
+                    "order": "5"
+                }
+            },
+            "developer": {
+                "position": "Frontend Developer Lead",
+                "order": "1"
+            }
+        }    
+    },
+    {
+        "name": "Anika",
+        "image": "1",
+        "team": {
+            "writing": {
+                "position": "Writer",
+                "order": "1"
+            }
+        }
+    },
+    {
+        "name": "Asher",
+        "image": "1",
+        "team": {
+            "developer": {
+                "position": "Frontend",
+                "order": "4"
+            }
+        }    
+    },
+    {
+        "name": "Aumnescio",
+        "image": "1",
+        "team": {
+            "art": {
+                "position": "Illustrator",
+                "order": "2"
+            }
+        }    
+    },
+    {
+        "name": "Avani Guduri",
+        "image": "1",
+        "team": {
+            "executive": {
+                "position": {
+                    "long": "Chief Design Officer",
+                    "abbr": "CDO",
+                    "order": "8"
+                }
+            },
+            "art": {
+                "position": "Illustrator Lead",
+                "order": "1"
+            }
+        }
+    },
+    {
+        "name": "Bobudub",
+        "image": "1",
+        "team": {
+            "art": {
+                "position": "Blender",
+                "order": "6"
+            }
+        }    
+    },
+    {
+        "name": "Carmen Lauren",
+        "image": "1",
+        "team": {
+            "writing": {
+                "position": "Writer",
+                "order": "1"
+            }
+        }
+    },
+    {
+        "name": "Casey",
+        "image": "1",
+        "team": {
+            "project": {
+                "position": "Medical Advisor",
+                "order": "7"
+            }
+        }    
+    },
+    {
+        "name": "Christer War&eacute;n",
+        "image": "1",
+        "team": {
+            "developer": {
+                "position": "Frontend",
+                "order": "6"
+            }
+        }    
+    },
+    {
+        "name": "Clayton",
+        "image": "1",
+        "team": {
+            "developer": {
+                "position": "Backend",
+                "order": "7"
+            }
+        }    
+    },
+    {
+        "name": "Della",
+        "image": "1",
+        "team": {
+            "writing": {
+                "position": "Writer",
+                "order": "1"
+            }
+        }
+    },
+    {
+        "name": "Ethan",
+        "image": "1",
+        "team": {
+            "business": {
+                "position": "Finance/PR",
+                "order": "5"
+            }
+        }    
+    },
+    {
+        "name": "Frank",
+        "image": "1",
+        "team": {
+            "art": {
+                "position": "Blender",
+                "order": "7"
+            }
+        }    
+    },
+    {
+        "name": "Grace",
+        "image": "1",
+        "team": {
+            "writing": {
+                "position": "Writer",
+                "order": "1"
+            }
+        }
+    },
+    {
+        "name": "Ishaan Panigrahi",
+        "image": "1",
+        "team": {
+            "executive": {
+                "position": {
+                    "long": "Chief Marketing Officer",
+                    "abbr": "CMO",
+                    "order": "3"
+                }
+            },
+            "business": {
+                "position": "Marketing Lead",
+                "order": "2"
+            }
+        }
+    },
+    {
+        "name": "Jake",
+        "image": "1",
+        "team": {
+            "writing": {
+                "position": "Writer",
+                "order": "1"
+            }
+        }
+    },
+    {
+        "name": "Jake Lee",
+        "image": "1",
+        "team": {
+            "video/audio": {
+                "position": "Editor",
+                "order": "2"
+            }
+        }
+    },
+    {
+        "name": "Josh Wolk",
+        "image": "1",
+        "team": {
+            "business": {
+                "position": "Marketing",
+                "order": "3"
+            }
+        }    
+    },
+    {
+        "name": "June",
+        "image": "1",
+        "team": {
+            "art": {
+                "position": "Illustrator",
+                "order": "3"
+            }
+        }    
+    },
+    {
+        "name": "Long",
+        "image": "1",
+        "team": {
+            "art": {
+                "position": "Illustrator/Animator",
+                "order": "4"
+            }
+        }    
+    },
+    {
+        "name": "Luis Barajas",
+        "image": "1",
+        "team": {
+            "project": {
+                "position": "Luis Barajas",
+                "order": "1"
+            }
+        }
+    },
+    {
+        "name": "Mac Kongsomjit",
+        "image": "1",
+        "team": {
+            "executive": {
+                "position": {
+                    "long": "Chief Operations Officer",
+                    "abbr": "COO",
+                    "order": "6"
+                }
+            },
+            "business": {
+                "position": "Operations Manager",
+                "order": "6"
+            }
+        }    
+    },
+    {
+        "name": "Maksim Petersburgski",
+        "image": "1",
+        "team": {
+            "executive": {
+                "position": {
+                    "long": "Chief Information Officer",
+                    "abbr": "CIO",
+                    "order": "7"
+                }
+            },
+            "developer": {
+                "position": "Backend Developer Lead",
+                "order": "2"
+            }
+        }
+    },
+    {
+        "name": "Matt",
+        "image": "1",
+        "team": {
+            "writing": {
+                "position": "Writer",
+                "order": "1"
+            }
+        }
+    },
+    {
+        "name": "Matthew",
+        "image": "1",
+        "team": {
+            "writing": {
+                "position": "Head Writer",
+                "order": "1"
+            }
+        }
+    },
+    {
+        "name": "Mohamed Elousrouti",
+        "image": "1",
+        "team": {
+            "developer": {
+                "position": "Frontend",
+                "order": "3"
+            }
+        }    
+    },
+    {
+        "name": "Olivier",
+        "image": "1",
+        "team": {
+            "art": {
+                "position": "Blender",
+                "order": "8"
+            }
+        }
+    },
+    {
+        "name": "P8IO",
+        "image": "1",
+        "team": {
+            "developer": {
+                "position": "Frontend",
+                "order": "5"
+            }
+        }    
+    },
+    {
+        "name": "Rishi Astra",
+        "image": "1",
+        "team": {
+            "project": {
+                "position": "Programming",
+                "order": "5"
+            }
+        }    
+    },
+    {
+        "name": "Roja Das",
+        "image": "1",
+        "team": {
+            "executive": {
+                "position": {
+                    "long": "Chief Financial Officer",
+                    "abbr": "CFO",
+                    "order": "2"
+                }
+            },
+            "business": {
+                "position": "Finance/PR Lead",
+                "order": "4"
+            }
+        }
+    },
+    {
+        "name": "Roland Yan",
+        "image": "1",
+        "team": {
+            "executive": {
+                "position": {
+                    "long": "Chief Executive Officer",
+                    "abbr": "CEO"
+                }
+            },
+            "project": {
+                "position": "Project Lead",
+                "order": "1"
+            },
+            "business": {
+                "position": "Lead",
+                "order": "1"
+            }
+        },
+        "description": "Hello! I'm Roland, currently a rising Senior in High School. I founded NovaCrypt.org, an umbrella organization dedicated to leading the next generation of researchers, scientists, engineers, and activists. I also lead the Project Team there, in Project MediAir, an autonomous VTOL UAV project. I have over 3000 hours of mechanical engineering work in FRC so far, and am a Columbia Engineering Research Program intern. In addition, I'm a student researcher at Columbia's Lamont-Doherty and have published my research to multiple journals.",
+        "some": {
+            "website": "https://rolandyan.com",
+            "linkedin": "roland-yan-52618a1a7",
+            "instagram": "robo_panda_x"
+        }
+    },
+    {
+        "name": "Sidaus Vishwakarma",
+        "image": "1",
+        "team": {
+            "art": {
+                "position": "Blender",
+                "order": "9"
+            }
+        }
+    },
+    {
+        "name": "Tate Schrock",
+        "image": "1",
+        "team": {
+            "executive": {
+                "position": {
+                    "long": "Chief Technology Officer",
+                    "abbr": "CTO",
+                    "order": "4"
+                }
+            },
+            "project": {
+                "position": "Build Engineer",
+                "order": "2"
+            }
+        }    
+    },
+    {
+        "name": "Will",
+        "image": "1",
+        "team": {
+            "project": {
+                "position": "Design Engineer",
+                "order": "4"
+            }
+        }    
+    },
+    {
+        "name": "Zeros",
+        "image": "1",
+        "team": {
+            "business": {
+                "position": "Operations Assistant",
+                "order": "7"
+            }
+        }    
+    },
+    {
+        "name": "Wyatt Mattaway",
+        "image": "1",
+        "team": {
+            "video/audio": {
+                "position": "Editor",
+                "order": "1"
+            }
+        }
+    },
+]

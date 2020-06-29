@@ -7,7 +7,7 @@
                 "position": "Blender",
                 "order": "5"
             }
-        }    
+        }
     },
     {
         "name": "Alex Lam",
@@ -17,7 +17,7 @@
                 "position": "FAA Advisor",
                 "order": "6"
             }
-        }    
+        }
     },
     {
         "name": "Ameya Singh",
@@ -26,15 +26,15 @@
             "executive": {
                 "position": {
                     "long": "Chief Web Officer",
-                    "abbr": "CWO",
-                    "order": "5"
-                }
+                    "abbr": "CWO"
+                },
+                "order": "5"
             },
             "developer": {
                 "position": "Frontend Developer Lead",
                 "order": "1"
             }
-        }    
+        }
     },
     {
         "name": "Anika",
@@ -54,7 +54,7 @@
                 "position": "Frontend",
                 "order": "4"
             }
-        }    
+        }
     },
     {
         "name": "Aumnescio",
@@ -64,7 +64,7 @@
                 "position": "Illustrator",
                 "order": "2"
             }
-        }    
+        }
     },
     {
         "name": "Avani Guduri",
@@ -73,9 +73,9 @@
             "executive": {
                 "position": {
                     "long": "Chief Design Officer",
-                    "abbr": "CDO",
-                    "order": "8"
-                }
+                    "abbr": "CDO"
+                },
+                "order": "8"
             },
             "art": {
                 "position": "Illustrator Lead",
@@ -91,7 +91,7 @@
                 "position": "Blender",
                 "order": "6"
             }
-        }    
+        }
     },
     {
         "name": "Carmen Lauren",
@@ -111,7 +111,7 @@
                 "position": "Medical Advisor",
                 "order": "7"
             }
-        }    
+        }
     },
     {
         "name": "Christer War&eacute;n",
@@ -121,7 +121,7 @@
                 "position": "Frontend",
                 "order": "6"
             }
-        }    
+        }
     },
     {
         "name": "Clayton",
@@ -131,7 +131,7 @@
                 "position": "Backend",
                 "order": "7"
             }
-        }    
+        }
     },
     {
         "name": "Della",
@@ -151,7 +151,7 @@
                 "position": "Finance/PR",
                 "order": "5"
             }
-        }    
+        }
     },
     {
         "name": "Frank",
@@ -161,7 +161,7 @@
                 "position": "Blender",
                 "order": "7"
             }
-        }    
+        }
     },
     {
         "name": "Grace",
@@ -175,14 +175,14 @@
     },
     {
         "name": "Ishaan Panigrahi",
-        "image": "1",
+        "image": "assets/images/people/ishaan-panigrahi.webp",
         "team": {
             "executive": {
                 "position": {
                     "long": "Chief Marketing Officer",
-                    "abbr": "CMO",
-                    "order": "3"
-                }
+                    "abbr": "CMO"
+                },
+                "order": "3"
             },
             "business": {
                 "position": "Marketing Lead",
@@ -218,7 +218,7 @@
                 "position": "Marketing",
                 "order": "3"
             }
-        }    
+        }
     },
     {
         "name": "June",
@@ -228,17 +228,17 @@
                 "position": "Illustrator",
                 "order": "3"
             }
-        }    
+        }
     },
     {
         "name": "Long",
-        "image": "1",
+        "image": "assets/images/people/long.webp",
         "team": {
             "art": {
                 "position": "Illustrator/Animator",
                 "order": "4"
             }
-        }    
+        }
     },
     {
         "name": "Luis Barajas",
@@ -252,20 +252,20 @@
     },
     {
         "name": "Mac Kongsomjit",
-        "image": "1",
+        "image": "assets/images/people/mac-kongsomjit.webp",
         "team": {
             "executive": {
                 "position": {
                     "long": "Chief Operations Officer",
-                    "abbr": "COO",
-                    "order": "6"
-                }
+                    "abbr": "COO"
+                },
+                "order": "6"
             },
             "business": {
                 "position": "Operations Manager",
                 "order": "6"
             }
-        }    
+        }
     },
     {
         "name": "Maksim Petersburgski",
@@ -274,9 +274,9 @@
             "executive": {
                 "position": {
                     "long": "Chief Information Officer",
-                    "abbr": "CIO",
-                    "order": "7"
-                }
+                    "abbr": "CIO"
+                },
+                "order": "7"
             },
             "developer": {
                 "position": "Backend Developer Lead",
@@ -312,7 +312,7 @@
                 "position": "Frontend",
                 "order": "3"
             }
-        }    
+        }
     },
     {
         "name": "Olivier",
@@ -332,7 +332,7 @@
                 "position": "Frontend",
                 "order": "5"
             }
-        }    
+        }
     },
     {
         "name": "Rishi Astra",
@@ -342,18 +342,18 @@
                 "position": "Programming",
                 "order": "5"
             }
-        }    
+        }
     },
     {
         "name": "Roja Das",
-        "image": "1",
+        "image": "assets/images/people/roja-das.webp",
         "team": {
             "executive": {
                 "position": {
                     "long": "Chief Financial Officer",
-                    "abbr": "CFO",
-                    "order": "2"
-                }
+                    "abbr": "CFO"
+                },
+                "order": "2"
             },
             "business": {
                 "position": "Finance/PR Lead",
@@ -363,13 +363,14 @@
     },
     {
         "name": "Roland Yan",
-        "image": "1",
+        "image": "assets/images/people/roland-yan.webp",
         "team": {
             "executive": {
                 "position": {
                     "long": "Chief Executive Officer",
                     "abbr": "CEO"
-                }
+                },
+                "order": "1"
             },
             "project": {
                 "position": "Project Lead",
@@ -404,15 +405,15 @@
             "executive": {
                 "position": {
                     "long": "Chief Technology Officer",
-                    "abbr": "CTO",
-                    "order": "4"
-                }
+                    "abbr": "CTO"
+                },
+                "order": "4"
             },
             "project": {
                 "position": "Build Engineer",
                 "order": "2"
             }
-        }    
+        }
     },
     {
         "name": "Will",
@@ -422,7 +423,7 @@
                 "position": "Design Engineer",
                 "order": "4"
             }
-        }    
+        }
     },
     {
         "name": "Zeros",
@@ -432,7 +433,7 @@
                 "position": "Operations Assistant",
                 "order": "7"
             }
-        }    
+        }
     },
     {
         "name": "Wyatt Mattaway",
@@ -443,5 +444,5 @@
                 "order": "1"
             }
         }
-    },
+    }
 ]

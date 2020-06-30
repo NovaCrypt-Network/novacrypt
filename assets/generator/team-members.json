@@ -1,7 +1,6 @@
 [
     {
         "name": "Adam Rueda",
-        "image": "1",
         "team": {
             "art": {
                 "position": "Blender",
@@ -11,7 +10,6 @@
     },
     {
         "name": "Alex Lam",
-        "image": "1",
         "team": {
             "project": {
                 "position": "FAA Advisor",
@@ -38,7 +36,6 @@
     },
     {
         "name": "Anika",
-        "image": "1",
         "team": {
             "writing": {
                 "position": "Writer",
@@ -48,7 +45,6 @@
     },
     {
         "name": "Asher",
-        "image": "1",
         "team": {
             "developer": {
                 "position": "Frontend",
@@ -58,7 +54,6 @@
     },
     {
         "name": "Aumnescio",
-        "image": "1",
         "team": {
             "art": {
                 "position": "Illustrator",
@@ -85,7 +80,6 @@
     },
     {
         "name": "Bobudub",
-        "image": "1",
         "team": {
             "art": {
                 "position": "Blender",
@@ -95,7 +89,6 @@
     },
     {
         "name": "Carmen Lauren",
-        "image": "1",
         "team": {
             "writing": {
                 "position": "Writer",
@@ -105,7 +98,6 @@
     },
     {
         "name": "Casey",
-        "image": "1",
         "team": {
             "project": {
                 "position": "Medical Advisor",
@@ -115,7 +107,6 @@
     },
     {
         "name": "Christer War&eacute;n",
-        "image": "1",
         "team": {
             "developer": {
                 "position": "Frontend",
@@ -125,7 +116,6 @@
     },
     {
         "name": "Clayton",
-        "image": "1",
         "team": {
             "developer": {
                 "position": "Backend",
@@ -135,7 +125,6 @@
     },
     {
         "name": "Della",
-        "image": "1",
         "team": {
             "writing": {
                 "position": "Writer",
@@ -145,7 +134,6 @@
     },
     {
         "name": "Ethan",
-        "image": "1",
         "team": {
             "business": {
                 "position": "Finance/PR",
@@ -155,7 +143,6 @@
     },
     {
         "name": "Frank",
-        "image": "1",
         "team": {
             "art": {
                 "position": "Blender",
@@ -165,7 +152,6 @@
     },
     {
         "name": "Grace",
-        "image": "1",
         "team": {
             "writing": {
                 "position": "Writer",
@@ -192,7 +178,6 @@
     },
     {
         "name": "Jake",
-        "image": "1",
         "team": {
             "writing": {
                 "position": "Writer",
@@ -202,7 +187,6 @@
     },
     {
         "name": "Jake Lee",
-        "image": "1",
         "team": {
             "video/audio": {
                 "position": "Editor",
@@ -212,7 +196,6 @@
     },
     {
         "name": "Josh Wolk",
-        "image": "1",
         "team": {
             "business": {
                 "position": "Marketing",
@@ -222,7 +205,6 @@
     },
     {
         "name": "June",
-        "image": "1",
         "team": {
             "art": {
                 "position": "Illustrator",
@@ -242,7 +224,6 @@
     },
     {
         "name": "Luis Barajas",
-        "image": "1",
         "team": {
             "project": {
                 "position": "Luis Barajas",
@@ -269,7 +250,6 @@
     },
     {
         "name": "Maksim Petersburgski",
-        "image": "1",
         "team": {
             "executive": {
                 "position": {
@@ -286,7 +266,6 @@
     },
     {
         "name": "Matt",
-        "image": "1",
         "team": {
             "writing": {
                 "position": "Writer",
@@ -296,7 +275,6 @@
     },
     {
         "name": "Matthew",
-        "image": "1",
         "team": {
             "writing": {
                 "position": "Head Writer",
@@ -306,7 +284,6 @@
     },
     {
         "name": "Mohamed Elousrouti",
-        "image": "1",
         "team": {
             "developer": {
                 "position": "Frontend",
@@ -316,7 +293,6 @@
     },
     {
         "name": "Olivier",
-        "image": "1",
         "team": {
             "art": {
                 "position": "Blender",
@@ -326,7 +302,6 @@
     },
     {
         "name": "P8IO",
-        "image": "1",
         "team": {
             "developer": {
                 "position": "Frontend",
@@ -336,7 +311,6 @@
     },
     {
         "name": "Rishi Astra",
-        "image": "1",
         "team": {
             "project": {
                 "position": "Programming",
@@ -390,7 +364,6 @@
     },
     {
         "name": "Sidaus Vishwakarma",
-        "image": "1",
         "team": {
             "art": {
                 "position": "Blender",
@@ -417,7 +390,6 @@
     },
     {
         "name": "Will",
-        "image": "1",
         "team": {
             "project": {
                 "position": "Design Engineer",
@@ -427,7 +399,6 @@
     },
     {
         "name": "Zeros",
-        "image": "1",
         "team": {
             "business": {
                 "position": "Operations Assistant",
@@ -437,7 +408,6 @@
     },
     {
         "name": "Wyatt Mattaway",
-        "image": "1",
         "team": {
             "video/audio": {
                 "position": "Editor",

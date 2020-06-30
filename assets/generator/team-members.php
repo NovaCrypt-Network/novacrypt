@@ -52,6 +52,10 @@ if(isset($teams['executive'][$i]['image']) && $teams['executive'][$i]['image'] !
 $content .= '
                         <img src="'.$teams['executive'][$i]['image'].'" alt="'.$teams['executive'][$i]['name'].'">
 ';
+} else {
+$content .= '
+                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); width: 200px; height: 200px; padding: 50px;">
+';
 }
 
 $content .= '

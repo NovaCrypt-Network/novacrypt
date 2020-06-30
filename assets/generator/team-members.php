@@ -17,7 +17,7 @@ echo "\n\n";
 $file = fopen(__DIR__."/team-members.html.txt", "w") or die("Unable to open file!");
 
 $content = '
-                <!-- Team Members Placeholder End -->
+                <!-- Team Members Placeholder Start -->
 ';
 fwrite($file, $content);
 
@@ -70,8 +70,13 @@ $content .= '
 ';
 }
 
+if(isset($teams['executive'][$i]['description']) && $teams['executive'][$i]['description'] != ''){
 $content .= '
                         <p class="card-description">'.$teams['executive'][$i]['description'].'</p>
+';
+}
+
+$content .= '
                         <div class="card-some beside">
 ';
 

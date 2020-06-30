@@ -35,6 +35,6 @@ section img.normal {
 
 @media only screen and (orientation: portrait) {
     section img.normal {
-        width: 100vw;
+        width: 85vw;
     }
 }

@@ -33,3 +33,8 @@ section img.normal {
     color: #ffffff;
 }
 
+@media only screen and (orientation: portrait) {
+    section img.normal {
+        width: 100vw;
+    }
+}

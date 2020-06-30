@@ -21,7 +21,7 @@
     },
     {
         "name": "Ameya Singh",
-        "image": "1",
+        "image": "assets/images/people/ameya-singh.webp",
         "team": {
             "executive": {
                 "position": {
@@ -68,7 +68,7 @@
     },
     {
         "name": "Avani Guduri",
-        "image": "1",
+        "image": "assets/images/people/avani-guduri.webp",
         "team": {
             "executive": {
                 "position": {
@@ -400,7 +400,7 @@
     },
     {
         "name": "Tate Schrock",
-        "image": "1",
+        "image": "assets/images/people/tate-schrock.webp",
         "team": {
             "executive": {
                 "position": {

@@ -64,7 +64,7 @@
                 <div class="card beside">
                     <div class="stacked">
 
-                        <img src="1" alt="Tate Schrock">
+                        <img src="assets/images/people/tate-schrock.webp" alt="Tate Schrock">
 
                     </div>
                     <div class="stacked">
@@ -82,7 +82,7 @@
                 <div class="card beside">
                     <div class="stacked">
 
-                        <img src="1" alt="Ameya Singh">
+                        <img src="assets/images/people/ameya-singh.webp" alt="Ameya Singh">
 
                     </div>
                     <div class="stacked">
@@ -136,7 +136,7 @@
                 <div class="card beside">
                     <div class="stacked">
 
-                        <img src="1" alt="Avani Guduri">
+                        <img src="assets/images/people/avani-guduri.webp" alt="Avani Guduri">
 
                     </div>
                     <div class="stacked">

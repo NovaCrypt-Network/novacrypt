@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -26,6 +26,9 @@
     <!-- CSS -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/sticky-thing.css" rel="stylesheet">
+    <link href="assets/css/about-team.css" rel="stylesheet">
+    <link href="assets/css/about-team-team.css" rel="stylesheet">
+    <link href="assets/css/about-team-images.css" rel="stylesheet">
 </head>
 
 <body>
@@ -55,7 +58,7 @@
                     <div class="subnav">
                         <ul>
                             <li><a href="about.html">About</a></li>
-                            <li><a href="about_team.html">About Team</a></li>
+                            <li><a href="about-team.html">About Team</a></li>
                             <li><a href="team-members.html">Team Members</a></li>
                         </ul>
                     </div>
@@ -92,11 +95,220 @@
             <a href="https://discord.gg/3CzcjJR" type="button" class="btn btn-outline-primary" role="button">Join Us!</a>
         </div>
     </nav>
-    <!-- first section - Home -->
-    <br><br><br>
-    <section class="comingsoon">
-        <h1 style="font-family:'Times New Roman';">Coming Soon!</h1>
-    </section>
+
+    <main id="content" class="stacked white-text">
+
+        <section id="map">
+            <div class="stacked">
+                <img class="normal" src="assets/images/tmp-map.png" alt="Temporary Map">
+            </div>
+        </section>
+
+<!-- 
+Nice Diamond Shape Responsive Team Members
+Md Nahidul Islam
+Source: https://codepen.io/thenahid/pen/WXKONJ
+-->
+<section id="team">
+	<div class="container">
+		<div class="row flex-center sm-no-flex">
+
+			<div class="pull-right sm-no-float col-md-8">
+				<ul class="team-members">
+					<!-- single member row starts -->
+					<li class="clearfix">
+						<div class="member-details">
+							<div>
+								<img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 12%;">
+								<div class="member-info">
+									<h3>Maksim Petersburgski</h3>
+									<p>CIO</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="member-details">
+							<div>
+								<img src="assets/images/people/tate-schrock.webp" alt="Tate Schrock">
+								<div class="member-info">
+									<h3>Tate Schrock</h3>
+									<p>CTO</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="member-details">
+							<div>
+								<img src="assets/images/people/ameya-singh.webp" alt="Ameya Singh">
+								<div class="member-info">
+									<h3>Ameya Singh</h3>
+									<p><abbr title="Chief Website Officer">CWO</abbr></p>
+								</div>
+							</div>
+						</div>
+					</li><!-- /single member row ends -->
+					
+					<!-- single member row starts -->
+					<li class="clearfix">
+						<div class="member-details">
+							<div>
+								<img src="assets/images/people/mac-kongsomjit.webp" alt="Mac Kongsomjit">
+								<div class="member-info">
+									<h3>Mac Kongsomjit</h3>
+									<p>COO</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="member-details">
+							<div>
+								<img src="assets/images/people/roland-yan.webp" alt="Roland Yan">
+								<div class="member-info">
+									<h3>Roland Yan</h3>
+									<p>CEO</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="member-details">
+							<div>
+								<img src="assets/images/people/roja-das.webp" alt="UI Designer">
+								<div class="member-info">
+									<h3>Roja Das</h3>
+									<p>CFO</p>
+								</div>
+							</div>
+						</div>
+					</li><!-- /single member row ends -->
+
+					<!-- single member row starts -->
+					<li class="clearfix">
+						<div class="member-details">
+							<div>
+								<img src="assets/images/people/ishaan-panigrahi.webp" alt="Ishaan Panigrahi">
+								<div class="member-info">
+									<h3>Ishaan Panigrahi</h3>
+									<p>CMO</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="member-details">
+							<div>
+								<img src="assets/images/people/avani-guduri.webp" alt="Avani Guduri">
+								<div class="member-info">
+									<h3>Avani Guduri</h3>
+									<p>CCO</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="member-details">
+							<div>
+								<img src="assets/images/novacrypt.png" alt="NovaCrypt" style="padding: 12%;">
+								<div class="member-info">
+									<h3>NovaCryptTeam</h3>
+									<p>Team Members</p>
+								</div>
+							</div>
+						</div>
+					</li><!-- /single member row ends -->
+
+				</ul><!-- /end team-photos -->
+			</div><!-- /end col-md-8 -->
+			
+			<div class="pull-left col-md-4 sm-text-center">
+				<div class="team-overview">
+					<h2>Who Are We?</h2>
+					<a href="#">Meet the Entire Team</a>
+					<p><div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quae nesciunt officia! Autem, nam eum voluptatem, esse voluptatibus deleniti tempora laboriosam sequi pariatur, explicabo itaque. Fuga, deserunt? Repudiandae, neque qui.</div></p>
+				</div>
+			</div><!-- /end col-md-4 -->
+		</div><!-- /end row -->
+	</div><!-- /end container -->
+</section>
+
+        <section id="org">
+            <div class="stacked">
+                <img class="normal" src="assets/images/org-structure.webp" alt="Organizational Structure">
+            </div>
+        </section>
+
+<!--
+Expanding flex cards
+by Zed Dash
+Source: https://codepen.io/z-/pen/OBPJKK
+-->
+        <section id="images">
+
+<div class="options">
+   <div class="option active" style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
+      <div class="shadow"></div>
+      <div class="label">
+         <div class="icon">
+            <i class="fas fa-walking"></i>
+         </div>
+         <div class="info">
+            <div class="main">Blonkisoaz</div>
+            <div class="sub">Omuke trughte a otufta</div>
+         </div>
+      </div>
+   </div>
+   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+      <div class="shadow"></div>
+      <div class="label">
+         <div class="icon">
+            <i class="fas fa-snowflake"></i>
+         </div>
+         <div class="info">
+            <div class="main">Oretemauw</div>
+            <div class="sub">Omuke trughte a otufta</div>
+         </div>
+      </div>
+   </div>
+   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
+      <div class="shadow"></div>
+      <div class="label">
+         <div class="icon">
+            <i class="fas fa-tree"></i>
+         </div>
+         <div class="info">
+            <div class="main">Iteresuselle</div>
+            <div class="sub">Omuke trughte a otufta</div>
+         </div>
+      </div>
+   </div>
+   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
+      <div class="shadow"></div>
+      <div class="label">
+         <div class="icon">
+            <i class="fas fa-tint"></i>
+         </div>
+         <div class="info">
+            <div class="main">Idiefe</div>
+            <div class="sub">Omuke trughte a otufta</div>
+         </div>
+      </div>
+   </div>
+   <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
+      <div class="shadow"></div>
+      <div class="label">
+         <div class="icon">
+            <i class="fas fa-sun"></i>
+         </div>
+         <div class="info">
+            <div class="main">Inatethi</div>
+            <div class="sub">Omuke trughte a otufta</div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<a href="https://victorofvalencia-blog.tumblr.com" target="_blank" class="credit">Photos from Victor of Valencia on tumblr</a>
+        </section>
+
+    </main>
+
     <!-- Social bar bottom -->
     <div style="display:flex;justify-content: center;">
         <a class="test-css" href="https://discord.gg/5dESz5e" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
@@ -127,7 +339,7 @@
                 <h5>About</h5>
                 <ul class="list-unstyled text-small">
                     <li><a class="text-muted" href="about.html">About</a></li>
-                    <li><a class="text-muted" href="about_team.html">About team</a></li>
+                    <li><a class="text-muted" href="about-team.html">About team</a></li>
                     <li><a class="text-muted" href="team-members.html">Team Members</a></li>
                 </ul>
             </div>
@@ -148,6 +360,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- JS -->
+    <script src="assets/js/about-team.js"></script>
 
 </body>
 

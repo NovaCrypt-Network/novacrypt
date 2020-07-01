@@ -1,0 +1,40 @@
+section {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+section img.normal {
+    width: 50vw;
+}
+
+
+.stacked {
+    display: flex;
+    flex-direction: column;
+}
+
+.beside {
+    display: flex;
+    flex-direction: row;
+}
+
+.layered {
+    grid-column: 1; grid-row: 1;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+@media only screen and (orientation: portrait) {
+    section img.normal {
+        width: 85vw;
+    }
+}

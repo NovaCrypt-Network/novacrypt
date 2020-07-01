@@ -1,0 +1,169 @@
+*, *:active, *:focus, *:hover, *:visited, *:link {
+    color: #ffffff;
+
+}
+
+main#content {
+    background: url('https://cdn.discordapp.com/attachments/706393501973348454/719849582296563749/milky-way-984050.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    margin: 0;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    flex: 25vw;
+    /*height: 100%;
+    left: 0px;
+    position: fixed;
+    top: 0px;*/
+    color: #ffffff;
+    background-color: #1a1a1a;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 20px;
+    padding: 70px;
+    padding-top: 100px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.menu a:hover {
+    color: #696969;
+    text-decoration: underline;
+}
+
+.cards {
+    width: 100%;
+    flex: 75vw;
+    /*position: absolute;
+    left: 20%;
+    top: 0px;
+    float: left;*/
+    align-items: center;
+    min-height: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.card {
+    border: solid #696969aa;
+    width: 90%;
+    background-color: #171717cc;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.card div:nth-child(1) {
+    margin-top: 0;
+}
+
+.card p {
+    margin-top: 0;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+.card .card-some {
+    margin-left: 15px;
+    font-size: xx-large;
+}
+.card .card-name {
+    font-size: xxx-large;
+}
+.card .card-some i {
+    margin-right: 15px;
+}
+.card .card-position {
+    font-size: xx-large;
+}
+.card .card-description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.card div:nth-child(2) {
+    justify-content: center;
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    border-right: solid #696969aa;
+}
+
+#test {
+    color: #ffffff;
+    text-align: center;
+}
+
+.stacked {
+    display: flex;
+    flex-direction: column;
+}
+.beside {
+    display: flex;
+    flex-direction: row;
+}
+
+.layered {
+    grid-column: 1; grid-row: 1;
+}
+
+.white-text {
+    color: #ffffff;
+}
+
+@media only screen and (orientation: portrait) {
+    main#content {
+        flex-direction: column;
+    }
+
+    .menu {
+        padding-top: 100px;
+        margin-bottom: 0;
+        flex: auto;
+    }
+
+    .cards {
+        flex: auto;
+    }
+    .card {
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: solid #696969aa;
+    }
+}
+
+/*@media only screen and (max-width: 1300px) {
+    .menu {
+
+    }
+}*/

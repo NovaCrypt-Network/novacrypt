@@ -157,6 +157,8 @@ main#content {
     .card img {
         width: 100%;
         height: auto;
+        border-right: none;
+        border-bottom: solid #696969aa;
     }
 }
 

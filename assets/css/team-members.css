@@ -29,8 +29,7 @@ main#content {
     text-align: center;
     font-size: 20px;
     padding: 70px;
-    margin-top:100px;
-    margin-bottom:100px;
+    padding-top: 100px;
 }
 
 .menu ul {
@@ -65,10 +64,8 @@ main#content {
     float: left;*/
     align-items: center;
     min-height: 100%;
-    margin-top:100px;
-    margin-bottom:100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .card {
@@ -144,6 +141,7 @@ main#content {
     }
 
     .menu {
+        padding-top: 100px;
         margin-bottom: 0;
         flex: auto;
     }

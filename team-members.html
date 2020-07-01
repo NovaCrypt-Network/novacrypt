@@ -1,132 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
-        <style>
-            body {
-                  background: url(https://cdn.discordapp.com/attachments/706393501973348454/719849582296563749/milky-way-984050.jpg) no-repeat center center fixed; 
-                    -webkit-background-size: cover;
-                    -moz-background-size: cover;
-                    margin: 0;
-                    -o-background-size: cover;
-                    background-size: cover;
-            }
-            *, *:active, *:focus, *:hover, *:visited, *:link {
-                color: #ffffff;
+<html>
 
-            }
-            .menu {
-                height: 100%;
-                left: 0px;
-                position: fixed;
-                top: 0px;
-                color: #ffffff;
-                background-color: #1a1a1a;
-                opacity: 0.9;
-                text-align: center;
-                font-size: 20px;
-                padding: 70px;
-                font-family: Comic Sans MS, cursive, sans-serif;
-            }
-            
-            .card {
-                border: solid #696969aa;
-                width: 90%;
-                margin-top: 50px;
-                background-color: #171717cc;
-            }
-            .card p {
-                margin-top: 0;
-                margin-left: 15px;
-                margin-bottom: 0;
-            }
-            .card .card-some {
-                margin-left: 15px;
-                font-size: xx-large;
-            }
-            .card .card-name {
-                font-size: xxx-large;
-            }
-            .card .card-some i {
-                margin-right: 15px;
-            }
-            .card .card-position {
-                font-size: xx-large;
-            }
-            .card .card-description {
-                margin-top: 15px;
-                margin-bottom: 15px;
-            }
-            .card div:nth-child(2) {
-                justify-content: center;
-            }
-            .cards {
-                width: 80%;
-                position: absolute;
-                left: 20%;
-                top: 0px;
-                float: left;
-                align-items: center;
-                height: 100%;
-                font-family: Comic Sans MS, cursive, sans-serif;    
-            }
-            .card img {
-                width: 300px;
-                height: 300px;
-                border-right: solid #696969aa;
-            }
-            .menu > a {
-                color: #ffffff;
-                text-decoration: none;
-                font-size: 30px;
-            }
-            .menu > a:hover {
-                color: #696969;
-                text-decoration: underline;
-            }
-            #test {
-                color: #ffffff;
-                text-align: center;
-            }
-            .stacked {
-                display: flex;
-                flex-direction: column;
-            }
-            .beside {
-                display: flex;
-                flex-direction: row;
-            }
-            @media only screen and (max-width: 1300px) {
-                .menu {
-                    
-                }
-            }
-        </style>
-        <body>
-            <div class="menu">
-                <a href="#executive">Executive team</a>
-                <br>
-                <br>
-                <a href="#project">Project team</a>
-                <br>
-                <br>
-                <a href="#business">Business team</a>
-                <br>
-                <br>
-                <a href="#developer">Developer team</a>
-                <br>
-                <br>
-                <a href="#art">Art team</a>
-                <br>
-                <br>
-                <a href="#contri">Contributors</a>
-                <br>
-                <br>
-                <a href="#vidad">Video/audio team</a>
-            </div>
-            <div class="cards stacked">
+<head>
+    <title>Team Members | NovaCrypt</title>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="https://novacrypt.org/assets/images/novacrypt.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet">
+
+        <!-- Icons -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Cyborg Theme for BootsWatch -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-GKugkVcT8wqoh3M8z1lqHbU+g6j498/ZT/zuXbepz7Dc09/otQZxTimkEMTkRWHP" crossorigin="anonymous">
+    
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/sticky-thing.css" rel="stylesheet">
+    <link href="assets/css/team-members.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- STICKY BAR THIGNS -->
+<div class="icon-bar">
+  <a href="https://discord.gg/5dESz5e" target="_blank" rel="noopener noreferrer" class="discord"><i class="fab fa-discord"></i></a>
+  <a href="https://www.reddit.com/r/NovaCrypt/" target="_blank" rel="noopener noreferrer" class="reddit"><i class="fab fa-reddit"></i></a>
+  <a href="https://twitter.com/NovaCrypt" target="_blank" rel="noopener noreferrer" class="twitter"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.instagram.com/novacryptteam/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/company/novacrypt/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i></a>
+  <a href="https://www.youtube.com/channel/UCGkrwKxJCOlp3GsKgMOhi4w" target="_blank" rel="noopener noreferrer" class="youtube"><i class="fab fa-youtube"></i></a>
+  <a href="https://www.facebook.com/NovaCrypt-101397501631517/" target="_blank" rel="noopener noreferrer" class="facebook"><i class="fab fa-facebook"></i></a>
+</div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/novacrypt.png" width="30" height="30" class="d-inline-block align-center" alt="">
+            NOVACRYPT
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About <i class="fa fa-caret-down"></i></a>
+                    <div class="subnav">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="about_team.html">About Team</a></li>
+                            <li><a href="team-members.html">Team Members</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div style="user-select:none" class="nav-link">Subsidiaries <i class="fa fa-caret-down"></i></div>
+                    <div class="subnav">
+                        <ul>
+                            <li><a href="auraedge.html">AuraEdge</a></li>
+                            <li><a href="covid-19.html">COVID-19</a></li>
+                            <li><a href="interinit.html">Interstellar Initiative</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="papers.html">Research/Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://an.novacrypt.org/DataPages/anon"><div class="dontclick">Announcements</div></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="support.html">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+            <a href="https://discord.gg/3CzcjJR" type="button" class="btn btn-outline-primary" role="button">Join Us!</a>
+        </div>
+    </nav>
+
+    <main id="content">
+        <div class="menu">
+            <a href="#executive">Executive team</a>
+            <br>
+            <br>
+            <a href="#project">Project team</a>
+            <br>
+            <br>
+            <a href="#business">Business team</a>
+            <br>
+            <br>
+            <a href="#developer">Developer team</a>
+            <br>
+            <br>
+            <a href="#art">Art team</a>
+            <br>
+            <br>
+            <a href="#contri">Contributors</a>
+            <br>
+            <br>
+            <a href="#vidad">Video/audio team</a>
+        </div>
+
+        <div class="cards stacked">
+
+
                 <!-- Team Members Placeholder Start -->
 
                 <div class="card beside">
@@ -151,6 +143,8 @@
                             <a href="https://www.instagram.com/robo_panda_x/"><i class="fab fa-instagram"></i></a>
 
                         </div>
+
+                        
                     </div>
                 </div>
 
@@ -165,9 +159,7 @@
 
                         <p class="card-position"><abbr title="Chief Financial Officer">CFO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -182,9 +174,7 @@
 
                         <p class="card-position"><abbr title="Chief Marketing Officer">CMO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -199,9 +189,7 @@
 
                         <p class="card-position"><abbr title="Chief Technology Officer">CTO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -216,9 +204,7 @@
 
                         <p class="card-position"><abbr title="Chief Web Officer">CWO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -233,16 +219,14 @@
 
                         <p class="card-position"><abbr title="Chief Operations Officer">COO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 
                 <div class="card beside">
                     <div class="stacked">
 
-                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); width: 200px; height: 200px; padding: 50px;">
+                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
 
                     </div>
                     <div class="stacked">
@@ -250,9 +234,7 @@
 
                         <p class="card-position"><abbr title="Chief Information Officer">CIO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -267,14 +249,67 @@
 
                         <p class="card-position"><abbr title="Chief Design Officer">CDO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 
                 <!-- Team Members Placeholder End -->
+
+        </div>
+    </main>
+
+    <!-- Social bar bottom -->
+    <div style="display:flex;justify-content: center;">
+        <a class="test-css" href="https://discord.gg/5dESz5e" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+        <a class="test-css" href="https://www.reddit.com/r/NovaCrypt/" target="_blank" rel="noopener noreferrer"><i class="fab fa-reddit"></i></a>
+        <a class="test-css" href="https://twitter.com/NovaCrypt" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        <a class="test-css" href="https://www.instagram.com/novacryptteam/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a class="test-css" href="https://www.linkedin.com/company/novacrypt/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a class="test-css" href="https://www.youtube.com/channel/UCGkrwKxJCOlp3GsKgMOhi4w" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+        <a class="test-css" href="https://www.facebook.com/NovaCrypt-101397501631517/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+    </div>
+    <!-- Footer -->
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md" style="min-width: initial;">
+                <a href="index.html"><img src="assets/images/novacrypt-footer.png" alt="Card image"></a>
+                <small class="d-block mb-3 text-muted">Copyright &copy; 2020</small>
             </div>
-        </body>
-    </head>
+            <div class="col-6 col-md">
+                <h5>Projects</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="papers.html">Research/Projects</a></li>
+                    <li><a class="text-muted" href="auraedge.html">AuraEdge</a></li>
+                    <li><a class="text-muted" href="interinit.html">Interstellar</a></li>
+                    <li><a class="text-muted" href="covid-19.html">NYFightingCovid</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="about.html">About</a></li>
+                    <li><a class="text-muted" href="about_team.html">About team</a></li>
+                    <li><a class="text-muted" href="team-members.html">Team Members</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Other</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="blog.html">Blog</a></li>
+                    <li><a class="text-muted" href="https://an.novacrypt.org/DataPages/anon">Announcements</a></li>
+                    <li><a class="text-muted" href="login.html">Log In</a></li>
+                    <li><a class="text-muted" href="support.html">Support</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Contact</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>

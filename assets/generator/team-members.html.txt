@@ -23,6 +23,8 @@
                             <a href="https://www.instagram.com/robo_panda_x/"><i class="fab fa-instagram"></i></a>
 
                         </div>
+
+                        
                     </div>
                 </div>
 
@@ -37,9 +39,7 @@
 
                         <p class="card-position"><abbr title="Chief Financial Officer">CFO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -54,9 +54,7 @@
 
                         <p class="card-position"><abbr title="Chief Marketing Officer">CMO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -71,9 +69,7 @@
 
                         <p class="card-position"><abbr title="Chief Technology Officer">CTO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -88,9 +84,7 @@
 
                         <p class="card-position"><abbr title="Chief Web Officer">CWO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -105,16 +99,14 @@
 
                         <p class="card-position"><abbr title="Chief Operations Officer">COO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 
                 <div class="card beside">
                     <div class="stacked">
 
-                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); width: 200px; height: 200px; padding: 50px;">
+                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
 
                     </div>
                     <div class="stacked">
@@ -122,9 +114,7 @@
 
                         <p class="card-position"><abbr title="Chief Information Officer">CIO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -139,9 +129,7 @@
 
                         <p class="card-position"><abbr title="Chief Design Officer">CDO</abbr></p>
 
-                        <div class="card-some beside">
-
-                        </div>
+                        
                     </div>
                 </div>
 

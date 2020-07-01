@@ -54,7 +54,7 @@ $content .= '
 ';
 } else {
 $content .= '
-                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); width: 200px; height: 200px; padding: 50px;">
+                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
 ';
 }
 
@@ -80,11 +80,11 @@ $content .= '
 ';
 }
 
+if(isset($teams['executive'][$i]['some']) && is_array($teams['executive'][$i]['some'])){
+
 $content .= '
                         <div class="card-some beside">
 ';
-
-if(isset($teams['executive'][$i]['some']) && is_array($teams['executive'][$i]['some'])){
 
 foreach($teams['executive'][$i]['some'] as $key => $value){
 
@@ -113,10 +113,14 @@ $content .= '
 
 }
 
+$content .= '
+                        </div>
+';
+
 }
 
 $content .= '
-                        </div>
+                        
                     </div>
                 </div>
 ';

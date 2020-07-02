@@ -1,4 +1,4 @@
-$(".option").click(function(){
+ccc$(".option").click(function(){
    $(".option").removeClass("active");
    $(this).addClass("active");
    
@@ -157,1099 +157,1099 @@ $("section#map .container").mapael({
             "value": "3100236",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Armenia<\/span><br \/>Population : 3100236"
+                "content": "<span style=\"font-weight:bold;\">Armenia<\/span><br \/>Population : 0"
             }
         },
         "AU": {
             "value": "22620600",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Australia<\/span><br \/>Population : 22620600"
+                "content": "<span style=\"font-weight:bold;\">Australia<\/span><br \/>Population : 0"
             }
         },
         "AT": {
             "value": "8419000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Austria<\/span><br \/>Population : 8419000"
+                "content": "<span style=\"font-weight:bold;\">Austria<\/span><br \/>Population : 0"
             }
         },
         "AZ": {
             "value": "9168000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Azerbaijan<\/span><br \/>Population : 9168000"
+                "content": "<span style=\"font-weight:bold;\">Azerbaijan<\/span><br \/>Population : 0"
             }
         },
         "BS": {
             "value": "347176",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Bahamas<\/span><br \/>Population : 347176"
+                "content": "<span style=\"font-weight:bold;\">Bahamas<\/span><br \/>Population : 0"
             }
         },
         "BH": {
             "value": "1323535",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Bahrain<\/span><br \/>Population : 1323535"
+                "content": "<span style=\"font-weight:bold;\">Bahrain<\/span><br \/>Population : 0"
             }
         },
         "BD": {
             "value": "150493658",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Bangladesh<\/span><br \/>Population : 150493658"
+                "content": "<span style=\"font-weight:bold;\">Bangladesh<\/span><br \/>Population : 0"
             }
         },
         "BB": {
             "value": "273925",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Barbados<\/span><br \/>Population : 273925"
+                "content": "<span style=\"font-weight:bold;\">Barbados<\/span><br \/>Population : 0"
             }
         },
         "BE": {
             "value": "11008000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Belgium<\/span><br \/>Population : 11008000"
+                "content": "<span style=\"font-weight:bold;\">Belgium<\/span><br \/>Population : 0"
             }
         },
         "BZ": {
             "value": "356600",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Belize<\/span><br \/>Population : 356600"
+                "content": "<span style=\"font-weight:bold;\">Belize<\/span><br \/>Population : 0"
             }
         },
         "BJ": {
             "value": "9099922",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Benin<\/span><br \/>Population : 9099922"
+                "content": "<span style=\"font-weight:bold;\">Benin<\/span><br \/>Population : 0"
             }
         },
         "BT": {
             "value": "738267",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Bhutan<\/span><br \/>Population : 738267"
+                "content": "<span style=\"font-weight:bold;\">Bhutan<\/span><br \/>Population : 0"
             }
         },
         "BY": {
             "value": "9473000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Belarus<\/span><br \/>Population : 9473000"
+                "content": "<span style=\"font-weight:bold;\">Belarus<\/span><br \/>Population : 0"
             }
         },
         "MM": {
             "value": "48336763",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Myanmar<\/span><br \/>Population : 48336763"
+                "content": "<span style=\"font-weight:bold;\">Myanmar<\/span><br \/>Population : 0"
             }
         },
         "BO": {
             "value": "10088108",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Bolivia, Plurinational State Of<\/span><br \/>Population : 10088108"
+                "content": "<span style=\"font-weight:bold;\">Bolivia, Plurinational State Of<\/span><br \/>Population : 0"
             }
         },
         "BA": {
             "value": "3752228",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Bosnia And Herzegovina<\/span><br \/>Population : 3752228"
+                "content": "<span style=\"font-weight:bold;\">Bosnia And Herzegovina<\/span><br \/>Population : 0"
             }
         },
         "BW": {
             "value": "2030738",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Botswana<\/span><br \/>Population : 2030738"
+                "content": "<span style=\"font-weight:bold;\">Botswana<\/span><br \/>Population : 0"
             }
         },
         "BR": {
             "value": "196655014",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Brazil<\/span><br \/>Population : 196655014"
+                "content": "<span style=\"font-weight:bold;\">Brazil<\/span><br \/>Population : 0"
             }
         },
         "BN": {
             "value": "405938",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Brunei Darussalam<\/span><br \/>Population : 405938"
+                "content": "<span style=\"font-weight:bold;\">Brunei Darussalam<\/span><br \/>Population : 0"
             }
         },
         "BG": {
             "value": "7476000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Bulgaria<\/span><br \/>Population : 7476000"
+                "content": "<span style=\"font-weight:bold;\">Bulgaria<\/span><br \/>Population : 0"
             }
         },
         "BF": {
             "value": "16967845",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Burkina Faso<\/span><br \/>Population : 16967845"
+                "content": "<span style=\"font-weight:bold;\">Burkina Faso<\/span><br \/>Population : 0"
             }
         },
         "BI": {
             "value": "8575172",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Burundi<\/span><br \/>Population : 8575172"
+                "content": "<span style=\"font-weight:bold;\">Burundi<\/span><br \/>Population : 0"
             }
         },
         "KH": {
             "value": "14305183",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Cambodia<\/span><br \/>Population : 14305183"
+                "content": "<span style=\"font-weight:bold;\">Cambodia<\/span><br \/>Population : 0"
             }
         },
         "CM": {
             "value": "20030362",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Cameroon<\/span><br \/>Population : 20030362"
+                "content": "<span style=\"font-weight:bold;\">Cameroon<\/span><br \/>Population : 0"
             }
         },
         "CA": {
             "value": "34482779",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Canada<\/span><br \/>Population : 34482779"
+                "content": "<span style=\"font-weight:bold;\">Canada<\/span><br \/>Population : 0"
             }
         },
         "CV": {
             "value": "500585",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Cape Verde<\/span><br \/>Population : 500585"
+                "content": "<span style=\"font-weight:bold;\">Cape Verde<\/span><br \/>Population : 0"
             }
         },
         "CF": {
             "value": "4486837",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Central African Republic<\/span><br \/>Population : 4486837"
+                "content": "<span style=\"font-weight:bold;\">Central African Republic<\/span><br \/>Population : 0"
             }
         },
         "CL": {
             "value": "17269525",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Chile<\/span><br \/>Population : 17269525"
+                "content": "<span style=\"font-weight:bold;\">Chile<\/span><br \/>Population : 0"
             }
         },
         "CN": {
             "value": "1344130000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">China<\/span><br \/>Population : 1344130000"
+                "content": "<span style=\"font-weight:bold;\">China<\/span><br \/>Population : 0"
             }
         },
         "CY": {
             "value": "1116564",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Cyprus<\/span><br \/>Population : 1116564"
+                "content": "<span style=\"font-weight:bold;\">Cyprus<\/span><br \/>Population : 0"
             }
         },
         "CO": {
             "value": "46927125",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Colombia<\/span><br \/>Population : 46927125"
+                "content": "<span style=\"font-weight:bold;\">Colombia<\/span><br \/>Population : 0"
             }
         },
         "KM": {
             "value": "753943",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Comoros<\/span><br \/>Population : 753943"
+                "content": "<span style=\"font-weight:bold;\">Comoros<\/span><br \/>Population : 0"
             }
         },
         "CG": {
             "value": "4139748",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Congo<\/span><br \/>Population : 4139748"
+                "content": "<span style=\"font-weight:bold;\">Congo<\/span><br \/>Population : 0"
             }
         },
         "CD": {
             "value": "67757577",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Congo, The Democratic Republic Of The<\/span><br \/>Population : 67757577"
+                "content": "<span style=\"font-weight:bold;\">Congo, The Democratic Republic Of The<\/span><br \/>Population : 0"
             }
         },
         "KP": {
             "value": "24451285",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Korea, Democratic People's Republic Of<\/span><br \/>Population : 24451285"
+                "content": "<span style=\"font-weight:bold;\">Korea, Democratic People's Republic Of<\/span><br \/>Population : 0"
             }
         },
         "KR": {
             "value": "49779000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Korea, Republic Of<\/span><br \/>Population : 49779000"
+                "content": "<span style=\"font-weight:bold;\">Korea, Republic Of<\/span><br \/>Population : 0"
             }
         },
         "CR": {
             "value": "4726575",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Costa Rica<\/span><br \/>Population : 4726575"
+                "content": "<span style=\"font-weight:bold;\">Costa Rica<\/span><br \/>Population : 0"
             }
         },
         "CI": {
             "value": "20152894",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">C\u00d4te D'ivoire<\/span><br \/>Population : 20152894"
+                "content": "<span style=\"font-weight:bold;\">C\u00d4te D'ivoire<\/span><br \/>Population : 0"
             }
         },
         "HR": {
             "value": "4407000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Croatia<\/span><br \/>Population : 4407000"
+                "content": "<span style=\"font-weight:bold;\">Croatia<\/span><br \/>Population : 0"
             }
         },
         "CU": {
             "value": "11253665",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Cuba<\/span><br \/>Population : 11253665"
+                "content": "<span style=\"font-weight:bold;\">Cuba<\/span><br \/>Population : 0"
             }
         },
         "DK": {
             "value": "5574000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Denmark<\/span><br \/>Population : 5574000"
+                "content": "<span style=\"font-weight:bold;\">Denmark<\/span><br \/>Population : 0"
             }
         },
         "DJ": {
             "value": "905564",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Djibouti<\/span><br \/>Population : 905564"
+                "content": "<span style=\"font-weight:bold;\">Djibouti<\/span><br \/>Population : 0"
             }
         },
         "DM": {
             "value": "67675",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Dominica<\/span><br \/>Population : 67675"
+                "content": "<span style=\"font-weight:bold;\">Dominica<\/span><br \/>Population : 0"
             }
         },
         "EG": {
             "value": "82536770",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Egypt<\/span><br \/>Population : 82536770"
+                "content": "<span style=\"font-weight:bold;\">Egypt<\/span><br \/>Population : 0"
             }
         },
         "AE": {
             "value": "7890924",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">United Arab Emirates<\/span><br \/>Population : 7890924"
+                "content": "<span style=\"font-weight:bold;\">United Arab Emirates<\/span><br \/>Population : 0"
             }
         },
         "EC": {
             "value": "14666055",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Ecuador<\/span><br \/>Population : 14666055"
+                "content": "<span style=\"font-weight:bold;\">Ecuador<\/span><br \/>Population : 0"
             }
         },
         "ER": {
             "value": "5415280",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Eritrea<\/span><br \/>Population : 5415280"
+                "content": "<span style=\"font-weight:bold;\">Eritrea<\/span><br \/>Population : 0"
             }
         },
         "ES": {
             "value": "46235000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Spain<\/span><br \/>Population : 46235000"
+                "content": "<span style=\"font-weight:bold;\">Spain<\/span><br \/>Population : 0"
             }
         },
         "EE": {
             "value": "1340000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Estonia<\/span><br \/>Population : 1340000"
+                "content": "<span style=\"font-weight:bold;\">Estonia<\/span><br \/>Population : 0"
             }
         },
         "US": {
             "value": "311591917",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">United States<\/span><br \/>Population : 311591917"
+                "content": "<span style=\"font-weight:bold;\">United States<\/span><br \/>Population : 0"
             }
         },
         "ET": {
             "value": "84734262",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Ethiopia<\/span><br \/>Population : 84734262"
+                "content": "<span style=\"font-weight:bold;\">Ethiopia<\/span><br \/>Population : 0"
             }
         },
         "FJ": {
             "value": "868406",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Fiji<\/span><br \/>Population : 868406"
+                "content": "<span style=\"font-weight:bold;\">Fiji<\/span><br \/>Population : 0"
             }
         },
         "FI": {
             "value": "5387000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Finland<\/span><br \/>Population : 5387000"
+                "content": "<span style=\"font-weight:bold;\">Finland<\/span><br \/>Population : 0"
             }
         },
         "FR": {
             "value": "65436552",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">France<\/span><br \/>Population : 65436552"
+                "content": "<span style=\"font-weight:bold;\">France<\/span><br \/>Population : 0"
             }
         },
         "GA": {
             "value": "1534262",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Gabon<\/span><br \/>Population : 1534262"
+                "content": "<span style=\"font-weight:bold;\">Gabon<\/span><br \/>Population : 0"
             }
         },
         "GM": {
             "value": "1776103",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Gambia<\/span><br \/>Population : 1776103"
+                "content": "<span style=\"font-weight:bold;\">Gambia<\/span><br \/>Population : 0"
             }
         },
         "GE": {
             "value": "4486000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Georgia<\/span><br \/>Population : 4486000"
+                "content": "<span style=\"font-weight:bold;\">Georgia<\/span><br \/>Population : 0"
             }
         },
         "GH": {
             "value": "24965816",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Ghana<\/span><br \/>Population : 24965816"
+                "content": "<span style=\"font-weight:bold;\">Ghana<\/span><br \/>Population : 0"
             }
         },
         "GR": {
             "value": "11304000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Greece<\/span><br \/>Population : 11304000"
+                "content": "<span style=\"font-weight:bold;\">Greece<\/span><br \/>Population : 0"
             }
         },
         "GD": {
             "value": "104890",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Grenada<\/span><br \/>Population : 104890"
+                "content": "<span style=\"font-weight:bold;\">Grenada<\/span><br \/>Population : 0"
             }
         },
         "GT": {
             "value": "14757316",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Guatemala<\/span><br \/>Population : 14757316"
+                "content": "<span style=\"font-weight:bold;\">Guatemala<\/span><br \/>Population : 0"
             }
         },
         "GN": {
             "value": "10221808",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Guinea<\/span><br \/>Population : 10221808"
+                "content": "<span style=\"font-weight:bold;\">Guinea<\/span><br \/>Population : 0"
             }
         },
         "GQ": {
             "value": "720213",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Equatorial Guinea<\/span><br \/>Population : 720213"
+                "content": "<span style=\"font-weight:bold;\">Equatorial Guinea<\/span><br \/>Population : 0"
             }
         },
         "GW": {
             "value": "1547061",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Guinea-bissau<\/span><br \/>Population : 1547061"
+                "content": "<span style=\"font-weight:bold;\">Guinea-bissau<\/span><br \/>Population : 0"
             }
         },
         "GY": {
             "value": "756040",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Guyana<\/span><br \/>Population : 756040"
+                "content": "<span style=\"font-weight:bold;\">Guyana<\/span><br \/>Population : 0"
             }
         },
         "HT": {
             "value": "10123787",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Haiti<\/span><br \/>Population : 10123787"
+                "content": "<span style=\"font-weight:bold;\">Haiti<\/span><br \/>Population : 0"
             }
         },
         "HN": {
             "value": "7754687",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Honduras<\/span><br \/>Population : 7754687"
+                "content": "<span style=\"font-weight:bold;\">Honduras<\/span><br \/>Population : 0"
             }
         },
         "HU": {
             "value": "9971000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Hungary<\/span><br \/>Population : 9971000"
+                "content": "<span style=\"font-weight:bold;\">Hungary<\/span><br \/>Population : 0"
             }
         },
         "JM": {
             "value": "2709300",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Jamaica<\/span><br \/>Population : 2709300"
+                "content": "<span style=\"font-weight:bold;\">Jamaica<\/span><br \/>Population : 0"
             }
         },
         "JP": {
             "value": "127817277",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Japan<\/span><br \/>Population : 127817277"
+                "content": "<span style=\"font-weight:bold;\">Japan<\/span><br \/>Population : 0"
             }
         },
         "MH": {
             "value": "54816",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Marshall Islands<\/span><br \/>Population : 54816"
+                "content": "<span style=\"font-weight:bold;\">Marshall Islands<\/span><br \/>Population : 0"
             }
         },
         "PW": {
             "value": "20609",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Palau<\/span><br \/>Population : 20609"
+                "content": "<span style=\"font-weight:bold;\">Palau<\/span><br \/>Population : 0"
             }
         },
         "SB": {
             "value": "552267",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Solomon Islands<\/span><br \/>Population : 552267"
+                "content": "<span style=\"font-weight:bold;\">Solomon Islands<\/span><br \/>Population : 0"
             }
         },
         "IN": {
             "value": "1241491960",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">India<\/span><br \/>Population : 1241491960"
+                "content": "<span style=\"font-weight:bold;\">India<\/span><br \/>Population : 0"
             }
         },
         "ID": {
             "value": "242325638",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Indonesia<\/span><br \/>Population : 242325638"
+                "content": "<span style=\"font-weight:bold;\">Indonesia<\/span><br \/>Population : 0"
             }
         },
         "JO": {
             "value": "6181000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Jordan<\/span><br \/>Population : 6181000"
+                "content": "<span style=\"font-weight:bold;\">Jordan<\/span><br \/>Population : 0"
             }
         },
         "IR": {
             "value": "74798599",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Iran, Islamic Republic Of<\/span><br \/>Population : 74798599"
+                "content": "<span style=\"font-weight:bold;\">Iran, Islamic Republic Of<\/span><br \/>Population : 0"
             }
         },
         "IQ": {
             "value": "32961959",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Iraq<\/span><br \/>Population : 32961959"
+                "content": "<span style=\"font-weight:bold;\">Iraq<\/span><br \/>Population : 0"
             }
         },
         "IE": {
             "value": "4487000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Ireland<\/span><br \/>Population : 4487000"
+                "content": "<span style=\"font-weight:bold;\">Ireland<\/span><br \/>Population : 0"
             }
         },
         "IS": {
             "value": "319000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Iceland<\/span><br \/>Population : 319000"
+                "content": "<span style=\"font-weight:bold;\">Iceland<\/span><br \/>Population : 0"
             }
         },
         "IL": {
             "value": "7765700",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Israel<\/span><br \/>Population : 7765700"
+                "content": "<span style=\"font-weight:bold;\">Israel<\/span><br \/>Population : 0"
             }
         },
         "IT": {
             "value": "60770000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Italy<\/span><br \/>Population : 60770000"
+                "content": "<span style=\"font-weight:bold;\">Italy<\/span><br \/>Population : 0"
             }
         },
         "KZ": {
             "value": "16558459",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Kazakhstan<\/span><br \/>Population : 16558459"
+                "content": "<span style=\"font-weight:bold;\">Kazakhstan<\/span><br \/>Population : 0"
             }
         },
         "KE": {
             "value": "41609728",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Kenya<\/span><br \/>Population : 41609728"
+                "content": "<span style=\"font-weight:bold;\">Kenya<\/span><br \/>Population : 0"
             }
         },
         "KG": {
             "value": "5507000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Kyrgyzstan<\/span><br \/>Population : 5507000"
+                "content": "<span style=\"font-weight:bold;\">Kyrgyzstan<\/span><br \/>Population : 0"
             }
         },
         "KI": {
             "value": "101093",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Kiribati<\/span><br \/>Population : 101093"
+                "content": "<span style=\"font-weight:bold;\">Kiribati<\/span><br \/>Population : 0"
             }
         },
         "KW": {
             "value": "2818042",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Kuwait<\/span><br \/>Population : 2818042"
+                "content": "<span style=\"font-weight:bold;\">Kuwait<\/span><br \/>Population : 0"
             }
         },
         "LA": {
             "value": "6288037",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Lao People's Democratic Republic<\/span><br \/>Population : 6288037"
+                "content": "<span style=\"font-weight:bold;\">Lao People's Democratic Republic<\/span><br \/>Population : 0"
             }
         },
         "LS": {
             "value": "2193843",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Lesotho<\/span><br \/>Population : 2193843"
+                "content": "<span style=\"font-weight:bold;\">Lesotho<\/span><br \/>Population : 0"
             }
         },
         "LV": {
             "value": "2220000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Latvia<\/span><br \/>Population : 2220000"
+                "content": "<span style=\"font-weight:bold;\">Latvia<\/span><br \/>Population : 0"
             }
         },
         "LB": {
             "value": "4259405",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Lebanon<\/span><br \/>Population : 4259405"
+                "content": "<span style=\"font-weight:bold;\">Lebanon<\/span><br \/>Population : 0"
             }
         },
         "LR": {
             "value": "4128572",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Liberia<\/span><br \/>Population : 4128572"
+                "content": "<span style=\"font-weight:bold;\">Liberia<\/span><br \/>Population : 0"
             }
         },
         "LY": {
             "value": "6422772",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Libya<\/span><br \/>Population : 6422772"
+                "content": "<span style=\"font-weight:bold;\">Libya<\/span><br \/>Population : 0"
             }
         },
         "LI": {
             "value": "36304",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Liechtenstein<\/span><br \/>Population : 36304"
+                "content": "<span style=\"font-weight:bold;\">Liechtenstein<\/span><br \/>Population : 0"
             }
         },
         "LT": {
             "value": "3203000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Lithuania<\/span><br \/>Population : 3203000"
+                "content": "<span style=\"font-weight:bold;\">Lithuania<\/span><br \/>Population : 0"
             }
         },
         "LU": {
             "value": "517000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Luxembourg<\/span><br \/>Population : 517000"
+                "content": "<span style=\"font-weight:bold;\">Luxembourg<\/span><br \/>Population : 0"
             }
         },
         "MK": {
             "value": "2063893",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Macedonia, The Former Yugoslav Republic Of<\/span><br \/>Population : 2063893"
+                "content": "<span style=\"font-weight:bold;\">Macedonia, The Former Yugoslav Republic Of<\/span><br \/>Population : 0"
             }
         },
         "MG": {
             "value": "21315135",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Madagascar<\/span><br \/>Population : 21315135"
+                "content": "<span style=\"font-weight:bold;\">Madagascar<\/span><br \/>Population : 0"
             }
         },
         "MY": {
             "value": "28859154",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Malaysia<\/span><br \/>Population : 28859154"
+                "content": "<span style=\"font-weight:bold;\">Malaysia<\/span><br \/>Population : 0"
             }
         },
         "MW": {
             "value": "15380888",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Malawi<\/span><br \/>Population : 15380888"
+                "content": "<span style=\"font-weight:bold;\">Malawi<\/span><br \/>Population : 0"
             }
         },
         "MV": {
             "value": "320081",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Maldives<\/span><br \/>Population : 320081"
+                "content": "<span style=\"font-weight:bold;\">Maldives<\/span><br \/>Population : 0"
             }
         },
         "ML": {
             "value": "15839538",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Mali<\/span><br \/>Population : 15839538"
+                "content": "<span style=\"font-weight:bold;\">Mali<\/span><br \/>Population : 0"
             }
         },
         "MT": {
             "value": "419000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Malta<\/span><br \/>Population : 419000"
+                "content": "<span style=\"font-weight:bold;\">Malta<\/span><br \/>Population : 0"
             }
         },
         "MA": {
             "value": "32272974",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Morocco<\/span><br \/>Population : 32272974"
+                "content": "<span style=\"font-weight:bold;\">Morocco<\/span><br \/>Population : 0"
             }
         },
         "MU": {
             "value": "1286051",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Mauritius<\/span><br \/>Population : 1286051"
+                "content": "<span style=\"font-weight:bold;\">Mauritius<\/span><br \/>Population : 0"
             }
         },
         "MR": {
             "value": "3541540",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Mauritania<\/span><br \/>Population : 3541540"
+                "content": "<span style=\"font-weight:bold;\">Mauritania<\/span><br \/>Population : 0"
             }
         },
         "MX": {
             "value": "114793341",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Mexico<\/span><br \/>Population : 114793341"
+                "content": "<span style=\"font-weight:bold;\">Mexico<\/span><br \/>Population : 0"
             }
         },
         "FM": {
             "value": "111542",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Micronesia, Federated States Of<\/span><br \/>Population : 111542"
+                "content": "<span style=\"font-weight:bold;\">Micronesia, Federated States Of<\/span><br \/>Population : 0"
             }
         },
         "MD": {
             "value": "3559000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Moldova, Republic Of<\/span><br \/>Population : 3559000"
+                "content": "<span style=\"font-weight:bold;\">Moldova, Republic Of<\/span><br \/>Population : 0"
             }
         },
         "MC": {
             "value": "35427",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Monaco<\/span><br \/>Population : 35427"
+                "content": "<span style=\"font-weight:bold;\">Monaco<\/span><br \/>Population : 0"
             }
         },
         "MN": {
             "value": "2800114",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Mongolia<\/span><br \/>Population : 2800114"
+                "content": "<span style=\"font-weight:bold;\">Mongolia<\/span><br \/>Population : 0"
             }
         },
         "ME": {
             "value": "632261",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Montenegro<\/span><br \/>Population : 632261"
+                "content": "<span style=\"font-weight:bold;\">Montenegro<\/span><br \/>Population : 0"
             }
         },
         "MZ": {
             "value": "23929708",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Mozambique<\/span><br \/>Population : 23929708"
+                "content": "<span style=\"font-weight:bold;\">Mozambique<\/span><br \/>Population : 0"
             }
         },
         "NA": {
             "value": "2324004",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Namibia<\/span><br \/>Population : 2324004"
+                "content": "<span style=\"font-weight:bold;\">Namibia<\/span><br \/>Population : 0"
             }
         },
         "NP": {
             "value": "30485798",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Nepal<\/span><br \/>Population : 30485798"
+                "content": "<span style=\"font-weight:bold;\">Nepal<\/span><br \/>Population : 0"
             }
         },
         "NI": {
             "value": "5869859",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Nicaragua<\/span><br \/>Population : 5869859"
+                "content": "<span style=\"font-weight:bold;\">Nicaragua<\/span><br \/>Population : 0"
             }
         },
         "NE": {
             "value": "16068994",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Niger<\/span><br \/>Population : 16068994"
+                "content": "<span style=\"font-weight:bold;\">Niger<\/span><br \/>Population : 0"
             }
         },
         "NG": {
             "value": "162470737",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Nigeria<\/span><br \/>Population : 162470737"
+                "content": "<span style=\"font-weight:bold;\">Nigeria<\/span><br \/>Population : 0"
             }
         },
         "NO": {
             "value": "4952000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Norway<\/span><br \/>Population : 4952000"
+                "content": "<span style=\"font-weight:bold;\">Norway<\/span><br \/>Population : 0"
             }
         },
         "NZ": {
             "value": "4405200",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">New Zealand<\/span><br \/>Population : 4405200"
+                "content": "<span style=\"font-weight:bold;\">New Zealand<\/span><br \/>Population : 0"
             }
         },
         "OM": {
             "value": "2846145",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Oman<\/span><br \/>Population : 2846145"
+                "content": "<span style=\"font-weight:bold;\">Oman<\/span><br \/>Population : 0"
             }
         },
         "UG": {
             "value": "34509205",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Uganda<\/span><br \/>Population : 34509205"
+                "content": "<span style=\"font-weight:bold;\">Uganda<\/span><br \/>Population : 0"
             }
         },
         "UZ": {
             "value": "29341200",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Uzbekistan<\/span><br \/>Population : 29341200"
+                "content": "<span style=\"font-weight:bold;\">Uzbekistan<\/span><br \/>Population : 0"
             }
         },
         "PK": {
             "value": "176745364",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Pakistan<\/span><br \/>Population : 176745364"
+                "content": "<span style=\"font-weight:bold;\">Pakistan<\/span><br \/>Population : 0"
             }
         },
         "PS": {
             "value": "4019433",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Palestine, State Of<\/span><br \/>Population : 4019433"
+                "content": "<span style=\"font-weight:bold;\">Palestine, State Of<\/span><br \/>Population : 0"
             }
         },
         "PA": {
             "value": "3571185",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Panama<\/span><br \/>Population : 3571185"
+                "content": "<span style=\"font-weight:bold;\">Panama<\/span><br \/>Population : 0"
             }
         },
         "PG": {
             "value": "7013829",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Papua New Guinea<\/span><br \/>Population : 7013829"
+                "content": "<span style=\"font-weight:bold;\">Papua New Guinea<\/span><br \/>Population : 0"
             }
         },
         "PY": {
             "value": "6568290",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Paraguay<\/span><br \/>Population : 6568290"
+                "content": "<span style=\"font-weight:bold;\">Paraguay<\/span><br \/>Population : 0"
             }
         },
         "NL": {
             "value": "16696000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Netherlands<\/span><br \/>Population : 16696000"
+                "content": "<span style=\"font-weight:bold;\">Netherlands<\/span><br \/>Population : 0"
             }
         },
         "PE": {
             "value": "29399817",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Peru<\/span><br \/>Population : 29399817"
+                "content": "<span style=\"font-weight:bold;\">Peru<\/span><br \/>Population : 0"
             }
         },
         "PH": {
             "value": "94852030",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Philippines<\/span><br \/>Population : 94852030"
+                "content": "<span style=\"font-weight:bold;\">Philippines<\/span><br \/>Population : 0"
             }
         },
         "PL": {
             "value": "38216000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Poland<\/span><br \/>Population : 38216000"
+                "content": "<span style=\"font-weight:bold;\">Poland<\/span><br \/>Population : 0"
             }
         },
         "PT": {
             "value": "10637000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Portugal<\/span><br \/>Population : 10637000"
+                "content": "<span style=\"font-weight:bold;\">Portugal<\/span><br \/>Population : 0"
             }
         },
         "QA": {
             "value": "1870041",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Qatar<\/span><br \/>Population : 1870041"
+                "content": "<span style=\"font-weight:bold;\">Qatar<\/span><br \/>Population : 0"
             }
         },
         "DO": {
             "value": "10056181",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Dominican Republic<\/span><br \/>Population : 10056181"
+                "content": "<span style=\"font-weight:bold;\">Dominican Republic<\/span><br \/>Population : 0"
             }
         },
         "RO": {
             "value": "21390000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Romania<\/span><br \/>Population : 21390000"
+                "content": "<span style=\"font-weight:bold;\">Romania<\/span><br \/>Population : 0"
             }
         },
         "GB": {
             "value": "62641000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">United Kingdom<\/span><br \/>Population : 62641000"
+                "content": "<span style=\"font-weight:bold;\">United Kingdom<\/span><br \/>Population : 0"
             }
         },
         "RU": {
             "value": "141930000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Russian Federation<\/span><br \/>Population : 141930000"
+                "content": "<span style=\"font-weight:bold;\">Russian Federation<\/span><br \/>Population : 0"
             }
         },
         "RW": {
             "value": "10942950",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Rwanda<\/span><br \/>Population : 10942950"
+                "content": "<span style=\"font-weight:bold;\">Rwanda<\/span><br \/>Population : 0"
             }
         },
         "KN": {
             "value": "53051",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Saint Kitts And Nevis<\/span><br \/>Population : 53051"
+                "content": "<span style=\"font-weight:bold;\">Saint Kitts And Nevis<\/span><br \/>Population : 0"
             }
         },
         "SM": {
             "value": "31735",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">San Marino<\/span><br \/>Population : 31735"
+                "content": "<span style=\"font-weight:bold;\">San Marino<\/span><br \/>Population : 0"
             }
         },
         "VC": {
             "value": "109365",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Saint Vincent And The Grenadines<\/span><br \/>Population : 109365"
+                "content": "<span style=\"font-weight:bold;\">Saint Vincent And The Grenadines<\/span><br \/>Population : 0"
             }
         },
         "LC": {
             "value": "176000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Saint Lucia<\/span><br \/>Population : 176000"
+                "content": "<span style=\"font-weight:bold;\">Saint Lucia<\/span><br \/>Population : 0"
             }
         },
         "SV": {
             "value": "6227491",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">El Salvador<\/span><br \/>Population : 6227491"
+                "content": "<span style=\"font-weight:bold;\">El Salvador<\/span><br \/>Population : 0"
             }
         },
         "WS": {
             "value": "183874",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Samoa<\/span><br \/>Population : 183874"
+                "content": "<span style=\"font-weight:bold;\">Samoa<\/span><br \/>Population : 0"
             }
         },
         "ST": {
             "value": "168526",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Sao Tome And Principe<\/span><br \/>Population : 168526"
+                "content": "<span style=\"font-weight:bold;\">Sao Tome And Principe<\/span><br \/>Population : 0"
             }
         },
         "SN": {
             "value": "12767556",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Senegal<\/span><br \/>Population : 12767556"
+                "content": "<span style=\"font-weight:bold;\">Senegal<\/span><br \/>Population : 0"
             }
         },
         "RS": {
             "value": "7261000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Serbia<\/span><br \/>Population : 7261000"
+                "content": "<span style=\"font-weight:bold;\">Serbia<\/span><br \/>Population : 0"
             }
         },
         "SC": {
             "value": "86000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Seychelles<\/span><br \/>Population : 86000"
+                "content": "<span style=\"font-weight:bold;\">Seychelles<\/span><br \/>Population : 0"
             }
         },
         "SL": {
             "value": "5997486",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Sierra Leone<\/span><br \/>Population : 5997486"
+                "content": "<span style=\"font-weight:bold;\">Sierra Leone<\/span><br \/>Population : 0"
             }
         },
         "SG": {
             "value": "5183700",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Singapore<\/span><br \/>Population : 5183700"
+                "content": "<span style=\"font-weight:bold;\">Singapore<\/span><br \/>Population : 0"
             }
         },
         "SK": {
             "value": "5440000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Slovakia<\/span><br \/>Population : 5440000"
+                "content": "<span style=\"font-weight:bold;\">Slovakia<\/span><br \/>Population : 0"
             }
         },
         "SI": {
             "value": "2052000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Slovenia<\/span><br \/>Population : 2052000"
+                "content": "<span style=\"font-weight:bold;\">Slovenia<\/span><br \/>Population : 0"
             }
         },
         "SO": {
             "value": "9556873",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Somalia<\/span><br \/>Population : 9556873"
+                "content": "<span style=\"font-weight:bold;\">Somalia<\/span><br \/>Population : 0"
             }
         },
         "SD": {
             "value": "34318385",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Sudan<\/span><br \/>Population : 34318385"
+                "content": "<span style=\"font-weight:bold;\">Sudan<\/span><br \/>Population : 0"
             }
         },
         "SS": {
             "value": "10314021",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">South Sudan<\/span><br \/>Population : 10314021"
+                "content": "<span style=\"font-weight:bold;\">South Sudan<\/span><br \/>Population : 0"
             }
         },
         "LK": {
             "value": "20869000",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Sri Lanka<\/span><br \/>Population : 20869000"
+                "content": "<span style=\"font-weight:bold;\">Sri Lanka<\/span><br \/>Population : 0"
             }
         },
         "SE": {

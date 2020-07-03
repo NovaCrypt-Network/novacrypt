@@ -184,7 +184,7 @@
                     <div class="stacked">
                         <p class="card-name">Luis Barajas</p>
 
-                        <p class="card-position">Luis Barajas</p>
+                        <p class="card-position">Design Engineer</p>
 
                     </div>
                 </div>

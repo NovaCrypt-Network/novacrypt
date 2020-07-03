@@ -39,7 +39,7 @@
         "team": {
             "writing": {
                 "position": "Writer",
-                "order": "1"
+                "order": "6"
             }
         }
     },
@@ -92,7 +92,7 @@
         "team": {
             "writing": {
                 "position": "Writer",
-                "order": "1"
+                "order": "3"
             }
         }
     },
@@ -128,7 +128,7 @@
         "team": {
             "writing": {
                 "position": "Writer",
-                "order": "1"
+                "order": "2"
             }
         }
     },
@@ -155,7 +155,7 @@
         "team": {
             "writing": {
                 "position": "Writer",
-                "order": "1"
+                "order": "4"
             }
         }
     },
@@ -181,7 +181,7 @@
         "team": {
             "writing": {
                 "position": "Writer",
-                "order": "1"
+                "order": "5"
             }
         }
     },
@@ -227,7 +227,7 @@
         "team": {
             "project": {
                 "position": "Luis Barajas",
-                "order": "1"
+                "order": "3"
             }
         }
     },
@@ -269,7 +269,7 @@
         "team": {
             "writing": {
                 "position": "Writer",
-                "order": "1"
+                "order": "7"
             }
         }
     },

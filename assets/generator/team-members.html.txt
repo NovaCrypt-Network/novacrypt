@@ -182,9 +182,9 @@
 
                     </div>
                     <div class="stacked">
-                        <p class="card-name"></p>
+                        <p class="card-name">Luis Barajas</p>
 
-                        <p class="card-position"></p>
+                        <p class="card-position">Luis Barajas</p>
 
                     </div>
                 </div>
@@ -230,6 +230,21 @@
                         <p class="card-name">Alex Lam</p>
 
                         <p class="card-position">FAA Advisor</p>
+
+                    </div>
+                </div>
+
+
+                <div class="card beside">
+                    <div class="stacked">
+
+                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
+
+                    </div>
+                    <div class="stacked">
+                        <p class="card-name">Casey</p>
+
+                        <p class="card-position">Medical Advisor</p>
 
                     </div>
                 </div>
@@ -632,6 +647,96 @@
                         <p class="card-name">Matthew</p>
 
                         <p class="card-position">Head Writer</p>
+
+                    </div>
+                </div>
+
+
+                <div class="card beside">
+                    <div class="stacked">
+
+                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
+
+                    </div>
+                    <div class="stacked">
+                        <p class="card-name">Della</p>
+
+                        <p class="card-position">Writer</p>
+
+                    </div>
+                </div>
+
+
+                <div class="card beside">
+                    <div class="stacked">
+
+                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
+
+                    </div>
+                    <div class="stacked">
+                        <p class="card-name">Carmen Lauren</p>
+
+                        <p class="card-position">Writer</p>
+
+                    </div>
+                </div>
+
+
+                <div class="card beside">
+                    <div class="stacked">
+
+                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
+
+                    </div>
+                    <div class="stacked">
+                        <p class="card-name">Grace</p>
+
+                        <p class="card-position">Writer</p>
+
+                    </div>
+                </div>
+
+
+                <div class="card beside">
+                    <div class="stacked">
+
+                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
+
+                    </div>
+                    <div class="stacked">
+                        <p class="card-name">Jake</p>
+
+                        <p class="card-position">Writer</p>
+
+                    </div>
+                </div>
+
+
+                <div class="card beside">
+                    <div class="stacked">
+
+                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
+
+                    </div>
+                    <div class="stacked">
+                        <p class="card-name">Anika</p>
+
+                        <p class="card-position">Writer</p>
+
+                    </div>
+                </div>
+
+
+                <div class="card beside">
+                    <div class="stacked">
+
+                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
+
+                    </div>
+                    <div class="stacked">
+                        <p class="card-name">Matt</p>
+
+                        <p class="card-position">Writer</p>
 
                     </div>
                 </div>

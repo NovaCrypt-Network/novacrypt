@@ -112,6 +112,12 @@
                 "position": "Frontend",
                 "order": "6"
             }
+        },
+        "some": {
+            "website": "https://christerwaren.fi",
+            "linkedin": "cwchristerw",
+            "twitter": "cwchristerw"
+
         }
     },
     {

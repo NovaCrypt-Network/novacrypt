@@ -39,7 +39,7 @@
         "team": {
             "writing": {
                 "position": "Writer",
-                "order": "1"
+                "order": "6"
             }
         }
     },
@@ -92,7 +92,7 @@
         "team": {
             "writing": {
                 "position": "Writer",
-                "order": "1"
+                "order": "3"
             }
         }
     },
@@ -112,6 +112,12 @@
                 "position": "Frontend",
                 "order": "6"
             }
+        },
+        "some": {
+            "website": "https://christerwaren.fi",
+            "linkedin": "cwchristerw",
+            "twitter": "cwchristerw"
+
         }
     },
     {
@@ -128,7 +134,7 @@
         "team": {
             "writing": {
                 "position": "Writer",
-                "order": "1"
+                "order": "2"
             }
         }
     },
@@ -155,7 +161,7 @@
         "team": {
             "writing": {
                 "position": "Writer",
-                "order": "1"
+                "order": "4"
             }
         }
     },
@@ -181,7 +187,7 @@
         "team": {
             "writing": {
                 "position": "Writer",
-                "order": "1"
+                "order": "5"
             }
         }
     },
@@ -226,8 +232,8 @@
         "name": "Luis Barajas",
         "team": {
             "project": {
-                "position": "Luis Barajas",
-                "order": "1"
+                "position": "Design Engineer",
+                "order": "3"
             }
         }
     },
@@ -269,7 +275,7 @@
         "team": {
             "writing": {
                 "position": "Writer",
-                "order": "1"
+                "order": "7"
             }
         }
     },

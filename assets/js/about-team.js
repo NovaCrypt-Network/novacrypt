@@ -9,12 +9,12 @@ $("section#map .container").mapael({
         name : "world_countries",
         defaultArea: {
             attrs: {
-                "fill": "#00b3f7",
+                "fill": "#33c5ff",
                 "stroke": "#013f57",
                 "stroke-width": 2
             },
             attrsHover: {
-                "fill": "#1abeff",
+                "fill": "#00b3f7",
                 "stroke-width": 2
             }
         }

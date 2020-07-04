@@ -26,7 +26,7 @@ $("section#map .container").mapael({
                 {
                     max: 1,
                     attrs: {
-                        fill: "#00a0de"
+                        fill: "#0092cc"
                     },
                     legendSpecificAttrs: {
                         stroke: '#013f57',
@@ -40,7 +40,7 @@ $("section#map .container").mapael({
                     min: 2,
                     max: 5,
                     attrs: {
-                        fill: "#008dc4"
+                        fill: "#006e99"
                     },
                     legendSpecificAttrs: {
                         stroke: '#013f57',
@@ -53,7 +53,7 @@ $("section#map .container").mapael({
                 {
                     min: 6,
                     attrs: {
-                        fill: "#007bab"
+                        fill: "#004966"
                     },
                     legendSpecificAttrs: {
                         stroke: '#013f57',

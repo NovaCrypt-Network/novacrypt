@@ -14,7 +14,7 @@ $("section#map .container").mapael({
                 "stroke-width": 2
             },
             attrsHover: {
-                "fill": "#00b7ff"
+                "fill": "#0092cc"
             }
         }
     },
@@ -25,10 +25,10 @@ $("section#map .container").mapael({
                 {
                     max: 1,
                     attrs: {
-                        fill: "#0092cc"
+                        fill: "#006e99"
                     },
                     attrsHover: {
-                        "fill": "#0092cc"
+                        "fill": "#006e99"
                     },
                     legendSpecificAttrs: {
                         stroke: '#013f57',
@@ -42,10 +42,10 @@ $("section#map .container").mapael({
                     min: 2,
                     max: 5,
                     attrs: {
-                        fill: "#006e99"
+                        fill: "#004966"
                     },
                     attrsHover: {
-                        "fill": "#006e99"
+                        "fill": "#004966"
                     },
                     legendSpecificAttrs: {
                         stroke: '#013f57',
@@ -58,10 +58,10 @@ $("section#map .container").mapael({
                 {
                     min: 6,
                     attrs: {
-                        fill: "#004966"
+                        fill: "#002533"
                     },
                     attrsHover: {
-                        "fill": "#004966"
+                        "fill": "#002533"
                     },
                     legendSpecificAttrs: {
                         stroke: '#013f57',

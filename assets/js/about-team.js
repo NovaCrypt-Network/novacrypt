@@ -14,7 +14,7 @@ $("section#map .container").mapael({
                 "stroke-width": 2
             },
             attrsHover: {
-                "fill": "#013f57",
+                "fill": "#1abeff",
                 "stroke-width": 2
             }
         }

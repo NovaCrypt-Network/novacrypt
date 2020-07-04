@@ -481,15 +481,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Estonia<\/span>"
             }
-        },
+        },*/
         "US": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">United States<\/span>"
             }
         },
-        "ET": {
+        /*"ET": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -502,15 +502,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Fiji<\/span>"
             }
-        },
+        },*/
         "FI": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Finland<\/span>"
             }
         },
-        "FR": {
+        /*"FR": {
             "value": "0",
             "href": "#",
             "tooltip": {

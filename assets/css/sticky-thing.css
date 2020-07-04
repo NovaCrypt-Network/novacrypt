@@ -64,8 +64,8 @@
   color: white;
 }
 
-@media only screen and (max-width: 480px) 
-{
-    .icon-bar {display:none
-}
+@media only screen and (orientation: portrait) {
+  .icon-bar {
+    display:none
+  }
 }

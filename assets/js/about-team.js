@@ -9,12 +9,12 @@ $("section#map .container").mapael({
         name : "world_countries",
         defaultArea: {
             attrs: {
-                "fill": "#33c5ff",
+                "fill": "#99e2ff",
                 "stroke": "#013f57",
                 "stroke-width": 2
             },
             attrsHover: {
-                "fill": "#0092cc"
+                "fill": "#66d4ff"
             }
         }
     },
@@ -25,10 +25,10 @@ $("section#map .container").mapael({
                 {
                     max: 1,
                     attrs: {
-                        fill: "#006e99"
+                        fill: "#33c5ff"
                     },
                     attrsHover: {
-                        "fill": "#006e99"
+                        "fill": "#33c5ff"
                     },
                     legendSpecificAttrs: {
                         stroke: '#013f57',
@@ -42,10 +42,10 @@ $("section#map .container").mapael({
                     min: 2,
                     max: 5,
                     attrs: {
-                        fill: "#004966"
+                        fill: "#00b7ff"
                     },
                     attrsHover: {
-                        "fill": "#004966"
+                        "fill": "#00b7ff"
                     },
                     legendSpecificAttrs: {
                         stroke: '#013f57',
@@ -57,11 +57,12 @@ $("section#map .container").mapael({
                 },
                 {
                     min: 6,
+                    max: 9,
                     attrs: {
-                        fill: "#002533"
+                        fill: "#0092cc"
                     },
                     attrsHover: {
-                        "fill": "#002533"
+                        "fill": "#0092cc"
                     },
                     legendSpecificAttrs: {
                         stroke: '#013f57',
@@ -70,6 +71,22 @@ $("section#map .container").mapael({
                         height: 50
                     },
                     label: "More than 6 members"
+                },
+                {
+                    min: 10,
+                    attrs: {
+                        fill: "#006e99"
+                    },
+                    attrsHover: {
+                        "fill": "#006e99"
+                    },
+                    legendSpecificAttrs: {
+                        stroke: '#013f57',
+                        "stroke-width": 2,
+                        width: 50,
+                        height: 50
+                    },
+                    label: "More than 10 members"
                 }
             ]
         }
@@ -104,15 +121,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Algeria<\/span>"
             }
-        },
+        },*/
         "DE": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Germany<\/span>"
+                "content": "<span style=\"font-weight:bold;\">German (1)<\/span>"
             }
         },
-        "AD": {
+        /*"AD": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -153,15 +170,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Armenia<\/span>"
             }
-        },
+        },*/
         "AU": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Australia<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Australia (1)<\/span>"
             }
         },
-        "AT": {
+        /*"AT": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -202,15 +219,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Barbados<\/span>"
             }
-        },
+        },*/
         "BE": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Belgium<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Belgium (1)<\/span>"
             }
         },
-        "BZ": {
+        /*"BZ": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -314,15 +331,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Cameroon<\/span>"
             }
-        },
+        },*/
         "CA": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Canada<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Canada (1)<\/span>"
             }
         },
-        "CV": {
+        /*"CV": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -344,10 +361,10 @@ $("section#map .container").mapael({
             }
         },
         "CN": {
-            "value": "0",
+            "value": "6",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">China<\/span>"
+                "content": "<span style=\"font-weight:bold;\">China<\/span><br>Mainland (3) <br>Hong Kong (3) <br>"
             }
         },
         "CY": {
@@ -391,15 +408,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Korea, Democratic People's Republic Of<\/span>"
             }
-        },
+        },*/
         "KR": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Korea, Republic Of<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Korea, Republic Of (1)<\/span>"
             }
         },
-        "CR": {
+        /*"CR": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -426,15 +443,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Cuba<\/span>"
             }
-        },
+        },*/
         "DK": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Denmark<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Denmark (1)<\/span>"
             }
         },
-        "DJ": {
+        /*"DJ": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -447,15 +464,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Dominica<\/span>"
             }
-        },
+        },*/
         "EG": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Egypt<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Egypt (1)<\/span>"
             }
         },
-        "AE": {
+        /*"AE": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -491,10 +508,31 @@ $("section#map .container").mapael({
             }
         },*/
         "US": {
-            "value": "3",
+            "value": "47",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">United States<\/span>"
+                "content": "<span style=\"font-weight:bold;\">United States (47)<\/span><br>New York – NY (14), <br>California – CA (3), <br>Texas – TX (4), <br>New Jersey – NJ (1), <br>Colorado – CO (1), <br>Maryland – MD (5), <br>Georgia – GA (2), <br>Indiana – IN (2), <br>Virginia – VA (2), <br>Ohio – OH (1), <br>Michigan – MI (3), <br>Utah – UT (2), <br>Florida – FL (2), <br>Missouri – MO (1), <br>Washington – WA (1), <br>Washington DC – DC (2), <br>North Carolina – NC (1), <br>Conneticut – CN (1) <br>"
+                
+                /*
+                New York – NY (14), <br>
+                California – CA (3), <br>
+                Texas – TX (4), <br>
+                New Jersey – NJ (1), <br>
+                Colorado – CO (1), <br>
+                Maryland – MD (5), <br>
+                Georgia – GA (2), <br>
+                Indiana – IN (2), <br>
+                Virginia – VA (2), <br>
+                Ohio – OH (1), <br>
+                Michigan – MI (3), <br>
+                Utah – UT (2), <br>
+                Florida – FL (2), <br>
+                Missouri – MO (1), <br>
+                Washington – WA (1), <br>
+                Washington DC – DC (2), <br>
+                North Carolina – NC (1), <br>
+                Conneticut – CN (1) <br>
+                */
             }
         },
         /*"ET": {
@@ -512,20 +550,20 @@ $("section#map .container").mapael({
             }
         },*/
         "FI": {
+            "value": "4",
+            "href": "#",
+            "tooltip": {
+                "content": "<span style=\"font-weight:bold;\">Finland (4)<\/span>"
+            }
+        },
+        "FR": {
             "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Finland<\/span>"
+                "content": "<span style=\"font-weight:bold;\">France (1)<\/span>"
             }
         },
-        /*"FR": {
-            "value": "0",
-            "href": "#",
-            "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">France<\/span>"
-            }
-        },
-        "GA": {
+        /*"GA": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -659,10 +697,10 @@ $("section#map .container").mapael({
             }
         },*/
         "IN": {
-            "value": "1",
+            "value": "5",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">India<\/span>"
+                "content": "<span style=\"font-weight:bold;\">India (5)<\/span>"
             }
         },
         /*"ID": {
@@ -713,15 +751,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Israel<\/span>"
             }
-        },
+        },*/
         "IT": {
-            "value": "0",
+            "value": "2",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Italy<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Italy (2)<\/span>"
             }
         },
-        "KZ": {
+        /*"KZ": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -888,15 +926,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Mauritania<\/span>"
             }
-        },
+        },*/
         "MX": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Mexico<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Mexico (1)<\/span>"
             }
         },
-        "FM": {
+        /*"FM": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -1042,29 +1080,29 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Paraguay<\/span>"
             }
-        },
+        },*/
         "NL": {
-            "value": "0",
+            "value": "2",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Netherlands<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Netherlands (2)<\/span>"
             }
         },
-        "PE": {
+        /*"PE": {
             "value": "0",
             "href": "#",
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Peru<\/span>"
             }
-        },
+        },*/
         "PH": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Philippines<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Philippines (1)<\/span>"
             }
         },
-        "PL": {
+        /*"PL": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -1098,15 +1136,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Romania<\/span>"
             }
-        },
+        },*/
         "GB": {
-            "value": "0",
+            "value": "3",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">United Kingdom<\/span>"
+                "content": "<span style=\"font-weight:bold;\">United Kingdom (3)<\/span>"
             }
         },
-        "RU": {
+        /*"RU": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -1196,29 +1234,29 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Sierra Leone<\/span>"
             }
-        },
+        },*/
         "SG": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Singapore<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Singapore (1)<\/span>"
             }
         },
-        "SK": {
+        /*"SK": {
             "value": "0",
             "href": "#",
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Slovakia<\/span>"
             }
-        },
+        },*/
         "SI": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Slovenia<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Slovenia (1)<\/span>"
             }
         },
-        "SO": {
+        /*"SO": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -1245,15 +1283,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Sri Lanka<\/span>"
             }
-        },
+        },*/
         "SE": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Sweden<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Sweden (1)<\/span>"
             }
         },
-        "CH": {
+        /*"CH": {
             "value": "0",
             "href": "#",
             "tooltip": {
@@ -1392,15 +1430,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Viet Nam<\/span>"
             }
-        },
+        },*/
         "UA": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">Ukraine<\/span>"
+                "content": "<span style=\"font-weight:bold;\">Ukraine (1)<\/span>"
             }
         },
-        "UY": {
+        /*"UY": {
             "value": "0",
             "href": "#",
             "tooltip": {

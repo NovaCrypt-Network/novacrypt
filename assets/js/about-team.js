@@ -483,7 +483,7 @@ $("section#map .container").mapael({
             }
         },*/
         "US": {
-            "value": "1",
+            "value": "3",
             "href": "#",
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">United States<\/span>"
@@ -649,15 +649,15 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Solomon Islands<\/span>"
             }
-        },
+        },*/
         "IN": {
-            "value": "0",
+            "value": "1",
             "href": "#",
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">India<\/span>"
             }
         },
-        "ID": {
+        /*"ID": {
             "value": "0",
             "href": "#",
             "tooltip": {

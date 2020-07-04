@@ -359,7 +359,7 @@ $("section#map .container").mapael({
             "tooltip": {
                 "content": "<span style=\"font-weight:bold;\">Chile<\/span>"
             }
-        },
+        },*/
         "CN": {
             "value": "6",
             "href": "#",
@@ -367,7 +367,7 @@ $("section#map .container").mapael({
                 "content": "<span style=\"font-weight:bold;\">China<\/span><br>Mainland (3) <br>Hong Kong (3) <br>"
             }
         },
-        "CY": {
+        /*"CY": {
             "value": "0",
             "href": "#",
             "tooltip": {

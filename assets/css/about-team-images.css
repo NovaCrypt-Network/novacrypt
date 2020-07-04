@@ -68,8 +68,12 @@ body .credit {
 }
  body .options .option:nth-child(4) {
 	 --defaultBackground: #2ecc71;
+}
+
+body .options .option:nth-child(4) .label .info {
     color: #000000;
 }
+
  body .options .option:nth-child(5) {
 	 --defaultBackground: #5d9cec;
 }

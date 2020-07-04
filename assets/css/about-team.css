@@ -10,6 +10,10 @@ section {
     margin-bottom:100px;
 }
 
+section#map {
+    margin-top: 200px;
+}
+
 section img.normal {
     width: 50vw;
 }

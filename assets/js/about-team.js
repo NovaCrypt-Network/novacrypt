@@ -1,4 +1,4 @@
-ccc$(".option").click(function(){
+$(".option").click(function(){
    $(".option").removeClass("active");
    $(this).addClass("active");
    
@@ -21,10 +21,10 @@ $("section#map .container").mapael({
     },
     legend: {
         area: {
-            title: "Countries population",
+            title: "Members in countries",
             slices: [
                 {
-                    max: 5000000,
+                    max: 1,
                     attrs: {
                         fill: "#6aafe1"
                     },
@@ -34,11 +34,11 @@ $("section#map .container").mapael({
                         width: 50,
                         height: 50
                     },
-                    label: "Less than 5 millions inhabitants"
+                    label: "Less than 2 members"
                 },
                 {
-                    min: 5000000,
-                    max: 10000000,
+                    min: 2,
+                    max: 5,
                     attrs: {
                         fill: "#459bd9"
                     },
@@ -48,24 +48,10 @@ $("section#map .container").mapael({
                         width: 50,
                         height: 50
                     },
-                    label: "Between 5 millions and 10 millions inhabitants"
+                    label: "Between 2 and 5 members"
                 },
                 {
-                    min: 10000000,
-                    max: 50000000,
-                    attrs: {
-                        fill: "#2579b5"
-                    },
-                    legendSpecificAttrs: {
-                        stroke: '#505050',
-                        "stroke-width": 2,
-                        width: 50,
-                        height: 50
-                    },
-                    label: "Between 10 millions and 50 millions inhabitants"
-                },
-                {
-                    min: 50000000,
+                    min: 6,
                     attrs: {
                         fill: "#1a527b"
                     },
@@ -75,7 +61,7 @@ $("section#map .container").mapael({
                         width: 50,
                         height: 50
                     },
-                    label: "More than 50 millions inhabitants"
+                    label: "More than 6 members"
                 }
             ]
         }

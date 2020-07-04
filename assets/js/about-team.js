@@ -28,6 +28,9 @@ $("section#map .container").mapael({
                     attrs: {
                         fill: "#0092cc"
                     },
+                    attrsHover: {
+                        "fill": "#0092cc"
+                    },
                     legendSpecificAttrs: {
                         stroke: '#013f57',
                         "stroke-width": 2,
@@ -42,6 +45,9 @@ $("section#map .container").mapael({
                     attrs: {
                         fill: "#006e99"
                     },
+                    attrsHover: {
+                        "fill": "#006e99"
+                    },
                     legendSpecificAttrs: {
                         stroke: '#013f57',
                         "stroke-width": 2,
@@ -54,6 +60,9 @@ $("section#map .container").mapael({
                     min: 6,
                     attrs: {
                         fill: "#004966"
+                    },
+                    attrsHover: {
+                        "fill": "#004966"
                     },
                     legendSpecificAttrs: {
                         stroke: '#013f57',

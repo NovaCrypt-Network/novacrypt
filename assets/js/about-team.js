@@ -364,7 +364,7 @@ $("section#map .container").mapael({
             "value": "6",
             "href": "#",
             "tooltip": {
-                "content": "<span style=\"font-weight:bold;\">China<\/span><br>Mainland (3) <br>Hong Kong (3) <br>"
+                "content": "<span style=\"font-weight:bold;\">China (6)<\/span><br>Mainland (3) <br>Hong Kong (3) <br>"
             }
         },
         /*"CY": {

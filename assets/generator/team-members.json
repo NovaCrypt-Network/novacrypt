@@ -107,6 +107,7 @@
     },
     {
         "name": "Christer War&eacute;n",
+        "image": "assets/images/people/christer-waren.webp",
         "team": {
             "developer": {
                 "position": "Frontend",
@@ -307,12 +308,16 @@
         }
     },
     {
-        "name": "P8IO",
+        "name": "Verneri Alanissi",
         "team": {
             "developer": {
                 "position": "Frontend",
                 "order": "5"
             }
+        },
+        "some": {
+            "website": "https://droidweb.org",
+            "discord": "P8IO#1433"
         }
     },
     {

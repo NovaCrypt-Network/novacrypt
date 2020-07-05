@@ -62,91 +62,118 @@ class Team {
     }
 
     public function generateHTML (){
-        for ($i = 0; $i < count($this->team); $i++) {
+
+        if($this->code == "executive"){
 $content = '
-                <div class="card beside">
-                    <div class="stacked">
+                <section id="'.$this->code.'">
+                    <header>
+                        <h2 style="display: none;">'.$this->name.'</h2>
+                    </header>
+';
+        } else {
+$content = '
+                <section id="'.$this->code.'">
+                    <header>
+                        <h2>'.$this->name.'</h2>
+                    </header>
+';
+        }
+
+        for ($i = 0; $i < count($this->team); $i++) {
+$content .= '
+                    <div class="card beside">
+                        <div class="stacked">
 ';
 
             if(isset($this->team[$i]['image']) && $this->team[$i]['image'] != ''){
 $content .= '
-                        <img src="'.$this->team[$i]['image'].'" alt="'.$this->team[$i]['name'].'">
+                            <img src="'.$this->team[$i]['image'].'" alt="'.$this->team[$i]['name'].'">
 ';
             } else {
 $content .= '
-                        <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
+                            <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
 ';
             }
 
 $content .= '
-                    </div>
-                    <div class="stacked">
-                        <p class="card-name">'.$this->team[$i]['name'].'</p>
+                        </div>
+                        <div class="stacked">
+                            <p class="card-name">'.$this->team[$i]['name'].'</p>
 ';
 
             if(is_array($this->team[$i]['team'][$this->code]['position'])){
 $content .= '
-                        <p class="card-position"><abbr title="'.$this->team[$i]['team'][$this->code]['position']['long'].'">'.$this->team[$i]['team'][$this->code]['position']['abbr'].'</abbr></p>
+                            <p class="card-position"><abbr title="'.$this->team[$i]['team'][$this->code]['position']['long'].'">'.$this->team[$i]['team'][$this->code]['position']['abbr'].'</abbr></p>
 ';
             } else {
 $content .= '
-                        <p class="card-position">'.$this->team[$i]['team'][$this->code]['position'].'</p>
+                            <p class="card-position">'.$this->team[$i]['team'][$this->code]['position'].'</p>
 ';
             }
 
             if(isset($this->team[$i]['description']) && $this->team[$i]['description'] != ''){
 $content .= '
-                        <p class="card-description">'.$this->team[$i]['description'].'</p>
+                            <p class="card-description">'.$this->team[$i]['description'].'</p>
 ';
             }
 
             if(isset($this->team[$i]['some']) && is_array($this->team[$i]['some'])){
 
 $content .= '
-                        <div class="card-some beside">
+                            <div class="card-some beside">
 ';
 
                 foreach($this->team[$i]['some'] as $key => $value){
 
                     if($key == 'website'){
 $content .= '
-                            <a href="'.$value.'"><i class="fas fa-globe"></i></a>
+                                <a href="'.$value.'" title="'.$value.'"><i class="fas fa-globe"></i></a>
 ';
                     }
                     if($key == 'linkedin'){
 $content .= '
-                            <a href="https://www.linkedin.com/in/'.$value.'/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/'.$value.'/" title="'.$value.'"><i class="fab fa-linkedin"></i></a>
 ';
                     }
 
                     if($key == 'instagram'){
 $content .= '
-                            <a href="https://www.instagram.com/'.$value.'/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/'.$value.'/" title="'.$value.'"><i class="fab fa-instagram"></i></a>
 ';
                     }
 
                     if($key == 'twitter'){
 $content .= '
-                            <a href="https://twitter.com/'.$value.'/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://twitter.com/'.$value.'/" title="'.$value.'"><i class="fab fa-twitter"></i></a>
+';
+                    }
+
+                    if($key == 'discord'){
+$content .= '
+                                <a href="#" title="'.$value.'"><i class="fab fa-discord"></i></a>
 ';
                     }
 
                 }
 
 $content .= '
-                        </div>
+                            </div>
 ';
 
             }
 
 $content .= '
+                        </div>
                     </div>
-                </div>
 
 ';
 
-            $this->htmlContent .= $content;
         }
+$content .= '
+                </section>
+';
+
+            $this->htmlContent .= $content;
     }
 
     public function doTasks (){

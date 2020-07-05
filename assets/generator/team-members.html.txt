@@ -468,7 +468,7 @@
 
                                 <a href="https://droidweb.org"><i class="fas fa-globe"></i></a>
 
-                                <a href="#P8IO#1433/" title="P8IO#1433"><i class="fab fa-discord"></i></a>
+                                <a href="#" title="P8IO#1433"><i class="fab fa-discord"></i></a>
 
                             </div>
 

@@ -150,7 +150,7 @@ $content .= '
 
                     if($key == 'discord'){
 $content .= '
-                                <a href="#'.$value.'/" title="'.$value.'"><i class="fab fa-discord"></i></a>
+                                <a href="#" title="'.$value.'"><i class="fab fa-discord"></i></a>
 ';
                     }
 

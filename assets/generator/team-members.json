@@ -107,6 +107,7 @@
     },
     {
         "name": "Christer War&eacute;n",
+        "image": "assets/images/people/christer-waren.webp",
         "team": {
             "developer": {
                 "position": "Frontend",

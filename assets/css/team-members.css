@@ -17,12 +17,20 @@ main#content {
     flex-direction: row;
 }
 
+section {
+    width: 90%;
+    padding-top: 100px;
+}
+
+section:nth-child(1) {
+    padding-top: 0;
+}
+section header {
+    text-align: center;
+}
+
 .menu {
     flex: 25vw;
-    /*height: 100%;
-    left: 0px;
-    position: fixed;
-    top: 0px;*/
     color: #ffffff;
     background-color: #1a1a1a;
     opacity: 0.9;
@@ -75,10 +83,12 @@ main#content {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.card:nth-child(1) {
-    margin-top: 0;
+section#executive .card:nth-child(2) {
+    margin-top: 0px;
 }
 
 .card p {

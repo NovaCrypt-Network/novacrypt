@@ -127,24 +127,24 @@ $content .= '
 
                     if($key == 'website'){
 $content .= '
-                                <a href="'.$value.'"><i class="fas fa-globe"></i></a>
+                                <a href="'.$value.'" title="'.$value.'"><i class="fas fa-globe"></i></a>
 ';
                     }
                     if($key == 'linkedin'){
 $content .= '
-                                <a href="https://www.linkedin.com/in/'.$value.'/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/'.$value.'/" title="'.$value.'"><i class="fab fa-linkedin"></i></a>
 ';
                     }
 
                     if($key == 'instagram'){
 $content .= '
-                                <a href="https://www.instagram.com/'.$value.'/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/'.$value.'/" title="'.$value.'"><i class="fab fa-instagram"></i></a>
 ';
                     }
 
                     if($key == 'twitter'){
 $content .= '
-                                <a href="https://twitter.com/'.$value.'/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://twitter.com/'.$value.'/" title="'.$value.'"><i class="fab fa-twitter"></i></a>
 ';
                     }
 

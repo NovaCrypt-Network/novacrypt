@@ -21,11 +21,11 @@
 
                             <div class="card-some beside">
 
-                                <a href="https://rolandyan.com"><i class="fas fa-globe"></i></a>
+                                <a href="https://rolandyan.com" title="https://rolandyan.com"><i class="fas fa-globe"></i></a>
 
-                                <a href="https://www.linkedin.com/in/roland-yan-52618a1a7/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/roland-yan-52618a1a7/" title="roland-yan-52618a1a7"><i class="fab fa-linkedin"></i></a>
 
-                                <a href="https://www.instagram.com/robo_panda_x/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/robo_panda_x/" title="robo_panda_x"><i class="fab fa-instagram"></i></a>
 
                             </div>
 
@@ -160,11 +160,11 @@
 
                             <div class="card-some beside">
 
-                                <a href="https://rolandyan.com"><i class="fas fa-globe"></i></a>
+                                <a href="https://rolandyan.com" title="https://rolandyan.com"><i class="fas fa-globe"></i></a>
 
-                                <a href="https://www.linkedin.com/in/roland-yan-52618a1a7/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/roland-yan-52618a1a7/" title="roland-yan-52618a1a7"><i class="fab fa-linkedin"></i></a>
 
-                                <a href="https://www.instagram.com/robo_panda_x/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/robo_panda_x/" title="robo_panda_x"><i class="fab fa-instagram"></i></a>
 
                             </div>
 
@@ -284,11 +284,11 @@
 
                             <div class="card-some beside">
 
-                                <a href="https://rolandyan.com"><i class="fas fa-globe"></i></a>
+                                <a href="https://rolandyan.com" title="https://rolandyan.com"><i class="fas fa-globe"></i></a>
 
-                                <a href="https://www.linkedin.com/in/roland-yan-52618a1a7/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/roland-yan-52618a1a7/" title="roland-yan-52618a1a7"><i class="fab fa-linkedin"></i></a>
 
-                                <a href="https://www.instagram.com/robo_panda_x/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/robo_panda_x/" title="robo_panda_x"><i class="fab fa-instagram"></i></a>
 
                             </div>
 
@@ -466,7 +466,7 @@
 
                             <div class="card-some beside">
 
-                                <a href="https://droidweb.org"><i class="fas fa-globe"></i></a>
+                                <a href="https://droidweb.org" title="https://droidweb.org"><i class="fas fa-globe"></i></a>
 
                                 <a href="#" title="P8IO#1433"><i class="fab fa-discord"></i></a>
 
@@ -489,11 +489,11 @@
 
                             <div class="card-some beside">
 
-                                <a href="https://christerwaren.fi"><i class="fas fa-globe"></i></a>
+                                <a href="https://christerwaren.fi" title="https://christerwaren.fi"><i class="fas fa-globe"></i></a>
 
-                                <a href="https://www.linkedin.com/in/cwchristerw/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/cwchristerw/" title="cwchristerw"><i class="fab fa-linkedin"></i></a>
 
-                                <a href="https://twitter.com/cwchristerw/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://twitter.com/cwchristerw/" title="cwchristerw"><i class="fab fa-twitter"></i></a>
 
                             </div>
 

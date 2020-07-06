@@ -128,6 +128,25 @@ section#executive .card:nth-child(2) {
     text-align: center;
 }
 
+.gototop-button {
+    border-radius: 50px;
+    background-color: #333333aa;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+
+.gototop-button i {
+    padding: 25px;
+    font-size: xxx-large;
+}
+
 .stacked {
     display: flex;
     flex-direction: column;

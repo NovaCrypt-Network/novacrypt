@@ -556,13 +556,23 @@
                     <div class="card beside">
                         <div class="stacked">
 
-                            <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
+                            <img src="assets/images/people/bridgit-jung.webp" alt="Bridgit Jung">
 
                         </div>
                         <div class="stacked">
-                            <p class="card-name">June</p>
+                            <p class="card-name">Bridgit Jung</p>
 
                             <p class="card-position">Illustrator</p>
+
+                            <p class="card-description">I’m Bridgit, and I’m a rising Senior in high school (class of 2021). I’ve created graphics for numerous businesses, organizations, and school clubs and have drawn commissioned art for 22+ clients. At the moment, I am a graphic design intern for the online student-teacher marketplace Nesuku. I lead my school’s National Honor Society (NHS) Public Relations Committee, and I am on the student board for my school’s chapter of Business Professionals of America (BPA).</p>
+
+                            <div class="card-some beside">
+
+                                <a href="https://bridgitjungart.weebly.com" title="https://bridgitjungart.weebly.com"><i class="fas fa-globe"></i></a>
+
+                                <a href="https://www.instagram.com/bridgitjung/" title="bridgitjung"><i class="fab fa-instagram"></i></a>
+
+                            </div>
 
                         </div>
                     </div>
@@ -601,11 +611,11 @@
                     <div class="card beside">
                         <div class="stacked">
 
-                            <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
+                            <img src="assets/images/people/joe-gosden.webp" alt="Joe Gosden">
 
                         </div>
                         <div class="stacked">
-                            <p class="card-name">Bobudub</p>
+                            <p class="card-name">Joe Gosden</p>
 
                             <p class="card-position">Blender</p>
 
@@ -616,7 +626,7 @@
                     <div class="card beside">
                         <div class="stacked">
 
-                            <img src="assets/images/novacrypt.png" alt="NovaCrypt" style="filter: grayscale(100%); padding: 50px;">
+                            <img src="assets/images/people/frank.webp" alt="Frank">
 
                         </div>
                         <div class="stacked">

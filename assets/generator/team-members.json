@@ -79,7 +79,8 @@
         }
     },
     {
-        "name": "Bobudub",
+        "name": "Joe Gosden",
+        "image": "assets/images/people/joe-gosden.webp",
         "team": {
             "art": {
                 "position": "Blender",
@@ -150,6 +151,7 @@
     },
     {
         "name": "Frank",
+        "image": "assets/images/people/frank.webp",
         "team": {
             "art": {
                 "position": "Blender",
@@ -211,12 +213,18 @@
         }
     },
     {
-        "name": "June",
+        "name": "Bridgit Jung",
+        "image": "assets/images/people/bridgit-jung.webp",
         "team": {
             "art": {
                 "position": "Illustrator",
                 "order": "3"
             }
+        },
+        "description": "I’m Bridgit, and I’m a rising Senior in high school (class of 2021). I’ve created graphics for numerous businesses, organizations, and school clubs and have drawn commissioned art for 22+ clients. At the moment, I am a graphic design intern for the online student-teacher marketplace Nesuku. I lead my school’s National Honor Society (NHS) Public Relations Committee, and I am on the student board for my school’s chapter of Business Professionals of America (BPA).",
+        "some": {
+            "website": "https://bridgitjungart.weebly.com",
+            "instagram": "bridgitjung"
         }
     },
     {

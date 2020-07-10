@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+article {
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+article header {
+    font-family: sans-serif;
+    width: 100%;
+    margin-bottom: 50px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+article header img {
+    width: 100%;
+}
+
+article header h2 {
+    color:white;
+    font-size: 250%;
+    margin-top: 50px;
+}
+
+article header p {
+    padding-right: initial;
+    padding-left: initial;
+}
+
+article header p.author span.name {
+    text-decoration: underline;
+}
+
+article p {
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: lefts;
+}

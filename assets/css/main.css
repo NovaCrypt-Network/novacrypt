@@ -1,10 +1,12 @@
 body {
     background:#030303;
 }
+
 .navbar.bg-dark {
     background:none !important; /*background:rgba(6,6,6,.5)*/
     border:none !important;
 }
+
 .container {
     width: 90%;
     padding: 10px;
@@ -12,6 +14,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .container2 {
     width: 95%;
     padding: 10px;
@@ -19,6 +22,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .container3 {
     width: 100%;
     padding: 0;
@@ -27,12 +31,6 @@ body {
     justify-content: center;
 }
 
-
-
-
-
-
-
 .container4 {
     width: 90%;
     padding: 10px;
@@ -40,6 +38,7 @@ body {
     display: contents;
     justify-content: center;
 }
+
 .box {
     text-align: center;
     height: 17%;
@@ -50,11 +49,11 @@ body {
     font-family: 'Jost', sans-serif;
     object-fit: cover;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
 
 .constant {
     font-family: 'Jost', sans-serif;
-
 }
 
 .box:hover {
@@ -64,6 +63,7 @@ body {
 /*.dontclick {
 cursor:not-allowed;
 }*/
+
 .gallery {
     display: block;
     margin-top: 0;
@@ -72,6 +72,7 @@ cursor:not-allowed;
     width:100%;
     height:50%;
 }
+
 .gallery2 {
     display: block;
     margin-top: 100px;
@@ -80,6 +81,7 @@ cursor:not-allowed;
     width: 100%;
     height: 50%;
 }
+
 .comingsoon {
     text-align: center;
     margin-top: 10%;
@@ -113,9 +115,11 @@ body {
 *::-webkit-scrollbar {
   width: 12px;
 }
+
 *::-webkit-scrollbar-track {
   background: #232F33;
 }
+
 *::-webkit-scrollbar-thumb {
   background-color: #99AAB5;
   border-radius: 20px;
@@ -175,6 +179,7 @@ body {
 .fade-in-left {
     animation:fade-in-left 1s ease-in
 }
+
 @keyframes fade-in-left {
     0% {
         opacity:0;
@@ -192,7 +197,6 @@ body {
     animation:fade-in-right 1s ease-in
 }
 
-
 @keyframes fade-in-right {
     0% {
         opacity:0;
@@ -203,11 +207,6 @@ body {
         transform:translateX(0px)
     }
 }
-
-
-
-
-
 
 /* padded section */
 .pad-section {
@@ -245,12 +244,14 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
 .gif {
     display: block;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
 }
+
 #articles {
     background: url("../images/b.jpg") no-repeat top fixed;
     background-size: cover;
@@ -262,8 +263,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
 }
+
 .btn-group button {
     margin: 0 30px;
     background: #fff;
@@ -324,6 +325,7 @@ body {
     position:relative;
 }
 /* for Projects page */
+
 #blog {
     background: url("../images/blogbackground2.0.webp") no-repeat  center fixed;
     background-size:contain;
@@ -336,7 +338,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
-
 
 /* for Projects page */
 #projectmain {
@@ -449,7 +450,6 @@ hr.bruh {
 }
 
 .lcards-list {
-
     text-align:center;
     z-index: 0;
     width: 100%;
@@ -459,7 +459,6 @@ hr.bruh {
 }
 
 .lcard {
-
     margin:  auto;
     width: 200px;
     height: 200px;
@@ -510,6 +509,7 @@ hr.bruh {
 .title-black {
     color: black;
 }
+
 @media all and (max-width: 500px) {
     .container3 {
         /* On small screens, we are no longer using row direction but column */
@@ -689,8 +689,6 @@ h5 a {
     bottom: 215px;
     height: 1275px;
     right: 10px;
-
-
 }
 
 .middle-row {
@@ -718,7 +716,6 @@ h5 a {
     left: -570px;
     transform: rotate(45deg);
     overflow: hidden;
-
 }
 
 .diamond2 {
@@ -728,7 +725,6 @@ h5 a {
     left: -120px;
     transform: rotate(45deg);
     overflow: hidden;
-
 }
 
 .diamond3 {
@@ -738,7 +734,6 @@ h5 a {
     left: 320px;
     transform: rotate(45deg);
     overflow: hidden;
-
 }
 
 .diamond4 {
@@ -748,7 +743,6 @@ h5 a {
     left: -620px;
     top: 260px;
     transform: rotate(45deg);
-
 }
 
 .diamond5 {
@@ -782,7 +776,6 @@ h5 a {
 }
 
 .diamond4 > .sm-sq-1 {
-
     position: absolute;
     width: 135px;
     height: 135px;
@@ -790,7 +783,6 @@ h5 a {
 }
 
 .diamond4 > .sm-sq-2 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -799,7 +791,6 @@ h5 a {
 }
 
 .diamond4 > .sm-sq-3 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -808,7 +799,6 @@ h5 a {
 }
 
 .diamond4 > .sm-sq-4 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -818,7 +808,6 @@ h5 a {
 }
 
 .diamond5 > .sm-sq-1 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -827,7 +816,6 @@ h5 a {
 }
 
 .diamond5 > .sm-sq-2 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -836,7 +824,6 @@ h5 a {
 }
 
 .diamond5 > .sm-sq-3 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -854,10 +841,7 @@ h5 a {
     top: 165px;
 }
 
-
-
 .diamond6 > .sm-sq-1 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -866,7 +850,6 @@ h5 a {
 }
 
 .diamond6 > .sm-sq-2 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -875,7 +858,6 @@ h5 a {
 }
 
 .diamond6 > .sm-sq-3 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -885,7 +867,6 @@ h5 a {
 }
 
 .diamond6 > .sm-sq-4 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -896,7 +877,6 @@ h5 a {
 }
 
 .diamond7 > .sm-sq-1 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -906,7 +886,6 @@ h5 a {
 }
 
 .diamond7 > .sm-sq-2 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -916,7 +895,6 @@ h5 a {
 }
 
 .diamond7 > .sm-sq-3 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -926,7 +904,6 @@ h5 a {
 }
 
 .diamond7 > .sm-sq-4 {
-
     position: absolute;
     overflow: hidden;
     width: 135px;
@@ -941,7 +918,6 @@ h5 a {
 }
 
 .img-1 {
-
     width: 300px;
     height: 300px;
     transition: all 1.5s ease;
@@ -952,7 +928,6 @@ h5 a {
 }
 
 .img-2 {
-
     position: absolute;
     left: -45px;
     top: -20px;
@@ -966,7 +941,6 @@ h5 a {
 }
 
 .img-3 {
-
     position: absolute;
     width: 400px;
     height: 400px;
@@ -978,7 +952,6 @@ h5 a {
 }
 
 .sm-img-1 {
-
     position: absolute;
     transition: all 1.5s ease;
     height: 150px;
@@ -986,12 +959,10 @@ h5 a {
 }
 
 .sm-img-1:hover {
-
     transform: scale(1.5);
 }
 
 .sm-img-2 {
-
     position: absolute;
     top: -20px;
     left: -20px;
@@ -1001,12 +972,10 @@ h5 a {
 }
 
 .sm-img-2:hover {
-
     transform: scale(1.5);
 }
 
 .sm-img-3 {
-
     position: absolute;
     top: 0px;
     left: 0px;
@@ -1016,12 +985,10 @@ h5 a {
 }
 
 .sm-img-3:hover {
-
     transform: scale(1.5);
 }
 
 .sm-img-4 {
-
     position: absolute;
     top: 0px;
     left: 0px;
@@ -1031,12 +998,10 @@ h5 a {
 }
 
 .sm-img-4:hover {
-
     transform: scale(1.5);
 }
 
 .sm-img-5 {
-
     position: absolute;
     top: 0px;
     left: 0px;
@@ -1046,12 +1011,10 @@ h5 a {
 }
 
 .sm-img-5:hover {
-
     transform: scale(1.5);
 }
 
 .sm-img-6 {
-
     position: absolute;
     top: 0px;
     left: 0px;
@@ -1061,12 +1024,10 @@ h5 a {
 }
 
 .sm-img-6:hover {
-
     transform: scale(1.5);
 }
 
 .sm-img-7 {
-
     position: absolute;
     top: 0px;
     left: 0px;
@@ -1076,12 +1037,10 @@ h5 a {
 }
 
 .sm-img-7:hover {
-
     transform: scale(1.5);
 }
 
 .sm-img-8 {
-
     position: absolute;
     top: 0px;
     left: 0px;
@@ -1091,12 +1050,10 @@ h5 a {
 }
 
 .sm-img-8:hover {
-
     transform: scale(1.5);
 }
 
 .sm-img-9 {
-
     position: absolute;
     top: 0px;
     left: 0px;
@@ -1106,12 +1063,10 @@ h5 a {
 }
 
 .sm-img-9:hover {
-
     transform: scale(1.5);
 }
 
 .sm-img-10 {
-
     position: absolute;
     top: 0px;
     left: 0px;
@@ -1121,12 +1076,10 @@ h5 a {
 }
 
 .sm-img-10:hover {
-
     transform: scale(1.5);
 }
 
 .sm-img-11 {
-
     position: absolute;
     top: 0px;
     left: 0px;
@@ -1136,12 +1089,10 @@ h5 a {
 }
 
 .sm-img-11:hover {
-
     transform: scale(1.5);
 }
 
 .sm-img-12 {
-
     position: absolute;
     top: 0px;
     left: 0px;
@@ -1151,16 +1102,13 @@ h5 a {
 }
 
 .sm-img-12:hover {
-
     transform: scale(1.5);
 
 }
 
 @media (min-width:320px) and (max-width: 768px) {
-
     html,
     body {
-
         overflow-x: hidden;
     }
 
@@ -1171,10 +1119,7 @@ h5 a {
     .d-container {
         position: relative;
         bottom: 235px;
-
-
     }
-
 
     .diamond {
         position: relative;
@@ -1182,10 +1127,8 @@ h5 a {
         height: 150px;
         bottom: 200px;
         left: -65px;
-        ;
         transform: rotate(45deg);
         overflow: hidden;
-
     }
 
     .diamond2 {
@@ -1196,7 +1139,6 @@ h5 a {
         top: -120px;
         transform: rotate(45deg);
         overflow: hidden;
-
     }
 
     .diamond3 {
@@ -1207,7 +1149,6 @@ h5 a {
         left: -50px;
         transform: rotate(45deg);
         overflow: hidden;
-
     }
 
     .diamond4 {
@@ -1217,7 +1158,6 @@ h5 a {
         left: -455px;
         top: 550px;
         transform: rotate(-45deg);
-
     }
 
     .diamond5 {
@@ -1227,8 +1167,6 @@ h5 a {
         left: -210px;
         top: 400px;
         transform: rotate(135deg);
-
-
     }
 
     .diamond6 {
@@ -1238,8 +1176,6 @@ h5 a {
         left: -165px;
         top: -75px;
         transform: rotate(135deg);
-
-
     }
 
     .diamond7 {
@@ -1249,12 +1185,9 @@ h5 a {
         left: 65px;
         top: -75px;
         transform: rotate(-45deg);
-
-
     }
 
     .diamond4 > .sm-sq-1 {
-
         position: absolute;
         width: 60px;
         height: 60px;
@@ -1263,7 +1196,6 @@ h5 a {
     }
 
     .diamond4 > .sm-sq-2 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
@@ -1272,7 +1204,6 @@ h5 a {
     }
 
     .diamond4 > .sm-sq-3 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
@@ -1281,7 +1212,6 @@ h5 a {
     }
 
     .diamond4 > .sm-sq-4 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
@@ -1291,7 +1221,6 @@ h5 a {
     }
 
     .diamond5 > .sm-sq-1 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
@@ -1300,7 +1229,6 @@ h5 a {
     }
 
     .diamond5 > .sm-sq-2 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
@@ -1309,7 +1237,6 @@ h5 a {
     }
 
     .diamond5 > .sm-sq-3 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
@@ -1319,7 +1246,6 @@ h5 a {
 
     .diamond5 > .sm-sq-4 {
         overflow: hidden;
-
         position: absolute;
         width: 60px;
         height: 60px;
@@ -1328,7 +1254,6 @@ h5 a {
     }
 
     .diamond6 > .sm-sq-1 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
@@ -1337,7 +1262,6 @@ h5 a {
     }
 
     .diamond6 > .sm-sq-2 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
@@ -1346,65 +1270,53 @@ h5 a {
     }
 
     .diamond6 > .sm-sq-3 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
         height: 60px;
         right: 0px;
-
     }
 
     .diamond6 > .sm-sq-4 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
         height: 60px;
         right: 0px;
         top: 95px;
-
     }
 
     .diamond7 > .sm-sq-1 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
         height: 60px;
         left: 0px;
-
     }
 
     .diamond7 > .sm-sq-2 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
         height: 60px;
         top: 90px;
-
     }
 
     .diamond7 > .sm-sq-3 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
         height: 60px;
         right: 0px;
-
     }
 
     .diamond7 > .sm-sq-4 {
-
         position: absolute;
         overflow: hidden;
         width: 60px;
         height: 60px;
         right: 0px;
         top: 165px;
-
     }
 }
 
@@ -1420,7 +1332,6 @@ GRID
 /*mobile*/
 @media (min-width: 375px) {
     .display-box1 {
-
         width: 100%;
         height: 350px;
         margin-top: 40px;
@@ -1430,7 +1341,6 @@ GRID
     }
 
     .display-box2 {
-
         width: 100%;
         height: 350px;
         margin-top: 40px;
@@ -1438,8 +1348,8 @@ GRID
         background-color: #262626;
         border: 2px groove #2a9fd6;
     }
-    .display-box3 {
 
+    .display-box3 {
         width: 100%;
         height: 350px;
         margin-top: 40px;
@@ -1449,7 +1359,6 @@ GRID
     }
 
     .display-box4 {
-
         width: 100%;
         height: 350px;
         margin-top: 40px;
@@ -1459,7 +1368,6 @@ GRID
     }
 
     .display-box5 {
-
         width: 100%;
         height: 350px;
         margin-top: 40px;
@@ -1469,7 +1377,6 @@ GRID
     }
 
     .display-box6 {
-
         width: 100%;
         height: 350px;
         margin-top: 40px;
@@ -1479,7 +1386,6 @@ GRID
     }
 
     .display-box7 {
-
         width: 100%;
         height: 350px;
         margin-top: 40px;
@@ -1553,32 +1459,21 @@ GRID
         background-image: url("../images/card_7.png");
     }
 
-
     .d-title {
-        
-        
         margin-top: 10px;
         margin-left: 10px;
     }
 
     .d-text {
-
         padding: 0px 10px;
         text-align: justify;
         font-size: 16px;
     }
-
-
-
 }
 
 /*tablets*/
 @media (min-width: 500px) {
-
-    .right-box {}
-
     .display-box1 {
-
         width: 70%;
         height: 350px;
         margin-top: 100px;
@@ -1588,7 +1483,6 @@ GRID
     }
 
     .display-box2 {
-
         width: 70%;
         height: 350px;
         margin-top: 40px;
@@ -1598,7 +1492,6 @@ GRID
     }
 
     .display-box3 {
-
         width: 70%;
         height: 350px;
         margin-top: 40px;
@@ -1608,7 +1501,6 @@ GRID
     }
 
     .display-box4 {
-
         width: 70%;
         height: 350px;
         margin-top: 40px;
@@ -1618,7 +1510,6 @@ GRID
     }
 
     .display-box5 {
-
         width: 70%;
         height: 350px;
         margin-top: 40px;
@@ -1628,7 +1519,6 @@ GRID
     }
 
     .display-box6 {
-
         width: 70%;
         height: 350px;
         margin-top: 40px;
@@ -1638,7 +1528,6 @@ GRID
     }
 
     .display-box7 {
-
         width: 70%;
         height: 350px;
         margin-top: 40px;
@@ -1664,7 +1553,6 @@ GRID
         margin-bottom: 20px;
         background-color: #262626;
         background-image: url("../images/card_2.png");
-
     }
 
     .img-box3 {
@@ -1716,7 +1604,6 @@ GRID
 
 
     .d-title {
-
         margin-top: 20px;
         margin-left: 20px;
         width: 100%;
@@ -1724,7 +1611,6 @@ GRID
     }
 
     .d-text {
-
         padding: 0px 15px;
         text-align: justify;
         font-size: 16px;
@@ -1735,9 +1621,7 @@ GRID
 
 /*medium desktop*/
 @media (min-width: 992px) {
-
     .display-box1 {
-
         width: 95%;
         height: 350px;
         margin-top: 100px;
@@ -1747,7 +1631,6 @@ GRID
     }
 
     .display-box2 {
-
         width: 95%;
         height: 350px;
         margin-top: 40px;
@@ -1757,7 +1640,6 @@ GRID
     }
 
     .display-box3 {
-
         width: 95%;
         height: 350px;
         margin-top: 40px;
@@ -1767,7 +1649,6 @@ GRID
     }
 
     .display-box4 {
-
         width: 95%;
         height: 350px;
         margin-top: 40px;
@@ -1777,7 +1658,6 @@ GRID
     }
 
     .display-box5 {
-
         width: 95%;
         height: 350px;
         margin-top: 40px;
@@ -1787,7 +1667,6 @@ GRID
     }
 
     .display-box6 {
-
         width: 95%;
         height: 350px;
         margin-top: 40px;
@@ -1797,7 +1676,6 @@ GRID
     }
 
     .display-box7 {
-
         width: 95%;
         height: 350px;
         margin-top: 40px;
@@ -1823,7 +1701,6 @@ GRID
         margin-bottom: 20px;
         background-color: #262626;
         background-image: url("../images/card_2.png");
-
     }
 
     .img-box3 {
@@ -1842,7 +1719,6 @@ GRID
         margin-bottom: 20px;
         background-color: #262626;
         background-image: url("../images/card_4.png");
-
     }
 
     .img-box5 {
@@ -1861,7 +1737,6 @@ GRID
         margin-bottom: 20px;
         background-color: #262626;
         background-image: url("../images/card_6.png");
-
     }
 
     .img-box7 {
@@ -1874,200 +1749,180 @@ GRID
     }
 
     .d-title {
-
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-
-        .d-text {
-
-            padding: 5px 15px;
-            text-align: justify;
-            font-size: 20px;
-        }
-
-        .right-box {
-
-            position: absolute;
-            top: -50px;
-            margin-right: 30px;
-            width: 90%;
-        }
-
+        margin-top: 20px;
+        margin-left: 20px;
     }
 
+    .d-text {
+        padding: 5px 15px;
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .right-box {
+        position: absolute;
+        top: -50px;
+        margin-right: 30px;
+        width: 90%;
+    }
+}
 
 /*desktop and greater*/
 @media (min-width: 1281px) {
-
-        .display-box1 {
-
-            width: 95%;
-            height: 350px;
-            margin-top: 100px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            border: 2px groove #2a9fd6;
-        }
-
-        .display-box2 {
-
-            width: 95%;
-            height: 350px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            border: 2px groove #2a9fd6;
-        }
-
-        .display-box3 {
-
-            width: 95%;
-            height: 350px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            border: 2px groove #2a9fd6;
-        }
-
-        .display-box4 {
-
-            width: 95%;
-            height: 350px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            border: 2px groove #2a9fd6;
-        }
-
-        .display-box5 {
-
-            width: 95%;
-            height: 350px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            border: 2px groove #2a9fd6;
-        }
-
-        .display-box6 {
-
-            width: 95%;
-            height: 350px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            border: 2px groove #2a9fd6;
-        }
-
-        .display-box7 {
-
-            width: 95%;
-            height: 350px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            border: 2px groove #2a9fd6;
-        }
-
-
-        .img-box1 {
-            width: 95%;
-            height: 350px;
-            margin-top: 100px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            background-image: url("../images/card_1.png");
-        }
-
-        .img-box2 {
-            width: 95%;
-            height: 350px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            background-image: url("../images/card_2.png");
-
-        }
-
-        .img-box3 {
-            width: 95%;
-            height: 350px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            background-image: url("../images/card_3.png");
-        }
-
-        .img-box4 {
-            width: 95%;
-            height: 350px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            background-image: url("../images/card_4.png");
-
-        }
-
-        .img-box5 {
-            width: 95%;
-            height: 350px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            background-image: url("../images/card_5.png");
-        }
-
-        .img-box6 {
-            width: 95%;
-            height: 350px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            background-image: url("../images/card_6.png");
-
-        }
-
-        .img-box7 {
-            width: 95%;
-            height: 350px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            background-color: #262626;
-            background-image: url("../images/card_7.png");
-        }
-
-
-        .d-title {
-
-            margin-top: 20px;
-            margin-left: 30px;
-        }
-
-        .d-text {
-
-            padding: 10px 30px;
-            text-align: justify;
-            font-size: 20px;
-        }
-
-        .right-box {
-
-            position: absolute;
-            top: -50px;
-            margin-right: 30px;
-            width: 90%;
-        }
-
+    .display-box1 {
+        width: 95%;
+        height: 350px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        border: 2px groove #2a9fd6;
     }
+
+    .display-box2 {
+        width: 95%;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        border: 2px groove #2a9fd6;
+    }
+
+    .display-box3 {
+        width: 95%;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        border: 2px groove #2a9fd6;
+    }
+
+    .display-box4 {
+        width: 95%;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        border: 2px groove #2a9fd6;
+    }
+
+    .display-box5 {
+        width: 95%;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        border: 2px groove #2a9fd6;
+    }
+
+    .display-box6 {
+        width: 95%;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        border: 2px groove #2a9fd6;
+    }
+
+    .display-box7 {
+        width: 95%;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        border: 2px groove #2a9fd6;
+    }
+
+    .img-box1 {
+        width: 95%;
+        height: 350px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        background-image: url("../images/card_1.png");
+    }
+
+    .img-box2 {
+        width: 95%;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        background-image: url("../images/card_2.png");
+    }
+
+    .img-box3 {
+        width: 95%;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        background-image: url("../images/card_3.png");
+    }
+
+    .img-box4 {
+        width: 95%;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        background-image: url("../images/card_4.png");
+    }
+
+    .img-box5 {
+        width: 95%;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        background-image: url("../images/card_5.png");
+    }
+
+    .img-box6 {
+        width: 95%;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        background-image: url("../images/card_6.png");
+    }
+
+    .img-box7 {
+        width: 95%;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #262626;
+        background-image: url("../images/card_7.png");
+    }
+
+    .d-title {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .d-text {
+        padding: 10px 30px;
+        text-align: justify;
+        font-size: 20px;
+    }
+
     .right-box {
-        background-repeat:no-repeat;
-        background-color:transparent
+        position: absolute;
+        top: -50px;
+        margin-right: 30px;
+        width: 90%;
     }
-    .stellar-grid * {
-        background-repeat:no-repeat;
-        background-color:transparent
-    }
+}
+
+.right-box {
+    background-repeat:no-repeat;
+    background-color:transparent
+}
+
+.stellar-grid * {
+    background-repeat:no-repeat;
+    background-color:transparent
+}
 /*
 STELLAR
 BROKEN
@@ -2079,8 +1934,7 @@ END
     flex-direction: column;
 }
 
-@media (max-width: 992px)
-{
+@media (max-width: 992px) {
     .nav-item {
         background:black;
         padding:5px

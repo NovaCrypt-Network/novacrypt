@@ -133,9 +133,9 @@ body {
     justify-content:center;
 }
 
-    .content > * + * {
-        margin-top: 1rem;
-    }
+.content > * + * {
+    margin-top: 1rem;
+}
 
 .title {
     font-size: 1.3rem;
@@ -163,14 +163,14 @@ body {
     border: none;
 }
 
-    .btn2:hover {
-        background-color: #0d0d0d;
-    }
+.btn2:hover {
+    background-color: #0d0d0d;
+}
 
-    .btn2:focus {
-        outline: 1px dashed yellow;
-        outline-offset: 3px;
-    }
+.btn2:focus {
+    outline: 1px dashed yellow;
+    outline-offset: 3px;
+}
 
 @media (hover: hover) and (min-width: 600px) {
     .card:after {
@@ -183,15 +183,15 @@ body {
         transform: translateY(calc(100% - 4.5rem));
     }
 
-        .content > *:not(.title) {
-            opacity: 0;
-            -webkit-transform: translateY(1rem);
-            transform: translateY(1rem);
-            -webkit-transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
-            transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
-            transition: transform var(--d) var(--e), opacity var(--d) var(--e);
-            transition: transform var(--d) var(--e), opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
-        }
+    .content > *:not(.title) {
+        opacity: 0;
+        -webkit-transform: translateY(1rem);
+        transform: translateY(1rem);
+        -webkit-transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+        transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+        transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+        transition: transform var(--d) var(--e), opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    }
 
     .card:hover,
     .card:focus-within {
@@ -199,37 +199,37 @@ body {
         align-items: center;
     }
 
-        .card:hover:before,
-        .card:focus-within:before {
-            -webkit-transform: translateY(-4%);
-            transform: translateY(-4%);
-        }
+    .card:hover:before,
+    .card:focus-within:before {
+        -webkit-transform: translateY(-4%);
+        transform: translateY(-4%);
+    }
 
-        .card:hover:after,
-        .card:focus-within:after {
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-        }
+    .card:hover:after,
+    .card:focus-within:after {
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
 
-        .card:hover .content,
-        .card:focus-within .content {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-        }
+    .card:hover .content,
+    .card:focus-within .content {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 
-            .card:hover .content > *:not(.title),
-            .card:focus-within .content > *:not(.title) {
-                opacity: 1;
-                -webkit-transform: translateY(0);
-                transform: translateY(0);
-                -webkit-transition-delay: calc(var(--d) / 8);
-                transition-delay: calc(var(--d) / 8);
-            }
+    .card:hover .content > *:not(.title),
+    .card:focus-within .content > *:not(.title) {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transition-delay: calc(var(--d) / 8);
+        transition-delay: calc(var(--d) / 8);
+    }
 
-            .card:focus-within:before, .card:focus-within:after,
-            .card:focus-within .content,
-            .card:focus-within .content > *:not(.title) {
-                -webkit-transition-duration: 0s;
-                transition-duration: 0s;
-            }
+    .card:focus-within:before, .card:focus-within:after,
+    .card:focus-within .content,
+    .card:focus-within .content > *:not(.title) {
+        -webkit-transition-duration: 0s;
+        transition-duration: 0s;
+    }
 }

@@ -26,6 +26,7 @@ section {
 section:nth-child(1) {
     padding-top: 0;
 }
+
 section header {
     text-align: center;
 }
@@ -97,23 +98,29 @@ section#executive .card:nth-child(2) {
     margin-left: 15px;
     margin-bottom: 0;
 }
+
 .card .card-some {
     margin-left: 15px;
     font-size: xx-large;
 }
+
 .card .card-name {
     font-size: xxx-large;
 }
+
 .card .card-some i {
     margin-right: 15px;
 }
+
 .card .card-position {
     font-size: xx-large;
 }
+
 .card .card-description {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .card div:nth-child(2) {
     justify-content: center;
 }
@@ -152,6 +159,7 @@ section#executive .card:nth-child(2) {
     display: flex;
     flex-direction: column;
 }
+
 .beside {
     display: flex;
     flex-direction: row;
@@ -179,6 +187,7 @@ section#executive .card:nth-child(2) {
     .cards {
         flex: auto;
     }
+
     .card {
         flex-direction: column;
         width: 75%;
@@ -191,9 +200,3 @@ section#executive .card:nth-child(2) {
         border-bottom: solid #696969aa;
     }
 }
-
-/*@media only screen and (max-width: 1300px) {
-    .menu {
-
-    }
-}*/

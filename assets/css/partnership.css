@@ -1,0 +1,152 @@
+.banner {
+    width: 100%;
+    height: 540px;
+}
+
+.banner .banner-image {
+    width: 100%;
+    height: 50%;
+}
+
+.banner .banner-p {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    text-align: center;
+    margin-top: 0;
+    padding: 1.5em 0 0;
+    border-top: 0px;
+}
+
+.our-partners h6 {
+    text-align: center;
+    color: white;
+    font-size: 300%;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+
+/* CARD STYLING */
+
+.card-container {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card,
+.card_front,
+.card_back {
+    width: 397px;
+    height: 640px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 397px;
+    height: 640px;
+    margin:0;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.our-partners
+.card_front,
+.card_back {  
+    background: url('http://i280.photobucket.com/albums/kk195/thelittleblacksmith/lobster-nebula_zps2j1cvbkx.jpg') no-repeat;
+    box-shadow: 0px 5px 25px 0px rgba(51,51,51,0.28); 
+}
+
+.card-symbol {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-family: 'Cantata One', serif;
+    font-size: 13em;  
+    mix-blend-mode: lighten;
+}
+
+@supports(display:flex) {
+    .card_front {  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    .card_front .card-symbol {  
+        margin: 0 0.15em;
+        border-radius: 50%;
+        font-size: 15em;  
+    }
+
+    .card_front {
+        position: relative;
+        padding: 0 1em;
+    }
+
+    .card_front .card-symbol {    
+        font-size: 15em;  
+    }
+
+    .card_back {
+        /*display: none;*/
+        padding: 1em;
+    }
+
+    .card_front > *,
+    .card_back > * {
+        background-color: white;
+        background-color: rgba(255, 255, 255, 0.75);  
+    }
+
+    .card-text {
+        padding: 0 4.5em 1em;
+        line-height: 1.4;
+    }
+
+    p:first-of-type {    
+        margin-top: 0;
+        padding: 1.5em 0 0;
+        border-top: 8px solid #333;
+    }
+
+    /* FLIP CARD STYLING */
+    .card-container {
+        perspective: 1000px;
+    }
+
+    .card:hover {
+        transform: rotateY(-180deg);
+    }
+
+    .card {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .card_front,
+    .card_back {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .card_front {
+        z-index: 2;
+        transform: rotateY(0deg);
+    }
+
+    .card_back {
+        transform: rotateY(-180deg);
+    }
+}

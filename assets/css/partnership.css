@@ -1,10 +1,12 @@
 .banner {
     width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 .banner .banner-image {
-    width: 100%;
-    height: 50%;
+    width: 1920px;
+    height: 580px;
 }
 
 .banner .banner-p {
@@ -21,7 +23,6 @@
     text-align: center;
     color: white;
     font-size: 300%;
-    font-weight: bolder;
     padding: 0;
     margin: 0;
 }
@@ -78,6 +79,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: ;
     } 
 
     .card_front .card-symbol {  

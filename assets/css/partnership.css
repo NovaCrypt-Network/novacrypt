@@ -2,6 +2,7 @@
     width: 100%;
     text-align: center;
     justify-content: center;
+    padding-bottom: 3%;
 }
 
 .banner .banner-image {
@@ -17,6 +18,8 @@
     margin-top: 0;
     padding: 1.5em 0 0;
     border-top: 0px;
+    margin-top: 3%;
+    
 }
 
 .our-partners h6 {
@@ -25,6 +28,7 @@
     font-size: 300%;
     padding: 0;
     margin: 0;
+    margin-bottom: 3%;
 }
 
 /* CARD STYLING */
@@ -33,10 +37,10 @@
     width: 100%;
     padding-top: 0;
     padding-bottom: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5%;
     
 }
 

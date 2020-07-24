@@ -94,7 +94,10 @@
 }
 
 .button-container .btn {
-    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
+
+   /* margin-left: 10px;
     margin-right: 10px;
     height: 57px;
     line-height: 80px;  
@@ -104,8 +107,14 @@
     background-color: rgb(0, 208, 255);
     color: white;
     text-align: center;
-    cursor: pointer;
+    cursor: pointer;*/
 }
+
+.button-container .btn img {
+    text-align:center;
+
+}
+
 
 .our-partners
 .card_front,

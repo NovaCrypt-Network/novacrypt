@@ -133,14 +133,18 @@
     mix-blend-mode: lighten;
 }
 
+.card-logo-front h6 {
+    font-weight: bolder;
+}
+
 .card-logo-back {
     text-align: center;
     background-color: inherit;
 }
 
-.card-logo img {
-    padding: 0;
-    margin: 12.5px;
+.card-logo-back img {
+    padding: 10px;
+    margin: 15px;
     text-align: center;
 }
 

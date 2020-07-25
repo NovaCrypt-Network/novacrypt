@@ -133,7 +133,15 @@
     mix-blend-mode: lighten;
 }
 
+.card-logo-front img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .card-logo-front h6 {
+    text-align: center;
     margin-top: 5px;
     font-weight: bolder;
 }

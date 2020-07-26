@@ -264,6 +264,10 @@ body {
     text-align: center;
 }
 
+.about-2 {
+    background: url("../images/MainSitePage/starsss_auro.png") no-repeat top fixed;
+}
+
 #articles {
     background: url("../images/b.jpg") no-repeat top fixed;
     background-size: cover;

@@ -210,11 +210,9 @@ body {
 
 /* padded section */
 .pad-section {
-    padding: 50px 0;
-}
-
-.pad-section img {
-    width: 100%;
+    padding: 0;
+    margin-bottom:0;
+    background-image: url('../images/MainSitePage/starss_auro.png') no-repeat top fixed;
 }
 
 /* vertical-centered text */
@@ -233,23 +231,33 @@ body {
 
 /* for Home page */
 #home {
-    background: url("../images/MainSitePage/novacrypt.gif") no-repeat center center fixed;
+    /*background: url("../images/MainSitePage/novacrypt.gif") no-repeat center center fixed;*/
     background-size:cover;
     display: table;
-    height: 100%;
     position: relative;
-    width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    width: 100%;
+    height: 100%;
 }
+
+/* .row-num-flex {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+} */
 
 .gif {
     display: block;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
+}
+
+.about-2 {
+    background: url("../images/MainSitePage/starsss_auro.png") no-repeat top fixed;
 }
 
 #articles {
@@ -410,6 +418,7 @@ hr.bruh {
 /* for num-flex */
 .num-flex {
     text-align: center;
+    background-image: ;
 }
 
 .num-flex h1 {

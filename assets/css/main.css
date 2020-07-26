@@ -245,6 +245,18 @@ body {
     background-size: cover;
 }
 
+.row-num-flex {
+    text-align: center;
+    background-image: ;
+    width: 100%;
+    height: 100%;
+}
+
+.row-num-flex img {
+    width: 100%;
+    height: 100%;
+}
+
 .gif {
     display: block;
     margin-top: 0;
@@ -410,6 +422,7 @@ hr.bruh {
 /* for num-flex */
 .num-flex {
     text-align: center;
+    background-image: ;
 }
 
 .num-flex h1 {

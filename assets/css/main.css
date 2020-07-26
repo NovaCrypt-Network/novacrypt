@@ -233,7 +233,7 @@ body {
 
 /* for Home page */
 #home {
-    background: url("https://cdn.pixabay.com/photo/2016/11/21/12/39/cosmos-1845140_1280.jpg") no-repeat center center fixed;
+    background: url("assets/images/MainSitePage/novacrypt.gif") no-repeat center center fixed;
     background-size:cover;
     display: table;
     height: 100%;

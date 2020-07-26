@@ -233,7 +233,7 @@ body {
 
 /* for Home page */
 #home {
-    background: url("assets/images/MainSitePage/novacrypt.gif") no-repeat center center fixed;
+    background: url("../images/MainSitePage/novacrypt.gif") no-repeat center center fixed;
     background-size:cover;
     display: table;
     height: 100%;

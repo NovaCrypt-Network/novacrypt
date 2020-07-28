@@ -9,7 +9,7 @@ body {
 .left {
     position: absolute;
     bottom: 0px;
-    left: 16px;
+    left: 0px;
 }
 .right {
     position: absolute;
@@ -132,7 +132,7 @@ textarea {
     transition: .8s ease;
     width: 20%;
     float: left;
-    height:95px;
+    height:.95%;
 }
 
 .btnn:hover {
@@ -189,6 +189,7 @@ button {
 
 .constant {
     font-family: 'Jost', sans-serif;
+
 }
 
 .box:hover {
@@ -673,10 +674,32 @@ hr.bruh {
     
     }
     .constant{
-     font-size:1.2em; 
+     font-size:1em; 
     }
-    .gif {
-  
+    .btnn {
+        margin: 0 3%;
+        background: #fff;
+        color: #000;
+        font-size: .75em;
+        padding: 1% 2.4%;
+        text-align: center;
+        text-transform: uppercase;
+        align-self: center;
+        border-radius: 5%;
+        cursor: pointer;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: .8s ease;
+        width: 40%;
+        float: left;
+        height: .5%;
+    }
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .small {
+        font-size: .5em;
     }
 
 }
@@ -686,6 +709,8 @@ hr.bruh {
         /* On small screens, we are no longer using row direction but column */
         flex-direction: column;
     }
+  
+
 }
 
 #stretch {

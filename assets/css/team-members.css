@@ -101,11 +101,11 @@ section#executive .card:nth-child(2) {
 
 .card .card-some {
     margin-left: 15px;
-    font-size: xx-large;
+    font-size: 2rem;
 }
 
 .card .card-name {
-    font-size: xxx-large;
+    font-size: 3rem;
 }
 
 .card .card-some i {
@@ -113,7 +113,7 @@ section#executive .card:nth-child(2) {
 }
 
 .card .card-position {
-    font-size: xx-large;
+    font-size: 2rem;
 }
 
 .card .card-description {
@@ -152,7 +152,7 @@ section#executive .card:nth-child(2) {
 
 .gototop-button i {
     padding: 25px;
-    font-size: xxx-large;
+    font-size: 3rem;
 }
 
 .stacked {

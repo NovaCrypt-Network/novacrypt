@@ -189,6 +189,7 @@ button {
 
 .constant {
     font-family: 'Jost', sans-serif;
+
 }
 
 .box:hover {
@@ -693,6 +694,13 @@ hr.bruh {
         float: left;
         height: .5%;
     }
+    .contact-box {
+        flex-direction: column;
+    }
+
+    .small {
+        font-size: .5em;
+    }
 
 }
 
@@ -701,6 +709,8 @@ hr.bruh {
         /* On small screens, we are no longer using row direction but column */
         flex-direction: column;
     }
+  
+
 }
 
 #stretch {

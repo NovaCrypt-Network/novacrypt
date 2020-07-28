@@ -109,6 +109,46 @@ input {
     padding-bottom: 5px;
 }
 
+.rgb {
+    position: relative;
+    margin: 20px auto 0;
+    width: 50%;
+    height: auto;
+    background-color: #0e0f12;
+}
+    .rgb:before,
+    .rgb:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094,#0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width:calc(100% + 4px);
+    height:calc(100% + 4px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    }
+
+    .rgb:after {
+    filter:blur(20px);
+    }
+
+@keyframes animate {
+
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
 textarea {
     width: 100%;
     border: 1px solid #ccc;
@@ -172,6 +212,14 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align:center;
+}
+.text-block2 {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .box {
@@ -391,6 +439,7 @@ body {
     margin-bottom: 0;
     text-align: center;
 }
+
 
 .about-2 {
     padding-top:15%;
@@ -657,25 +706,24 @@ hr.bruh {
     color: black;
 }
 
-@media all and (max-width: 500px) {
+
+@media all and (max-width: 600px) {
     .container3 {
         /* On small screens, we are no longer using row direction but column */
         flex-direction: column;
-
     }
-}
 
-@media all and (max-width: 600px) {
     .container {
         /* On small screens, we are no longer using row direction but column */
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
-    
     }
+
     .constant{
      font-size:1em; 
     }
+
     .btnn {
         margin: 0 3%;
         background: #fff;
@@ -688,30 +736,35 @@ hr.bruh {
         border-radius: 5%;
         cursor: pointer;
         font-weight: bold;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         transition: .8s ease;
         width: 40%;
         float: left;
         height: .5%;
     }
+
     .contact-box {
         flex-direction: column;
+    }
+
+    .gif2 {
+        height: 200px;
     }
 
     .small {
         font-size: .5em;
     }
-
-}
-
-@media all and (max-width: 500px) {
     .card-list {
         /* On small screens, we are no longer using row direction but column */
         flex-direction: column;
     }
-  
-
+    .btnn {
+        font-size: 1em;
+        width: 120px;
+        height: 45px;
+    }
 }
+
 
 #stretch {
     text-align: center;

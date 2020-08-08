@@ -25,16 +25,24 @@ img[src="assets/images/interstellarwave-01.png"] {
 
 .interstellar-link {
     display: flex;
+    background-color: #eb661e;
     color: white;
     justify-content: center;
-    margin: 0 10%;
+    margin: 40px 15%;
     font-size: 35px;
-    padding: 10px;
-    border: 1px solid #2a9fd6;
+    padding: 15px;
+    border: 1px solid #eb661e;
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s;
     font-weight: bolder;
+    margin-bottom: 80px;
+}
+
+.interstellar-link:hover {
+    background-color: #2a9fd6;
+    border: 1px solid #2a9fd9;
+    color: white;
 }
 
 @media only screen and (orientation: portrait) {

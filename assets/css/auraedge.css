@@ -103,16 +103,24 @@ section#video-graphic-content h2, section#challenges h2, section#archive h2 {
 
 .auraedge-link {
     display: flex;
+    background-color: #2a9fd6;
     color: white;
     justify-content: center;
-    margin: 0 10%;
+    margin: 40px 15%;
     font-size: 35px;
-    padding: 10px;
-    border: 1px solid #2a9fd6;
+    padding: 15px;
+    border: 1px solid #2a9fd9;
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s;
     font-weight: bolder;
+    margin-bottom: 80px;
+}
+
+.auraedge-link:hover {
+    border: 1px solid #ffc107;
+    background-color: #ffc107;
+    color: white;
 }
 
 @media only screen and (orientation: portrait) {

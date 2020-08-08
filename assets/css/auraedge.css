@@ -101,6 +101,20 @@ section#video-graphic-content h2, section#challenges h2, section#archive h2 {
     color: #ffffff;
 }
 
+.auraedge-link {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 0 10%;
+    font-size: 35px;
+    padding: 10px;
+    border: 1px solid #2a9fd6;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-weight: bolder;
+}
+
 @media only screen and (orientation: portrait) {
     section#join {
         flex-direction: column;

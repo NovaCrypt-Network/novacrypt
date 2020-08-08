@@ -23,6 +23,20 @@ img[src="assets/images/interstellarwave-01.png"] {
     width: 50%;
 }
 
+.interstellar-link {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 0 10%;
+    font-size: 35px;
+    padding: 10px;
+    border: 1px solid #2a9fd6;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    font-weight: bolder;
+}
+
 @media only screen and (orientation: portrait) {
     .container {
         justify-content: center;

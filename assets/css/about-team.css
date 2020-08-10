@@ -62,3 +62,7 @@ section img.normal {
         width: 85vw;
     }
 }
+
+.team-members{
+  list-style-type: none;
+}

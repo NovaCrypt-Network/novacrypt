@@ -37,6 +37,7 @@ img[src="assets/images/interstellarwave-01.png"] {
     transition: background 0.3s;
     font-weight: bolder;
     margin-bottom: 80px;
+    text-align: center;
 }
 
 .interstellar-link:hover {

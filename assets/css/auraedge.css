@@ -115,6 +115,7 @@ section#video-graphic-content h2, section#challenges h2, section#archive h2 {
     transition: background 0.3s;
     font-weight: bolder;
     margin-bottom: 80px;
+    text-align: center;
 }
 
 .auraedge-link:hover {

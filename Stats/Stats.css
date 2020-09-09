@@ -1,0 +1,19 @@
+.stat-holder{
+    background-color: #1d1e1f;
+}
+.right-border{
+    border-right: 2px dashed #00b8ff;
+}
+@media (min-width: 992px) {
+    .stat-numbers{
+        border-bottom: 2px solid #00b8ff;
+    }
+}
+@media (max-width: 425px) {
+    .stats h2{
+        font-size: 150%;
+    }
+    .stats h6{
+        font-size: 60%;
+    }
+}

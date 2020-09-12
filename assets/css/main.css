@@ -2,10 +2,6 @@ body {
     background:#030303;
 }
 
-.navbar.bg-dark {
-    background:none !important; /*background:rgba(6,6,6,.5)*/
-    border:none !important;
-}
 .left {
     position: absolute;
     bottom: 0px;
@@ -272,10 +268,6 @@ cursor:not-allowed;
     margin-bottom: 10%;
 }
 
-.navbar-collapse {
-    position:relative;right:10px
-}
-
 .hidden {
     display:none
 }
@@ -311,54 +303,6 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
-
-/* hovering navbar */
-.list-item:hover {
-    background-color: #666;
-    color: white;
-}
-
-.navbar-brand {
-    font-family: 'Jost', sans-serif;
-    font-size: 1.25em;
-}
-
-.navbar-nav .nav-item.active .nav-link,
-.navbar-nav .nav-item:hover .nav-link {
-    color: #2A9FD6;
-}
-
-.nav-item {
-    position:relative;
-}
-
-.subnav {
-    position:absolute;
-    left:-43px;
-    z-index:1000;
-    display:none;
-}
-
-.subnav ul li {
-    list-style:none;
-    display:block;
-    white-space: nowrap;
-    margin-bottom:10px
-}
-
-.subnav a {
-    color:#f2f2f2;
-    background:#060606;
-    padding:10px;
-}
-
-.nav-item:hover .subnav {
-    display:block;
-}
-
-.navbar-nav .nav-item .nav-link {
-    color: #f2f2f2;
-}
 
 .fade-in-left {
     animation:fade-in-left 1s ease-in
@@ -497,14 +441,6 @@ body {
     background-size: cover;
 }
 
-.navbar {
-    margin-top:20px!important
-}
-
-.nav-link {
-    font-size:17px;
-    padding-right:40px!important;
-}
 
 /* for About and Contact page */
 #about-header {
@@ -2171,3 +2107,73 @@ END
         padding:5px
     }
 }
+
+
+/*
+
+.navbar.bg-dark {
+    background:none !important; //background:rgba(6,6,6,.5)
+    border:none !important;
+}
+
+.navbar-collapse {
+    position:relative;right:10px
+}
+
+// hovering navbar
+.list-item:hover {
+    background-color: #666;
+    color: white;
+}
+
+.navbar-brand {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.25em;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #2A9FD6;
+}
+
+.nav-item {
+    position:relative;
+}
+
+.subnav {
+    position:absolute;
+    left:-43px;
+    z-index:1000;
+    display:none;
+}
+
+.subnav ul li {
+    list-style:none;
+    display:block;
+    white-space: nowrap;
+    margin-bottom:10px
+}
+
+.subnav a {
+    color:#f2f2f2;
+    background:#060606;
+    padding:10px;
+}
+
+.nav-item:hover .subnav {
+    display:block;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #f2f2f2;
+}
+
+.navbar {
+    margin-top:20px!important
+}
+
+.nav-link {
+    font-size:17px;
+    padding-right:40px!important;
+}
+*/

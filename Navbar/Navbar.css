@@ -1,10 +1,14 @@
 
-.navbar{
+.navbar {
   background-color: transparent;
   transition: 750ms ease;
 }
 
-.offcanvas-header{ display:none; }
+.navbar a:hover {
+  color: #2A9FD6;
+}
+
+.offcanvas-header { display:none; }
 
 .dropdown.show .dropdown-menu {
   max-height: 300px;

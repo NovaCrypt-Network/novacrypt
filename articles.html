@@ -28,9 +28,13 @@
 
         <!-- JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js" integrity="sha512-tBzZQxySO5q5lqwLWfu8Q+o4VkTcRGOeQGVQ0ueJga4A1RKuzmAu5HXDOXLEjpbKyV7ow9ympVoa6wZLEzRzDg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" integrity="sha512-rCjfoab9CVKOH/w/T6GbBxnAH5Azhy4+q1EXW5XEURefHbIkRbQ++ZR+GBClo3/d3q583X/gO4FKmOFuhkKrdA==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mapael/2.2.0/js/jquery.mapael.min.js" integrity="sha512-+iXNzFArGbqxdmbClb1f6MKIiZASR7H8ep6rS1ZFn2I7tRX400ApvS0nsG8/v1+F7RoGU2shMDTl/gZ5lZF1iw==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mapael/2.2.0/js/maps/world_countries.min.js" integrity="sha512-QGmaAYAgVbqkUFtLzXmKhaP52gAePFwe50bNkE0SbflQ4sm6mmdvufVnKnb5CNgRP2nW4ondofrZ++1dTEAJ4Q==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mapael/2.2.0/js/maps/world_countries_miller.min.js" integrity="sha512-/1y+twyr2NOw48Hl1Jc10HZ7QEIh3i3Dcdq0gLjEXNSy+JwGLiMIE58UzLI3KKxSJ5G/kJq4Q0oktgC2myyYFw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -39,10 +43,9 @@
         <link href="assets/css/articles.css" rel="stylesheet">
         <link href="assets/css/main.css" rel="stylesheet">
         <link href="assets/css/sticky-thing.css" rel="stylesheet">
-        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css'>
         <link href="assets/css/main.css" rel="stylesheet">
-        <link rel="stylesheet" href="Navbar/Navbar.css">
-        <link rel="stylesheet" href="Footer/Footer.css">
+        <link rel="stylesheet" href="other/Navbar/Navbar.css">
+        <link rel="stylesheet" href="other/Footer/Footer.css">
     </head>
     <body>
         <!-- STICKY BAR THIGNS -->
@@ -69,7 +72,7 @@
                 </div>
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown px-2">
-                        <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown"> About </a>
+                        <a class="nav-link dropdown-toggle text-white amber-lighter-hover" href="#" data-toggle="dropdown"> About </a>
                         <ul class="dropdown-menu dropdown-menu-right">
                         <li><a class="dropdown-item text-white" href="https://novacrypt.org/about.html"> About Us </a></li>
                             <li><a class="dropdown-item text-white" href="https://novacrypt.org/about-team.html"> About Our Community </a></li>
@@ -77,7 +80,7 @@
                             <li><a class="dropdown-item text-white" href="https://novacrypt.org/partnership.html"> About Out Partners </a></li>
                         </ul>
                     </li>
-                    <li class="nav-item px-2"><a class="nav-link text-white" href="https://novacrypt.org/papers.html"> Research & Projects </a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white amber-lighter-hover mb-3" href="https://novacrypt.org/papers.html"> Research & Projects </a></li>
                     <li class="nav-item px-2"><a class="nav-link text-white" href="https://novacrypt.org/blog.html"> Blog </a></li>
                     <li class="nav-item px-2"><a class="nav-link text-white" href="https://novacrypt.org/announcements.html">Announcements</a> </li>
                     <li class="nav-item dropdown pl-2">
@@ -127,5 +130,9 @@
             </div>
         </footer>
     </body>
-    <script src="Navbar/Navbar.js"></script>
+    <!-- JS -->
+    <!-- Not at all skidded from this link https://stackoverflow.com/questions/26694385/fade-in-on-scroll-down-fade-out-on-scroll-up-based-on-element-position-in-win -->
+    <script src="assets/js/not_skidded.js"></script>
+    <script src="other/Navbar/Navbar.js"></script>
+    <script src="other/Navbar/Navbar.js"></script>
 </html>

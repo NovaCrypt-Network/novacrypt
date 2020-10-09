@@ -1,0 +1,46 @@
+
+.navbar {
+  background-color: transparent;
+  transition: 750ms ease;
+}
+
+.navbar a:hover {
+  color: #2A9FD6;
+}
+
+.offcanvas-header { display:none; }
+
+.dropdown.show .dropdown-menu {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.navbar-brand {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.25em;
+}
+
+.btn-outline-primary{
+  border-color: #00b8ff ;
+}
+
+@media (max-width: 1200px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: black;
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}

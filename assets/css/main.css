@@ -458,7 +458,8 @@ body {
 /* for Projects page */
 
 #blog {
-    background: url("../images/blogbackground2.0.webp") no-repeat  center fixed;
+    /* background: url("../images/blogbackground2.0.webp") no-repeat  center fixed; */
+    background-color: black;
     background-size:contain;
     display: table;
     height: 100%;

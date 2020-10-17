@@ -8,6 +8,10 @@
     font-size: 20px;
 
 }
+#redirect-button-projects:hover{
+  background-color: grey;
+  color: white;
+}
 #redirect-main{
     color: white;
   /*  text-decoration: underline;
@@ -15,4 +19,8 @@
     border-bottom: 2px solid white;
     border-bottom-width: 1px;
     padding: 0px 0px 4px;
+}
+#redirect-main:hover{
+  color:rgb(16, 167, 218);
+  border-bottom: 2px solid rgb(16, 167, 218);
 }

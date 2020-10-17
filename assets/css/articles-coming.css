@@ -1,0 +1,15 @@
+#redirect-button-projects{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 2px;
+
+}
+#redirect-main{
+    color: white;
+  /*  text-decoration: underline;
+    -moz-text-decoration-line: ; */
+    border-bottom: 2px solid white;
+    border-bottom-width: 1px;
+    padding: 0px 0px 4px;
+}

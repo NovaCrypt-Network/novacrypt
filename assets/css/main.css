@@ -455,10 +455,24 @@ body {
 #aboutcontainer {
     position:relative;
 }
-/* for Projects page */
 
+/* for Blog page */
 #blog {
     /* background: url("../images/blogbackground2.0.webp") no-repeat  center fixed; */
+    background-color: black;
+    background-size:contain;
+    display: table;
+    height: 80%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* For Articles Coming Soon Page */
+#articles-comingmain {
     background-color: black;
     background-size:contain;
     display: table;

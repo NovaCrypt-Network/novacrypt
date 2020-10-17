@@ -1,0 +1,40 @@
+.popular{
+    margin:5% 15%;
+    display:flex;
+}
+#popular-image{
+    height: 50%;
+    width: 30%;
+    /* margin-left: 10%; */
+    float: left;
+    background-color: white;
+    flex: 1;
+}
+.pop{
+    height: 100%;
+    width: 100%;
+}
+#pop-text{
+    margin: auto;
+    padding-left: 3%;
+    text-align: left;
+    vertical-align: middle;
+    /* width: 70%; */
+    flex: 2;
+    /* float: right; */
+}
+.article{
+    height: 50%;
+    width: 50%;
+}
+.article-image{
+    height: 100%;
+    width: 100%;
+}
+.artim{
+    height: 100%;
+    width: 100%;
+}
+.article-text{
+    text-align: center;
+}

@@ -1,14 +1,14 @@
 .popular{
-    margin:5% 15%;
+    margin:10% 15%;
     display:flex;
 }
 #popular-image{
-    height: 50%;
-    width: 30%;
+    height: 70%;
+    width: 50%;
     /* margin-left: 10%; */
     float: left;
     background-color: white;
-    flex: 1;
+    /* flex: 1; */
 }
 .pop{
     height: 100%;
@@ -20,19 +20,19 @@
     text-align: left;
     vertical-align: middle;
     /* width: 70%; */
-    flex: 2;
-    /* float: right; */
+    /* flex: 2; */
+    float: right;
 }
-.article{
-    margin: 5% 15%;
-    display: block;
-    background-color: grey;
+#articles-section{
+    margin: 10% 10%;
+    /* display: flex; */
 }
 .article-image{
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 .artim{
     height: 100%;
@@ -40,5 +40,24 @@
 
 }
 .article-text{
-    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+    display: block;
+}
+#article-1{
+    width: 33%;
+    float: left;
+}
+#article-2{
+    width: 33%;
+    float: left;
+}
+#article-3{
+    width: 33%;
+    float: left;
+}
+.category{
+    /* border-bottom: 2px solid white; */
+    text-decoration: underline white;
 }

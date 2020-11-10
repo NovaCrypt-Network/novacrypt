@@ -1,5 +1,5 @@
 .popular{
-    margin:10% 15%;
+    margin:5% 15%;
     display:flex;
 }
 #popular-image{
@@ -57,7 +57,24 @@
     width: 33%;
     float: left;
 }
-.category{
+.topic{ 
     /* border-bottom: 2px solid white; */
     text-decoration: underline white;
+}
+.category{
+    float: left;
+    width: 12.5%;
+    /* padding: 5px; */
+}
+.bubble{   
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    border: 3px solid cyan;
+    margin-left:15%;
+    margin-right: 15%;
+}
+#categories{
+    margin: 5% 15%;
+    display: table;
 }

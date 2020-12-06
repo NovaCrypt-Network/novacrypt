@@ -105,3 +105,10 @@ background-color: white;
     display: table;
     border: 2px solid white;
 }
+.card-color{
+    background-color: black;
+}
+.vertical-space{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

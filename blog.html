@@ -89,43 +89,97 @@
                 </div>
             </div>
         </nav>
-        <div class="container vertical-space">
-            <div class="row">
-                <div class="col-md-5">
-                    <img class="pop" src="assets/images/article sample.jpeg">
-                </div>
-                <div class="col-md-7" style="margin: auto;">
-                    <h4 style="text-decoration: underline white;">Popular Post</h4><br>
-                    <h4>Our Blog</h4><br>
-                    <h5>This is our first blog about research, projects, and organizations. Please check this out. We will update by weekly basis.</h5>
-                </div>
-            </div> 
+        <div class="container-fluid vertical-space">
+          <div class="row d-none d-lg-flex justify-content-center">
+            <div class="col-sm-1">
+              <img src="SVG/Artemis.svg" class="rounded-circle category-picture">
+            </div>
+            <div class="col-sm-1">
+              <img src="assets/images/article sample.jpeg" class="rounded-circle category-picture">
+            </div>
+            <div class="col-sm-1">
+              <img src="assets/images/article sample.jpeg" class="rounded-circle category-picture">
+            </div>
+            <div class="col-sm-1">
+              <img src="assets/images/article sample.jpeg" class="rounded-circle category-picture">
+            </div>
+            <div class="col-sm-1">
+              <img src="assets/images/article sample.jpeg" class="rounded-circle category-picture">
+            </div>
+            <div class="col-sm-1">
+              <img src="assets/images/article sample.jpeg" class="rounded-circle category-picture">
+            </div>
+            <div class="col-sm-1">
+              <img src="assets/images/article sample.jpeg" class="rounded-circle category-picture">
+            </div>
+            <div class="col-sm-1">
+              <img src="assets/images/article sample.jpeg" class="rounded-circle category-picture">
+            </div>
+          </div>
+          <div class="row d-flex d-lg-none justify-content-center">
+            <h1>test</h1>
+          </div>
         </div>
-        <div class="container vertical-space">
+        <div class="container-fluid vertical-space horizontal-space">
+          <div class="container-fluid mx-0 d-none d-lg-block popular">
+            <div class = "row my-5 mx-0 d-flex justify-content-center stat-holder">
+                <div class="col-12 mx-0">
+                    <div class="container-fluid mx-0">
+                        <div class="row mx-0">
+                            <div class="col-12 col-lg-4 mx-0">
+                                <img class="img-fluid rounded" src="assets/images/article sample.jpeg" alt="{{Primary.thumbnail_desc}}">
+                            </div>
+                            <div class="col-12 col-lg-8 mx-0">
+                                <h2><a class="article" href="/Blog/Article/{{Primary.slug}}">{{Primary.title}}</a></h2>
+                                <h5>Posted by <a class="article" href="/Blog/Author/{{Primary.owner.username}}">{{Primary.owner.first_name|title}} {{Primary.owner.last_name|title}}</a> on {{Primary.first_published_at}}</h5>
+                                <h5><a class="article" href="/Blog/Category/{{Primary.category}}">{{Primary.category}}</a></h5>
+                                <h6>{{Primary.short_description}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container-fluid mx-0 d-lg-none popular">
+            <div class="row d-flex mt-5 justify-content-center">
+                <div class="col-10 col-md-6 col-lg-3 card d-flex special-card" style="width: 18rem;">
+                    <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Primary.thumbnail_desc}}">
+                    <div class="card-body">
+                        <h5 class="card-title"><a class="article" href="/Blog/Article/{{Primary.slug}}">{{Primary.title}}</a></h5>
+                        <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Primary.owner.username}}">{{Primary.owner.first_name|title}} {{Primary.owner.last_name|title}}</a> on {{Primary.first_published_at}}</p>
+                        <p class="card-text"><a class="article" href="/Blog/Category/{{Primary.category}}">{{Primary.category}}</a></p> 
+                        <p class="card-text">{{Primary.short_description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div class="container-fluid vertical-space horizontal-space">
             <div class="card-deck">
-                <div class="card text-white card-color">
+                <div class="card text-white main-color">
                   <img class="card-img-top" src="assets/images/article sample.jpeg">
                   <div class="card-body">
                     <h5 class="card-title">Category</h5>
-                    <h5 class="card-title">Card title</h5>
+                    <h4 class="card-title">Card title</h4>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                   </div>
                 </div>
-                <div class="card text-white card-color">
+                <div class="card text-white main-color">
                   <img class="card-img-top" src="assets/images/article sample.jpeg">
                   <div class="card-body">
                     <h5 class="card-title">Category</h5>
-                    <h5 class="card-title">Card title</h5>
+                    <h4 class="card-title">Card title</h4>
                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                     <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                   </div>
                 </div>
-                <div class="card text-white card-color">
+                <div class="card text-white main-color">
                   <img class="card-img-top" src="assets/images/article sample.jpeg">
                   <div class="card-body">
                     <h5 class="card-title">Category</h5>
-                    <h5 class="card-title">Card title</h5>
+                    <h4 class="card-title">Card title</h4>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                     <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                   </div>
@@ -133,9 +187,9 @@
             </div>
         </div>
 
-        <div class="container" style="padding-top: 100px;">
+        <div class="container-fluid vertical-space horizontal-space">
             <div class="card-deck">
-                <div class="card text-white card-color">
+                <div class="card text-white card-color mb-3">
                   <img class="card-img-top" src="assets/images/article sample.jpeg">
                   <div class="card-body">
                     <h5 class="card-title">Category</h5>
@@ -144,7 +198,7 @@
                     <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                   </div>
                 </div>
-                <div class="card text-white card-color">
+                <div class="card text-white card-color mb-3">
                   <img class="card-img-top" src="assets/images/article sample.jpeg">
                   <div class="card-body">
                     <h5 class="card-title">Category</h5>
@@ -153,7 +207,7 @@
                     <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                   </div>
                 </div>
-                <div class="card text-white card-color">
+                <div class="card text-white card-color mb-3">
                   <img class="card-img-top" src="assets/images/article sample.jpeg">
                   <div class="card-body">
                     <h5 class="card-title">Category</h5>
@@ -164,9 +218,9 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container-fluid horizontal-space">
             <div class="card-deck">
-                <div class="card text-white card-color">
+                <div class="card text-white card-color mb-3">
                   <img class="card-img-top" src="assets/images/article sample.jpeg">
                   <div class="card-body">
                     <h5 class="card-title">Category</h5>
@@ -175,7 +229,7 @@
                     <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                   </div>
                 </div>
-                <div class="card text-white card-color">
+                <div class="card text-white card-color mb-3">
                   <img class="card-img-top" src="assets/images/article sample.jpeg">
                   <div class="card-body">
                     <h5 class="card-title">Category</h5>
@@ -184,7 +238,7 @@
                     <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                   </div>
                 </div>
-                <div class="card text-white card-color">
+                <div class="card text-white card-color mb-3">
                   <img class="card-img-top" src="assets/images/article sample.jpeg">
                   <div class="card-body">
                     <h5 class="card-title">Category</h5>

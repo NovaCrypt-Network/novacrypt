@@ -10,10 +10,10 @@
     background-color: white;
     /* flex: 1; */
 }
-.pop{
-    height: 100%;
-    width: 100%;
-}
+/* .pop{
+    height: 100px;
+    width: 100px;
+} */
 #pop-text{
     margin: auto;
     padding-left: 3%;
@@ -107,8 +107,25 @@ background-color: white;
 }
 .card-color{
     background-color: black;
+    border: 2px solid cyan;
+}
+.main-color{
+    background-color: black;
 }
 .vertical-space{
     padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
+.horizontal-space{
+    padding-left: 100px;
+    padding-right: 100px;
+} 
+.category-picture{
+    height: 100px;
+    width: 100px;
+    border: 2px solid cyan;
+}
+/* .category-space{
+    padding-left: 50px;
+    padding-right: 50px;
+} */

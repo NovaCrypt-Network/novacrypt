@@ -1,7 +1,7 @@
-.popular{
+/* .popular{
     margin:5% 15%;
-    display:flex;
-}
+    display:flex; */
+/* } */
 #popular-image{
     height: 70%;
     width: 50%;
@@ -121,11 +121,120 @@ background-color: white;
     padding-right: 100px;
 } 
 .category-picture{
-    height: 100px;
-    width: 100px;
+    /* height: 100px;
+    width: 100px; */
     border: 2px solid cyan;
 }
 /* .category-space{
     padding-left: 50px;
     padding-right: 50px;
 } */
+
+body {
+    background: #030303;
+}
+.special-card {
+    /* create a custom class so you 
+       do not run into specificity issues 
+       against bootstraps styles
+       which tends to work better than using !important 
+       (future you will thank you later)*/
+    
+      background-color: rgba(245, 245, 245, 0);
+}
+.popular{
+    margin-top:10%;
+}
+.Category{
+    font-size: 5vw;
+}
+.thumbnail_desc{
+    font-size: larger;
+}
+.avatar{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+}
+@media (max-width: 1023px){
+    .popular{
+        margin-top:12%;
+    }
+    .Category{
+        font-size: 10vw;
+    }
+}
+@media (max-width: 767px){
+    .popular{
+        margin-top:30%;
+    }
+    .Category{
+        font-size: 15vw;
+    }
+    .thumbnail_desc{
+        font-size: small;
+    }
+    .avatar{
+        height: 75px;
+        width: 75px;
+    }
+}
+h1,h2,h3,h4,h5,h6,p {
+    color: white;
+    font-family: 'Comfortaa';
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+a.article
+{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid wheat;
+}
+a.article:hover{
+    color: wheat;
+}
+/*
+For if we want it to grow the underline with color.
+
+a.article:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: wheat;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+a.article:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+*/
+
+.block-image img{
+    width:100%;
+    height: auto;
+}
+.block-embed div{
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    height:0;
+    position: relative;
+}
+.block-embed div iframe{
+    width:100%;
+    height: 100%;
+    position: absolute;
+}

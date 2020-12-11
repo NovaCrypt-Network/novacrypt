@@ -1,0 +1,278 @@
+body {
+    background:	#01587f;
+}
+
+/* for About and Contact page */
+#aboutcontact {
+    background: url("../images/whowearetree-01.jpg") no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* for About and Contact page */
+#about-header {
+    text-shadow: 2px 2px 5px black;
+}
+
+#projectsheader {
+    font-family:'Jost';
+    color:#fe330a;
+}
+
+#aboutcontainer {
+    position:relative;
+}
+/* for Projects page */
+
+#blog {
+    background: url("../images/blogbackground2.0.webp") no-repeat  center fixed;
+    background-size:contain;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* for Projects page */
+#projectmain {
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* for Projects page */
+#projectmediair {
+    background: url("../images/projectmediair.png") no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* for Interstellar page */
+#interstellarmain {
+    background: url("../images/ibg.webp") no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* for AuraEdge page */
+#auramain {
+    background: url("../images/auraedge_1.jpg") no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* for AuraEdge page */
+#covidmain {
+    background: url("../images/covid19.png") no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#disclogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#aboutimage {
+    position:absolute;
+    right:10px;
+    top:10px;
+    height:575px;
+    width:550px;
+    object-fit:none;
+}
+
+#aboutlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footerdown {
+    margin-top: 70px;
+}
+#footerlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#stretch {
+    text-align: center;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2A9FD6;
+}
+
+.no-decor li {
+    list-style: none;
+}
+
+.no-decor {
+    margin: 0;
+    padding: 0;
+}
+
+h5 a {
+    color: #fff;
+    text-align: center;
+}
+
+/* Profile Cards */
+
+
+#footlogo {
+    max-height: 30px;
+    width: auto;
+}
+.navbar {
+    background-color: #1d1e1f;
+    transition: 750ms ease;
+  }
+  
+  .navbar a:hover {
+    color: #2A9FD6;
+  }
+  
+  .offcanvas-header { display:none; }
+  
+  .dropdown.show .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
+  }
+  
+  .navbar-brand {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.25em;
+  }
+  
+  .btn-outline-primary{
+    border-color: #00b8ff ;
+  }
+.mvisible {
+    display: none;
+}
+.mhidden {
+    display: block;
+}
+.imagge1 {
+    display: block;
+}
+.imagge2 {
+    display: none;
+}
+.form-control {
+    background-color: transparent;
+    border: solid #0c86b2;
+    color: #ffffff;
+    margin-top: 20px;
+    border-radius: 40px;
+}
+.login-form {
+    min-width: 30%;
+    width: 60%;
+}
+.submit {
+    border: solid #15ab78;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: transparent;
+    margin-left: 15px;
+}
+.divider1 {
+    color: #0c86b2;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form {
+    width: 100%;
+}
+.divider1 > hr{
+    background-color: #0c86b2 !important;
+    opacity: 0.9;
+}
+@media only screen and (max-width: 1200px) {
+    .mvisible {
+        display: block;
+    }
+    .mhidden {
+        display: none;
+    }
+    .imagge2 {
+        display: block;
+    }
+    .imagge1 {
+        display: none;
+    }
+    .offcanvas-header{ display:block; }
+    .navbar-collapse {
+      position: fixed;
+      top:0; 
+      bottom: 0;
+      left: 100%;
+      width: 100%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color: black;
+      transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    }
+    .navbar-collapse.show {
+      visibility: visible;
+      transform: translateX(-100%);
+    }
+}

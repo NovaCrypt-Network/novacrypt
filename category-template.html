@@ -1,8 +1,7 @@
-﻿<!-- Matthew and Samantha -->
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
-        <title>Blog | NovaCrypt</title>
+        <title>Category | NovaCrypt</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta property="og:site_name" content="Welcome to NovaCrypt">
@@ -41,7 +40,7 @@
         <link href="assets/css/main.css" rel="stylesheet">
         <link href="assets/css/sticky-thing.css" rel="stylesheet">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css'>
-        <link href="assets/css/scrollbar.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
         <link rel="stylesheet" href="Navbar/Navbar.css">
         <link rel="stylesheet" href="Footer/Footer.css">
         <link rel="stylesheet" href="assets/css/blog.css">
@@ -91,85 +90,17 @@
             </div>
         </nav>
         <div class="container-fluid vertical-space">
-          <div class="row d-none d-lg-flex justify-content-center toppad">
-            <div class="col-1 mx-xl-3">
-                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture" title="category"></a>
+            <div class="row d-flex justify-content-center mx-5">
+                <div class="col-10 d-none d-md-block border-bottom border-primary">
+                    <h1 class="display-1 text-primary ">Science</h1>
+                </div>
+                <div class="col-md-4 d-md-none border-bottom border-primary">
+                    <h4 class="text-primary">Science</h4>
+                </div>
             </div>
-            <div class="col-1 mx-xl-3">
-                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture" title="{{category}}"></a>
-            </div>
-            <div class="col-1 mx-xl-3">
-                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture" title="{{category}}"></a>
-            </div>
-            <div class="col-1 mx-xl-3">
-                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture" title="{{category}}"></a>
-            </div>
-            <div class="col-1 mx-xl-3">
-                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture" title="{{category}}"></a>
-            </div>
-            <div class="col-1 mx-xl-3">
-                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture" title="{{category}}"></a>
-            </div>
-            <div class="col-1 mx-xl-3">
-                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture" title="{{category}}"></a>
-            </div>
-            <div class="col-1 mx-xl-3">
-                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture" title="{{category}}"></a>
-            </div>
-            
-          </div>
         </div>
-        <div class="container-fluid d-flex d-lg-none justify-content-center">
-          <div class="dropdown ">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-              Categories
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">category name</a></li>
-              <li><a class="dropdown-item" href="#">category name</a></li>
-              <li><a class="dropdown-item" href="#">category name</a></li>
-              <li><a class="dropdown-item" href="#">category name</a></li>
-              <li><a class="dropdown-item" href="#">category name</a></li>
-              <li><a class="dropdown-item" href="#">category name</a></li>
-              <li><a class="dropdown-item" href="#">category name</a></li>
-              <li><a class="dropdown-item" href="#">category name</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="container-fluid mx-0 d-none d-lg-block popular ">
-          <div class = "row my-5 mx-5 d-flex justify-content-center stat-holder">
-              <div class="col-12 mx-0">
-                  <div class="container-fluid mx-5">
-                      <div class="row mx-5">
-                          <div class="col-12 col-lg-4 mx-0">
-                              <img class="img-fluid rounded" src="assets/images/article sample.jpeg" alt="{{Primary.thumbnail_desc}}">
-                          </div>
-                          <div class="col-12 col-lg-8 mx-0">
-                              <h2><a class="article" href="/Blog/Article/{{Primary.slug}}">{{Primary.title}}</a></h2>
-                              <h5>Posted by <a class="article" href="/Blog/Author/{{Primary.owner.username}}">{{Primary.owner.first_name|title}} {{Primary.owner.last_name|title}}</a> on {{Primary.first_published_at}}</h5>
-                              <h5><a class="article" href="/Blog/Category/{{Primary.category}}">{{Primary.category}}</a></h5>
-                              <h6>{{Primary.short_description}}</h6>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="container-fluid mx-0 d-lg-none">
-          <div class="row d-flex mt-5 justify-content-center">
-              <div class="col-10 col-md-6 col-lg-3 card d-flex special-card" style="width: 18rem;">
-                  <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Primary.thumbnail_desc}}">
-                  <div class="card-body">
-                      <h5 class="card-title"><a class="article" href="/Blog/Article/{{Primary.slug}}">{{Primary.title}}</a></h5>
-                      <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Primary.owner.username}}">{{Primary.owner.first_name|title}} {{Primary.owner.last_name|title}}</a> on {{Primary.first_published_at}}</p>
-                      <p class="card-text"><a class="article" href="/Blog/Category/{{Primary.category}}">{{Primary.category}}</a></p> 
-                      <p class="card-text">{{Primary.short_description}}</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-    <div class="container-fluid mx-0 skew">
-        <div class="row d-flex mt-5 justify-content-center ARTICLE_HOLDER wrap" data-version="0" >
+      <div class="container-fluid mx-0">
+        <div class="row d-flex mt-5 justify-content-center ARTICLE_HOLDER" data-version="0" >
             <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card" style="width: 16rem;" data-id="{{Blog.pk}}">
                 <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
                 <div class="card-body">
@@ -197,59 +128,35 @@
                 <p class="card-text">{{Blog.short_description}}</p>
             </div>
           </div>
+          <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card" style="width: 16rem;" data-id="{{Blog.pk}}">
+            <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
+            <div class="card-body">
+                <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
+                <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
+                <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
+                <p class="card-text">{{Blog.short_description}}</p>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card" style="width: 16rem;" data-id="{{Blog.pk}}">
+            <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
+            <div class="card-body">
+                <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
+                <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
+                <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
+                <p class="card-text">{{Blog.short_description}}</p>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card" style="width: 16rem;" data-id="{{Blog.pk}}">
+            <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
+            <div class="card-body">
+                <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
+                <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
+                <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
+                <p class="card-text">{{Blog.short_description}}</p>
+            </div>
+          </div>
         </div>
     </div>
-    </div>
-    <div class="container-fluid mx-0 vertical-space skew2 css-selector">
-      <div class="row d-flex mt-5 justify-content-center ARTICLE_HOLDER wrap2" data-version="0" >
-          <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card outline" style="width: 16rem;" data-id="{{Blog.pk}}">
-              <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
-              <div class="card-body">
-                  <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
-                  <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
-                  <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
-                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cupiditate vero fuga asperiores quam qui molestiae pariatur, provident repellendus hic inventore culpa laboriosam aliquam, dolorum minima nesciunt illo. Ex, laboriosam.</p>
-              </div>
-          </div>
-          <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card outline" style="width: 16rem;" data-id="{{Blog.pk}}">
-            <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
-            <div class="card-body">
-                <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
-                <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
-                <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
-                <p class="card-text">{{Blog.short_description}}</p>
-            </div>
-        </div>
-        <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card outline" style="width: 16rem;" data-id="{{Blog.pk}}">
-          <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
-          <div class="card-body">
-              <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
-              <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
-              <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
-              <p class="card-text">{{Blog.short_description}}</p>
-          </div>
-        </div>
-        <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card outline" style="width: 16rem;" data-id="{{Blog.pk}}">
-            <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
-            <div class="card-body">
-                <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
-                <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
-                <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
-                <p class="card-text">{{Blog.short_description}}</p>
-            </div>
-          </div>
-          <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card outline" style="width: 16rem;" data-id="{{Blog.pk}}">
-            <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
-            <div class="card-body">
-                <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
-                <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
-                <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
-                <p class="card-text">{{Blog.short_description}}</p>
-            </div>
-          </div>
-        </div>
-  </div>
-
         <!-- Footer -->
         <footer class="page-footer text-white ">
             <div class="container-fluid">

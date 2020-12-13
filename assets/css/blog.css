@@ -123,7 +123,11 @@ background-color: white;
 .category-picture{
     /* height: 100px;
     width: 100px; */
+    transition: transform 0.5s;
     border: 2px solid cyan;
+}
+.category-picture:hover{
+    transform: scale(1.5);
 }
 /* .category-space{
     padding-left: 50px;
@@ -131,7 +135,7 @@ background-color: white;
 } */
 
 body {
-    background: #030303;
+    background: black;
 }
 .special-card {
     /* create a custom class so you 
@@ -140,10 +144,10 @@ body {
        which tends to work better than using !important 
        (future you will thank you later)*/
     
-      background-color: rgba(245, 245, 245, 0);
+      background-color: black;
 }
 .popular{
-    margin-top:10%;
+    padding-top: 50px;
 }
 .Category{
     font-size: 5vw;
@@ -159,7 +163,7 @@ body {
 }
 @media (max-width: 1023px){
     .popular{
-        margin-top:12%;
+        margin-top:1%;
     }
     .Category{
         font-size: 10vw;
@@ -167,7 +171,7 @@ body {
 }
 @media (max-width: 767px){
     .popular{
-        margin-top:30%;
+        margin-top:1%;
     }
     .Category{
         font-size: 15vw;
@@ -237,4 +241,62 @@ a.article:hover:before {
     width:100%;
     height: 100%;
     position: absolute;
+}
+.skew{
+    padding-bottom: 100px;
+    /* padding: 100px 0; */
+    transform: skew(0deg, 5deg);
+}
+
+.wrap{
+    padding: 10px 10px;
+    padding-bottom: 100px;
+    transform: skew(0deg, -5deg);
+}
+.skew2{
+    padding: 200px 0;
+    background: #00587e;
+    /* transform: skew(0deg, 5deg) translateY(-120px); */
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+@media (max-width:992px){
+    .skew2{
+        padding: 100px 0;
+        clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%);
+    }
+}
+.wrap2{
+    /* transform: skew(0deg, -5deg); */
+    padding-top: 50px;
+    padding: 10px 10px;
+}
+.toppad{
+    padding-top: 50px;
+}
+.outline{
+    border: solid 2px #00b8ff;
+}
+.css-selector {
+    background: linear-gradient(270deg, #00b8ff, #00415a);
+    background-size: 400% 400%;
+
+    -webkit-animation: Background 30s ease infinite;
+    -moz-animation: Background 30s ease infinite;
+    animation: Background 30s ease infinite;
+}
+
+@-webkit-keyframes Background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }

@@ -91,31 +91,32 @@
             </div>
         </nav>
         <div class="container-fluid vertical-space">
-          <div class="row d-none d-lg-flex justify-content-center">
+          <div class="row d-none d-lg-flex justify-content-center toppad">
             <div class="col-1 mx-xl-3">
-              <img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture">
+                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture"></a>
             </div>
             <div class="col-1 mx-xl-3">
-              <img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture">
+                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture"></a>
             </div>
             <div class="col-1 mx-xl-3">
-              <img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture">
+                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture"></a>
             </div>
             <div class="col-1 mx-xl-3">
-              <img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture">
+                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture"></a>
             </div>
             <div class="col-1 mx-xl-3">
-              <img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture">
+                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture"></a>
             </div>
             <div class="col-1 mx-xl-3">
-              <img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture">
+                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture"></a>
             </div>
             <div class="col-1 mx-xl-3">
-              <img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture">
+                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture"></a>
             </div>
             <div class="col-1 mx-xl-3">
-              <img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture">
+                <a href="#"><img src="SVG/Artemis.svg" class="rounded-circle img-fluid category-picture"></a>
             </div>
+            
           </div>
         </div>
         <div class="container-fluid d-flex d-lg-none justify-content-center">
@@ -135,11 +136,11 @@
             </ul>
           </div>
         </div>
-        <div class="container-fluid mx-0 d-none d-lg-block popular">
-          <div class = "row my-5 mx-0 d-flex justify-content-center stat-holder">
+        <div class="container-fluid mx-0 d-none d-lg-block popular ">
+          <div class = "row my-5 mx-5 d-flex justify-content-center stat-holder">
               <div class="col-12 mx-0">
-                  <div class="container-fluid mx-0">
-                      <div class="row mx-0">
+                  <div class="container-fluid mx-5">
+                      <div class="row mx-5">
                           <div class="col-12 col-lg-4 mx-0">
                               <img class="img-fluid rounded" src="assets/images/article sample.jpeg" alt="{{Primary.thumbnail_desc}}">
                           </div>
@@ -154,7 +155,7 @@
               </div>
           </div>
       </div>
-      <div class="container-fluid mx-0 d-lg-none popular">
+      <div class="container-fluid mx-0 d-lg-none">
           <div class="row d-flex mt-5 justify-content-center">
               <div class="col-10 col-md-6 col-lg-3 card d-flex special-card" style="width: 18rem;">
                   <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Primary.thumbnail_desc}}">
@@ -167,18 +168,18 @@
               </div>
           </div>
       </div>
-      <div class="container-fluid mx-0">
-        <div class="row d-flex mt-5 justify-content-center ARTICLE_HOLDER" data-version="0">
-            <div class="col-10 col-md-6 col-lg-4 mt-5 mt-lg-3 card d-flex special-card" style="width: 18rem;" data-id="{{Blog.pk}}">
+    <div class="container-fluid mx-0 skew">
+        <div class="row d-flex mt-5 justify-content-center ARTICLE_HOLDER wrap" data-version="0" >
+            <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card" style="width: 16rem;" data-id="{{Blog.pk}}">
                 <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
                 <div class="card-body">
                     <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
                     <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
                     <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
-                    <p class="card-text">{{Blog.short_description}}</p>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cupiditate vero fuga asperiores quam qui molestiae pariatur, provident repellendus hic inventore culpa laboriosam aliquam, dolorum minima nesciunt illo. Ex, laboriosam.</p>
                 </div>
             </div>
-            <div class="col-10 col-md-6 col-lg-4 mt-5 mt-lg-3 card d-flex special-card" style="width: 18rem;" data-id="{{Blog.pk}}">
+            <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card" style="width: 16rem;" data-id="{{Blog.pk}}">
               <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
               <div class="card-body">
                   <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
@@ -187,7 +188,7 @@
                   <p class="card-text">{{Blog.short_description}}</p>
               </div>
           </div>
-          <div class="col-10 col-md-6 col-lg-4 mt-5 mt-lg-3 card d-flex special-card" style="width: 18rem;" data-id="{{Blog.pk}}">
+          <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card" style="width: 16rem;" data-id="{{Blog.pk}}">
             <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
             <div class="card-body">
                 <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
@@ -196,20 +197,21 @@
                 <p class="card-text">{{Blog.short_description}}</p>
             </div>
           </div>
-          </div>
+        </div>
     </div>
-    <div class="container-fluid mx-0 vertical-space slash">
-      <div class="row d-flex mt-5 justify-content-center ARTICLE_HOLDER" data-version="0">
-          <div class="col-10 col-md-6 col-lg-4 mt-5 mt-lg-3 card d-flex special-card" style="width: 18rem;" data-id="{{Blog.pk}}">
+    </div>
+    <div class="container-fluid mx-0 vertical-space skew2 css-selector">
+      <div class="row d-flex mt-5 justify-content-center ARTICLE_HOLDER wrap2" data-version="0" >
+          <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card outline" style="width: 16rem;" data-id="{{Blog.pk}}">
               <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
               <div class="card-body">
                   <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
                   <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
                   <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
-                  <p class="card-text">{{Blog.short_description}}</p>
+                  <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cupiditate vero fuga asperiores quam qui molestiae pariatur, provident repellendus hic inventore culpa laboriosam aliquam, dolorum minima nesciunt illo. Ex, laboriosam.</p>
               </div>
           </div>
-          <div class="col-10 col-md-6 col-lg-4 mt-5 mt-lg-3 card d-flex special-card" style="width: 18rem;" data-id="{{Blog.pk}}">
+          <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card outline" style="width: 16rem;" data-id="{{Blog.pk}}">
             <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
             <div class="card-body">
                 <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
@@ -218,7 +220,7 @@
                 <p class="card-text">{{Blog.short_description}}</p>
             </div>
         </div>
-        <div class="col-10 col-md-6 col-lg-4 mt-5 mt-lg-3 card d-flex special-card" style="width: 18rem;" data-id="{{Blog.pk}}">
+        <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card outline" style="width: 16rem;" data-id="{{Blog.pk}}">
           <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
           <div class="card-body">
               <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
@@ -227,9 +229,27 @@
               <p class="card-text">{{Blog.short_description}}</p>
           </div>
         </div>
+        <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card outline" style="width: 16rem;" data-id="{{Blog.pk}}">
+            <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
+            <div class="card-body">
+                <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
+                <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
+                <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
+                <p class="card-text">{{Blog.short_description}}</p>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card outline" style="width: 16rem;" data-id="{{Blog.pk}}">
+            <img class="card-img-top rounded" src="assets/images/article sample.jpeg" alt="{{Blog.thumbnail_desc}}">
+            <div class="card-body">
+                <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
+                <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
+                <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
+                <p class="card-text">{{Blog.short_description}}</p>
+            </div>
+          </div>
         </div>
   </div>
-    
+
         <!-- Footer -->
         <footer class="page-footer text-white ">
             <div class="container-fluid">

@@ -1,0 +1,29 @@
+#redirect-button-projects{
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #00b8ff;
+    border-radius: 5px;
+    width: 200px;
+    height:50px;
+    font-size: 20px;
+
+
+}
+#redirect-button-projects:hover{
+  background-color: white;
+  border: 2px solid white;
+  color: black;
+}
+#redirect-main{
+    color: white;
+  /*  text-decoration: underline;
+    -moz-text-decoration-line: ; */
+    border-bottom: 2px solid white;
+    border-bottom-width: 1px;
+    padding: 0px 0px 4px;
+}
+#redirect-main:hover{
+  color:#00b8ff;
+  border-bottom: 2px solid #00b8ff;
+}

@@ -47,45 +47,58 @@
     </head>
     <body style="background-color: #0e0f12">
         <!-- Navagation Bar -->
-        <nav class="navbar navbar-expand-xl fixed-top navbar-dark">
-            <div class = "container-fluid pt-3">
-                <a class="navbar-brand d-flex align-self-center" href="https://novacrypt.org/index.html"><img src="https://novacrypt.org/assets/images/novacrypt.png" class="d-inline-block mr-1" style="width: auto; height: 32px;">NOVACRYPT</a>
-                <button class="navbar-toggler" type="button" data-trigger="#main_nav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse" id="main_nav">
-                <div class="offcanvas-header mt-3">  
-                    <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
-                    <h5 class="py-2 text-white">Menu</h5>
-                </div>
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown px-2">
-                        <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown"> About </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                        <li><a class="dropdown-item text-white" href="https://novacrypt.org/about.html"> About Us </a></li>
-                            <li><a class="dropdown-item text-white" href="https://novacrypt.org/about-team.html"> About Our Community </a></li>
-                            <li><a class="dropdown-item text-white" href="https://novacrypt.org/team-members.html"> About Our Team </a></li>
-                            <li><a class="dropdown-item text-white" href="https://novacrypt.org/partnership.html"> About Out Partners </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item px-2"><a class="nav-link text-white" href="https://novacrypt.org/papers.html"> Research & Projects </a></li>
-                    <li class="nav-item px-2"><a class="nav-link text-white" href="https://an.novacrypt.org/blog"> Blog </a></li>
-                    <li class="nav-item px-2"><a class="nav-link text-white" href="https://an.novacrypt.org/announcements">Announcements</a> </li>
-                    <li class="nav-item dropdown pl-2">
-                        <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown"> Subsidiaries </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a class="dropdown-item text-white" href="https://novacrypt.org/auraedge.html"> AuraEdge </a></li>
-                            <li><a class="dropdown-item text-white" href="https://novacrypt.org/covid-19.html"> COVID-19 </a></li>
-                            <li><a class="dropdown-item text-white" href="https://novacrypt.org/interinit.html"> Interstellar Initiative </a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item px-2"><a class="nav-link text-white" href="https://novacrypt.org/contact.html"> Contact </a></li>
-                    <li class="nav-item px-2"><a class="nav-link text-white" href="https://novacrypt.org/support.html"> Support Us </a></li>
-                    <li class="nav-item px-2"><a class="nav-link text-white" href="https://novacrypt.org/login.html"> Login </a></li>
-                    <li class="nav-item px-1"><a class="nav-link btn btn-outline-primary text-white" href="https://discord.gg/hu2jdsf"> Join Us </a></li>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent" id = "navbar" style="background-color: black;">
+            <a class="navbar-brand d-flex align-self-center" href="https://novacrypt.org/index.html" style="font-family: 'Jost', sans-serif;"><img src="https://novacrypt.org/assets/images/novacrypt.png" class="d-inline-block mr-1 d-lg-none" style="width: auto; height: 32px;">NOVACRYPT</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle d-inline-block" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+                      About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#262626;">
+                      <a class="dropdown-item" href="https://novacrypt.org/about.html">About Us</a>
+                      <a class="dropdown-item" href="https://novacrypt.org/about-team.html">Our Community</a>
+                      <a class="dropdown-item" href="https://novacrypt.org/team-members.html">Team Members</a>
+                      <a class="dropdown-item" href="https://novacrypt.org/partnership.html">Partners</a>
+                      <a class="dropdown-item" href="https://novacrypt.org/support.html">Support</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-inline-block" href="https://novacrypt.org/auraedge.html" style="color:white;">Subsidiaries</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block" href="https://novacrypt.org/papers.html" style="color:white;">Projects</a>
+                </li>
+                <li class="logo">
+                    <img src="https://novacrypt.org/assets/images/novacrypt.png" class="d-inline-none mr-1 ml-1 d-none d-lg-block" style="width: auto; height: 40px;">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block" href="https://novacrypt.org/blog.html" style="color:white;">Journal</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block" href="https://novacrypt.org/announcements.html" style="color:white;">Announcements</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle d-inline-block" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+                      Events
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#262626;">
+                      <a class="dropdown-item" href="#">General Events</a>
+                      <a class="dropdown-item" href="#">Competitions</a>
+                      <a class="dropdown-item" href="#">Webinars</a>
+                    </div>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link px-3 d-inline-block" href="#" style="color:#189BD0; border:1px solid #189BD0; border-radius: 2px;">Join Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-item ml-auto d-none d-lg-block">
+                <a class="nav-link" href="#" style="color:#189BD0; border:1px solid #189BD0; border-radius: 2px;">Join Us</a>
             </div>
         </nav>
         <div class="container8">
@@ -137,22 +150,53 @@
             </div>
         </div>
         <!-- Footer -->
-        <footer class="page-footer text-white ">
+        <footer class="page-footer text-white" style="position: relative;">
             <div class="container-fluid">
                 <!-- Social bar bottom -->
                 <div class="row d-flex justify-content-center">
-                    <a class="test-css discord" href="https://discord.gg/5dESz5e" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
-                    <a class="test-css reddit" href="https://www.reddit.com/r/NovaCrypt/" target="_blank" rel="noopener noreferrer"><i class="fab fa-reddit"></i></a>
-                    <a class="test-css twitter" href="https://twitter.com/NovaCrypt" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                    <a class="test-css instagram" href="https://www.instagram.com/novacryptteam/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                    <a class="test-css linkedin" href="https://www.linkedin.com/company/novacrypt/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                    <a class="test-css youtube" href="https://www.youtube.com/channel/UCGkrwKxJCOlp3GsKgMOhi4w" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
-                    <a class="test-css facebook" href="https://www.facebook.com/NovaCrypt-101397501631517/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a class="test-css discord" href="https://discord.gg/5dESz5e" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-discord"></i></a>
+                    <a class="test-css reddit" href="https://www.reddit.com/r/NovaCrypt/" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-reddit"></i></a>
+                    <a class="test-css twitter" href="https://twitter.com/NovaCrypt" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a class="test-css instagram" href="https://www.instagram.com/novacryptteam/" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a class="test-css linkedin" href="https://www.linkedin.com/company/novacrypt/" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a class="test-css youtube" href="https://www.youtube.com/channel/UCGkrwKxJCOlp3GsKgMOhi4w" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    <a class="test-css facebook" href="https://www.facebook.com/NovaCrypt-101397501631517/" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
                 </div>
                 <div class="row d-flex justify-content-center">
-                    <a class="navbar-brand text-white" href="https://novacrypt.org/index.html"><img src="https://novacrypt.org/assets/images/novacrypt.png" class="d-inline-block mr-1" style="width: auto; height: 32px;">NOVACRYPT</a>
+                    <a class="navbar-brand text-white" href="https://novacrypt.org/index.html"><img
+                            src="https://novacrypt.org/assets/images/novacrypt.png" class="d-inline-block mr-1"
+                            style="width: auto; height: 70px;"></a>
                 </div>
-                <div class="row d-flex justify-content-center unstyled">Copyright © 2020</div>
+                <div class="row d-flex justify-content-center">
+                    <a class="navbar-brand text-white" href="https://novacrypt.org/index.html"
+                        style="font-family: 'Jost', sans-serif">NOVACRYPT<a>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <a class="navbar-brand text-white unstyled" href="https://novacrypt.org/index.html">Copyright © 2020</a>
+                </div>
+            </div>
+        
+            <div class="container newsletter d-none d-lg-block"
+                style="color:#189BD0; font-size: 18px; position: absolute; text-align: left;">
+                <p class="ml-5 mt-5">Join our Newsletter</p>
+                <form>
+                    <div class="form-group d-inline-block ml-5">
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter Your Email"
+                            style="border-radius: 25px;">
+                    </div><br>
+                    <button type="submit" class="btn btn-primary ml-5 my-0 py-0"
+                        style="border-radius: 10px; color:black; background-color: #1EB1EE;">Submit</button>
+                    <a href="#"><button type="submit" class="btn btn-primary ml-1 my-0 py-0"
+                            style="border-radius: 10px; color:black; background-color: #1EB1EE;">Contact</button></a>
+                </form>
+                    
             </div>
         </footer>
     </body>

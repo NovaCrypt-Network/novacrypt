@@ -17,27 +17,26 @@
     background: #51b8f0;
     color: #fff;
 }
-.article{
-    content:"" ;
+.article {
+    content:"";
     /* height: 150%; */
     background: url("../images/Background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background
 }
-.top-space{
+.top-space {
     padding-top: 200px;
 }
-.bottom-space{
+.bottom-space {
     padding-bottom: 200px;
 }
-.outline{
+.outline {
     border: solid 5px  #007bff;
 }
-.title{
+.title {
     font-size: 90px;
 }
-.text{
+.text {
     font-size: 35px;
 }

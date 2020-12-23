@@ -1,0 +1,35 @@
+
+
+.btn
+{
+
+    background-color: transparent;
+    transition: 750ms ease;
+
+}
+
+
+
+#continents{
+  background-color: transparent;
+  border: transparent;
+}
+
+.card{
+border-color: blue;
+}
+.body{
+  background-color: black;
+}
+hr{
+  border: 1px solid blue;
+
+
+}
+#btn_country{
+  border: transparent;
+  cursor: none;
+  padding: 16px;
+  font-size: 16px;
+
+}

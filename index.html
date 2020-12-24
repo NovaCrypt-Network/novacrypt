@@ -215,13 +215,40 @@
         </div>
 
         <div class= "row justify-content-around" style="padding-top:10%;">
-            <div class="col-4">
-                <h1 class="text-primary">WHAT DO WE DO?</h1>
+            <div class="col-2">
+                <h1 class="text-left text-primary display-1 pb-5">WHAT DO WE DO?</h1><br>
             </div>
             <div class="col-4">
-                <img class="img-fluid rounded" src="assets/images/interstellar.jpg">
+                <img class="img-fluid rounded d-none d-lg-block" src="assets/images/interstellar.jpg">
+
+                <!-- Icon Modal -->
+                 <!-- Button trigger modal -->
+                <button type="button" class="close" aria-label="Close" data-toggle="modal" data-target="#IconModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-play-circle-fill text-primary" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"></svg>    
+                </button>
+                 <!-- Modal -->
+                <div class="modal fade" id="IconModal" tabindex="-1" role="dialog" aria-labelledby="IconModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="IconModalLabel"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=IIrCDAV3EgI" allowfullscreen></iframe>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+
 
         <div class="container-fluid my-5 py-5">
             <div class = "row my-5 mx-5 d-flex justify-content-center stat-holder">

@@ -26,7 +26,7 @@ hr{
 
 
 }
-#btn_country{
+button.btn.btn-primary.dropdown-toggle{
   border: transparent;
   cursor: none;
   padding: 16px;

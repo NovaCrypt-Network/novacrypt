@@ -172,7 +172,7 @@ textarea {
 }
 
 .btnn:hover {
-    background: #ffc107;
+    /* background: #ffc107; */
     color: #fff;
 }
 label {
@@ -423,7 +423,7 @@ body {
 }
 
 .btn:hover {
-    background: #ffc107;
+    /* background: #ffc107; */
     color: #fff;
 }
 

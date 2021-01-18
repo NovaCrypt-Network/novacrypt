@@ -1,0 +1,22 @@
+.btn {
+  background-color: transparent;
+}
+
+#continents {
+  background-color: transparent;
+  border: transparent;
+}
+
+.card {
+border-color: blue;
+}
+
+.body {
+  background-color: black;
+}
+
+button.btn.btn-primary.dropdown-toggle {
+  border: transparent;
+  padding: 16px;
+  font-size: 16px;
+}

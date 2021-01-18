@@ -1,35 +1,22 @@
-
-
-.btn
-{
-
-    background-color: transparent;
-    transition: 750ms ease;
-
+.btn {
+  background-color: transparent;
 }
 
-
-
-#continents{
+#continents {
   background-color: transparent;
   border: transparent;
 }
 
-.card{
+.card {
 border-color: blue;
 }
-.body{
+
+.body {
   background-color: black;
 }
-hr{
-  border: 1px solid blue;
 
-
-}
-button.btn.btn-primary.dropdown-toggle{
+button.btn.btn-primary.dropdown-toggle {
   border: transparent;
-  cursor: none;
   padding: 16px;
   font-size: 16px;
-
 }

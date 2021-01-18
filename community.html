@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
 
   <title>Community | NovaCrypt</title>
   <meta charset="utf-8">
@@ -76,14 +75,13 @@
     }
 
     hr {
-      border-top: 1px solid #999;
       width: 90%;
     }
   </style>
-</head>
-<!-- Navagation Bar -->
-<nav class="navbar navbar-expand-xl fixed-top navbar-dark">
-  <div class="container-fluid pt-3">
+  </head>
+  <!-- Navagation Bar -->
+  <nav class="navbar navbar-expand-xl fixed-top navbar-dark">
+    <div class="container-fluid pt-3">
     <a class="navbar-brand d-flex align-self-center" href="https://novacrypt.org/index.html"><img src="https://novacrypt.org/assets/images/novacrypt.png" alt="background" class="d-inline-block mr-1" style="width: auto; height: 32px;">NOVACRYPT</a>
     <button class="navbar-toggler" type="button" data-trigger="#main_nav">
       <span class="navbar-toggler-icon"></span>
@@ -122,13 +120,10 @@
         <li class="nav-item px-1"><a class="nav-link btn btn-outline-primary text-white" href="https://discord.gg/hu2jdsf"> Join Us </a></li>
       </ul>
     </div>
-  </div>
-</nav>
-
-
-<body>
+    </div>
+  </nav>
+  <body>
   <!--slideshow(from researchs and projects)-->
-
   <main class="main-content">
     <section class="slideshow">
       <div class="slideshow-inner">
@@ -232,124 +227,144 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
   </main>
-  <!--map-->
-  <div class="stacked" style="width: 90vw;" id="map">
-    <div class="container">
-      <div class="map"></div>
+  <div class="container-fluid m-0 p-0">
+    <hr class="w-100 m-0 p-0" style="border: none; border-top: 5px solid #00b0f0; width: 100%;">
+    <div class="row mt-5 mb-5">
+      <div class="col">
+        <div class="rounded-circle" style="border: 5px solid #00b0f0;">
+          <div class="container d-flex justify-content-center flex-column">
+            <h3 class="row justify-content-center font-weight-bold" style="color: #00b0f0;">1124</h3>
+            <p class="row justify-content-center font-weight-bold" style="color: #00b0f0;">Members</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="rounded-circle" style="border: 5px solid #00b0f0;">
+          <div class="container d-flex justify-content-center flex-column">
+            <h3 class="row justify-content-center font-weight-bold" style="color: #00b0f0;">1124</h3>
+            <p class="row justify-content-center font-weight-bold" style="color: #00b0f0;">Members</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="rounded-circle" style="border: 5px solid #00b0f0;">
+          <div class="container d-flex justify-content-center flex-column">
+            <h3 class="row justify-content-center font-weight-bold" style="color: #00b0f0;">1124</h3>
+            <p class="row justify-content-center font-weight-bold" style="color: #00b0f0;">Members</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="rounded-circle" style="border: 5px solid #00b0f0;">
+          <div class="container d-flex justify-content-center flex-column">
+            <h3 class="row justify-content-center font-weight-bold" style="color: #00b0f0;">1124</h3>
+            <p class="row justify-content-center font-weight-bold" style="color: #00b0f0;">Members</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class='container' id="line_container">
+  <!--map-->
+  <div class="container mw-100 m-0 p-0" id="map">
+    <div class="mw-100 m-0 p-0" id="map">
 
-    <hr class="line">
-
+    </div>
   </div>
   <!--factions/card-->
-  <div class="card mb-4.align-item-center a" id="faction">
+  <div class="container">
     <div class="row no-gutters">
       <!--left part of card-->
-      <div class="col-md-4" id="continents">
-        <h5> <a href="#" onClick="javascript:goToSlide(0);">Location</a></h5>
-        <div class="dropdown">
+      <div class="col-md-4" id="continents" style="border: 3px solid #00b0f0; width: 100%; background-color: #404040;">
+        <h5 class="pl-4 mt-4 mb-1"><a href="#" onClick="javascript:goToSlide(0);" style="color: #00b0f0; font-size: 30px;">Location</a></h5>
+        <hr class="mw-70 m-0 p-0 ml-auto mr-auto mb-3" style="border: none; border-top: 3px solid #00b0f0;">
+        <div class="dropdown ml-4 mb-3">
           <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">North America
             <span class="caret"></span></button>
           <ul class="dropdown-menu">
-            <li><a href="#" onClick="javascript:goToSlide(1);">US</a></li>
+            <li><a href="#" onClick="javascript:goToSlide(1);" class="ml-4">US</a></li>
           </ul>
         </div>
-        <div class="dropdown">
+        <div class="dropdown ml-4 mb-3">
           <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">South America
             <span class="caret"></span></button>
           <ul class="dropdown-menu">
-            <li><a href="#" onClick="javascript:goToSlide(2);">Brazil</a></li>
+            <li><a href="#" onClick="javascript:goToSlide(2);" class="ml-4">Brazil</a></li>
           </ul>
         </div>
-        <div class="dropdown">
+        <div class="dropdown ml-4 mb-3">
           <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Europe
             <span class="caret"></span></button>
           <ul class="dropdown-menu">
-            <li><a href="#" onClick="javascript:goToSlide(3);">Belgium</a></li>
+            <li><a href="#" onClick="javascript:goToSlide(3);" class="ml-4">Belgium</a></li>
           </ul>
         </div>
-        <div class="dropdown">
+        <div class="dropdown ml-4 mb-3">
           <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Asia
             <span class="caret"></span></button>
           <ul class="dropdown-menu">
-            <li><a href="#" onClick="javascript:goToSlide(4);">South Korea</a></li>
+            <li><a href="#" onClick="javascript:goToSlide(4);" class="ml-4">South Korea</a></li>
           </ul>
         </div>
-
-        <div class="dropdown">
+        <div class="dropdown ml-4 mb-3">
           <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Africa
             <span class="caret"></span></button>
           <ul class="dropdown-menu">
-            <li><a href="#" onClick="javascript:goToSlide(5);">Egypt</a></li>
+            <li><a href="#" onClick="javascript:goToSlide(5);" class="ml-4">Egypt</a></li>
           </ul>
         </div>
-
-        <div class="dropdown">
+        <div class="dropdown ml-4 mb-3">
           <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Australia
             <span class="caret"></span></button>
           <ul class="dropdown-menu">
-            <li><a href="#" onClick="javascript:goToSlide(6);">Sydney</a></li>
+            <li><a href="#" onClick="javascript:goToSlide(6);" class="ml-4">Sydney</a></li>
           </ul>
         </div>
         <!--right part of card-->
       </div>
-      <div class="col-md-8">
-        <div id="FactionCarousel" class="carousel slide" data-interval="false">
-          <div class="carousel-inner">
+      <div class="col-md-8" style="border: 3px solid #00b0f0; width: 100%; background-color: #262626;">
+        <div id="FactionCarousel" class="carousel slide h-100  d-flex align-content-center" data-interval="false">
+          <div class="carousel-inner mt-auto mb-auto">
             <div class="carousel-item active">
-              <h5>Factions</h5>
-              <img class="d-block w-100" height="200" width="200" src="assets/images/novacrypt.png" alt="Original">
+              <img class="d-block mt-auto mb-auto ml-auto mr-auto img-fluid" height="360" width="360" src="assets/images/novacrypt.png" alt="Original">
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" height="200" src="http://www.pngmagic.com/product_images/solid-white-background.jpg" alt="New York">
-              <h5>US:Chapter name</h5>
-              <h6>President:Joe</h6>
-              <h6>Contact Info</h6>
-
-
+            <div class="carousel-item ml-auto mr-auto mw-80" style="width: 80%; margin-left: auto; margin-right: auto; float: none;">
+              <img class="d-block w-100 mt-2 mb-2 img-fluid" style="height: 200px !important;" src="http://www.pngmagic.com/product_images/solid-white-background.jpg" alt="New York">
+              <h5 class="mt-2 mb-2" style="color: #00b0f0; font-size: 30px;">US: Chapter name</h5>
+              <h6 class="mt-2 mb-2" style="color: white; font-size: 20px;">President: Joe</h6>
+              <h6 class="mt-2 mb-2" style="color: white; font-size: 20px;">Contact Info</h6>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" height="200" src="http://www.pngmagic.com/product_images/solid-white-background.jpg" alt="Brazil">
-              <h5>Brazil:Chapter name</h5>
-              <h6>President:Joe</h6>
-              <h6>Contact Info</h6>
-
+            <div class="carousel-item ml-auto mr-auto mw-80" style="width: 80%; margin-left: auto; margin-right: auto; float: none;">
+              <img class="d-block w-100 mt-2 mb-2 img-fluid" style="height: 200px !important;" src="http://www.pngmagic.com/product_images/solid-white-background.jpg" alt="New York">
+              <h5 class="mt-2 mb-2" style="color: #00b0f0; font-size: 30px;">Brazil: Chapter name</h5>
+              <h6 class="mt-2 mb-2" style="color: white; font-size: 20px;">President: Joe</h6>
+              <h6 class="mt-2 mb-2" style="color: white; font-size: 20px;">Contact Info</h6>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" height="200" src="http://www.pngmagic.com/product_images/solid-white-background.jpg" alt="New York">
-              <h5>Belgium:Chapter name</h5>
-              <h6>President:Joe</h6>
-              <h6>Contact Info</h6>
-
-
+            <div class="carousel-item ml-auto mr-auto mw-80" style="width: 80%; margin-left: auto; margin-right: auto; float: none;">
+              <img class="d-block w-100 mt-2 mb-2 img-fluid" style="height: 200px !important;" src="http://www.pngmagic.com/product_images/solid-white-background.jpg" alt="New York">
+              <h5 class="mt-2 mb-2" style="color: #00b0f0; font-size: 30px;">Belgium: Chapter name</h5>
+              <h6 class="mt-2 mb-2" style="color: white; font-size: 20px;">President: Joe</h6>
+              <h6 class="mt-2 mb-2" style="color: white; font-size: 20px;">Contact Info</h6>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" height="200" src="http://www.pngmagic.com/product_images/solid-white-background.jpg" alt="New York">
-              <h5>South Korea:Chapter name</h5>
-              <h6>President:Joe</h6>
-              <h6>Contact Info</h6>
-
+            <div class="carousel-item ml-auto mr-auto mw-80" style="width: 80%; margin-left: auto; margin-right: auto; float: none;">
+              <img class="d-block w-100 mt-2 mb-2 img-fluid" style="height: 200px !important;" src="http://www.pngmagic.com/product_images/solid-white-background.jpg" alt="New York">
+              <h5 class="mt-2 mb-2" style="color: #00b0f0; font-size: 30px;">South Korea: Chapter name</h5>
+              <h6 class="mt-2 mb-2" style="color: white; font-size: 20px;">President: Joe</h6>
+              <h6 class="mt-2 mb-2" style="color: white; font-size: 20px;">Contact Info</h6>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" height="200" src="http://www.pngmagic.com/product_images/solid-white-background.jpg" alt="New York">
-              <h5>Egypt:Chapter name</h5>
-              <h6>President:Joe</h6>
-              <h6>Contact Info</h6>
-
+            <div class="carousel-item ml-auto mr-auto mw-80" style="width: 80%; margin-left: auto; margin-right: auto; float: none;">
+              <img class="d-block w-100 mt-2 mb-2 img-fluid" style="height: 200px !important;" src="http://www.pngmagic.com/product_images/solid-white-background.jpg" alt="New York">
+              <h5 class="mt-2 mb-2" style="color: #00b0f0; font-size: 30px;">Egypt: Chapter name</h5>
+              <h6 class="mt-2 mb-2" style="color: white; font-size: 20px;">President: Joe</h6>
+              <h6 class="mt-2 mb-2" style="color: white; font-size: 20px;">Contact Info</h6>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" height="200" src="http://www.pngmagic.com/product_images/solid-white-background.jpg" alt="New York">
-              <h5>Sydney:Chapter name</h5>
-              <h6>President:Joe</h6>
-              <h6>Contact Info</h6>
-
+            <div class="carousel-item ml-auto mr-auto mw-80" style="width: 80%; margin-left: auto; margin-right: auto; float: none;">
+              <img class="d-block w-100 mt-2 mb-2 img-fluid" style="height: 200px !important;" src="http://www.pngmagic.com/product_images/solid-white-background.jpg" alt="New York">
+              <h5 class="mt-2 mb-2" style="color: #00b0f0; font-size: 30px;">Sydney: Chapter name</h5>
+              <h6 class="mt-2 mb-2" style="color: white; font-size: 20px;">President: Joe</h6>
+              <h6 class="mt-2 mb-2" style="color: white; font-size: 20px;">Contact Info</h6>
             </div>
-          </div>
-
         </div>
       </div>
     </div>
@@ -358,6 +373,99 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <script src="assets/js/community.js"></script>
   <script src="Navbar/Navbar.js"></script>
+  <script type="text/javascript" src="NovaCrypt.js"></script>
+  <script type="text/javascript">
+    var southWest = L.latLng(-89.98155760646617, -180), northEast = L.latLng(89.99346179538875, 180);
+    var bounds = L.latLngBounds(southWest, northEast);
+    var map = L.map('map', {center: [0,0], zoom:2, minZoom:2,maxZoom:5 });
+    map.setMaxBounds(bounds);
+    map.on('drag', function() {
+        map.panInsideBounds(bounds, { animate: false });
+    });
+	// control that shows state info on hover
+	var info = L.control();
+	info.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'info');
+		this.update();
+		return this._div;
+	};
+	info.update = function (props) {
+		this._div.innerHTML = '<h4>Country Members</h4>' +  (props ?
+			'<b>' + props.CountryName + '</b><br />' + props.Members + ' Members'
+			: 'Hover over a state');
+	};
+	info.addTo(map);
+	// get color depending on population density value
+	function getColor(d) {
+		return d > 100 ? '#00F9FF' :
+				d > 50  ? '#00D2FF' :
+				d > 10  ? '#009FFF' :
+				d > 5  ? '#0078FF' :
+                d > 0   ? '#0051FF' :
+                            '#303030';
+	}
+	function style(feature) {
+		return {
+			weight: 1,
+			opacity: .2,
+			color: 'black',
+			dashArray: '3',
+			fillOpacity: 0.7,
+			fillColor: getColor(feature.properties.Members)
+		};
+	}
+	function highlightFeature(e) {
+		var layer = e.target;
+		layer.setStyle({
+			weight: 5,
+			color: 'white',
+			dashArray: '',
+			fillOpacity: 0.7
+		});
+		if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+			layer.bringToFront();
+		}
+		info.update(layer.feature.properties);
+	}
+	var geojson;
+	function resetHighlight(e) {
+		geojson.resetStyle(e.target);
+		info.update();
+	}
+	function zoomToFeature(e) {
+		map.fitBounds(e.target.getBounds());
+	}
+	function onEachFeature(feature, layer) {
+		layer.on({
+			mouseover: highlightFeature,
+			mouseout: resetHighlight,
+			click: zoomToFeature
+		});
+	}
+	geojson = L.geoJson(countryData, {
+		style: style,
+		onEachFeature: onEachFeature
+	}).addTo(map);
+	var legend = L.control({position: 'bottomright'});
+	legend.onAdd = function (map) {
+		var div = L.DomUtil.create('div', 'info legend'),
+			grades = [1,5,10,50,100],
+			labels = [],
+			from, to;
+
+		for (var i = 0; i < grades.length; i++) {
+			from = grades[i];
+			to = grades[i + 1];
+
+			labels.push(
+				'<i style="background:' + getColor(from + 1) + '"></i> ' +
+				from + (to ? '&ndash;' + to : '+'));
+		}
+		div.innerHTML = labels.join('<br>');
+		return div;
+	};
+	legend.addTo(map);
+</script>
 </body>
 
 

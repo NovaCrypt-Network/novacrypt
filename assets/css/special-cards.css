@@ -1,0 +1,13 @@
+.specialcard{
+    border: 5px solid #2A9FD6;
+}
+
+.specialtitle {
+    color: white;
+    font-size: 1rem;
+    margin: auto 1rem;
+}
+
+.specialtitle:hover {
+    color: #2A9FD6;
+}

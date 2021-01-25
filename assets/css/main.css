@@ -588,7 +588,18 @@ hr.bruh {
     flex-wrap: wrap;
 }
 
-.lcard {
+.lcard-offer {
+    margin:  auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    /* box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22); */
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #000;
+}
+
+.lcard{
     margin:  auto;
     width: 200px;
     height: 200px;
@@ -596,6 +607,7 @@ hr.bruh {
     /* box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22); */
     cursor: pointer;
     transition: 0.4s;
+    background-color: #000;
 }
 
 .lcard .lcard_image {
@@ -604,11 +616,26 @@ hr.bruh {
     border-radius: 40px;
 }
 
+.lcard-offer .lcard_image{
+    width: inherit;
+    height: inherit;
+    border-radius: 100px;
+}
+
 .lcard .lcard_image img {
     width: inherit;
     height: inherit;
     border-radius: 40px;
     object-fit: cover;
+    border: 5px solid #2A9FD6;
+}
+
+.lcard-offer .lcard_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 100px;
+    object-fit: cover;
+    border: 5px solid #2A9FD6;
 }
 
 .lcard .lcard_title {
@@ -620,14 +647,6 @@ hr.bruh {
     font-size: 30px;
     margin-top: -80px;
     height: 40px;
-}
-
-.lcard:hover {
-    transform: scale(0.9, 0.9);
-    /* box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-        -5px -5px 30px 15px rgba(0, 0, 0, 0.22); */
-    border-color: #4285F4;
-    border-width: 5px;
 }
 
 #cardlinq {
@@ -642,6 +661,24 @@ hr.bruh {
     color: black;
 }
 
+.play-btn{
+    margin-top: -550px;
+    margin-right: 750px;
+}
+
+@media all and (max-width: 992px){
+    .play-btn{
+        margin-top: 375px;
+        margin-right: 150px;
+    }
+}
+
+@media all and (max-width: 768px){
+    .play-btn{
+        margin-top: 300px;
+        margin-right: 50px;
+    }
+}
 
 @media all and (max-width: 600px) {
     .container3 {

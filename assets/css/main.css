@@ -662,10 +662,15 @@ hr.bruh {
 }
 
 .play-btn{
-    margin-top: -550px;
-    margin-right: 750px;
+    margin: auto;
+    height: 5vh;
+    width: auto;
 }
-
+@media all and (max-width: 2000px){
+    .play-btn{
+        margin-top: 200rem;
+    }
+}
 @media all and (max-width: 992px){
     .play-btn{
         margin-top: 375px;

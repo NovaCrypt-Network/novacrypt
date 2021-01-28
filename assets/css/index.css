@@ -1,3 +1,4 @@
+@charset "utf-8";
 header {
     position: relative;
     background-color: black;
@@ -45,4 +46,12 @@ z-index: 1;
 @media (pointer: coarse) and (hover: none) {
 header video {
 }
+}
+@media(max-width:720px){
+    #h1nova{
+        font-size: 0.5rem !important;
+    }
+}
+@media(min-width:721px;) and (max-width:){
+    
 }

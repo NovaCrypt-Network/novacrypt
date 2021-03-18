@@ -6,6 +6,7 @@
     border: 5px solid;
     border-radius: 1rem;
     border-color:  #33AFFF;
+    margin-top: 1vw;
 }
 .col-md-2{
     display: flex;
@@ -19,7 +20,7 @@
   }
 .v2{
     width:1rem;
-    min-height: 9.5rem;
+    min-height: 10.5vw;
     background-color: #33AFFF;
   }
 .hl{
@@ -34,8 +35,8 @@
     background: #33AFFF;
   }
 .wbox{
-    height:10rem;
-    width: 70vw;
+    min-height:11vw;
+    width: 80vw;
     background-color: transparent;
     border: 5px solid;
     border-radius: 1rem;
@@ -45,4 +46,13 @@
     .v1 {
         margin-left:1rem;
     }
+    .v2{
+      display: none;
+    }
+    #upperrow{
+      margin-top: 0rem;
+    }
+  }
+  #upperrow{
+    margin-top: 4rem;
   }

@@ -1,0 +1,58 @@
+
+.boxmenu{
+    min-height:8rem;
+    min-width: 8rem;
+    background-color: transparent;
+    border: 5px solid;
+    border-radius: 1rem;
+    border-color:  #33AFFF;
+    margin-top: 1vw;
+}
+.col-md-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v1{
+    width:2rem;
+    min-height: 100vh; 
+    background-color: #33AFFF;
+  }
+.v2{
+    width:1rem;
+    min-height: 10.5vw;
+    background-color: #33AFFF;
+  }
+.hl{
+    height: 2rem;
+    width: 4rem;
+    background: #33AFFF;
+  }
+  
+.line1{
+    height: 0.5rem;
+    width: 100%;
+    background: #33AFFF;
+  }
+.wbox{
+    min-height:11vw;
+    width: 80vw;
+    background-color: transparent;
+    border: 5px solid;
+    border-radius: 1rem;
+    border-color:  #33AFFF;
+}
+@media screen and (max-width: 425px) {
+    .v1 {
+        margin-left:1rem;
+    }
+    .v2{
+      display: none;
+    }
+    #upperrow{
+      margin-top: 0rem;
+    }
+  }
+  #upperrow{
+    margin-top: 4rem;
+  }

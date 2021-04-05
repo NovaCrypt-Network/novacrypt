@@ -1,11 +1,13 @@
-
+.text-primary{
+  color:#00adef !important;
+}
 .boxmenu{
     min-height:8rem;
     min-width: 8rem;
     background-color: transparent;
     border: 5px solid;
     border-radius: 1rem;
-    border-color:  #33AFFF;
+    border-color:  #00adef;
     margin-top: 1vw;
 }
 .col-md-2{
@@ -16,23 +18,23 @@
 .v1{
     width:2rem;
     min-height: 100vh; 
-    background-color: #33AFFF;
+    background-color: #00adef;
   }
 .v2{
     width:1rem;
     min-height: 10.5vw;
-    background-color: #33AFFF;
+    background-color: #00adef;
   }
 .hl{
     height: 2rem;
     width: 4rem;
-    background: #33AFFF;
+    background: #00adef;
   }
   
 .line1{
     height: 0.5rem;
     width: 100%;
-    background: #33AFFF;
+    background: #00adef;
   }
 .wbox{
     min-height:11vw;
@@ -40,7 +42,20 @@
     background-color: transparent;
     border: 5px solid;
     border-radius: 1rem;
-    border-color:  #33AFFF;
+    border-color: #00adef;
+}
+.btn-primary{
+  border-color: #00adef !important;
+  background-color:#00adef  !important;
+}
+.btn-outline-primary{
+  border-color: #00adef !important;
+  color:#00adef  !important;
+}
+.btn-outline-primary:hover{
+  border-color: #00adef !important;
+  background-color:#00adef  !important;
+  color: black !important;
 }
 @media screen and (max-width: 425px) {
     .v1 {

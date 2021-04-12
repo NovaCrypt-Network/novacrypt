@@ -72,3 +72,23 @@
   #upperrow{
     margin-top: 4rem;
   }
+  @media screen and (max-width: 600px) {
+    .v1{
+      display: none;
+    }
+    .h1{
+      display: none;
+    }
+  
+    #lower{
+      text-align: left !important;
+    }
+    #titel{
+      font-size:xx-large !important;
+    }
+  }
+  @media screen and (max-width: 990px) {
+    .v2{
+      display: none;
+    }
+  }

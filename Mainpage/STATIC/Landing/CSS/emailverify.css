@@ -1,0 +1,177 @@
+a.bruh:hover {
+    text-decoration: none;
+}
+
+.emailverify-card {
+    position: relative;
+    background-color: #222222;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+    border-radius: 40px;
+    border: 5px solid #189BD0;
+    padding: 0;
+}
+.emailverify-banner {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+    border-radius: 35px 35px 0px 0px;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+    height: 7rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-bottom: 5px solid #189BD0;
+    background-image: url("https://cdn.novacrypt.org/static/Administration/images/starry-space.png");
+    background-repeat: no-repeat;
+    background-size: 100% ;
+}
+
+.emailverify-roundedimg {
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 5px solid #189BD0;
+}
+
+.verified-email-title {
+    color: #189BD0;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0px;
+    padding-top: 1.5rem;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+.verified-email-text {
+    color:white !important;
+}
+
+.verified-email-details {
+    padding: 1.5rem;
+    padding-top: 56px;
+}
+
+/* Media Query */
+
+@media (max-width: 1380px) {
+    .experience-text-role {
+        padding-top: 0.5rem;
+        font-size: 22px;
+    }
+    .experience-text-company {
+        font-size: 22px;
+    }
+    .emailverify-roundedimg {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+}
+
+@media (max-width: 778px) {
+    .verified-email-title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    .emailverify-card {
+        width: 90vw !important;
+        margin-right: auto;
+    }
+}
+
+.border-boi {
+    border-radius: 40px;
+    border: 3px solid #189BD0;
+}
+
+.bruh.fab.fa-discord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 4.5rem;
+    color: #fff;
+}
+
+.no-highlight {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.special-text {
+    font: "Raleway", "Oswald", sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.dashboard:hover {
+    background-color: white;
+}
+
+.dashboard h3 {
+    color: #189BD0 !important;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.dashboard:hover > h3 {
+    color: black !important;
+}
+
+#confetti {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.nc-logo {
+    height: 50px;
+    width: 50px;
+}
+
+@media (max-width: 500px) {
+    .discord-boi {
+        padding: 1rem !important;
+        border-radius: 10px;
+    }
+    .discord-boi i {
+        font-size: 2.5rem !important;
+    }
+    .dashboard-boi {
+        margin: 1rem !important;
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+    }
+    .dashboard {
+        border-radius: 10px;
+    }
+    .nc-logo {
+        height: 25px !important;
+        width: 25px !important;
+    }
+    .dashboard h3 {
+        letter-spacing: normal;
+        font-size: 0.6rem;
+    }
+}

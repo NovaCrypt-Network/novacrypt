@@ -1,0 +1,277 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}NovaCrypt | Research and Projects {% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'Projects/CSS/Carousel.css' %}">
+<link rel="stylesheet" href="{% static 'Projects/CSS/Cards.css' %}">
+<link rel="stylesheet" href="{% static 'Projects/CSS/Stats.css' %}">
+<link rel="stylesheet" href="{% static 'Projects/CSS/TeamCards.css' %}">
+<link rel="stylesheet" href="{% static 'Projects/CSS/CustomSVGFont/css/Glyphter.css' %}">
+{% endblock %}
+{% block body %}
+<!-- Developed by Kanishk Kacholia -->
+<main class="main-content">
+  <section class="slideshow">
+    <div class="slideshow-inner">
+      <div class="slides">
+
+        <div class="slide is-active ">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">Exploring the stars</div>
+              <div class="text">
+                <p class="slide-desc">Analyzing Satellite Data to uncover new galaxies.</p>
+              </div> 
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="{% static 'Projects/images/1.png' %}" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">Discovering new worlds</div>
+              <div class="text">
+                <p class="slide-desc">Collecting data and using algorithms to discover new planets.</p>
+              </div> 
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="{% static 'Projects/images/2.png' %}" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">Nanorobotics</div>
+              <div class="text">
+                <p class="slide-desc">Building nanorobots to monitor the internal body chemistry.</p>
+              </div> 
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="{% static 'Projects/images/3.jpg' %}" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">Testing rocket engines</div>
+              <div class="text">
+                <p class="slide-desc">Building aerospike rocket engines to test efficiency.</p>
+              </div> 
+              <a href="#" class="carousel-btn">
+                <span class="btn-inner">Learn More</span>
+              </a>
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="{% static 'Projects/images/4.jpeg' %}" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">Integrating Cybernetics</div>
+              <div class="text">
+                <p class="slide-desc">Combining the human biology with new technological advances.</p>
+              </div> 
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="{% static 'Projects/images/5.jpg' %}" alt="" class="image" />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">Building new websites</div>
+              <div class="text">
+                <p class="slide-desc">Developing new platforms to help organizations and bring social good.</p>
+              </div> 
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="{% static 'Projects/images/6.webp' %}" alt="" class="image" />
+          </div>
+        </div>
+      </div>
+      <div class="pagination row justify-content-center">
+        <div class="item is-active"> 
+          <span class="icon">1</span>
+        </div>
+        <div class="item">
+          <span class="icon">2</span>
+        </div>
+        <div class="item">
+          <span class="icon">3</span>
+        </div>
+        <div class="item">
+          <span class="icon">4</span>
+        </div>
+        <div class="item">
+          <span class="icon">5</span>
+        </div>
+        <div class="item">
+          <span class="icon">6</span>
+        </div>
+      </div>
+      <div class="arrows">
+        <div class="arrow prev">
+          <span class="svg svg-arrow-left">
+            <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+            <span class="alt sr-only"></span>
+          </span>
+        </div>
+        <div class="arrow next">
+          <span class="svg svg-arrow-right">
+            <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+            <span class="alt sr-only"></span>
+          </span>
+        </div>
+      </div>
+    </div> 
+  </section>
+</main>
+<div class="container-fluid stat-holder text-white pb-lg-5">
+  <div class="row text-center py-4 justify-content-center stat-numbers" data-aos="fade-up">
+    <div class="col-3 stats right-border">
+      <h2 class="count">{{Projects|length}}</h2>
+      <h6>Projects</h6>
+    </div>
+    <div class="col-3 stats right-border">
+      <h2 class="count">{{Teams|length}}</h2>
+      <h6>Teams</h6>
+    </div> 
+    <div class="col-3 stats right-border">
+      <h2 class="count">1500</h2>
+      <h6>Members</h6>
+    </div> 
+    <div class="col-3 stats">
+      <h2 class="count">{{Sponsors}}</h2>
+      <h6>Sponsors</h6>
+    </div>  
+  </div>
+  <div class="row text-center pt-5 pb-2 justify-content-center text-white d-none d-lg-flex" data-aos="fade-up">
+    <h1 class="project-teams">PROJECT TEAMS</h1>
+  </div>
+  <div class="row pb-4 px-2 justify-content-center d-none d-lg-flex" data-aos="fade-up">
+    {% for Team in Teams %}
+    <a class="card w-100" href="{% url 'TeamPage' TeamName=Team.name %}">
+      <div class="svgicon"><i class="icon-{{ Team.name|lower }} md-48"></i></div>
+      <p class="title">Team {{ Team.name }}</p>
+      <p class="text">{{ Team.description }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+<div class="container-fluid parent pt-3">
+  {% for Project in Projects %}
+  {% if forloop.counter0|divisibleby:"2" %}
+  <div class="row mx-lg-4 d-flex justify-content-center" data-aos="fade-up">
+    <div class="col-12 col-lg-4 d-flex justify-content-center">
+      <a href="{% url 'ProjectPage' ProjectName=Project.name %}" style="text-decoration: none;">
+        <div class="card-container">
+          {% if Project.completion == 5 %}
+          <span class="Complete">Complete</span>
+          {% elif Project.completion != 5 and Project.completion != 0%}
+          <span class="Progress">In Progress</span>
+          {% elif Project.completion == 0 %}
+          <span class="Concept">Concept</span>
+          {% endif %}
+          <img class="icon" src="{{Project.icon.url}}" alt="user"/>
+          <h3>{{Project.name}}</h3>
+          <h6>Current Progress</h6>
+          <ul class="activity-level d-flex align-self-center">
+            {% for i in "12345"|make_list %}
+            {% if Project.completion >= forloop.counter %}
+            <li class="active"></li>
+            {% else %}
+            <li class=""></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          <p class="px-3">{{Project.description}}</p>
+          <img class="d-lg-none img-fluid p-3 rounded" src="{{Project.thumbnail.url}}">
+          <div class="buttons">
+              <button class="primary">
+                  Learn More
+              </button>
+          </div>
+          <div class="tags">
+              <h6>Tags</h6>
+              <ul>
+                {% for Tag in Project.tags.all %}
+                  <li>{{Tag.name}}</li>
+                {% endfor %}
+              </ul>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-8 d-none d-lg-flex align-self-center justify-content-center">
+      <img class="img-fluid rounded" src="{{Project.thumbnail.url}}">
+    </div>
+  </div>
+  {% elif not forloop.counter0|divisibleby:"2" %}
+  <div class="row mx-lg-4 d-flex justify-content-center" data-aos="fade-up">
+    <div class="col-8 d-none d-lg-flex align-self-center justify-content-center">
+      <img class="img-fluid rounded" src="{{Project.thumbnail.url}}">
+    </div>
+    <div class="col-12 col-lg-4 d-flex justify-content-center">
+      <a href="{% url 'ProjectPage' ProjectName=Project.name %}" style="text-decoration: none;">
+        <div class="card-container">
+          {% if Project.completion == 5 %}
+          <span class="Complete">Complete</span>
+          {% elif Project.completion != 5 and Project.completion != 0%}
+          <span class="Progress">In Progress</span>
+          {% elif Project.completion == 0 %}
+          <span class="Concept">Concept</span>
+          {% endif %}
+          <img class="icon" src="{{Project.icon.url}}" alt="user"/>
+          <h3>{{Project.name}}</h3>
+          <h6>Current Progress</h6>
+          <ul class="activity-level d-flex align-self-center">
+            {% for i in "12345"|make_list %}
+            {% if Project.completion >= forloop.counter %}
+            <li class="active"></li>
+            {% else %}
+            <li class=""></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          <p class="px-3">{{Project.description}}</p>
+          <img class="d-lg-none img-fluid p-3 rounded" src="{{Project.thumbnail.url}}">
+          <div class="buttons">
+              <button class="primary">
+                  Learn More
+              </button>
+          </div>
+          <div class="tags">
+              <h6>Tags</h6>
+              <ul>
+                {% for Tag in Project.tags.all %}
+                  <li>{{Tag.name}}</li>
+                {% endfor %}
+              </ul>
+          </div>
+        </div>
+      </a>
+    </div>
+  {% endif %}
+  {% endfor %}
+  </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="{% static 'Projects/Javascript/Cards.js' %}"></script>
+<script src="{% static 'Projects/Javascript/Carousel.js' %}"></script>
+<script src="{% static 'Projects/Javascript/Navbar.js' %}"></script>
+<script src="{% static 'Projects/Javascript/Stats.js' %}"></script>
+{% endblock %}

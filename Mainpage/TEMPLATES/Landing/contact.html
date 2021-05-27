@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}Community | NovaCrypt{% endblock %}
+{% load static %}
+{% block css %}
+
+    <link rel="stylesheet" href="{% static 'Landing/CSS/contact.css' %}">
+{% endblock %}
+{% block body %}
+ 
+<div class="container8 stat-holder">
+    <h1 style="margin-bottom:10px;margin-top:100px; font-size:3em;" class="constant">Connect With Us</h1>
+    <p style="margin-bottom:40px;" class="constant">Please wait at least 24 hours for a response.</p>
+    <div class="contact-box">
+        <div class="contact-left">
+            <h3 class="constant" style="color:black; font-weight:600; margin-bottom: 30px;color: #03cdff;">Send your request</h3>
+            <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Jordan Osborn">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="text" placeholder="(845)-123-4567">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="text" placeholder="jordanosborn@gmail.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Subject</label>
+                        <input type="text" placeholder="Demo">
+                    </div>
+                </div>
+                <label>Message</label>
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+        <div class="contact-right">
+            <h3 class="constant" style=" font-size:3em; border-bottom: 1px solid #fff; font-weight:600; margin-bottom: 30px;">Reach Us</h3>
+            <table style="font-size:2em;">
+                <tbody><tr>
+                    <td class="constant-2" style="text-decoration: underline;">Email:</td>
+                </tr>
+                <tr>
+                    <td class="constant-2 constant-3">info@novacrypt.org</td>
+                </tr>
+                <tbody><tr>
+                    <td class="constant-2" style="text-decoration: underline;">Sponsorships:</td>
+                </tr>
+                <tr>
+                    <td class="constant-2 constant-3">kashish.kumar@novacrypt.org</td>
+                </tr>
+                <tbody><tr>
+                    <td class="constant-2" style="text-decoration: underline;">Partnerships:</td>
+                </tr>
+                <tr>
+                    <td class="constant-2 constant-3">roland.yan@novacrypt.org</td>
+                </tr>
+                <tbody><tr>
+                    <td class="constant-2" style="text-decoration: underline;">Outreach:</td>
+                </tr>
+                <tr>
+                    <td class="constant-2 constant-3">sivaa@novacrypt.org</td>
+                </tr>
+                <tbody><tr>
+                    <td class="constant-2" style="text-decoration: underline;">Projects:</td>
+                </tr>
+                <tr>
+                    <td class="constant-2">roland.yan@novacrypt.org</td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block js %}   
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+{% endblock %}

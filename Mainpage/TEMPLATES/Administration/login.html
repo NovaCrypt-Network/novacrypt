@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static%}
+{% load crispy_forms_tags %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'Administration/CSS/signup.css' %}">
+{% endblock %}
+{% block body %}
+<div class="container mb-5 stat-holder" style="margin-top: 150px; background-color: #262626;">
+  <div class="mvisible">
+      <br>
+          <h3 class="text-white" style="text-align: center;">Log In</h3>
+          <div class="row justify-content-center">
+              <div class="divider1">
+                  <hr>
+              </div>
+          </div>
+          <div class="d-flex justify-content-center">
+              <form method="POST" action="">
+                {% csrf_token %}
+                  <div style="width: 100%;"  class="d-flex justify-content-center">
+                      <div class="login-form">
+                          <h6 class="text-center text-white">Don't have an account? <a href="/Administration/signup">Sign Up!</a></h6>
+                          {{form.username}}
+                          {{ form.username.errors }}
+                          {{form.password}}
+                          {{ form.password.errors }}
+                      </div>
+                  </div>
+                  <div class="row justify-content-center" style="margin-top: 40px;">
+                    {{form.captcha}}
+                  </div>
+                  {% if form.errors %}
+                  <div class="alert alert-info alert-dismissible m-2 text-center" role="alert">
+                    <strong>Username and Password combination do not match or CAPTCHA was invalid</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  {% endif %}
+                  <div class="row justify-content-center">
+                      <button style="margin-top: 20px;" type="submit" class="submit"><i class="fab fa-google"></i></button>
+                      <button style="margin-top: 20px;" type="submit" class="submit" value="Log in">Log In</button>
+                  </div>   
+              </form>
+          </div>
+      <br>
+      <br>
+      <br>
+  </div>
+  <div class="row justify-content-end">
+      <div class="mhidden col"> 
+          <br>
+          <h3 class="text-white" style="text-align: center;">Log in</h3>
+          <div class="row justify-content-center">
+              <div class="divider1">
+                  <hr>
+              </div>
+          </div>
+          <div class="d-flex justify-content-center">
+              <form method="POST" action="">
+                {% csrf_token %}
+                  <div style="width: 100%;"  class="d-flex justify-content-center">
+                      <div class="login-form">
+                        <h6 class="text-center text-white">Don't have an account? <a href="/Administration/signup">Sign Up!</a></h6>
+                        <h6 class="text-center text-white">Forgot you Password? <a href="/Administration/signup">Reset it here!</a></h6>
+                        {{form.username}}
+                        {{form.password}}
+                      </div>
+                  </div>
+                  <div class="row justify-content-center" style="margin-top: 40px;">
+                      {{form.captcha}}
+                  </div>
+                  {% if form.errors %}
+                  <div class="alert alert-info alert-dismissible my-2 mx-5 text-center" role="alert">
+                    <strong>Username and Password combination do not match or CAPTCHA was invalid</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  {% endif %}
+                  <div class="row justify-content-center">
+                      <button style="margin-top: 20px;" type="submit" class="submit" value="Log in">Log In</button>
+                  </div>   
+              </form>
+          </div>
+      </div>
+      <img src="{% static 'Administration/images/kuva1.png' %}" class="img-fluid imagge1" alt="Image error">
+  </div>        
+</div>
+{% endblock %}
+{% block js %}
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+{% endblock %}

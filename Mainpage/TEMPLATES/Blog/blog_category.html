@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% load wagtailcore_tags %}
+{% load wagtailimages_tags %}
+{% block title %}NovaCrypt | {{Category|title}} {% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'Blog/CSS/Blog.css' %}">
+{% endblock %}
+{% block body %}
+<!-- Developed by Matthew and Kanishk Kacholia-->
+<div class="container-fluid vertical-space">
+    <div class="row d-flex justify-content-center mx-5">
+        <div class="col-10 d-none d-md-block border-bottom border-primary">
+            <h1 class="display-1 text-primary ">{{Category}}</h1>
+        </div>
+        <div class="col-md-4 d-md-none border-bottom border-primary">
+            <h4 class="text-primary">{{Category}}</h4>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mx-0 stat-holder">
+    <div class="row d-flex mt-5 justify-content-center ARTICLE_HOLDER" data-version="1" data-category="{{Category}}">
+        {% for Blog in Blogs %}
+        <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card" style="width: 16rem;" data-id="{{Blog.pk}}" data-aos="fade-up">
+            <img class="card-img-top rounded" src="{{Blog.thumbnail.url}}" alt="{{Blog.thumbnail_desc}}">
+            <div class="card-body">
+                <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
+                <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
+                <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
+                <p class="card-text">{{Blog.short_description}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="https://unpkg.com/moment"></script>
+<script src="{% static 'Blog/JS/Blog.js' %}"></script>
+{% endblock %}

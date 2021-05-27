@@ -1,0 +1,16 @@
+django-cleanup
+Wagtail
+django-crispy-forms
+django-recaptcha
+django-storages
+wagtail-storages
+Django-Verify-Email
+psycopg2
+django-multidb-router
+python-memcached
+gunicorn
+boto3
+mee6-py-api
+schedule
+django[argon2]
+django-crontab

@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Python: Django",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder}\\Mainpage\\manage.py",
+				"args": [
+					"runserver",
+					"7000",
+					"--settings=Mainpage.settings"
+				],
+				"django": true
+			}
+		]
+	}
+}

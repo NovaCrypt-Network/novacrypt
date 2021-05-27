@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard | NovaCrypt</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:site_name" content="Welcome to NovaCrypt">
+    <meta property="og:title" content="Dashboard | NovaCrypt">
+    <meta property="og:description"
+        content="An international umbrella organization dedicated to building impactful research, projects, and organizations. A community of student researchers, engineers, leaders, and programmers that join together to take their skills beyond the competitional stage Come join one of our multiple student-led Research Initiatives and Projects!">
+    <meta property="og:image" content="{% static 'novacrypt.webp' %}">
+    <meta name="og:url" content="https://novacrypt.org">
+    <meta name="description"
+        content="An international umbrella organization dedicated to building impactful research, projects, and organizations. A community of student researchers, engineers, leaders, and programmers that join together to take their skills beyond the competitional stage.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="{% static 'novacrypt.webp' %}">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Cyborg Theme for BootsWatch -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cyborg/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GKugkVcT8wqoh3M8z1lqHbU+g6j498/ZT/zuXbepz7Dc09/otQZxTimkEMTkRWHP" crossorigin="anonymous">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css'>
+    <link href="{% static 'Dashboard/css/dashboard.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar"
+            style="border-right: 3px solid #21C1FC;">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center mt-5" href="{% url 'Landing:index' %}">
+                <div class="sidebar-brand-icon" style="text-align: center;">
+                    <img src="{% static 'novacrypt.webp' %}" style="width: 80px; height: auto;">
+                </div>
+            </a>
+
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{% url 'Landing:index' %}">
+                <div class="sidebar-brand-text mx-3" style="font-size: 22px;">NovaCrypt</div>
+            </a>
+
+            <li class="nav-item">
+                <a class="nav-link mt-5" href="{% url 'Administration:dashboard' %}" style="text-align: center;">
+                    <span style=" font-size: 20px;">Dashboard</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link mt-5" href="{% url 'Administration:activity' %}" style="text-align: center;">
+                    <span style=" font-size: 20px;">Activity</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link mt-5" href="{% url 'Administration:profile' %}" style="text-align: center;">
+                    <span style=" font-size: 20px;">My Profile</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link mt-5" href="/Administration/dashboard/external/{{Profile.user.username}}" style="text-align: center;">
+                    <span style=" font-size: 20px;">External Profile</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link mt-5" href="{% url 'Administration:logout' %}" style="text-align: center;">
+                    <span style=" font-size: 20px;">Sign Out</span></a>
+            </li>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top"
+                    style="border-bottom: 3px solid #21C1FC;">
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item no-arrow">
+                            <a class="nav-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"
+                                    style="color: #21C1FC; font-size: 18px;">{{Profile.user.first_name}} {{Profile.user.last_name}}</span>
+                                <img class="img-profile rounded-circle" src="{% get_media_prefix  %}{{ Profile.avatar }}">
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+                
+                <!--Content Header-->
+                <h3 class="h3 ml-5 mb-0">Activity</h3>
+
+                <div class="col-xl-11 col-md-6 mb-5 mt-5" style="margin: 0 auto;">
+                    <div class="card border-left-info shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto">
+                                            <div class="h5 mb-0 mr-3 font-weight-bold" style="color:#1FB9F8">{{level}}</div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="progress progress-sm mr-2" style="background-color: #4A5A70; height:7px;">
+                                                <div class="progress-bar bg-info" role="progressbar"
+                                                    style="width: {{levelper}}%; background-color: #1FB9F8;" aria-valuenow="50" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="h5 mb-0 mr-3 font-weight-bold" style="color:#1FB9F8">{{levelp1}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Middle-->
+                <h4 class="ml-5 mb-0 mt-5 pt-5 pb-3" style="text-align: center; text-decoration: underline; text-underline-offset: 18px; font-weight:lighter;">Next Activity Level</h4>
+                <div class="h5 mb-0 ml-5 pt-2" style="color:#1FB9F8; text-align: center; font-size: 70px;">{{levelp1}}</div>
+                <div class="next-level">
+                    <ul class="mt-3 dashed mb-5" style="text-align: center; color:white; font-size:22px;">
+                        <li>{{teams}} Project Team Slots</li>
+                    </ul>
+                </div>
+
+                <!--Levels-->
+                <div class="row mb-5">
+                    <div class="col-sm-4" style="text-align: center;">
+                        <div class="level-container container" style="color:#1FB9F8; line-height: 180px; font-size: 75px;">{{levelm1}}</div>
+                    </div>
+                    <div class="col-sm-4" style="text-align: center;">
+                        <div class="level-container container" style="color:#1FB9F8; line-height: 180px; font-size: 75px;">{{level}}</div>
+                    </div>
+                    <div class="col-sm-4" style="text-align: center;">
+                        <div class="level-container container" style="color:#1FB9F8; line-height: 180px; font-size: 75px;">{{levelp1}}</div>
+                    </div>
+                </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}NovaCrypt | Partners {% endblock %}
+{% block css %}
+<style>
+  a.bruh:hover {
+    background-color: #03cdff;
+    color: black !important;
+    font-weight: bolder;
+  }
+</style>
+{% endblock %}
+{% block body %}
+<div class="p-0 w-100" style="margin: 0; margin-top: 100px;">
+    <div class="d-flex flex-column w-100">
+      <div class="d-flex flex-row w-100">
+        <hr class="mx-0 my-auto align-middle" style="background-color: #03cdff; height: 3px; opacity: 1; margin-left: 0; width: 10%;" data-aos="fade-up">
+        <h3 class="my-auto align-middle" style="margin-left: 5%; letter-spacing: 0.3em; text-transform: uppercase !important; color: #03cdff; font: 'Raleway', 'Oswald', sans-serif;" data-aos="fade-up">Partners</h3>
+      </div>
+      <hr class="mx-0 mb-5 align-middle" style="background-color: #03cdff; height: 3px; opacity: 1; margin-left: 0; width: 100% !important;" data-aos="fade-up">
+      <div class="d-flex justify-content-around p-0 my-5" style="width: 100%; margin-top: 2rem !important; flex-wrap: wrap;">
+        {% for Partner in Partners %}
+        <div class="row d-flex justify-content-center m-0">
+          <a class="text-white m-0" href="{{Partner.link}}"><img src="{% get_media_prefix  %}{{ Partner.logo }}" class="d-inline-block m-0" style="width: 100px; height: 100px;" data-aos="fade-up"></a>
+        </div>
+        {% endfor %}
+      </div>
+      <a class="bruh mx-auto my-5" style="color: #03cdff; border:1px solid #03cdff; border-radius: 10px; padding: 20px; width: 80%; text-align: center; font-size: 1.5rem; font-weight: bolder;" href="" data-aos="fade-up">Want to Partner?</a>
+    </div>
+  </div>        
+{% endblock %}
+{% block js %}
+{% endblock %}

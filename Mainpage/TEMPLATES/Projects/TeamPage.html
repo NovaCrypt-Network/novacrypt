@@ -1,0 +1,263 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}NovaCrypt | {{Team.name|title}} {% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'Projects/CSS/Carousel.css' %}">
+<link rel="stylesheet" href="{% static 'Projects/CSS/Cards.css' %}">
+<link rel="stylesheet" href="{% static 'Projects/CSS/Stats.css' %}">
+<link rel="stylesheet" href="{% static 'Projects/CSS/PeopleCards.css' %}">
+<link rel="stylesheet" href="{% static 'Projects/CSS/CustomSVGFont/css/Glyphter.css' %}">
+{% endblock %}
+{% block body %}
+<!-- Developed by Kanishk Kacholia -->
+<!--<main class="main-content">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+       {% for slide in TeamSlideshow %}
+       {% if forloop.first %}
+       <div class="carousel-item active">
+          <img src="{{slide.picture.url}}" class="img-fluid" alt="...">
+       </div>
+       {% else %}
+       <div class="carousel-item">
+          <img src="slide.picture.url" class="img-fluid" alt="...">
+       </div>
+       {% endif %}
+       {% endfor %}
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+    <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </a>
+ </div>-->
+  <section class="slideshow">
+    <div class="slideshow-inner">
+      <div class="slides">
+        {% for slide in TeamSlideshow %}
+        {% if forloop.first %}
+        <div class="slide is-active ">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">{{slide.title}}</div>
+              <div class="text">
+                <p class="slide-desc">{{slide.desc}}</p>
+              </div> 
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="{{slide.picture.url}}" alt="" class="image" />
+          </div>
+        </div>
+        {% else %}
+        <div class="slide">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">{{slide.title}}</div>
+              <div class="text">
+                <p class="slide-desc">{{slide.desc}}</p>
+              </div> 
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="{{slide.picture.url}}" alt="" class="image" />
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% for slide in TeamSlideshow %}
+      <div class="pagination row justify-content-center">
+        <div class="item is-active"> 
+          <span class="icon">{{ forloop.counter }}</span>
+        </div>
+      </div>
+      {% endfor %}
+      {% if TeamSlideshow|length > 0 %}
+      <div class="arrows">
+        <div class="arrow prev">
+          <span class="svg svg-arrow-left">
+            <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+            <span class="alt sr-only"></span>
+          </span>
+        </div>
+        <div class="arrow next">
+          <span class="svg svg-arrow-right">
+            <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+            <span class="alt sr-only"></span>
+          </span>
+        </div>
+      </div>
+      {% endif %}
+    </div> 
+  </section>
+</main>
+<div class="container-fluid stat-holder text-white pb-lg-5">
+  <!--<div class="row text-center py-4 justify-content-center stat-numbers" data-aos="fade-up">
+    <div class="col-3 stats right-border">
+      <h2 class="count">{{Projects|length}}</h2>
+      <h6>Projects</h6>
+    </div>
+    <div class="col-3 stats right-border">
+      <h2 class="count">{{Teams|length}}</h2>
+      <h6>Teams</h6>
+    </div> 
+    <div class="col-3 stats right-border">
+      <h2 class="count">1500</h2>
+      <h6>Members</h6>
+    </div> 
+    <div class="col-3 stats">
+      <h2 class="count">{{Sponsors}}</h2>
+      <h6>Sponsors</h6>
+    </div> 
+  </div>--> 
+  <div class="row justify-content-center pt-lg-5" data-aos="fade-up">
+    <img src="{{Team.icon.url}}" style="width: 25%;">
+  </div>
+  <div class="row text-center pt pb-2 justify-content-center text-white" data-aos="fade-up">
+    <h1 class="project-teams team-name">{{Team.name|upper}}</h1>
+  </div>
+  <div class="row text-center pt-5 pb-5 justify-content-center text-white d-none d-lg-flex" data-aos="fade-up">
+    <h1 class="project-teams">Team Members</h1>
+  </div>
+  <div class="row justify-content-center text-white d-none d-lg-flex" data-aos="fade-up">
+    {% for Lead in Leads %}
+    <div class="col-2 d-flex justify-content-center rounded person-card m-3">
+      <div class="row justify-content-center d-flex">
+        <div class="col-12 col-xl-9 pr-xl-0 text-center pb-0">
+          <h5 class="card-title person-card-title pt-2">{{Lead.User.user.first_name|title}} {{Lead.User.user.last_name|title}}</h5>
+          <p class="person-card-desc">{{Lead.Title}} of Team {{Team.name}}.</p>
+        </div>
+        <div class="col-2 d-lg-none d-xl-block ml-auto align-self-center pl-0 pl-xl-1">
+          {% if Lead.User.linkedin != None %}
+          <a href="{{Lead.User.linkedin}}" target="_blank"><i class="fab fa-linkedin-in vert-icon"></i></a>
+          {% endif %}
+          {% if Lead.User.instagram != None %}
+          <a href="{{Lead.User.instagram}}" target="_blank"><i class="fab fa-instagram vert-icon"></i></a>
+          {% endif %}
+          {% if Lead.User.github != None %}
+          <a href="{{Lead.User.github}}" target="_blank"><i class="fab fa-github vert-icon"></i></a>
+          {% endif %}
+        </div>
+        <div class="row d-lg-flex d-xl-none justify-content-center pb-1">
+          {% if Lead.User.linkedin != None %}
+          <a href="{{Lead.User.linkedin}}" target="_blank"><i class="col-4 fab fa-linkedin-in vert-icon"></i></a>
+          {% endif %}
+          {% if Lead.User.instagram != None %}
+          <a href="{{Lead.User.instagram}}" target="_blank"><i class="col-4 fab fa-instagram vert-icon"></i></a>
+          {% endif %}
+          {% if Lead.User.github != None %}
+          <a href="{{Lead.User.github}}" target="_blank"><i class="col-4 fab fa-github vert-icon"></i></a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="container-fluid parent pt-3">
+  {% for Project in Projects %}
+  {% if forloop.counter0|divisibleby:"2" %}
+  <div class="row mx-lg-4 d-flex justify-content-center" data-aos="fade-up">
+    <div class="col-12 col-lg-4 d-flex justify-content-center">
+      <a href="{% url 'ProjectPage' ProjectName=Project.name %}" style="text-decoration: none;">
+        <div class="card-container">
+          {% if Project.completion == 5 %}
+          <span class="Complete">Complete</span>
+          {% elif Project.completion != 5 and Project.completion != 0%}
+          <span class="Progress">In Progress</span>
+          {% elif Project.completion == 0 %}
+          <span class="Concept">Concept</span>
+          {% endif %}
+          <img class="icon" src="{{Project.icon.url}}" alt="user"/>
+          <h3>{{Project.name}}</h3>
+          <h6>Current Progress</h6>
+          <ul class="activity-level d-flex align-self-center">
+            {% for i in "12345"|make_list %}
+            {% if Project.completion >= forloop.counter %}
+            <li class="active"></li>
+            {% else %}
+            <li class=""></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          <p class="px-3">{{Project.description}}</p>
+          <img class="d-lg-none img-fluid p-3 rounded" src="{{Project.thumbnail.url}}">
+          <div class="buttons">
+              <button class="primary">
+                  Learn More
+              </button>
+          </div>
+          <div class="tags">
+              <h6>Tags</h6>
+              <ul>
+                {% for Tag in Project.tags.all %}
+                  <li>{{Tag.name}}</li>
+                {% endfor %}
+              </ul>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-8 d-none d-lg-flex align-self-center justify-content-center">
+      <img class="img-fluid rounded" src="{{Project.thumbnail.url}}">
+    </div>
+  </div>
+  {% elif not forloop.counter0|divisibleby:"2" %}
+  <div class="row mx-lg-4 d-flex justify-content-center" data-aos="fade-up">
+    <div class="col-8 d-none d-lg-flex align-self-center justify-content-center">
+      <img class="img-fluid rounded" src="{{Project.thumbnail.url}}">
+    </div>
+    <div class="col-12 col-lg-4 d-flex justify-content-center">
+      <a href="{% url 'ProjectPage' ProjectName=Project.name %}" style="text-decoration: none;">
+        <div class="card-container">
+          {% if Project.completion == 5 %}
+          <span class="Complete">Complete</span>
+          {% elif Project.completion != 5 and Project.completion != 0%}
+          <span class="Progress">In Progress</span>
+          {% elif Project.completion == 0 %}
+          <span class="Concept">Concept</span>
+          {% endif %}
+          <img class="icon" src="{{Project.icon.url}}" alt="user"/>
+          <h3>{{Project.name}}</h3>
+          <h6>Current Progress</h6>
+          <ul class="activity-level d-flex align-self-center">
+            {% for i in "12345"|make_list %}
+            {% if Project.completion >= forloop.counter %}
+            <li class="active"></li>
+            {% else %}
+            <li class=""></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+          <p class="px-3">{{Project.description}}</p>
+          <img class="d-lg-none img-fluid p-3 rounded" src="{{Project.thumbnail.url}}">
+          <div class="buttons">
+              <button class="primary">
+                  Learn More
+              </button>
+          </div>
+          <div class="tags">
+              <h6>Tags</h6>
+              <ul>
+                {% for Tag in Project.tags.all %}
+                  <li>{{Tag.name}}</li>
+                {% endfor %}
+              </ul>
+          </div>
+        </div>
+      </a>
+    </div>
+  {% endif %}
+  {% endfor %}
+  </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="{% static 'Projects/Javascript/Cards.js' %}"></script>
+<script src="{% static 'Projects/Javascript/Carousel.js' %}"></script>
+<script src="{% static 'Projects/Javascript/Navbar.js' %}"></script>
+<script src="{% static 'Projects/Javascript/Stats.js' %}"></script>
+{% endblock %}

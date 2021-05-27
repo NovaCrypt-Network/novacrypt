@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Webinar | Novacrypt {% endblock %}
+{% load static %}
+{% block css %}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="{% static 'Landing/css/about.css' %}" rel="stylesheet">
+
+<link href="{% static 'Events/css/community.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'Events/css/Carousel.css' %}">
+<link rel="stylesheet" href="{% static 'Events/css/Events.css' %}">
+
+{% endblock %}
+{% block body %}
+<!--slideshow(from researchs and projects)-->
+<main class="main-content">
+  <section class="slideshow">
+    <div class="slideshow-inner">
+    <div class="slides">
+        <div class="slide is-active ">
+        <div class="slide-content">
+            <div class="caption">
+            <div class="title header">All Competitions</div>
+            </div>
+        </div>
+        <div class="image-container"> 
+            <img src="{% static 'Events/img/Indiana_Convention_Center_2_S.png' %}" alt="" class="image" />
+        </div>
+        </div>
+    </div> 
+</section>
+    <div class="pagination row justify-content-center" style="margin: 0; padding: 0; width: 100vw;">
+      <hr class="m-0 p-0" style="border: none; border-top: 5px solid #00b0f0; width: 100vw;">
+    </div>
+</main>
+<!--events/card-->
+<div class="container">
+  <h3 class="special-blue mt-4 mb-4">All Competitions</h3>
+
+  {% for Event in Events %}
+  <div class="row no-gutters mt-1 mb-4">
+    <!--left part of card-->
+    <div class="col-md-7 p-4 d-flex flex-row" style="border: 3px solid #00b0f0; width: 100%; background-color: #262626;">
+      <div class="col-sm-4 m-0 p-0">
+        <img class="img-fluid" src="{{Event.img.url}}" alt="">
+      </div>
+      <div class="col-sm-8 d-flex flex-column justify-content-center p-0 m-0 pl-3">
+        <h4 class="special-blue">{{Event.title}}</h6>
+        <h6 class="special-blue">{{Event.description|truncatewords:20}}</h1>
+        {% if Event.is_past_due %}
+        <h6 class="odd-font red-text">Closed</h6>
+        {% else %}
+        <h6 class="odd-font green-text">Upcoming</h6>
+        {% endif %}
+      </div>
+    </div>
+    <!--right part of card-->
+    <div class="col-md-4 p-4 d-flex flex-column justify-content-center" id="continents" style="border: 3px solid #00b0f0; width: 100%; background-color: #262626;">
+      <div class="text-center w-100 mb-4"> 
+        <a href="/events/competition/{{Event.title}}" type="button" class="btn btn-outline-primary attend-btn w-75 p-1 strong">Learn More</a>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+
+
+
+  </div>
+</div>
+
+{% endblock %}
+{% block js %}
+<!-- JS -->
+<script src="{% static 'Events/js/community.js' %}"></script>
+{% endblock %}

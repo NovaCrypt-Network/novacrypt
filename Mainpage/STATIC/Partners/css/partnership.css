@@ -1,0 +1,239 @@
+.banner {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 3%;
+}
+
+.banner .banner-image {
+    margin-top: 7%;
+    width: 100%;
+    height: 25%;
+}
+
+.banner .banner-p {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    text-align: center;
+    margin-top: 0;
+    padding: 1.5em 0 0;
+    border-top: 0px;
+    margin-top: 3%;
+    
+}
+
+.our-partners h6 {
+    text-align: center;
+    color: white;
+    font-size: 300%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3%;
+    
+}
+
+/* CARD STYLING */
+
+.card-container {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    flex-flow: wrap;
+    
+}
+
+.card {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: initial;
+    margin-left: initial;
+}
+
+.card,
+.card_front,
+.card_back {
+    width: 397px;
+    height: 640px;
+    box-sizing: border-box;
+
+}
+
+.card {
+    width: 397px;
+    height: 640px;
+    margin-left:auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    
+}
+
+
+.text-n-stuff {
+    width: 100%;
+    height: 100%;
+}
+
+.card-text p {
+    color: black;
+    width: 100%;
+    height: 75%;
+}
+
+.button-container {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    height: auto;
+    bottom: 2px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-container .btn {
+    text-align: center;
+    padding: 10px;
+
+   /* margin-left: 10px;
+    margin-right: 10px;
+    height: 57px;
+    line-height: 80px;  
+    width: 57px;  
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: rgb(0, 208, 255);
+    color: white;
+    text-align: center;
+    cursor: pointer;*/
+}
+
+.button-container .btn img {
+    text-align:center;
+
+}
+
+
+.our-partners
+.card_front,
+.card_back, .text-n-stuff {  
+    box-shadow: 0px 5px 25px 0px rgba(51,51,51,0.28); 
+}
+
+.card-symbol {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-family: 'Cantata One', serif;
+    font-size: 13em;  
+    mix-blend-mode: lighten;
+}
+
+.card-logo-front img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.card-logo-front h6 {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bolder;
+}
+
+.card-logo-back {
+    text-align: center;
+    background-color: inherit;
+}
+
+.card-logo-back img {
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+}
+
+@supports(display:flex) {
+    .card_front {  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: ;
+    } 
+
+    .card_front .card-symbol {  
+        margin: 0 0.15em;
+        border-radius: 50%;
+        font-size: 15em;  
+    }
+
+    .card_front {
+        position: relative;
+        padding: 0 1em;
+    }
+
+    .card_front .card-symbol {    
+        font-size: 15em;  
+    }
+
+    .card_back {
+        /*display: none;*/
+        padding: 5%;
+        
+    }
+
+    /*card_front > *,*/ .text-n-stuff > * {
+        background-color: white;
+        background-color: rgba(255, 255, 255, 0.75);  
+    }
+
+    .card-text {
+        padding: 0 4.5em 1em;
+        line-height: 1.4;
+        height: 64%;
+    }
+
+    p:first-of-type {    
+        margin-top: 0;
+        padding: 1.5em 0 0;
+        border-top: 8px solid #333;
+    }
+
+    /* FLIP CARD STYLING */
+    .card-container {
+        perspective: 1000px;
+    }
+
+    .card:hover {
+        transform: rotateY(-180deg);
+    }
+
+    .card {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .card_front,
+    .card_back {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(/assets/images/star-card.jpg)
+    }
+
+    .card_front {
+        z-index: 2;
+        transform: rotateY(0deg);
+    }
+
+    .card_back {
+        transform: rotateY(-180deg);
+    }
+}

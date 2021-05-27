@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load static%}
+{% load crispy_forms_tags %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'Administration/CSS/signup.css' %}">
+{% endblock %}
+{% block body %}
+<div class="container stat-holder" style="margin-top: 150px; background-color: #262626;">
+    <div class="mvisible">
+        <br>
+            <h3 class="text-white" style="text-align: center;">Sign Up</h3>
+            <div class="row justify-content-center">
+                <div class="divider1">
+                    <hr>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    <div style="width: 100%;"  class="d-flex justify-content-center">
+                        <div class="login-form">
+                            <h6 class="text-center text-white">Already have an account? <a href="/Administration">Log In!</a></h6>
+                            {{form.username}}
+                            {{form.password1}}
+                            {{form.password2}}
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" style="margin-top: 20px;">
+                        <div class="divider1"><hr></div>
+                    </div>
+                    <div style="width: 100%;"  class="d-flex justify-content-center">
+                        <div class="login-form">
+                            {{form.first_name}}
+                            {{form.last_name}}
+                            {{form.email}}
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" style="margin-top: 40px;">
+                        {{form.captcha}}
+                    </div>
+                    {% if form.errors %}
+                    <!-- Error messaging -->
+                    <div id="errors" class="alert alert-info alert-dismissible m-2 text-center" role="alert">
+                        <div class="inner">
+                            <p>There were some errors in the information you entered. Please correct the following:</p>
+                            <ul>
+                                {% for field in form %}
+                                    {% if field.errors %}<li>{{ field.label }}: {{ field.errors|striptags }}</li>{% endif %}
+                                {% endfor %}
+                            </ul>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /Error messaging -->
+                    {% endif %}
+                    <div class="row justify-content-center" style="margin-top: 20px;">
+                        <div class="divider1"><hr></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button style="margin-top: 20px;" type="submit" class="submit"><i class="fab fa-google"></i></button>
+                        <button style="margin-top: 20px;" type="submit" class="submit" value="Sign Up">Sign Up</button>
+                    </div>   
+                </form>
+            </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div class="row justify-content-end">
+        <div class="mhidden col"> 
+            <br>
+            <h3 class="text-white" style="text-align: center;">Sign Up</h3>
+            <div class="row justify-content-center">
+                <div class="divider1">
+                    <hr>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    <div style="width: 100%;"  class="d-flex justify-content-center">
+                        <div class="login-form">
+                            <h6 class="text-center text-white">Already have an account? <a href="/Administration">Log In!</a></h6>
+                            {{form.username}}
+                            {{form.password1}}
+                            {{form.password2}}
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" style="margin-top: 20px;">
+                        <div class="divider1"><hr></div>
+                    </div>
+                    <div style="width: 100%;"  class="d-flex justify-content-center">
+                        <div class="login-form">
+                            {{form.first_name}}
+                            {{form.last_name}}
+                            {{form.email}}
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" style="margin-top: 40px;">
+                        {{form.captcha}}
+                    </div>
+                    {% if form.errors %}
+                    <!-- Error messaging -->
+                    <div id="errors" class="alert alert-info alert-dismissible m-2 text-center" role="alert">
+                        <div class="inner">
+                            <p>There were some errors in the information you entered. Please correct the following:</p>
+                            <ul>
+                                {% for field in form %}
+                                    {% if field.errors %}<li>{{ field.label }}: {{ field.errors|striptags }}</li>{% endif %}
+                                {% endfor %}
+                            </ul>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /Error messaging -->
+                    {% endif %}
+                    <div class="row justify-content-center" style="margin-top: 20px;">
+                        <div class="divider1"><hr></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button style="margin-top: 20px;" type="submit" class="submit" value="Sign Up">Sign Up</button>
+                    </div>   
+                </form>
+            </div>
+            <br>
+        </div>
+        <img src="{% static 'Administration/images/kuva1.png' %}" class="img-fluid imagge1" alt="Image error" style="width: 40rem;">
+    </div>      
+</div>
+<div class="footerdown">
+    <br>
+</div>
+{% endblock %}
+{% block js %}
+{% endblock %}

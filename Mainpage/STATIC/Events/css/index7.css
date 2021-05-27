@@ -1,0 +1,23 @@
+.blue-border{
+  border: 3px solid #13ACE3;
+}
+.noSchedule{
+    font-size: 9vmin;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 767.98px){
+    .header{
+        font-size: 100px !important;
+    }
+}
+@media (min-width: 991.98px){
+    .header{
+        font-size: 150px !important;
+    }
+}
+@media (min-width: 1199.98px){
+    .header{
+        font-size: 200px !important;
+    }
+}

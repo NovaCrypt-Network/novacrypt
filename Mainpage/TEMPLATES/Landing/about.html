@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block title %}NovaCrypt | About {% endblock %}
+{% load static %}
+{% block css %}
+<link href="{% static 'Landing/CSS/newAbout.css' %}" rel="stylesheet">
+{% endblock %}
+{% block body %}
+<!-- Developed by Kanishk Kacholia -->
+<div class="container-fluid px-0 pt-5">
+  <div class="row px-0 d-flex justify-content-center pt-5" data-aos="zoom-in" data-aos-delay="60"  data-aos-duration="1000">
+    <div class="col-10 col-md-8 col-lg-6 col-xl-4">
+      <img class="img-fluid" src="{% static 'Landing/images/mainlogo.gif' %}">
+    </div>
+  </div>
+  <div class="row px-0 d-flex justify-content-center stat-holder">
+    <h1 class="ml11">
+      <span class="text-wrapper">
+        <span class="line line1"></span>
+        <span class="letters">What Is NovaCrypt?</span>
+      </span>
+    </h1>
+  </div>
+  <div class="row px-0 d-flex justify-content-center pt-5">
+    <div class="col-10 col-lg-6 text-center mx-2" data-aos="fade-up">
+      <h1 class="header">Who We Are</h1>
+      <p class="paragraphText">
+        NovaCrypt is an international umbrella organization that focuses on researching and building projects that make a real impact. Each of our subsidiaries offers new capabilities and perks to aid in expanding projects, offering services from marketing to dedicated livestream platforms.
+      </p>
+    </div>
+    <div class="col-8 col-lg-5 col-xl-4 mx-2" data-aos="fade-up">
+      <img class="img-fluid" src="{% static 'Landing/images/11.PNG' %}"></div>
+    </div>
+  </div>
+
+  <div class="row px-0 d-flex justify-content-center pt-2 pb-5 pb-lg-0 mt-5">
+    <div class="col-10 col-lg-6 mx-2 text-center" data-aos="fade-up">
+      <h1 class="header">What We Do</h1>
+      <p class="paragraphText">
+        Whether its building a rocket engine or developing algorithms, we work to take projects beyond the developmental stage and into the real world. We offer 12 open-source project teams and multiple private ones, working on research in biotechnology, software, aerospace, and much more.
+      </p>
+    </div>
+    <div class="col-10 col-md-8 col-lg-5 col-xl-4 mx-2 justify-content-center" data-aos="fade-up">
+      <img class="img-fluid rounded mb-2" src="{% static 'Landing/images/cad2.png' %}">
+      <a href="/Projects" class="btn btn-primary w-100 pt-2 paragraphText">See Our Projects</a>
+    </div>
+  </div>
+
+  <div class="row px-0 d-flex justify-content-center pt-2 pt-lg-5 pb-5 pb-lg-0 mt-5">
+    <div class="col-10 col-lg-6 text-center mx-2" data-aos="fade-up">
+      <h1 class="header">Where We Are</h1>
+      <p class="paragraphText">
+        With members all across the globe, NovaCrypt harnesses the power of global unity through research while also providing a world-class experience to members. We've grown so much over the past year and hope that you can join us on this amazing journey.
+      </p>
+    </div>
+    <div class="col-10 col-md-8 col-lg-5 col-xl-4 mx-2 justify-content-center" data-aos="fade-up">
+      <img class="img-fluid rounded mb-2" src="{% static 'Landing/images/Map.png' %}">
+      <a href="{% url 'Landing:community' %}" class="btn btn-primary w-100 pt-2 paragraphText">See Our Community</a>
+    </div>
+  </div>
+  
+  <div class="row px-0 d-flex justify-content-center pt-2 pt-lg-5 pb-5 pb-lg-2 mt-5 mb-5">
+    <div class="col-10 col-lg-6 text-center mx-2" data-aos="fade-up">
+      <h1 class="header">Why Us?</h1>
+      <p class="paragraphText">
+        Behind the scenes, the NovaCrypt Team works to maintain the website and advance our projects to better improve the services we offer. If you are interested in joining the team, click the button below.
+      </p>
+    </div>
+    <div class="col-10 col-md-8 col-lg-5 col-xl-4 mx-2 justify-content-center" data-aos="fade-up">
+      <img class="img-fluid rounded mb-2" src="{% static 'Landing/images/Team.png' %}">
+      <a href="https://forms.gle/pUNT3miiKHrv1meL6" target="_blank" class="btn btn-primary w-100 pt-2 paragraphText">Join Our Team!</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="{% static 'Landing/js/TextAnimate.js' %}"></script>
+{% endblock %}

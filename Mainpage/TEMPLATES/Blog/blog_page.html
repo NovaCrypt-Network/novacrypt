@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% load wagtailcore_tags %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'Blog/CSS/Blog.css' %}">
+{% endblock %}
+{% block title %}NovaCrypt | {{page.title|title}} {% endblock %}
+{% block body %}
+<!-- Developed by Kanishk Kacholia -->
+    <div class="container-fluid popular mx-0">
+        <div class="row d-flex justify-content-center mt-3 mb-5">
+            <div class="col-10 col-lg-8 text-center">
+                <h3>{{page.title|title}}</h3>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center stat-holder">
+            <img class="col-10 col-lg-8 rounded" src="{{page.thumbnail.url}}">
+        </div>
+        <div class="row d-flex justify-content-center mt-3">
+            <p class="col-10 col-lg-8 text-muted thumbnail_desc">{{page.thumbnail_desc}}</p>
+        </div>
+        <div class="row d-flex justify-content-center mb-5">
+            <div class="col-10 col-lg-8 block-{{block.block_type }}">
+                <img class="avatar mx-0 my-lg-3" src="{{User.avatar.url}}">
+                <h3><a class="article" href="/Blog/Author/{{page.owner.username}}">{{page.owner.first_name|title}} {{page.owner.last_name|title}}</a></h3>
+                <h6 class="text-muted">Published on {{page.first_published_at}} in <a class="article" href="/Blog/Category/{{page.category}}">{{page.category}}</a></h6>
+            </div>
+        </div>
+        {% for block in page.content %}
+        <div class="row justify-content-center mt-5 text-white">
+            <div class="col-10 col-lg-8 block-{{block.block_type }}">
+                {% include_block block %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
+{% block js %}
+{% endblock %}

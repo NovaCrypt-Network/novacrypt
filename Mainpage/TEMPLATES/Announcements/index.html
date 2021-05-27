@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}NovaCrypt | Announcements {% endblock %}
+{% block css %}
+<link href="{% static 'Announcements/CSS/announcements.css' %}" rel="stylesheet">
+<link href="{% static 'main.css' %}" rel="stylesheet">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css'>
+
+{% endblock %}
+{% block body %}
+<main id="content" class="stacked white-text">
+    <div class="multi">
+        <section id="announcements">
+
+            <h2>Announcements</h2>
+            <hr>
+            {% for Announcement in Announcements %}
+                    <p>&#xA;&#xA;Merry Christmas everyone! &#xA;&#xA;??</p>
+                    <hr>
+            {% endfor %}
+        </section>
+
+        <aside id="discord">
+            <div class="stacked" style="height: 100%;">
+                <div class="beside" style="margin-bottom: 25px; margin-left: auto; margin-right: auto;">
+                    <a href="https://discord.gg/5dESz5e"><img src="{% static 'Announcements/images/1qepg36lgyz41.webp' %}" alt="Discord" aria-hidden="true" style="width: 100px; height: 100px; margin-right: 10px;"></a>
+                    <span style="color: #5d17a4; font-size: x-large; margin: auto;">Join our <br> Discord server!</span>
+                </div>
+                <iframe class="discord" src="https://discordapp.com/widget?id=702020759803134023&theme=dark" style="border:none; border-radius:30px; height:100%;"></iframe>
+            </div>
+        </aside>
+
+    </div>
+
+</main>
+
+
+
+
+{% endblock %}
+{% block js %}
+{% endblock %}

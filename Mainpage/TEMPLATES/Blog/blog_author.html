@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load static %}
+{% load wagtailcore_tags %}
+{% load wagtailimages_tags %}
+{% block title %}NovaCrypt | {{User.user.first_name|title}} {{User.user.last_name|title}} {% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'Blog/CSS/Blog.css' %}">
+{% endblock %}
+{% block body %}
+<!-- Developed by Kanishk Kacholia -->
+    <div class="container-fluid mx-0 d-none d-lg-block popular">
+        <div class = "row my-5 mx-0 d-flex justify-content-center stat-holder">
+            <div class="col-12 mx-0">
+                <div class="container-fluid mx-0">
+                    <div class="row mx-0 d-flex justify-content-center">
+                        <div class="col-2 mx-0 justify-content-center">
+                            <img class="img-fluid avatar" src="{{User.avatar.url}}">
+                        </div>
+                        <div class="col-7 mx-0">
+                            <h2>{{User.user.first_name|title}} {{User.user.last_name|title}}</h2>
+                            <p>{{UserMember.bio}}</p>
+                        </div>
+                        {% if UserMember.linkedin or UserMember.instagram or UserMember.github %}
+                            <div class="col-2 mx-0 justify-content-center">
+                                {% if UserMember.linkedin %}
+                                    <a class="test-css linkedin" href="{{UserMember.linkedin}}" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                                {% endif %}
+                                {% if UserMember.instagram %}
+                                    <a class="test-css instagram" href="{{UserMember.instagram}}" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                                {% endif %}
+                                {% if UserMember.github %}
+                                    <a class="test-css github" href="{{UserMember.github}}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mx-0 d-lg-none popular">
+        <div class="row d-flex mt-5 justify-content-center">
+            <div class="col-6 col-md-4 card d-flex special-card" style="width: 18rem;">
+                <img class="avatar align-self-center" src="{{User.avatar.url}}">
+            </div>
+        </div>
+        <div class="row d-flex mt-1 justify-content-center">
+            <div class="col-10 card d-flex special-card" style="width: 18rem;">
+                <h2 class="text-center">{{User.user.first_name|title}} {{User.user.last_name|title}}</h2>
+                <p>{{UserMember.bio}}</p>
+            </div>
+        </div>
+        {% if UserMember.linkedin or UserMember.instagram or UserMember.github %}
+            <div class="row d-flex mt-1 justify-content-center">
+                {% if UserMember.linkedin %}
+                    <div class="col-4"><a class="test-css linkedin" href="{{UserMember.linkedin}}" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></div>
+                {% endif %}
+                {% if UserMember.instagram %}
+                    <div class="col-4"><a class="test-css instagram" href="{{UserMember.instagram}}" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></div>
+                {% endif %}
+                {% if UserMember.github %}
+                    <div class="col-4"><a class="test-css github" href="{{UserMember.github}}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></div>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+    {% if Blogs %}
+    <div class="container-fluid mx-0">
+        <div class = "row mt-3 mx-0 d-flex justify-content-center">
+            <h1>Published Articles</h1>
+        </div>
+        <hr>
+    </div>
+    <div class="container-fluid mx-0">
+        <div class="row d-flex mt-5 justify-content-center ARTICLE_HOLDER" data-version="2" data-author="{{UserMember.user.username}}">
+            {% for Blog in Blogs %}
+            <div class="col-10 col-md-6 col-lg-4 mt-5 mt-lg-3 card d-flex special-card" style="width: 18rem;" data-id="{{Blog.pk}}" data-aos="fade-up">
+                <img class="card-img-top rounded" src="{{Blog.thumbnail.url}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
+                    <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.date}}</p>
+                    <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
+                    <p class="card-text">{{Blog.short_description}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}
+{% block js %}
+<script src="https://unpkg.com/moment"></script>
+<script src="{% static 'Blog/JS/Blog.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Event info | NovaCrypt{% endblock %}
+{% block css %}
+    <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'Projects/CSS/Carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'Events/css/Cards.css' %}">
+    <link rel="stylesheet" href="{% static 'Events/css/Stats.css' %}">
+    <link rel="stylesheet" href="{% static 'Events/css/TeamCards.css' %}">
+    <link rel="stylesheet" href="{% static 'Events/css/CustomSVGFont/css/Glyphter.css' %}">
+
+{% endblock %}
+{% block body %}
+    <main class="main-content">
+      <section class="slideshow">
+          <div class="slideshow-inner">
+          <div class="slides">
+              <div class="slide is-active ">
+              <div class="slide-content">
+                  <div class="caption">
+                  </div>
+              </div>
+              <div class="image-container"> 
+                  <img src="{{Event.img.url}}" alt="" class="image" />
+              </div>
+              </div>
+          </div> 
+      </section>
+  </main>
+
+
+    <div class="w-100 p-3" style="background-color: #000000; color: #ffffff; border-top: 8px solid #00B0F0">
+      <div class="d-block justify-content-between" style="padding: 1rem;">
+          <h1 style="letter-spacing: 2px; font-weight: 300; color: #00B0F0;">{{Event.title}}</h1>
+          <h5 style="letter-spacing: 2px; font-weight: 300; color: #00B0F0;">{{Event.type}}</h5>
+      </div>
+      <div class="d-flex w-100" style="padding: 1rem;">
+      <div>
+          <p class="w-100">
+            {{Event.description}}
+          </p>
+      </div>
+      <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: -125px;">
+            <div class="col" style="margin: 10px;">
+              <div class="card" style="height: 30rem; max-width: 300px; border-radius: 0; border: 8px solid #00B0F0">
+                <a href="#" style="text-decoration: none; color: #ffffff">
+                <img src="{{Event.img.url}}" class="card-img-top" style="padding-top: 10px;" alt="...">
+                <a href="{{Event.URL}}" type="button" class="btn btn-lg w-100" style="background-color: #00B0F0; border: 1px solid #000000; border-radius: 0; letter-spacing: 3px;">JOIN EVENT</a>
+                <div class="card-body">
+                  <h6 class="card-title" style="font-weight: 300; text-transform: none;">Event Date: {{Event.date}} EST</h6>
+                  <h6 class="card-title" style="font-weight: 300; text-transform: none;">Deadline: </h6>
+                  <hr color="white">
+                  <h6 class="card-title" style="font-weight: 300; text-transform: none;">Questions? <a href="mailto:info@novacrypt.org">Email Us!</a></h6>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+      {%if Event.type == "Webinar" %}
+      <a href="/events/webinar/{{Event.title}}" type="button" class="btn btn-outline-primary w-100" style="border-radius: 0; font-size: 20px; letter-spacing: 3px;">MORE INFO</a>
+      {% else %}
+      <a href="/events/competition/{{Event.title}}" type="button" class="btn btn-outline-primary w-100" style="border-radius: 0; font-size: 20px; letter-spacing: 3px;">MORE INFO</a>
+      {% endif %}
+       </div>
+  {% endblock %}
+  {% block js %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{% static 'Projects/Javascript/Carousel.js' %}"></script>
+    <script src="{% static 'Events/js/Stats.js' %}"></script>
+    <script src="{% static 'Events/js/Cards.js' %}"></script>
+    {% endblock %}
+

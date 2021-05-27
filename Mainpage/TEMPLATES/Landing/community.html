@@ -1,0 +1,262 @@
+{% extends "base.html" %}
+{% block title %}Community | NovaCrypt{% endblock %}
+{% load static %}
+{% block css %}
+<!-- CSS -->
+<link href="{% static 'Landing/CSS/community.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'Projects/CSS/Carousel.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" type="71cda429cbb1aa2f15d1544d-text/javascript"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+<!--StyleTag-->
+<style>
+  #map {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  #faction {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  #line_container {
+    height: 200px;
+    width: 600px;
+    margin: 10px auto;
+    padding-top: 100px;
+  }
+
+  hr {
+    width: 90%;
+  }
+</style>
+<style>
+#map { width: 800px; height: 500px; background: #060606;} 
+.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } 
+.info h4 { margin: 0 0 5px; color: #777; } .legend { text-align: left; line-height: 18px; color: #555; } 
+.legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }</style>
+{% endblock %}
+{% block body %}
+
+<!--slideshow(from researchs and projects)-->
+<main class="main-content stat-holder">
+    <section class="slideshow">
+        <div class="slideshow-inner">
+        <div class="slides">
+            <div class="slide is-active ">
+            <div class="slide-content">
+                <div class="caption">
+                <div class="title">Our Community</div>
+                </div>
+            </div>
+            <div class="image-container"> 
+                <img src="https://cdn.novacrypt.org/static/Landing/images/anotherimage.png" alt="" class="image" />
+            </div>
+            </div>
+        </div> 
+    </section>
+</main>
+
+<div class="container-fluid m-0 p-0">
+  <hr class="w-100 m-0 p-0" style="border: none; border-top: 5px solid #00b0f0; width: 100%;">
+<div class="row mt-5 mb-5">
+
+    <div class="col col-9 col-sm-3">
+      <div class="d-none d-sm-block rounded-circle" style="margin-left: 4vw; margin-right: 4vw; border: 5px solid #00b0f0; width: 15vw; height: 15vw;">
+        <div class="container d-flex justify-content-center align-content-center flex-column">
+          <h1 class="row justify-content-center align-self-center font-weight-bold" style="font-size:4vw; margin-top: 30%; color: #00b0f0;">1,500</h1>
+          <h5 class="row justify-content-center align-self-center font-weight-bold" style="font-size:2vw;color: #00b0f0;">Members</h5>
+        </div>
+      </div>
+      <div class="d-sm-none rounded-circle mb-5" style="margin-left: 20vw; margin-right: 20vw; border: 5px solid #00b0f0; width: 60vw; height: 60vw;">
+        <div class="container d-flex justify-content-center align-content-center flex-column">
+          <h1 class="row justify-content-center align-self-center font-weight-bold" style="font-size:8vw; margin-top: 30%; color: #00b0f0;">1,500+</h1>
+          <h5 class="row justify-content-center align-self-center font-weight-bold" style="font-size:4vw;color: #00b0f0;">Members</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-9 col-sm-3">
+      <div class="d-none d-sm-block rounded-circle" style="margin-left: 4vw; margin-right: 4vw; border: 5px solid #00b0f0; width: 15vw; height: 15vw;">
+        <div class="container d-flex justify-content-center align-content-center flex-column">
+          <h1 class="row justify-content-center align-self-center font-weight-bold" style="font-size:4vw; margin-top: 30%; color: #00b0f0;">{{Projects}}</h1>
+          <h5 class="row justify-content-center align-self-center font-weight-bold" style="font-size:2vw;color: #00b0f0;">Projects</h5>
+        </div>
+      </div>
+      <div class="d-sm-none rounded-circle mb-5" style="margin-left: 20vw; margin-right: 20vw; border: 5px solid #00b0f0; width: 60vw; height: 60vw;">
+        <div class="container d-flex justify-content-center align-content-center flex-column">
+          <h1 class="row justify-content-center align-self-center font-weight-bold" style="font-size:8vw; margin-top: 30%; color: #00b0f0;">{{Projects}}</h1>
+          <h5 class="row justify-content-center align-self-center font-weight-bold" style="font-size:4vw;color: #00b0f0;">Projects</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-9 col-sm-3">
+      <div class="d-none d-sm-block rounded-circle" style="margin-left: 4vw; margin-right: 4vw;border: 5px solid #00b0f0; width: 15vw; height: 15vw;">
+        <div class="container d-flex justify-content-center align-content-center flex-column">
+          <h1 class="row justify-content-center align-self-center font-weight-bold" style="font-size:4vw; margin-top: 30%; color: #00b0f0;">{{Sponsors}}</h1>
+          <h5 class="row justify-content-center align-self-center font-weight-bold" style="font-size:2vw;color: #00b0f0;">Sponsors</h5>
+        </div>
+      </div>
+      <div class="d-sm-none rounded-circle mb-5" style="margin-left: 20vw; margin-right: 20vw;border: 5px solid #00b0f0; width: 60vw; height: 60vw;">
+        <div class="container d-flex justify-content-center align-content-center flex-column">
+          <h1 class="row justify-content-center align-self-center font-weight-bold" style="font-size:8vw; margin-top: 30%; color: #00b0f0;">{{Sponsors}}</h1>
+          <h5 class="row justify-content-center align-self-center font-weight-bold" style="font-size:4vw;color: #00b0f0;">Sponsors</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-9 col-sm-3">
+      <div class="d-none d-sm-block rounded-circle" style="margin-left: 4vw; margin-right: 4vw;border: 5px solid #00b0f0; width: 15vw; height: 15vw;">
+        <div class="container d-flex justify-content-center align-content-center flex-column">
+          <h1 class="row justify-content-center align-self-center font-weight-bold" style="font-size:4vw; margin-top: 30%; color: #00b0f0;">{{Teams}}</h1>
+          <h5 class="row justify-content-center align-self-center font-weight-bold" style="font-size:2vw;color: #00b0f0;">Teams</h5>
+        </div>
+      </div>
+      <div class="d-sm-none rounded-circle mb-5" style="margin-left: 20vw; margin-right: 20vw;border: 5px solid #00b0f0; width: 60vw; height: 60vw;">
+        <div class="container d-flex justify-content-center align-content-center flex-column">
+          <h1 class="row justify-content-center align-self-center font-weight-bold" style="font-size:8vw; margin-top: 30%; color: #00b0f0;">{{Teams}}</h1>
+          <h5 class="row justify-content-center align-self-center font-weight-bold" style="font-size:4vw;color: #00b0f0;">Teams</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--map
+<div class="container mw-100 m-0 p-0" id="map">
+  <div class="mw-100 m-0 p-0" id="map">
+
+  </div>
+</div>-->
+<div id='map' class="d-none d-lg-block"></div>
+<!--factions/card-->
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center">
+    <div class="col-10 col-lg-4">
+      <select class="selectpicker Country w-100 py-3" data-live-search="true" title="Select a Country." data-style="btn-primary text-white">
+        {% for Country in Countries%}
+          <option value="{{Country.id}}">{{Country.name}}</option>
+        {% endfor %}
+      </select>
+      <select disabled class="selectpicker Chapter w-100 py-3" data-live-search="true" title="Select a Chapter" data-style="btn-primary text-white">
+        
+      </select>
+    </div>
+    <div class="DISPLAY col-10 col-lg-5 text-center justify-content-center py-3" style="font-family: 'Montserrat',sans-serif;">
+      <div class="d-flex flex-column justify-content-center align-middle p-5" style="background-color: #0d0d0d; border: 2px solid #00b0f0;"">
+          <h1 class="mx-auto" style='color: #00b0f0 !important; text-transform: uppercase; font: 400 40px/1.1 "Raleway", "Oswald", sans-serif; letter-spacing: 0.2em;'>Factions</h1>
+          <img class="img-fluid mx-auto mt-3" src="https://cdn.novacrypt.org/static/novacrypt.webp" style="height: 200px; width: 200px;">
+      </div>
+  </div>
+  </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="{% static 'Landing/js/community.js' %}"></script>
+<script type="71cda429cbb1aa2f15d1544d-text/javascript" src="https://members.novacrypt.org/NovaCrypt.js"></script>
+<script type="71cda429cbb1aa2f15d1544d-text/javascript">
+  var southWest = L.latLng(-89.98155760646617, -180), northEast = L.latLng(89.99346179538875, 180);
+  var bounds = L.latLngBounds(southWest, northEast);
+  var map = L.map('map', {center: [0,0], zoom:2, minZoom:2,maxZoom:5 });
+  map.attributionControl.addAttribution('Data Sourced From The <a target="_blank" href="https://discord.gg/mApp83YdXT", class="your_class">NovaCrypt Discord Server</a>');
+  map.setMaxBounds(bounds);
+  map.on('drag', function() {
+      map.panInsideBounds(bounds, { animate: false });
+  });
+// control that shows state info on hover
+var info = L.control();
+info.onAdd = function (map) {
+  this._div = L.DomUtil.create('div', 'info');
+  this.update();
+  return this._div;
+};
+info.update = function (props) {
+  this._div.innerHTML = '<h4>Country Members</h4>' +  (props ?
+    '<b>' + props.CountryName + '</b><br />' + props.Members + ' Members'
+    : 'Hover over a country');
+};
+info.addTo(map);
+// get color depending on population density value
+function getColor(d) {
+  return d > 100 ? '#BCE6FF' :
+      d > 50  ? '#88CDF6' :
+      d > 10  ? '#1ca7ec' :
+      d > 0   ? '#428cd4' :
+      '#015C92';
+}
+function style(feature) {
+  return {
+    weight: 1,
+    opacity: .2,
+    color: 'black',
+    dashArray: '3',
+    fillOpacity: 0.7,
+    fillColor: getColor(feature.properties.Members)
+  };
+}
+function highlightFeature(e) {
+  var layer = e.target;
+  layer.setStyle({
+    weight: 5,
+    color: 'white',
+    dashArray: '',
+    fillOpacity: 0.7
+  });
+  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+    layer.bringToFront();
+  }
+  info.update(layer.feature.properties);
+}
+var geojson;
+function resetHighlight(e) {
+  geojson.resetStyle(e.target);
+  info.update();
+}
+function zoomToFeature(e) {
+  map.fitBounds(e.target.getBounds());
+}
+function onEachFeature(feature, layer) {
+  layer.on({
+    mouseover: highlightFeature,
+    mouseout: resetHighlight,
+    click: zoomToFeature
+  });
+}
+geojson = L.geoJson(countryData, {
+  style: style,
+  onEachFeature: onEachFeature
+}).addTo(map);
+var legend = L.control({position: 'bottomright'});
+legend.onAdd = function (map) {
+  var div = L.DomUtil.create('div', 'info legend'),
+    grades = [1,10,50,100],
+    labels = [],
+    from, to;
+
+  for (var i = 0; i < grades.length; i++) {
+    from = grades[i];
+    to = grades[i + 1];
+
+    labels.push(
+      '<i style="background:' + getColor(from + 1) + '"></i> ' +
+      from + (to ? '&ndash;' + to : '+'));
+  }
+  div.innerHTML = labels.join('<br>');
+  return div;
+};
+legend.addTo(map);
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="71cda429cbb1aa2f15d1544d-|49" defer=""></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+<script src="{% static 'Landing/js/selection.js' %}"></script>
+{% endblock %}

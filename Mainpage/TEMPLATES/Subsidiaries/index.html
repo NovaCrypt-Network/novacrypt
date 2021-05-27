@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}NovaCrypt | Subsidiaries {% endblock %}
+{% block css %}
+<link href="{% static 'Subsidiaries/css/subsidiaries.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.3.0/dist/animxyz.min.css">
+<link rel="stylesheet" href="{% static 'ihover.css'%}">
+{% endblock %}
+{% block body %}
+
+<div class="container-fluid mx-0 stat-holder d-none d-lg-flex" style="height:1200px; position: relative;">
+
+    <div class="align-self-center" id="parentdiv" xyz="stagger">
+        <img src="{% static 'Landing/images/mainlogosmall.gif' %}" width="290" height="290" class="figure-img rounded-circle gradient-border">
+        {% for Subsidiary in Subsidiaries %}
+        <div class="childdiv xyz-in gradient-border">
+            <a href="{{Subsidiary.link}}">
+             <img src="{{Subsidiary.logo.url}}" width="150" height="150" class="figure-img rounded-circle">
+            </a>
+        </div>
+        {% endfor %}
+      </div>
+	
+</div>
+
+
+<div class="container-fluid mx-0 stat-holder d-lg-none">
+    <div class="row mt-2 d-flex justify-content-center">
+        <img class="w-25" src="{% static 'Landing/images/mainlogosmall.gif' %}">
+    </div>
+    <div class="row mt-2 d-flex justify-content-center">
+        <h3 class="text-white" style="font-family: 'Jost', sans-serif">NOVACRYPT</h3>
+    </div>
+    <hr style="border:2px solid #4285F4; margin-top: 4%; margin-bottom: 4%;">
+    {% for Subsidiary in Subsidiaries %}
+    <div class="row justify-content-center d-flex mx-3">
+        <div class="col-3 text-center">
+            <a href="{{Subsidiary.link}}">
+                <figure class="figure">
+                    <img src="{{Subsidiary.logo.url}}" class="figure-img img-fluid rounded">
+                    <figcaption class="figure-caption text-center text-white" style="font-family: 'Jost', sans-serif; font-size: 3vw;">{{Subsidiary.name|upper}}</figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
+{% block js %}
+<script type = "text/javascript" src="{% static 'Subsidiaries/js/subsidiaries.js' %}"></script> 
+{% endblock %}

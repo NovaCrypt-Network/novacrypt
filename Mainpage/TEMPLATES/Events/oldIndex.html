@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}NovaCrypt | General Events{% endblock %}
+{% block css %}
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'Projects/CSS/Carousel.css' %}">
+{% endblock %}
+{% block body %}
+    <main class="main-content">
+        <section class="slideshow">
+            <div class="slideshow-inner">
+            <div class="slides">
+                <div class="slide is-active ">
+                <div class="slide-content">
+                    <div class="caption">
+                    <div class="title">Events</div>
+                    </div>
+                </div>
+                <div class="image-container"> 
+                    <img src="{% static 'Events/img/Indiana_Convention_Center_2_S.png' %}" alt="" class="image" />
+                </div>
+                </div>
+            </div> 
+        </section>
+    </main>
+
+    <div class="w-100 p-3" style="background-color: #000000; color: #ffffff; border: 3px solid #00B0F0">
+      <div class="d-flex justify-content-between" style="padding: 1rem;">
+          <h3 style="letter-spacing: 2px; font-weight: 200; font-size: 20px;">RECENT & UPCOMING</h3>
+      </div>
+      <div class="container">
+        
+        
+            {% for Event in Events %}
+            {% if forloop.first %}
+            <div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 50px 0;">
+            {% endif %}
+                <div class="col" style="margin: 10px;">
+                    <div class="card h-100" style="max-width: 300px; border-radius: 0; border: 1px solid #00B0F0">
+                    {%if Event.type == "Webinar" %}
+                    <a href="/events/info/webinar/{{Event.title}}" style="text-decoration: none; color: #ffffff">
+                    {% else %}
+                    <a href="/events/info/competition/{{Event.title}}" style="text-decoration: none; color: #ffffff">
+                    {% endif %}
+                    <img src="{{Event.img.url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title" style="text-decoration: underline; text-transform: none;">{{Event.type}}</h6>
+                        <h5 class="card-title">{{Event.title}}</h5>
+                        <p class="card-text">{{Event.description|truncatewords:40}}</p>
+                    </div>
+                    </a>
+                    </div>
+                </div>
+          {% if forloop.counter|divisibleby:3 %}</div><div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 50px 0;">{% endif %}
+            {% if forloop.last %}</div>{% endif %}
+          {% endfor %}
+      </div>
+    </div>
+{% endblock %}
+{% block js %}
+    <script src="{% static 'Projects/Javascript/Carousel.js' %}"></script>
+{% endblock %}
+

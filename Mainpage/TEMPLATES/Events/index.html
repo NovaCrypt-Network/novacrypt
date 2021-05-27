@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}NovaCrypt | General Events{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'Events/css/Carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'Events/css/index7.css' %}">
+    <link rel="stylesheet" href="{% static 'Blog/CSS/Blog.css' %}">
+{% endblock %}
+{% block body %}
+    <main class="main-content stat-holder">
+        <section class="slideshow">
+            <div class="slideshow-inner">
+            <div class="slides">
+                <div class="slide is-active ">
+                <div class="slide-content">
+                    <div class="caption">
+                    <div class="title">Upcoming Events</div>
+                    </div>
+                </div>
+                <div class="image-container"> 
+                    <img src="{% static 'Events/img/Indiana_Convention_Center_2_S.png' %}" alt="" class="image" />
+                </div>
+                </div>
+            </div> 
+        </section>
+    </main>
+    {% if Events|length > 0 %}
+        <div class="container-fluid px-0" style="background-color: #1d1e1f;">
+            <div class="row d-flex justify-content-center text-center py-3" id="time-holder" data-aos="fade-up" data-time="{{Events.0.date|date:'M d, Y H:i:s'}}">
+                    <h1 class="noSchedule">Time Until Next {{Events.0.type|title}}</h1>
+            </div>
+            <div class="row d-flex justify-content-center py-3">
+                <div class="col-6 col-md-3 text-center" data-aos="fade-up">
+                    <h1 id="days">00</h1>
+                    <p>DAYS</p>
+                </div>
+                <div class="col-6 col-md-3 text-center" data-aos="fade-up">
+                    <h1 id="hours">00</h1>
+                    <p>HOURS</p>
+                </div>
+                <div class="col-6 col-md-3 text-center" data-aos="fade-up">
+                    <h1 id="minutes">00</h1>
+                    <p>MINUTES</p>
+                </div>
+                <div class="col-6 col-md-3 text-center" data-aos="fade-up">
+                    <h1 id="seconds">00</h1>
+                    <p>SECONDS</p>
+                </div>
+            </div>
+            <div class="row justify-content-center d-flex py-4 css-selector">
+                {% for Event in Events %}
+                    {%if Event.type == "Webinar" %}
+                    <a href="/events/info/webinar/{{Event.title}}" class="col-10 col-md-6 col-lg-3 pt-3 my-2 my-lg-4 mx-4 card d-flex special-card outline text-white" style="width: 16rem; background-color: #1d1e1f; text-decoration: none;" data-id="{{Blog.pk}}" data-aos="fade-up">
+                    {% else %}
+                    <a href="/events/competition/{{Event.title}}" class="col-10 col-md-6 col-lg-3 pt-3 my-2 my-lg-4 mx-4 card d-flex special-card outline text-white" style="width: 16rem; background-color: #1d1e1f; text-decoration: none;" data-id="{{Blog.pk}}" data-aos="fade-up">
+                    {% endif %}
+                        <img class="card-img-top rounded" src="{{Event.img.url}}">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">{{Event.title|title}}</h5>
+                            <p class="card-text text-muted">Scheduled For {{Event.date}} EST</p>
+                            <p class="card-text">{{Event.type}}</p> 
+                            <p class="card-text">{{Event.description|truncatewords:40}}</p>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    {%else%}
+        <div class="container-fluid px-0 blue-border">
+            <div class="row justify-content-center d-flex py-4">
+                <div class="col-11 text-center">
+                    <h1 class="noSchedule">No events scheduled currently</h1>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+{% block js %}
+    <script src="{% static 'Projects/Javascript/Carousel.js' %}"></script>
+    <script src="{% static 'Events/js/index3.js' %}"></script>
+{% endblock %}
+

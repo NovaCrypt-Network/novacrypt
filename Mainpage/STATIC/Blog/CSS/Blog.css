@@ -1,0 +1,302 @@
+/* .popular{
+    margin:5% 15%;
+    display:flex; */
+/* } */
+#popular-image{
+    height: 70%;
+    width: 50%;
+    /* margin-left: 10%; */
+    float: left;
+    background-color: white;
+    /* flex: 1; */
+}
+/* .pop{
+    height: 100px;
+    width: 100px;
+} */
+#pop-text{
+    margin: auto;
+    padding-left: 3%;
+    text-align: left;
+    vertical-align: middle;
+    /* width: 70%; */
+    /* flex: 2; */
+    float: right;
+}
+#articles-section{
+    margin: 10% 10%;
+    /* display: flex; */
+}
+.article-image{
+    height: 60%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.artim{
+    height: 100%;
+    width: 100%;
+
+}
+.article-text{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+    display: block;
+}
+#article-1{
+    width: 33%;
+    float: left;
+}
+#article-2{
+    width: 33%;
+    float: left;
+}
+#article-3{
+    width: 33%;
+    float: left;
+}
+.topic{ 
+    /* border-bottom: 2px solid white; */
+    text-decoration: underline white;
+}
+.category{
+    float: left;
+    width: 110px;
+    /* padding-bottom: 100%; */
+    height: 110px;
+    /* position: relative; */
+    background-color: grey;
+    border-radius: 50%;
+    border: 2px solid cyan;
+    margin-left: 3.75%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+.category:hover .overlay{
+background-color: white;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#categories{
+    height: auto;
+    width: 70%;
+    margin: 5% 15%;
+    display: table;
+    border: 2px solid white;
+}
+.card-color{
+    background-color: black;
+    border: 2px solid cyan;
+}
+.main-color{
+    background-color: black;
+}
+.vertical-space{
+    padding-top: 100px;
+    /* padding-bottom: 100px; */
+}
+.horizontal-space{
+    padding-left: 100px;
+    padding-right: 100px;
+} 
+.category-picture{
+    /* height: 100px;
+    width: 100px; */
+    transition: transform 0.5s;
+    border: 2px solid cyan;
+}
+.category-picture:hover{
+    transform: scale(1.5);
+}
+/* .category-space{
+    padding-left: 50px;
+    padding-right: 50px;
+} */
+
+body {
+    background: black;
+}
+.special-card {
+    /* create a custom class so you 
+       do not run into specificity issues 
+       against bootstraps styles
+       which tends to work better than using !important 
+       (future you will thank you later)*/
+    
+      background-color: black;
+}
+.popular{
+    padding-top: 50px;
+}
+.Category{
+    font-size: 5vw;
+}
+.thumbnail_desc{
+    font-size: larger;
+}
+.avatar{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    border:5px solid #00b8ff;
+}
+@media (max-width: 1023px){
+    .popular{
+        margin-top:1%;
+    }
+    .Category{
+        font-size: 10vw;
+    }
+}
+@media (max-width: 767px){
+    .popular{
+        margin-top:1%;
+    }
+    .Category{
+        font-size: 15vw;
+    }
+    .thumbnail_desc{
+        font-size: small;
+    }
+    .avatar{
+        height: 150px;
+        width: 150px;
+    }
+}
+h1,h2,h3,h4,h5,h6,p {
+    color: white;
+    font-family: 'Comfortaa';
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+a.article
+{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid wheat;
+}
+a.article:hover{
+    color: wheat;
+}
+/*
+For if we want it to grow the underline with color.
+a.article:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: wheat;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+a.article:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+*/
+
+.block-image img{
+    width:100%;
+    height: auto;
+}
+.block-embed div{
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    height:0;
+    position: relative;
+}
+.block-embed div iframe{
+    width:100%;
+    height: 100%;
+    position: absolute;
+}
+.skew{
+    padding-bottom: 100px;
+    /* padding: 100px 0; */
+    transform: skew(0deg, 5deg);
+}
+
+.wrap{
+    padding: 10px 10px;
+    padding-bottom: 100px;
+    transform: skew(0deg, -5deg);
+}
+.skew2{
+    padding: 100px 0;
+    background: #00587e;
+    /* transform: skew(0deg, 5deg) translateY(-120px); */
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+@media (max-width:992px){
+    .skew2{
+        padding: 50px 0;
+        clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%);
+    }
+}
+.wrap2{
+    /* transform: skew(0deg, -5deg); */
+    padding-top: 50px;
+    padding: 10px 10px;
+}
+.toppad{
+    padding-top: 50px;
+}
+.outline{
+    border: solid 2px #00b8ff;
+}
+.css-selector {
+    background: linear-gradient(270deg, #00b8ff, #00415a);
+    background-size: 400% 400%;
+
+    -webkit-animation: Background 30s ease infinite;
+    -moz-animation: Background 30s ease infinite;
+    animation: Background 30s ease infinite;
+}
+
+@-webkit-keyframes Background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% load static %}
+{% load wagtailcore_tags %}
+{% load wagtailimages_tags %}
+{% block title %}NovaCrypt | Journal {% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'Blog/CSS/Blog.css' %}">
+{% endblock %}
+{% block body %}
+<!-- Developed by Matthew and Kanishk Kacholia -->
+<div class="container-fluid vertical-space stat-holder">
+    <div class="row d-none d-lg-flex justify-content-center toppad">
+      <div class="col-1 mx-xl-3">
+          <a href="/Blog/Category/Science"><img src="{% static 'Blog/images/category-science.png' %}" class="rounded-circle img-fluid category-picture" title="category"></a>
+      </div>
+      <div class="col-1 mx-xl-3">
+          <a href="/Blog/Category/Technology"><img src="{% static 'Blog/images/category-programming.png' %}" class="rounded-circle img-fluid category-picture" title="{{category}}"></a>
+      </div>
+      <div class="col-1 mx-xl-3">
+          <a href="/Blog/Category/Mathematics"><img src="{% static 'Blog/images/category-mathematics.png' %}" class="rounded-circle img-fluid category-picture" title="{{category}}"></a>
+      </div>
+      <div class="col-1 mx-xl-3">
+          <a href="/Blog/Category/Events"><img src="{% static 'Blog/images/novahackswhite.png' %}" class="rounded-circle img-fluid category-picture" title="{{category}}"></a>
+      </div>
+      <div class="col-1 mx-xl-3">
+          <a href="/Blog/Category/Partners"><img src="{% static 'Blog/images/ncblack2.png' %}" class="rounded-circle img-fluid category-picture" title="{{category}}"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid d-flex d-lg-none justify-content-center">
+    <div class="dropdown ">
+      <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+        Categories
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="/Blog/Category/Science">Science</a></li>
+        <li><a class="dropdown-item" href="/Blog/Category/Technology">Technology</a></li>
+        <li><a class="dropdown-item" href="/Blog/Category/Mathematics">Mathematics</a></li>
+        <li><a class="dropdown-item" href="/Blog/Category/Events">Events</a></li>
+        <li><a class="dropdown-item" href="/Blog/Category/Partners">Partners</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid mx-0 d-none d-lg-block popular ">
+    <div class = "row my-5 mx-5 d-flex justify-content-center stat-holder">
+        <div class="col-12 mx-0">
+            <div class="container-fluid mx-5">
+                <div class="row mx-5">
+                    <div class="col-12 col-lg-4 mx-0">
+                        <img class="img-fluid rounded" src="{{Primary.thumbnail.url}}" alt="{{Primary.thumbnail_desc}}">
+                    </div>
+                    <div class="col-12 col-lg-8 mx-0">
+                        <h2><a class="article" href="/Blog/Article/{{Primary.slug}}">{{Primary.title}}</a></h2>
+                        <h5>Posted by <a class="article" href="/Blog/Author/{{Primary.owner.username}}">{{Primary.owner.first_name|title}} {{Primary.owner.last_name|title}}</a> on {{Primary.first_published_at}}</h5>
+                        <h5><a class="article" href="/Blog/Category/{{Primary.category}}">{{Primary.category}}</a></h5>
+                        <h6>{{Primary.short_description}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mx-0 d-lg-none">
+    <div class="row d-flex mt-5 justify-content-center">
+        <div class="col-10 col-md-6 col-lg-3 card d-flex special-card" style="width: 18rem;">
+            <img class="card-img-top rounded" src="{{Primary.thumbnail.url}}" alt="{{Primary.thumbnail_desc}}">
+            <div class="card-body">
+                <h5 class="card-title"><a class="article" href="/Blog/Article/{{Primary.slug}}">{{Primary.title}}</a></h5>
+                <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Primary.owner.username}}">{{Primary.owner.first_name|title}} {{Primary.owner.last_name|title}}</a> on {{Primary.first_published_at}}</p>
+                <p class="card-text"><a class="article" href="/Blog/Category/{{Primary.category}}">{{Primary.category}}</a></p> 
+                <p class="card-text">{{Primary.short_description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mx-0 vertical-space skew2 css-selector">
+<div class="row d-flex mt-5 justify-content-center ARTICLE_HOLDER wrap2" data-version="0" >
+    {% for Blog in Blogs %}
+    <div class="col-10 col-md-6 col-lg-3 pt-3 my-5 my-lg-4 mx-4 card d-flex special-card outline" style="width: 16rem;" data-id="{{Blog.pk}}" data-aos="fade-up">
+        <img class="card-img-top rounded" src="{{Blog.thumbnail.url}}" alt="{{Blog.thumbnail_desc}}">
+        <div class="card-body">
+            <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
+            <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.first_published_at}}</p>
+            <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
+            <p class="card-text">{{Blog.short_description}}</p>
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="https://unpkg.com/moment"></script>
+<script src="{% static 'Blog/JS/Blog.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block title %}{{Profile.user.username}} | Novacrypt{% endblock %}
+{% load static %}
+{% block css %}
+<link href="{% static 'Administration/CSS/profile.css' %}" rel="stylesheet">
+<link href="{% static 'Landing/CSS/main.css' %}" rel="stylesheet">
+{% endblock %}
+{% block body %}
+<!--Image-->
+<div class="topbar mt-5 pt-5">
+    <img class="bg" src="{% static 'Administration/images/profile-temp.jpg' %}"></img>
+    <div class="row pic-name">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-2">
+        <img class="pic rounded-circle" src="{{Profile.avatar.url}}"></img>
+      </div>
+      <div class="col-sm-9">
+        <div class="row">
+          <p class="name">{{Profile.user.first_name|title}} {{Profile.user.last_name|title}}</p>
+        </div>
+        <div class="row level-bar">
+          <div class="row no-gutters align-items-center" style="width: 90%;">
+            <div class="col-auto">
+              <div class="h5 mb-0 mr-3" style="color:#1FB9F8; font-size: 28px;">{{level}}</div>
+            </div>
+            <div class="col">
+              <div class="progress progress-sm mr-2" style="background-color: #4A5A70; height:7px;">
+              <div class="progress progress-sm mr-2" style="background-color: #1EB1EE; height:7px; width: {{levelper}}%;"></div>
+                <!--<div class="progress-bar bg-info" role="progressbar" style="width: 60%; color: #1EB1EE;"
+                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>-->
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="h5 mb-0 mr-3" style="color:#1FB9F8; font-size: 28px;">{{levelp1}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <br>
+
+  <!--Content-->
+  <div class="content">
+    <div class="row mx-auto" style="width:80%;">
+      <div class="col-xl-6 bio">
+        <div class="row title">
+            <p style="color: #1AA1D8; font-size: 35px;">About Me</p>
+            <div class="row">
+              <p style="color: white; font-size: 16px; width: 80%;">
+                {{Profile.bio}}
+              </p>
+              <p style="color: white; font-size: 16px; width: 80%;">
+              </p>
+              <p style="color: white; font-size: 16px; width: 80%;">
+              </p>
+            </div>
+          <div class="row mb-4">
+            <a href="{{Profile.linkedin}}"><img class="mr-2" style="height: 35px;" src="{% static 'Administration/images/linkedin.webp' %}"></a>
+            <a href="{{Profile.instagram}}"><img style="height: 35px;" src="{% static 'Administration/images/instagram.webp' %}"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 circles">
+        <div class="title-imgs">
+          <div class="row ml-4">
+            <p class="mt-2" style="color: #1AA1D8; font-size: 24px;">PROJECTS</p>
+          </div>
+          <div class="row">
+            {% for Project in Projects %}
+            <div class="col-sm-3 badge-img">
+              <img style="width: 100%;" src="{{Project.icon.url}}">
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="title-imgs">
+          <div class="row ml-4">
+            <p class="mt-2" style="color: #1AA1D8; font-size: 24px;">TEAMS</p>
+          </div>
+          <div class="row">
+            {% for Team in Teams %}
+            <div class="col-sm-3 badge-img">
+              <img style="width: 100%;" src="{{Team.icon.url}}">
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="title-imgs">
+          <div class="row ml-4">
+            <p class="mt-2" style="color: #1AA1D8; font-size: 24px;">AWARDS</p>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 badge-img">
+              <img style="width: 100%;" src="{% static 'Administration/images/profilepic-temp.png' %}">
+            </div>
+            <div class="col-sm-3 badge-img">
+              <img style="width: 100%;" src="{% static 'Administration/images/profilepic-temp.png' %}">
+            </div>
+            <div class="col-sm-3 badge-img">
+              <img style="width: 100%;" src="{% static 'Administration/images/profilepic-temp.png' %}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}

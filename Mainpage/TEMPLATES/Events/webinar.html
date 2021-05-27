@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+{% block title %}Webinar | Novacrypt {% endblock %}
+{% load static %}
+{% block css %}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="{% static 'Landing/css/about.css' %}" rel="stylesheet">
+
+<link href="{% static 'Events/css/community.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'Events/css/Carousel.css' %}">
+<link rel="stylesheet" href="{% static 'Events/css/Events.css' %}">
+
+{% endblock %}
+{% block body %}
+<!--slideshow(from researchs and projects)-->
+<main class="main-content">
+    <section class="slideshow">
+      <div class="slideshow-inner">
+        <div class="slides">
+          <div class="slide is-active ">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="text">
+                  <p class="slide-desc">Meet</p>
+                </div>
+                <div class="title special-blue">People</div>
+                <div class="text">
+                  <p class="slide-desc">Analyzing the satellite data to discover new exoplanets</p>
+                </div>
+                <a href="#" class="carousel-btn">
+                  <span class="btn-inner">Coming Soon</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="" alt="" class="image"/>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Nanorobotics</div>
+                <div class="text">
+                  <p class="slide-desc">Building nanorobots to monitor the internal body chemistry</p>
+                </div>
+                <a href="#" class="carousel-btn">
+                  <span class="btn-inner">Learn More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="" alt="" class="image"/>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title special-blue">Developing new technologies</div>
+                <div class="text">
+                  <p class="slide-desc">Creating new web applications and software to impact the world</p>
+                </div>
+                <a href="#" class="carousel-btn">
+                  <span class="btn-inner">Learn More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="" alt="" class="image"/>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title special-blue">Saving our planet</div>
+                <div class="text">
+                  <p class="slide-desc">Innovating new solutions to climate change and pollution</p>
+                </div>
+                <a href="#" class="carousel-btn">
+                  <span class="btn-inner">Learn More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="" alt="" class="image"/>
+            </div>
+          </div>
+        </div>
+        <div class="pagination row justify-content-center">
+          <div class="item is-active">
+            <span class="icon">1</span>
+          </div>
+          <div class="item">
+            <span class="icon">2</span>
+          </div>
+          <div class="item">
+            <span class="icon">3</span>
+          </div>
+          <div class="item">
+            <span class="icon">4</span>
+          </div>
+        </div>
+        <div class="arrows">
+          <div class="arrow prev">
+            <span class="svg svg-arrow-left">
+              <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
+                <path
+                  d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z" />
+              </svg>
+              <span class="alt sr-only"></span>
+            </span>
+          </div>
+          <div class="arrow next">
+            <span class="svg svg-arrow-right">
+              <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
+                <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z" />
+              </svg>
+              <span class="alt sr-only"></span>
+            </span>
+          </div>
+      </div>
+    </section>
+    <div class="pagination row justify-content-center" style="margin: 0; padding: 0; width: 100vw;">
+      <hr class="m-0 p-0" style="border: none; border-top: 5px solid #00b0f0; width: 100vw;">
+    </div>
+</main>
+<!--events/card-->
+<div class="container">
+  <h3 class="special-blue mt-4 mb-4">Upcoming Events</h3>
+
+  {% for Speaker in Speakers %}
+  <div class="row no-gutters mt-1 mb-4">
+    <!--left part of card-->
+    <div class="col-md-7 p-4 d-flex flex-row" style="border: 3px solid #00b0f0; width: 100%; background-color: #262626;">
+      <div class="col-sm-4 m-0 p-0">
+        <img class="img-fluid" src="{{Speaker.picture.url}}" alt="">
+      </div>
+      <div class="col-sm-8 d-flex flex-column justify-content-center p-0 m-0 pl-1">
+        <h4 class="special-blue">{{Speaker.name}}</h6>
+        <h6 class="special-blue">{{Speaker.event.date}}</h1>
+        <h6 class="special-blue">{{Speaker.position}}</h6>
+        {% if Speaker.event.is_past_due %}
+        <h6 class="odd-font red-text">Closed</h6>
+        {% else %}
+        <h6 class="odd-font green-text">Upcoming</h6>
+        {% endif %}
+      </div>
+    </div>
+    <!--right part of card-->
+    <div class="col-md-4 p-4 d-flex flex-column justify-content-center" id="continents" style="border: 3px solid #00b0f0; width: 100%; background-color: #262626;">
+      <h4 class="text-center mb-3" style="color: #00b0f0; font-size: 29px;">{{Speaker.event.title}}</h5>
+      <div class="text-center w-100 mb-4"> 
+        <a href="{{Speaker.event.URL}}" type="button" class="btn btn-outline-primary attend-btn w-75 p-1 strong">Attend</a>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+
+
+
+  </div>
+</div>
+
+{% endblock %}
+{% block js %}
+<!-- JS -->
+<script src="{% static 'Events/js/community.js' %}"></script>
+{% endblock %}

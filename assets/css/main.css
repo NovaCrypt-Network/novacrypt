@@ -74,15 +74,26 @@ body {
 
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #bfbfbf;
+    opacity: 1; /* Firefox */
+  }
+
+.clear {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #595959;
+    color: #bfbfbf;
+}
 .contact-left {
     flex-basis:60%;
     padding:40px 60px;
+    background: black;
 }
 
 .contact-right {
     flex-basis: 40%;
     padding: 40px;
-    background: #03cdff;
+    background: #0d0d0d;
     color: #fff;
 }
 

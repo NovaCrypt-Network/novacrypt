@@ -45,9 +45,9 @@
     <link rel="stylesheet" href="Footer/Footer.css">
     
     </head>
-    <body style="background-color: #0e0f12">
+    <body style="background-color: #000000">
         <!-- Navagation Bar -->
-        <nav class="navbar navbar-expand-xl fixed-top navbar-dark">
+        <nav class="navbar navbar-expand-xl fixed-top navbar-dark" style="background-color: black;">
             <div class = "container-fluid pt-3">
                 <a class="navbar-brand d-flex align-self-center" href="https://novacrypt.org/index.html"><img src="https://novacrypt.org/assets/images/novacrypt.png" class="d-inline-block mr-1" style="width: auto; height: 32px;">NOVACRYPT</a>
                 <button class="navbar-toggler" type="button" data-trigger="#main_nav">
@@ -88,51 +88,54 @@
                 </div>
             </div>
         </nav>
-        <div class="container8">
-            <h1 style="margin-bottom:10px;margin-top:100px; font-size:3em;" class="constant">Connect With Us</h1>
-            <p style="margin-bottom:40px;" class="constant">Please wait at least 24 hours for a response.</p>
-            <div class="contact-box">
-                <div class="contact-left">
+        <div class="container-fluid py-3" style="background-color: #262626;">
+            <h1 style="margin-bottom:10px;margin-top:100px; font-size:3em; color: #03cdff;" class="constant mx-5">Contact Us</h1>
+            <p style="margin-bottom:40px;" class="constant mx-5">Please wait at least 24 hours for a response.</p>
+            <div class="contact-box mx-5">
+                <div style="color:black"class="contact-left">
                     <h3 class="constant" style="color:black; font-weight:600; margin-bottom: 30px;color: #03cdff;">Send your request</h3>
                     <form>
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Name</label>
-                                <input type="text" placeholder="Jordan Osborn">
-                            </div>
-                            <div class="input-group">
-                                <label>Phone</label>
-                                <input type="text" placeholder="(845)-123-4567">
+                                <input type="text" placeholder="Jordan Osborn" class="clear">
                             </div>
                         </div>
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Email</label>
-                                <input type="text" placeholder="jordanosborn@gmail.com">
+                                <input type="text" placeholder="jordanosborn@gmail.com" class="clear">
                             </div>
+                        </div>
+                        <div class="input-row">
                             <div class="input-group">
                                 <label>Subject</label>
-                                <input type="text" placeholder="Demo">
+                                <input type="text" placeholder="Demo" class="clear">
                             </div>
                         </div>
                         <label>Message</label>
-                        <textarea rows="5" placeholder="Your Message"></textarea>
-                        <button type="submit">SEND</button>
+                        <textarea rows="5" placeholder="Your Message" style="border: none; background-color: #0d0d0d;"></textarea>
+                        <button type="submit" style="color: black;">SEND</button>
                     </form>
                 </div>
                 <div class="contact-right">
-                    <h3 class="constant" style=" font-size:3em; border-bottom: 1px solid #fff; font-weight:600; margin-bottom: 30px;">Reach Us</h3>
-                    <table style="font-size:2em;">
-                        <tr>
-                            <td  class="constant">Email:</td>
-                        </tr>
-                        <tr>
-                            <td  class="constant">info@novacrypt.org</td>
-                        </tr>
-                        <tr>
-                            <td style="padding-top: 30px;" class="constant"><a href="https://discord.gg/5dESz5e" >Join Us</a></td>
-                        </tr>
-                    </table>
+                    <h3 class="constant" style=" font-size:3em; border-bottom: 1px solid #595959; font-weight:600; margin-bottom: 30px; color: #03cdff;">Reach Us</h3>
+                    <form class="mr-5 pr-5"> 
+                            <div class="input-group my-5">
+                                <label>General Inquiries</label>
+                                <input type="text" placeholder="info@novacrypt.org" class="clear" readonly>
+                            </div>
+                            <div class="input-group my-5">
+                                <label>Sponsorships</label>
+                                <input type="text" placeholder="roja.das@novacrypt.org" class="clear" readonly>
+                            </div>
+                            <div class="input-group my-5">
+                                <label>Sponsorships</label>
+                                <input type="text" placeholder="roland.yan@novacrypt.org" class="clear" readonly>
+                            </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

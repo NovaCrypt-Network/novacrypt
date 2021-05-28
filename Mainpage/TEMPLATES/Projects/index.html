@@ -164,7 +164,7 @@
   <div class="row pb-4 px-2 justify-content-center d-none d-lg-flex" data-aos="fade-up">
     {% for Team in Teams %}
     <a class="card w-100" href="{% url 'TeamPage' TeamName=Team.name %}">
-      <div class="svgicon"><i class="icon-{{ Team.name|lower }} md-48"></i></div>
+      <div class="svgicon"><img class= "img-fluid" src="{{Team.icon.url}}"></div>
       <p class="title">Team {{ Team.name }}</p>
       <p class="text">{{ Team.description }}</p>
     </a>

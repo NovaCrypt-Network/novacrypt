@@ -70,7 +70,7 @@ body {
 
 .contact-box {
     background:#fff;
-    display:flex;
+    display: flex;
 
 }
 
@@ -85,13 +85,19 @@ body {
     color: #bfbfbf;
 }
 .contact-left {
+    /* position: absolute; */
+    z-index: 1;
     flex-basis:60%;
+    float: left;
     padding:40px 60px;
     background: black;
 }
 
 .contact-right {
+    /* position: absolute; */
     flex-basis: 40%;
+    z-index: 2;
+    float: right;
     padding: 40px;
     background: #0d0d0d;
     color: #fff;

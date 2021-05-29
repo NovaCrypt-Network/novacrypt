@@ -6,9 +6,23 @@
 <link href="{% static 'Landing/CSS/index.css' %}" rel="stylesheet">
 <link rel="stylesheet" href="{% static 'ihover.css'%}">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
 {% endblock %}
 {% block body %}
+<header>
 
+    <video playsinline="playsinline" class="vid embed-responsive-item" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="https://cdn.novacrypt.org/static/Landing/videos/4k.mp4" type="video/mp4">
+    </video>
+    <div class="container justify-content-start h-100">
+        <div class="d-flex align-items-center" style="height: 98% !important;">
+            <div class=" w-100" data-aos="fade-right">
+                <p class="lead mb-5 text-white">WELCOME TO</p>
+                <h1 class="display-2 mb-5 text-primary" style="font-family:sans-serif;">NOVACRYPT</h1>
+            </div>
+        </div>
+    </div>
+</header>
 <div class="d-none d-lg-block about-2 " style="padding-top:2%; margin-bottom: 4rem;">
     <div class="gif" data-aos="fade-up">
         <img class="gif2 stat-holder" style="padding-top:5%;"src="https://cdn.novacrypt.org/static/Landing/images/mainlogosmall.gif">
@@ -549,8 +563,10 @@
       </div>
     </div>
   </div>-->
+
 {% endblock %}
 {% block js %}
+
 <!--<script>
   AOS.init();
 </script>

@@ -39,7 +39,14 @@
 		 <link href="{% static 'scrollbar.css' %}" rel="stylesheet">
 	 </head>
 <style>
-	 @font-face { font-family: bahnschrift ; src: url(' https://cdn.novacrypt.org/static/Bahnschrift.woff '); } 
+	 @font-face {
+    font-family: 'Bahnschrift';
+    src: url('https://cdn.novacrypt.org/static/Bahnschrift.woff2') format('woff2'),
+        url('https://cdn.novacrypt.org/static/Bahnschrift.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} 
     h2 {
         color: #00b0f0 !important;
     }
@@ -516,26 +523,26 @@ position: absolute;
                         <ul class="navbar-nav ml-auto text-light">
                             <li class="nav-item active">
                                 <a class="nav-link" href="{% url 'Landing:about' %}">
-                                    <strong>ABOUT</strong>
+                                    ABOUT
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" style="" href="{% url 'Landing:services' %}">
-                                    <strong>NAVIGATION</strong>
+                                    NAVIGATION
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'Landing:contact' %}">
-                                    <strong>CONTACT</strong>
+                                    CONTACT
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <form class="form-inline">
                                     {% if request.user.is_authenticated %}
-									<a href="{% url 'Administration:dashboard' %}" type="button" class="btn btn-outline-light ml-2" id='firstbutton'><strong> DASHBOARD</strong>
+									<a href="{% url 'Administration:dashboard' %}" type="button" class="btn btn-outline-light ml-2" id='firstbutton'> DASHBOARD
 									</a>
 									{% else %}
-									<a href="{% url 'Administration:signup' %}" type="button" class="btn btn-outline-light ml-2" id='firstbutton'><strong> SIGN UP</strong>
+									<a href="{% url 'Administration:signup' %}" type="button" class="btn btn-outline-light ml-2" id='firstbutton'> SIGN UP
 									</a>
 									
 									{% endif %}
@@ -549,7 +556,7 @@ position: absolute;
                         <div class="col-md-7 ">
                             <div class="row">
                                 <h1 class='display-1' style="color: white !important; font-weight: bold !important; font-size:  6vw !important; width:100%;" data-aos="fade-up">
-                                    <strong>NAVIGATION</strong>
+                                    NAVIGATION
                                 </h1>
                             </div>
                             <div class="row mt-md-5 pt-5" data-aos="fade-up">
@@ -566,10 +573,10 @@ position: absolute;
                 </div>
                 <div class="container-fluid" data-aos="fade-up">
                     <div class="row d-flex flex-wrap flex-row justify-content-around align-items-center pb-4">
- <a href="{% url 'Landing:services' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up"><strong>Services</strong></a>
-                        <a href="{% url 'Landing:research' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up"><strong>Research</strong></a>
-                        <a href="{% url 'Landing:news' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up"><strong>News</strong></a>
-                        <a href="{% url 'Landing:subsidiaries' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up"><strong>Subsidiaries</strong></a>
+ <a href="{% url 'Landing:services' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up">Services</a>
+                        <a href="{% url 'Landing:research' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up">Research</a>
+                        <a href="{% url 'Landing:news' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up">News</a>
+                        <a href="{% url 'Landing:subsidiaries' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up">Subsidiaries</a>
 
                        
                     </div>
@@ -596,26 +603,26 @@ position: absolute;
 				<ul class="navbar-nav ml-auto text-light">
 					<li class="nav-item active">
 						<a class="nav-link" href="{% url 'Landing:about' %}">
-							<strong>ABOUT</strong>
+							ABOUT
 						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" style="" href="{% url 'Landing:services' %}">
-							<strong>NAVIGATION</strong>
+							NAVIGATION
 						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="{% url 'Landing:contact' %}">
-							<strong>CONTACT</strong>
+							CONTACT
 						</a>
 					</li>
 					<li class="nav-item">
 						<form class="form-inline">
 							{% if request.user.is_authenticated %}
-							<a href="{% url 'Administration:dashboard' %}" type="button" class="btn btn-outline-light ml-2" id='firstbutton'><strong> DASHBOARD</strong>
+							<a href="{% url 'Administration:dashboard' %}" type="button" class="btn btn-outline-light ml-2" id='firstbutton'> DASHBOARD
 							</a>
 							{% else %}
-							<a href="{% url 'Administration:signup' %}" type="button" class="btn btn-outline-light ml-2" id='firstbutton'><strong> SIGN UP</strong>
+							<a href="{% url 'Administration:signup' %}" type="button" class="btn btn-outline-light ml-2" id='firstbutton'> SIGN UP
 							</a>
 							
 							{% endif %}
@@ -630,7 +637,7 @@ position: absolute;
                         <div class="col-md-7 pt-5">
                             <div class="row" style="justify-content: center; align-items: center;">
                                 <h1 class='' style="color: white !important; font-weight: bold !important; font-size: 3rem !important;" data-aos="fade-up">
-                                    <strong>NAVIGATION</strong>
+                                    NAVIGATION
                                 </h1>
                             </div>
                             <div class="row mt-md-5 py-5 mx-auto" data-aos="fade-up" style="justify-content: center; align-items: center;">
@@ -647,10 +654,10 @@ position: absolute;
                 </div>
                 <div class="container-fluid">
                     <div class="row d-flex flex-wrap flex-row justify-content-around align-items-center pb-4">
-                         <a href="{% url 'Landing:services' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up"><strong>Services</strong></a>
-                        <a href="{% url 'Landing:research' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up"><strong>Research</strong></a>
-                        <a href="{% url 'Landing:news' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up"><strong>News</strong></a>
-                        <a href="{% url 'Landing:subsidiaries' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up"><strong>Subsidiaries</strong></a>
+                         <a href="{% url 'Landing:services' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up">Services</a>
+                        <a href="{% url 'Landing:research' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up">Research</a>
+                        <a href="{% url 'Landing:news' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up">News</a>
+                        <a href="{% url 'Landing:subsidiaries' %}" type="button" class="btn btn-outline-light btn-lg px-5 m-2" id='secondbutton' style="padding-bottom:2.5%; padding-top:2.5%;"  data-aos="fade-up">Subsidiaries</a>
 
                        
                     </div>

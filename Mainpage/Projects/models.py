@@ -13,6 +13,13 @@ def upload_Team_Logo(instance, filename):
         'Team_{uuid}_{filename}{ext}'.format(
             uuid=uuid.uuid4(), filename=filename, ext=ext)
     )
+def upload_Team_Logo_inner(instance, filename):
+    filename, ext = os.path.splitext(filename)
+    return os.path.join(
+        'Team_Logo_inner',
+        'Team_{uuid}_{filename}{ext}'.format(
+            uuid=uuid.uuid4(), filename=filename, ext=ext)
+    )
 def upload_Project_Logo(instance, filename):
     filename, ext = os.path.splitext(filename)
     return os.path.join(
@@ -68,6 +75,11 @@ class Team(models.Model):
     icon = models.ImageField(
         verbose_name=_('Team Logo'),
         upload_to=upload_Team_Logo,
+        blank=True,
+    )
+    inner_icon = models.ImageField(
+        verbose_name=_('Team Logo Inner'),
+        upload_to=upload_Team_Logo_inner,
         blank=True,
     )
     description = models.TextField(max_length=40)

@@ -20,6 +20,7 @@ def index(request):
     return render(request,"Landing/index.html",context=context1)
 def about(request):
     return render(request,"Landing/about.html")
+
 def contact(request):
     return render(request,"Landing/contact.html")
 def community(request):
@@ -62,3 +63,16 @@ def ChapterAPI(request):
     if ChapterObject.website:
         data+={"instagram":ChapterObject.website}
     return JsonResponse(data)
+
+
+def news(request):
+    return render(request,"Landing/navigation/News.html")
+
+def services(request):
+    return render(request,"Landing/navigation/Services.html")
+
+def research(request):
+    return render(request,"Landing/navigation/Research.html")
+
+def subsidiaries(request):
+    return render(request,"Landing/navigation/Subsidiaries.html")

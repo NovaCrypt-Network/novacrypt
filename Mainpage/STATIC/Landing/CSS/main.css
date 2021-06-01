@@ -75,14 +75,30 @@ body {
 }
 
 .contact-left {
+    z-index: 1;
     flex-basis:60%;
+    float: left;
     padding:40px 60px;
+    background: black;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #bfbfbf;
+    opacity: 1; /* Firefox */
+  }
+
+.clear {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #595959;
+    color: #bfbfbf;
 }
 
 .contact-right {
     flex-basis: 40%;
     padding: 40px;
-    background: #03cdff;
+    z-index: 2;
+    float: right;
+    background: #0d0d0d;
     color: #fff;
 }
 

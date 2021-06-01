@@ -4,75 +4,123 @@
 {% block css %}
 
     <link rel="stylesheet" href="{% static 'Landing/CSS/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'Landing/CSS/main.css' %}">
 {% endblock %}
 {% block body %}
  
-<div class="container8 stat-holder">
-    <h1 style="margin-bottom:10px;margin-top:100px; font-size:3em;" class="constant">Connect With Us</h1>
-    <p style="margin-bottom:40px;" class="constant">Please wait at least 24 hours for a response.</p>
-    <div class="contact-box">
-        <div class="contact-left">
+<div class="d-none d-lg-block container-fluid pt-3 pb-5" style="background-color: #262626;">
+    <h1 style="margin-bottom:10px;margin-top:100px; font-size:3em; color: #03cdff;" class="constant mx-5">Contact Us</h1>
+    <p style="margin-bottom:40px;" class="constant mx-5">Please wait at least 24 hours for a response.</p>
+    
+    
+    <div class="contact-box" style="position: relative; background-color:#262626; padding-left: 15%; margin-top: 5%;">
+    
+    
+        <div style="color:black; width:85%;"class="contact-left">
             <h3 class="constant" style="color:black; font-weight:600; margin-bottom: 30px;color: #03cdff;">Send your request</h3>
             <form>
                 <div class="input-row">
                     <div class="input-group">
                         <label>Name</label>
-                        <input type="text" placeholder="Jordan Osborn">
-                    </div>
-                    <div class="input-group">
-                        <label>Phone</label>
-                        <input type="text" placeholder="(845)-123-4567">
+                        <input type="text" placeholder="Jordan Osborn" class="clear">
                     </div>
                 </div>
                 <div class="input-row">
                     <div class="input-group">
                         <label>Email</label>
-                        <input type="text" placeholder="jordanosborn@gmail.com">
+                        <input type="text" placeholder="jordanosborn@gmail.com" class="clear">
                     </div>
+                </div>
+                <div class="input-row">
                     <div class="input-group">
                         <label>Subject</label>
-                        <input type="text" placeholder="Demo">
+                        <input type="text" placeholder="Demo" class="clear">
                     </div>
                 </div>
                 <label>Message</label>
-                <textarea rows="5" placeholder="Your Message"></textarea>
-                <button type="submit">SEND</button>
+                <textarea rows="5" placeholder="Your Message" style="border: none; background-color: #0d0d0d; color: #bfbfbf; width:55%;"></textarea>
+                <div class="row pl-5">
+                <button type="submit" style="color: black;">SEND</button>
+                </div>
+            </form>
+        </div>
+        
+        
+        
+        <div class="contact-right" style="position: absolute; left: 50%; top:-110px; width:35%;">
+            <h3 class="constant" style=" font-size:3em; border-bottom: 1px solid #595959; font-weight:600; margin-bottom: 30px; color: #03cdff;">Reach Us</h3>
+            <form class="mr-5 pr-5"> 
+                    <div class="input-group my-5">
+                        <label>General Inquiries</label>
+                        <input type="text" placeholder="info@novacrypt.org" class="clear" readonly>
+                    </div>
+                    <div class="input-group my-5">
+                        <label>Sponsorships</label>
+                        <input type="text" placeholder="roja.das@novacrypt.org" class="clear" readonly>
+                    </div>
+                    <div class="input-group my-5">
+                        <label>Sponsorships</label>
+                        <input type="text" placeholder="roland.yan@novacrypt.org" class="clear" readonly>
+                    </div>
+                    </div>
+                </div>
+                
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="d-lg-none container-fluid py-3" style="background-color: #262626;">
+    <h1 style="margin-bottom:10px;margin-top:100px; font-size:3em; color: #03cdff;" class="constant mx-5">Contact Us</h1>
+    <p style="margin-bottom:40px;" class="constant mx-5">Please wait at least 24 hours for a response.</p>
+    <div class="contact-box mx-5">
+        <div style="color:black"class="contact-left">
+            <h3 class="constant" style="color:black; font-weight:600; margin-bottom: 30px;color: #03cdff;">Send your request</h3>
+            <form>
+                <div class="">
+                    <div class="">
+                        <label>Name</label>
+                        <input type="text" placeholder="Jordan Osborn" class="clear">
+                    </div>
+                </div>
+                <div class="">
+                    <div class="">
+                        <label>Email</label>
+                        <input type="text" placeholder="jordanosborn@gmail.com" class="clear">
+                    </div>
+                </div>
+                <div class="">
+                    <div class="">
+                        <label>Subject</label>
+                        <input type="text" placeholder="Demo" class="clear">
+                    </div>
+                </div>
+                <label>Message</label>
+                <textarea rows="5" placeholder="Your Message" style="border: none; background-color: #0d0d0d; color: #bfbfbf;"></textarea>
+                <button type="submit" style="color: black;">SEND</button>
             </form>
         </div>
         <div class="contact-right">
-            <h3 class="constant" style=" font-size:3em; border-bottom: 1px solid #fff; font-weight:600; margin-bottom: 30px;">Reach Us</h3>
-            <table style="font-size:2em;">
-                <tbody><tr>
-                    <td class="constant-2" style="text-decoration: underline;">Email:</td>
-                </tr>
-                <tr>
-                    <td class="constant-2 constant-3">info@novacrypt.org</td>
-                </tr>
-                <tbody><tr>
-                    <td class="constant-2" style="text-decoration: underline;">Sponsorships:</td>
-                </tr>
-                <tr>
-                    <td class="constant-2 constant-3">kashish.kumar@novacrypt.org</td>
-                </tr>
-                <tbody><tr>
-                    <td class="constant-2" style="text-decoration: underline;">Partnerships:</td>
-                </tr>
-                <tr>
-                    <td class="constant-2 constant-3">roland.yan@novacrypt.org</td>
-                </tr>
-                <tbody><tr>
-                    <td class="constant-2" style="text-decoration: underline;">Outreach:</td>
-                </tr>
-                <tr>
-                    <td class="constant-2 constant-3">sivaa@novacrypt.org</td>
-                </tr>
-                <tbody><tr>
-                    <td class="constant-2" style="text-decoration: underline;">Projects:</td>
-                </tr>
-                <tr>
-                    <td class="constant-2">roland.yan@novacrypt.org</td>
-                </tr>
-            </tbody></table>
+            <h3 class="constant" style=" font-size:3em; border-bottom: 1px solid #595959; font-weight:600; margin-bottom: 30px; color: #03cdff;">Reach Us</h3>
+            <form class=""> 
+                    <div class=" my-5">
+                        <label>General Inquiries</label>
+                        <input type="text" placeholder="info@novacrypt.org" class="clear" readonly>
+                    </div>
+                    <div class=" my-5">
+                        <label>Sponsorships</label>
+                        <input type="text" placeholder="roja.das@novacrypt.org" class="clear" readonly>
+                    </div>
+                    <div class=" my-5">
+                        <label>Sponsorships</label>
+                        <input type="text" placeholder="roland.yan@novacrypt.org" class="clear" readonly>
+                    </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>

@@ -11,5 +11,9 @@ urlpatterns = [
     path('community/CountryAPI',views.CountryAPI,name="CountryAPI"),
     path('community/ChapterAPI',views.ChapterAPI,name="ChapterAPI"),
     path('ssc-paper.html', views.roland_pdf, name='roland_pdf'),
+    path('navigation/news',views.news,name="news"),
+    path('navigation/services',views.services,name="services"),
+    path('navigation/research',views.research,name="research"),
+    path('navigation/subsidiaries',views.subsidiaries,name="subsidiaries"),
     
 ]

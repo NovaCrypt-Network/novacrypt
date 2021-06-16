@@ -72,7 +72,10 @@ def services(request):
     return render(request,"Landing/navigation/Services.html")
 
 def research(request):
-    return render(request,"Landing/navigation/Research.html")
+    context1 = {
+        "Teams":Team.objects.all(),
+    }
+    return render(request,"Landing/navigation/Research.html",context=context1)
 
 def subsidiaries(request):
     return render(request,"Landing/navigation/Subsidiaries.html")

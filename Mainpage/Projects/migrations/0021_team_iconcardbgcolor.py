@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='team',
             name='IconCardBGColor',
-            field=models.CharField(default=django.utils.timezone.now, max_length=7),
+            field=models.CharField(default='FFFFFF', max_length=6),
             preserve_default=False,
         ),
     ]

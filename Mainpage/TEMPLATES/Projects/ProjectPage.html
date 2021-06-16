@@ -11,6 +11,7 @@
 {% endblock %}
 {% block body %}
 <!-- Developed by Kanishk Kacholia -->
+{% if ProjectSlideshow|length > 0 %}
 <section class="slideshow">
   <div class="slideshow-inner">
     <div class="slides">
@@ -70,6 +71,7 @@
     {% endif %}
   </div> 
 </section>
+{% endif %}
     </main>
     <div class="container-fluid stat-holder text-white pb-lg-5">
       <!--<div class="row text-center py-4 justify-content-center stat-numbers" data-aos="fade-up">

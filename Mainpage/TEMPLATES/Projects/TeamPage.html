@@ -34,6 +34,7 @@
     <span class="visually-hidden">Next</span>
     </a>
  </div>-->
+ {% if TeamSlideshow|length > 0 %}
   <section class="slideshow">
     <div class="slideshow-inner">
       <div class="slides">
@@ -75,7 +76,7 @@
         </div>
       </div>
       {% endfor %}
-      {% if TeamSlideshow|length > 0 %}
+      {% if TeamSlideshow|length > 1 %}
       <div class="arrows">
         <div class="arrow prev">
           <span class="svg svg-arrow-left">
@@ -93,6 +94,7 @@
       {% endif %}
     </div> 
   </section>
+  {% endif %}
 </main>
 <div class="container-fluid stat-holder text-white pb-lg-5">
   <!--<div class="row text-center py-4 justify-content-center stat-numbers" data-aos="fade-up">

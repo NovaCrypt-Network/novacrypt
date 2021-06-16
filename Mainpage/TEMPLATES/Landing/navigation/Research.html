@@ -278,7 +278,7 @@ position: absolute;
 
 </style>
 
-<body > 
+<body style="background-color: #000000;"> 
     <div class="d-none d-lg-block container-fluid" id='one' style="font-family: 'bahnschrift';">
         <div class="row" id="one">
             <div class="col-md-3 d-flex flex-column justify-content-center align-items-center" id='left'>
@@ -306,270 +306,29 @@ position: absolute;
 
 				 <div style="height: 2rem;"></div>
 					 
-
+				 {% for Team in Teams %}
 				 <div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
 					<div class="row no-gutters" style="height:100%;">
 					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >
 						  <div class="card-body pr-0 pl-2">
-							 <h5 class="card-title" style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;  z-index:100; position: relative;">Astro</h5>
+							 <h5 class="card-title" style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;  z-index:100; position: relative;">{{Team.name}}</h5>
 						  </div>
 
 						  <div class="triangle1"></div>
-						  <div class="triangle2"></div>
+						  <div class="triangle2" style="border-color: transparent transparent #{{Team.IconCardBGColor}} transparent;"></div>
 					   </div>
-					   <div class="col-7" style="height:100%;  background-color: #FFFFFF; border-radius: 10px;">
+					   <div class="col-7" style="height:100%;  background-color: #{{Team.IconCardBGColor}}; border-radius: 10px;">
 						  <div class="parallelogram1"></div>
 						  <div class="parallelogram2"></div>
-						  <img src="https://cdn.novacrypt.org/media/Team_Logo/Team_309fbec6-764a-45d2-9329-8ce8785368d2_astrologo-01.png" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #FFFFFF;">
+						  <img src="{{Team.icon.url}}" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #FFFFFF;">
 					   </div>
 					</div>
-					<a href="https://novacrypt.org/Projects/Teams/Astro/" class="stretched-link"></a>
+					<a href="{% url 'TeamPage' TeamName=Team.name %}" class="stretched-link"></a>
 				 </div>
 
 				 <div style="height: 2rem;"></div>
 					 
-
-				 <div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
-					<div class="row no-gutters" style="height:100%;">
-					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >
-						  <div class="card-body pr-0 pl-2">
-							 <h5 class="card-title" style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;  z-index:100; position: relative;">Lunar</h5>
-						  </div>
-
-						  <div class="triangle1"></div>
-						  <div class="triangle2"></div>
-					   </div>
-					   <div class="col-7" style="height:100%;  background-color: #FFFFFF;  border-radius: 10px;">
-						  <div class="parallelogram1"></div>
-						  <div class="parallelogram2"></div>
-						  <img src="https://cdn.novacrypt.org/media/Team_Logo/Team_e281b459-d2f1-4ec5-85a0-0946d38f1fb4_artemislogo-01.png" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #FFFFFF;">
-					   </div>
-					</div>
-					<a href="https://novacrypt.org/Projects/Teams/Artemis/" class="stretched-link"></a>
-				 </div>
-
-				 <div style="height: 2rem;"></div>
-					 
-
-				 <div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
-					<div class="row no-gutters" style="height:100%;">
-					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >
-						  <div class="card-body pr-0 pl-2">
-							 <h5 class="card-title" style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;  z-index:100; position: relative;">Mars</h5>
-						  </div>
-
-						  <div class="triangle1"></div>
-						  <div class="triangle2"></div>
-					   </div>
-					   <div class="col-7" style="height:100%;  background-color: #FFFFFF;  border-radius: 10px;">
-						  <div class="parallelogram1"></div>
-						  <div class="parallelogram2"></div>
-						  <img src="https://cdn.novacrypt.org/media/Team_Logo/Team_7783ef00-b67a-47a4-9f11-d654ab8f73dd_areslogo-01.png" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #FFFFFF;">
-					   </div>
-					</div>
-					<a href="https://novacrypt.org/Projects/Teams/Ares/" class="stretched-link"></a>
-				 </div>
-
-				 <div style="height: 2rem;"></div>
-					 
-
-				 <div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
-					<div class="row no-gutters" style="height:100%;">
-					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >
-						  <div class="card-body pr-0 pl-2">
-							 <h5 class="card-title" style="color: #00b0f0; font-weight: 600 !important;  z-index:100; position: relative;">Biology</h5>
-						  </div>
-
-						  <div class="triangle1"></div>
-						  <div class="triangle2"></div>
-					   </div>
-					   <div class="col-7" style="height:100%;  background-color: #FFFFFF;  border-radius: 10px;">
-						  <div class="parallelogram1"></div>
-						  <div class="parallelogram2"></div>
-						  <img src="https://cdn.novacrypt.org/media/Team_Logo/Team_bb52e0f2-8a74-440a-bf2d-1fa91a8833c1_BioNexus.png" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #FFFFFF;">
-					   </div>
-					</div>
-					<a href="https://novacrypt.org/Projects/Teams/Bionexus/" class="stretched-link"></a>
-				 </div>
-
-				 <div style="height: 2rem;"></div>
-					 
-
-				 <div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
-					<div class="row no-gutters" style="height:100%;">
-					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >
-						  <div class="card-body pr-0 pl-2">
-							 <h5 class="card-title" style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;  z-index:100; position: relative;">Cybernetic</h5>
-						  </div>
-
-						  <div class="triangle1"></div>
-						  <div class="triangle2"></div>
-					   </div>
-					   <div class="col-7" style="height:100%;  background-color: #FFFFFF; border-radius: 10px;" >
-						  <div class="parallelogram1"></div>
-						  <div class="parallelogram2"></div>
-						  <img src="https://cdn.novacrypt.org/media/Team_Logo/Team_04501053-fde2-4f9d-b271-72a4f19cfdc2_cyyberneticlogo-01.png" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #FFFFFF;">
-					   </div>
-					</div>
-					<a href="https://novacrypt.org/Projects/Teams/Cybernetic/" class="stretched-link"></a>
-				 </div>
-
-				 <div style="height: 2rem;"></div>
-					 
-
-				 <div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
-					<div class="row no-gutters" style="height:100%;">
-					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >
-						  <div class="card-body pr-0 pl-2">
-							 <h5 class="card-title" style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;  z-index:100; position: relative;">Enviro</h5>
-						  </div>
-
-						  <div class="triangle1"></div>
-						  <div class="triangle2"></div>
-					   </div>
-					   <div class="col-7" style="height:100%;  background-color: #FFFFFF; border-radius: 10px;">
-						  <div class="parallelogram1"></div>
-						  <div class="parallelogram2"></div>
-						  <img src="https://cdn.novacrypt.org/media/Team_Logo/Team_3bc7c397-538f-40a7-b641-139d4a057b1c_Team_dcbc3d14-ae43-44e3-9b9e-91013e1_5L51qPT.png" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #FFFFFF;">
-					   </div>
-					</div>
-					<a href="https://novacrypt.org/Projects/Teams/Enviro/" class="stretched-link"></a>
-				 </div>
-
-				 <div style="height: 2rem;"></div>
-					 
-
-				 <div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
-					<div class="row no-gutters" style="height:100%;">
-					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >
-						  <div class="card-body pr-0 pl-2">
-							 <h5 class="card-title" style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;  z-index:100; position: relative;">Software</h5>
-						  </div>
-
-						  <div class="triangle1"></div>
-						  <div class="triangle3"></div>
-					   </div>
-					   <div class="col-7" style="height:100%;  background-color: #00000000; border-radius: 10px;">
-						  <div class="parallelogram1"></div>
-						  <div class="parallelogram2"></div>
-						  <img src="https://cdn.novacrypt.org/media/Team_Logo/Team_0088a381-0dcb-4013-8af5-69c209578c9e_Untitled.png" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #00000000;">
-					   </div>
-					</div>
-					<a href="https://novacrypt.org/Projects/Teams/Ortexo/" class="stretched-link"></a>
-				 </div>
-
-				 <div style="height: 2rem;"></div>
-					 
-
-				 <div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
-					<div class="row no-gutters" style="height:100%;">
-					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >
-						  <div class="card-body pr-0 pl-2">
-							 <h5 class="card-title" style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;  z-index:100; position: relative;">Robotics</h5>
-						  </div>
-
-						  <div class="triangle1"></div>
-						  <div class="triangle2"></div>
-					   </div>
-					   <div class="col-7" style="height:100%;  background-color: #FFFFFF; border-radius: 10px;">
-						  <div class="parallelogram1"></div>
-						  <div class="parallelogram2"></div>
-						  <img src="https://cdn.novacrypt.org/media/Team_Logo/Team_1eb97e51-6120-4bd7-8194-9723adac5960_roboticsinvis.png" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #FFFFFF;">
-					   </div>
-					</div>
-					<a href="https://novacrypt.org/Projects/Teams/Hephaestus/" class="stretched-link"></a>
-				 </div>
-
-				 <div style="height: 2rem;"></div>
-					 
-
-				 <div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
-					<div class="row no-gutters" style="height:100%;">
-					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >
-						  <div class="card-body pr-0 pl-2">
-							 <h5 class="card-title" style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;  z-index:100; position: relative;">CAD/VR</h5>
-						  </div>
-
-						  <div class="triangle1"></div>
-						  <div class="triangle2"></div>
-					   </div>
-					   <div class="col-7" style="height:100%;  background-color: #FFFFFF; border-radius: 10px;">
-						  <div class="parallelogram1"></div>
-						  <div class="parallelogram2"></div>
-						  <img src="https://cdn.novacrypt.org/media/Team_Logo/Team_eed16cda-15fd-4910-987f-29dd0cc2d6da_CADVRinvis.png" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #FFFFFF;">
-					   </div>
-					</div>
-					<a href="https://novacrypt.org/Projects/Teams/CADVR/" class="stretched-link"></a>
-				 </div>
-
-				 <div style="height: 2rem;"></div>
-					 
-
-				 <div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
-					<div class="row no-gutters" style="height:100%;">
-					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >
-						  <div class="card-body pr-0 pl-2">
-							 <h5 class="card-title" style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;  z-index:100; position: relative;">Business</h5>
-						  </div>
-
-						  <div class="triangle1"></div>
-						  <div class="triangle3"></div>
-					   </div>
-					   <div class="col-7" style="height:100%;  background-color: #00000000; border-radius: 10px;">
-						  <div class="parallelogram1"></div>
-						  <div class="parallelogram2"></div>
-						  <img src="https://cdn.novacrypt.org/media/Team_Logo/Team_4cdbccf6-6251-4b04-ad37-50bb25af8732_Inventinvis.png" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #00000000;">
-					   </div>
-					</div>
-					<a href="https://novacrypt.org/Projects/Teams/Inventz/" class="stretched-link"></a>
-				 </div>
-
-				 <div style="height: 2rem;"></div>
-					 
-
-				 <div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
-					<div class="row no-gutters" style="height:100%;">
-					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >
-						  <div class="card-body pr-0 pl-2">
-							 <h5 class="card-title" style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;  z-index:100; position: relative;">Aquatics</h5>
-						  </div>
-
-						  <div class="triangle1"></div>
-						  <div class="triangle2"></div>
-					   </div>
-					   <div class="col-7" style="height:100%;  background-color: #FFFFFF; border-radius: 10px;">
-						  <div class="parallelogram1"></div>
-						  <div class="parallelogram2"></div>
-						  <img src="https://cdn.novacrypt.org/media/Team_Logo/Team_c5ad5e64-e508-44b1-9f32-32408fe88e77_neptunelogo-01.png" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #FFFFFF;">
-					   </div>
-					</div>
-					<a href="https://novacrypt.org/Projects/Teams/Neptune/" class="stretched-link"></a>
-				 </div>
-
-				 <div style="height: 2rem;"></div>
-					 
-
-				 <div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
-					<div class="row no-gutters" style="height:100%;">
-					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >
-						  <div class="card-body pr-0 pl-2">
-							 <h5 class="card-title" style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;  z-index:100; position: relative;">Theory</h5>
-						  </div>
-
-						  <div class="triangle1"></div>
-						  <div class="triangle2"></div>
-					   </div>
-					   <div class="col-7" style="height:100%;  background-color: #FFFFFF;  border-radius: 10px;">
-						  <div class="parallelogram1"></div>
-						  <div class="parallelogram2"></div>
-						  <img src="https://cdn.novacrypt.org/media/Team_Logo/Team_fd6de91d-8e08-48bb-8640-25b375a87407_Theoryinvis.png" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #FFFFFF;">
-					   </div>
-					</div>
-					<a href="https://novacrypt.org/Projects/Teams/Theorists/" class="stretched-link"></a>
-				 </div>
-
-				 <div style="height: 2rem;"></div>
-					 
+				{% endfor %}
 					 
 					 
             </div>

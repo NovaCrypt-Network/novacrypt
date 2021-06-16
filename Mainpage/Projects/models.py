@@ -77,6 +77,7 @@ class Team(models.Model):
         upload_to=upload_Team_Logo,
         blank=True,
     )
+    IconCardBGColor = models.CharField(max_length=6, default="FFFFFF")
     inner_icon = models.ImageField(
         verbose_name=_('Team Logo Inner'),
         upload_to=upload_Team_Logo_inner,

@@ -3,6 +3,7 @@ from django.http import HttpResponse, JsonResponse
 from Administration.models import Member
 from Projects.models import Team,Project
 from Sponsors.models import Sponsor
+from Subsidiaries.models import Subsidiary
 from CommunityChapters.models import Country, Chapter
 from django.contrib.staticfiles.views import serve
 import os
@@ -78,4 +79,7 @@ def research(request):
     return render(request,"Landing/navigation/Research.html",context=context1)
 
 def subsidiaries(request):
-    return render(request,"Landing/navigation/Subsidiaries.html")
+    context1 = {
+        "Subsidiaries":Subsidiary.objects.all(),
+    }
+    return render(request,"Landing/navigation/Subsidiaries.html",context=context1)

@@ -308,6 +308,45 @@ position: absolute;
 				
 			
 
+				{% for Subsidiary in Subsidiaries %}
+				 <div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
+					<div class="row no-gutters" style="height:100%;">
+					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >
+						  <div class="card-body pr-0 pl-2">
+							 <h5 class="card-title" style="font-size: 1.2rem !important; color: #00b0f0; font-weight: 600 !important; background-color: #030303;  z-index:100; position: relative;">{{Subsidiary.name}}</h5>
+						  </div>
+
+						  {% if Subsidiary.tag == 1 %}
+						  <div class="parallelogram3"></div>
+						  <div class="parallelogram4">
+						  <p class="beta-tag" style="transform: skew(25deg);">BETA</p>
+						  </div>
+						  {% endif %}
+						  {% if Subsidiary.tag == 2 %}
+						  <div class="parallelogram3"></div>
+						  <div class="parallelogram4">
+						  <p class="beta-tag" style="transform: skew(25deg);">DOWN</p>
+						  </div>
+						  {% endif %}
+						  <div class="triangle1"></div>
+						  <div class="triangle2" style="border-color: transparent transparent #{{Subsidiary.IconCardBGColor}} transparent;"></div>
+					   </div>
+					   <div class="col-7" style="height:100%;  background-color: #{{Subsidiary.IconCardBGColor}}; border-radius: 10px;">
+						  <div class="parallelogram1"></div>
+						  <div class="parallelogram2"></div>
+						  <img src="{{Subsidiary.icon.url}}" class="img-fluid float-right m-3" style="height:75%; border-radius: 8%;  background-color: #{{Subsidiary.IconCardBGColor}};">
+					   </div>
+					</div>
+					<a href="{{Subsidiary.link}}}" class="stretched-link"></a>
+				 </div>
+
+				 <div style="height: 2rem;"></div>
+					 
+				{% endfor %}
+
+
+
+
 				<div class="card" style="width: 18rem; height:10rem; border-radius: 20px;" data-aos="fade-up">
 					<div class="row no-gutters" style="height:100%;">
 					   <div class="col-5" style="height:100%;  border-radius: 20px; background-color: #030303;" >

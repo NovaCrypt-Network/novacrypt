@@ -14,6 +14,11 @@ def upload_Subsidiary_Logo(instance, filename):
             uuid=uuid.uuid4(), filename=filename, ext=ext)
     )
 
+Tags = (
+    (0, 'Standard'),
+    (1, 'Beta'),
+    (2, 'Down'),
+)
 class Subsidiary(models.Model):
     name = models.CharField(max_length=35)
     logo = models.ImageField(
@@ -21,6 +26,8 @@ class Subsidiary(models.Model):
         upload_to=upload_Subsidiary_Logo,
         blank=True,
     )
+    IconCardBGColor = models.CharField(max_length=6, default="FFFFFF")
+    tag = models.IntegerField(choices=Tags, default=0)
     link = models.URLField()
     def __str__(self):
         return "Subsidiary "+ self.name

@@ -254,3 +254,4 @@ CRONJOBS = [
     ('0 0 * * *', 'Administration.cron.get_xp', '>> /tmp/scheduled_job.log')
 ]
 
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'

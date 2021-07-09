@@ -207,3 +207,5 @@ DEFAULT_FROM_EMAIL = 'no-reply@novacrypt.org'
 VERIFICATION_SUCCESS_TEMPLATE = None
 
 HTML_MESSAGE_TEMPLATE = os.path.join(BASE_DIR, "TEMPLATES/Administration/email.html")
+
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'

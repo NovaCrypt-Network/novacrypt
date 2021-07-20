@@ -69,7 +69,9 @@ INSTALLED_APPS = [
     'Sponsors',
     'Subsidiaries',
     'Announcements',
+    'interstellar',
     'django_crontab',
+    'rest_framework',
     
     'storages',
     'wagtail_storages',
@@ -255,3 +257,11 @@ CRONJOBS = [
 ]
 
 DEFAULT_AUTO_FIELD='django.db.models.AutoField'
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}

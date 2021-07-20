@@ -69,7 +69,9 @@ INSTALLED_APPS = [
     'Sponsors',
     'Subsidiaries',
     'Announcements',
+    'interstellar',
     'django_crontab',
+    'rest_framework',
     
     'storages',
     'wagtail_storages',
@@ -170,8 +172,8 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
 
-AWS_ACCESS_KEY_ID = "AKIATJVLODGQZYLIRP5I"
-AWS_SECRET_ACCESS_KEY = "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"
+AWS_ACCESS_KEY_ID = "xxxx"
+AWS_SECRET_ACCESS_KEY = "xxxx"
 AWS_STORAGE_BUCKET_NAME = "novacryptdev"
 AWS_DEFAULT_ACL = None
 AWS_S3_CUSTOM_DOMAIN = 'novacryptdev.s3.amazonaws.com'
@@ -209,3 +211,11 @@ VERIFICATION_SUCCESS_TEMPLATE = None
 HTML_MESSAGE_TEMPLATE = os.path.join(BASE_DIR, "TEMPLATES/Administration/email.html")
 
 DEFAULT_AUTO_FIELD='django.db.models.AutoField'
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}

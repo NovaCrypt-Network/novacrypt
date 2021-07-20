@@ -40,14 +40,32 @@ class Competition_ViewSet(viewsets.ReadOnlyModelViewSet):
 
 class Funding_ViewSet(viewsets.ReadOnlyModelViewSet):
 
-    queryset = Funding.objects.all()
+    def get_queryset(self):
+
+        queryset = Funding.objects.all()
+        tag = self.request.query_params.get('tag')
+        if tag is not None:
+            queryset = queryset.filter(tags__tag__iexact=tag)
+        return queryset
     serializer_class = Funding_Serializer
 
 class Opportunity_ViewSet(viewsets.ReadOnlyModelViewSet):
 
-    queryset = Opportunity.objects.all()
+    def get_queryset(self):
+
+        queryset = Opportunity.objects.all()
+        tag = self.request.query_params.get('tag')
+        if tag is not None:
+            queryset = queryset.filter(tags__tag__iexact=tag)
+        return queryset
     serializer_class = Opportunity_Serializer
 class Internship_ViewSet(viewsets.ReadOnlyModelViewSet):
 
-    queryset = Internship.objects.all()
+    def get_queryset(self):
+
+        queryset = Internship.objects.all()
+        tag = self.request.query_params.get('tag')
+        if tag is not None:
+            queryset = queryset.filter(tags__tag__iexact=tag)
+        return queryset
     serializer_class = Internship_Serializer

@@ -273,42 +273,20 @@ position: absolute;
             <div class="col-md-3 d-flex flex-column justify-content-center align-items-center" id='left'>
                 <h2 class="py-5">News</h2>
 				
-
+                {% for New in News %}
 			
 					
 					<div class="card" style="width: 18rem;" data-aos="fade-up">
-				  <img class="card-img-top" src="https://cdn.novacrypt.org/static/novacrypt.webp" alt="Card image cap">
+				  <img class="card-img-top" src="{{New.logo.url}}" alt="Card image cap">
 				  <div class="card-body">
-					<h5 class="card-title"style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;">NovaCrypt is back!</h5>
-					<p class="card-text">After a month of exams, NovaCrypt is back into action, and kicking it off starting on June 1st! We'll be launching new AMAs, events, research projects, and much more! Get started, and join our growing community of innovators today! </p>
+					<h5 class="card-title"style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;">{{New.name}}</h5>
+					<p class="card-text">{{New.desc}}</p>
 				  </div>
 				  
 				</div>
 					<div style="height: 2rem;"></div>
-					
-					
-						<div class="card" style="width: 18rem;" data-aos="fade-up">
-				  <img class="card-img-top" src="https://cdn.novacrypt.org/static/Landing/images/s9biyhs4lix61.jpg" alt="Card image cap">
-				  <div class="card-body">
-					<h5 class="card-title"style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;">New Moderation Features</h5>
-					<p class="card-text">We have new moderation features added to the discord server, including ModMail and Apollo. ModMail will serve as a direct line of communication with mods, and Apollo will help notify and schedule our live events!</p>
-				  </div>
-				 
-				</div>
-					<div style="height: 2rem;"></div>
-					
-					
-					
-						<div class="card" style="width: 18rem;" data-aos="fade-up">
-				  <img class="card-img-top" src="https://cdn.novacrypt.org/media/Project_Thumnnail/Project_ec99b0e9-9d58-4363-bacd-0267f74ef425_roverbackground.png" alt="Card image cap">
-				  <div class="card-body">
-					<h5 class="card-title"style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;">Research Teams are making ground!</h5>
-					<p class="card-text">Our research teams are making ground, including the designs for our Vulcan Rocket, experimentation for our rover ISRU units, new energy grids, and the genetic engineering of Glycine Max!</p>
-				  </div>
-				  
-				</div>
-					<div style="height: 2rem;"></div>
-					
+                    {% endfor %}
+				
 					
             </div>
 			
@@ -480,38 +458,25 @@ position: absolute;
 				
 			
 
+                {% for New in News %}
+
+
+
 				<div class="card" style="width: 18rem;" data-aos="fade-up">
-				  <img class="card-img-top" src="https://cdn.novacrypt.org/static/novacrypt.webp" alt="Card image cap">
+				  <img class="card-img-top" src="{{New.logo.url}}" alt="Card image cap">
 				  <div class="card-body">
-					<h5 class="card-title"style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;">NovaCrypt is back!</h5>
-					<p class="card-text">After a month of exams, NovaCrypt is back into action, and kicking it off starting on June 1st! We'll be launching new AMAs, events, research projects, and much more! Get started, and join our growing community of innovators today! </p>
+					<h5 class="card-title"style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;">{{New.name}}</h5>
+					<p class="card-text">{{New.desc}}</p>
 				  </div>
 				 
 				</div>
 					<div style="height: 2rem;"></div>
 					
-					
-						<div class="card" style="width: 18rem;" data-aos="fade-up">
-				  <img class="card-img-top" src="https://cdn.novacrypt.org/static/Landing/images/s9biyhs4lix61.jpg" alt="Card image cap">
-				  <div class="card-body">
-					<h5 class="card-title"style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;">New Moderation Features</h5>
-					<p class="card-text">We have new moderation features added to the discord server, including ModMail and Apollo. ModMail will serve as a direct line of communication with mods, and Apollo will help notify and schedule our live events!</p>
-				  </div>
-				 
-				</div>
-					<div style="height: 2rem;"></div>
-					
-					
-					
-						<div class="card" style="width: 18rem;" data-aos="fade-up">
-				  <img class="card-img-top" src="https://cdn.novacrypt.org/media/Project_Thumnnail/Project_ec99b0e9-9d58-4363-bacd-0267f74ef425_roverbackground.png" alt="Card image cap">
-				  <div class="card-body">
-					<h5 class="card-title"style="color: #00b0f0; font-weight: 600 !important; background-color: #030303;">Research Teams are making ground!</h5>
-					<p class="card-text">Our research teams are making ground, including the designs for our Vulcan Rocket, experimentation for our rover ISRU units, new energy grids, and the genetic engineering of Glycine Max!</p>
-				  </div>
-				
-				</div>
-					<div style="height: 2rem;"></div>
+					{% endfor %}
+
+
+
+
             </div>
 	</div>
 

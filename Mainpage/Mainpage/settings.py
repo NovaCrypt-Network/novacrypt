@@ -70,6 +70,7 @@ INSTALLED_APPS = [
     'Subsidiaries',
     'Announcements',
     'interstellar',
+    'Landing',
     'django_crontab',
     'rest_framework',
     

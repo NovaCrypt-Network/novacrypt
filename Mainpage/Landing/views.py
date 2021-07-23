@@ -4,6 +4,7 @@ from Administration.models import Member
 from Projects.models import Team,Project
 from Sponsors.models import Sponsor
 from Subsidiaries.models import Subsidiary
+from .models import *
 from CommunityChapters.models import Country, Chapter
 from django.contrib.staticfiles.views import serve
 import os
@@ -67,10 +68,16 @@ def ChapterAPI(request):
 
 
 def news(request):
-    return render(request,"Landing/navigation/News.html")
+    context1 = {
+        "News":News.objects.all().reverse(),
+    }
+    return render(request,"Landing/navigation/News.html",context=context1)
 
 def services(request):
-    return render(request,"Landing/navigation/Services.html")
+    context1 = {
+        "Services":Service.objects.all(),
+    }
+    return render(request,"Landing/navigation/Services.html",context=context1)
 
 def research(request):
     context1 = {

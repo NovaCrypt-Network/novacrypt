@@ -69,7 +69,7 @@ def ChapterAPI(request):
 
 def news(request):
     context1 = {
-        "News":News.objects.all().reverse(),
+        "News":News.objects.all(),
     }
     return render(request,"Landing/navigation/News.html",context=context1)
 

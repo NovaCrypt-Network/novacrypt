@@ -26,7 +26,7 @@ SECRET_KEY = '03^es37**wrgpu*1p4@=entxl@$%wqe=)-2##&^q=7pax#32-e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition

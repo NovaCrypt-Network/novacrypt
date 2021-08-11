@@ -12,7 +12,7 @@
 				"name": "Python: Django",
 				"type": "python",
 				"request": "launch",
-				"program": "${workspaceFolder}\\Mainpage\\manage.py",
+				"program": "${workspaceFolder}/Mainpage/manage.py",
 				"args": [
 					"runserver",
 					"7000",

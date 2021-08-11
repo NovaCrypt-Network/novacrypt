@@ -215,7 +215,7 @@ DEFAULT_AUTO_FIELD='django.db.models.AutoField'
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
+    # or allow read-only access for unauthenticated users. test
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]

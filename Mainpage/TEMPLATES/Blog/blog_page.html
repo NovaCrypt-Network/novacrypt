@@ -22,8 +22,8 @@
         <div class="row d-flex justify-content-center mb-5">
             <div class="col-10 col-lg-8 block-{{block.block_type }}">
                 <img class="avatar mx-0 my-lg-3" src="{{User.avatar.url}}">
-                <h3><a class="article" href="/Blog/Author/{{page.owner.username}}">{{page.owner.first_name|title}} {{page.owner.last_name|title}}</a></h3>
-                <h6 class="text-muted">Published on {{page.first_published_at}} in <a class="article" href="/Blog/Category/{{page.category}}">{{page.category}}</a></h6>
+                <h3><a class="article" href="/journal/Author/{{page.owner.username}}">{{page.owner.first_name|title}} {{page.owner.last_name|title}}</a></h3>
+                <h6 class="text-muted">Published on {{page.first_published_at}} in <a class="article" href="/journal/Category/{{page.category}}">{{page.category}}</a></h6>
             </div>
         </div>
         {% for block in page.content %}

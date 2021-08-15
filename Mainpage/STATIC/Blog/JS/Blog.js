@@ -18,7 +18,7 @@ $( document ).ready(function() {
             $(".loader").removeClass("d-none");
             $(".loader").addClass("d-block");
             $.ajax({
-                url:"/Blog/ArticleAPI",
+                url:"/journal/ArticleAPI",
                 type:"POST",
                 data:{
                     'csrfmiddlewaretoken':csrftoken,
@@ -36,9 +36,9 @@ $( document ).ready(function() {
                         <div class="col-10 col-md-6 col-lg-4 mt-5 mt-lg-3 card d-flex special-card" style="width: 18rem;" data-id="${val.pk}">
                             <img class="card-img-top rounded" src="${val.thumbnail_url}" alt="${val.thumnail_desc}">
                             <div class="card-body">
-                                <h5 class="card-title"><a class="article" href="/Blog/Article/${val.slug}">${val.title}</a></h5>
-                                <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/${val.username}">${val.first_name} ${val.last_name}</a> on ${moment(val.publish).format("MMM. D, YYYY, h:mm a")}</p>
-                                <p class="card-text"><a class="article" href="/Blog/Category/${val.category}">${val.category}</a></p> 
+                                <h5 class="card-title"><a class="article" href="/journal/Article/${val.slug}">${val.title}</a></h5>
+                                <p class="card-text text-muted">Posted by <a class="article" href="/journal/Author/${val.username}">${val.first_name} ${val.last_name}</a> on ${moment(val.publish).format("MMM. D, YYYY, h:mm a")}</p>
+                                <p class="card-text"><a class="article" href="/journal/Category/${val.category}">${val.category}</a></p> 
                                 <p class="card-text">${val.short_description}</p>
                             </div>
                         </div>

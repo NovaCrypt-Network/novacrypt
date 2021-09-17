@@ -77,9 +77,9 @@
             <div class="col-10 col-md-6 col-lg-4 mt-5 mt-lg-3 card d-flex special-card" style="width: 18rem;" data-id="{{Blog.pk}}" data-aos="fade-up">
                 <img class="card-img-top rounded" src="{{Blog.thumbnail.url}}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title"><a class="article" href="/Blog/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
-                    <p class="card-text text-muted">Posted by <a class="article" href="/Blog/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.date}}</p>
-                    <p class="card-text"><a class="article" href="/Blog/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
+                    <h5 class="card-title"><a class="article" href="/journal/Article/{{Blog.slug}}">{{Blog.title}}</a></h5>
+                    <p class="card-text text-muted">Posted by <a class="article" href="/journal/Author/{{Blog.owner.username}}">{{Blog.owner.first_name|title}} {{Blog.owner.last_name|title}}</a> on {{Blog.date}}</p>
+                    <p class="card-text"><a class="article" href="/journal/Category/{{Blog.category}}">{{Blog.category}}</a></p> 
                     <p class="card-text">{{Blog.short_description}}</p>
                 </div>
             </div>

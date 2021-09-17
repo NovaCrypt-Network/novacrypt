@@ -23,6 +23,10 @@ def index(request):
 def about(request):
     return render(request,"Landing/about.html")
 
+def nri(request):
+    return render(request,"Landing/nri.html")
+
+
 def contact(request):
     return render(request,"Landing/contact.html")
 def community(request):

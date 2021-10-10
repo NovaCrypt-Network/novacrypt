@@ -14,6 +14,11 @@ class Service(models.Model):
     name = models.CharField(max_length=35)
     tag = models.IntegerField(choices=Tags, default=0)
     link = models.URLField()
+    order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['order']
+
     def __str__(self):
         return "Service "+ self.name
 
@@ -31,6 +36,11 @@ def upload_News_Logo(instance, filename):
 
 class News(models.Model):
     name = models.CharField(max_length=35)
+    order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['order']
+
     logo = models.ImageField(
         verbose_name=_('News Logo'),
         upload_to=upload_News_Logo,

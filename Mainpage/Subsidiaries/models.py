@@ -29,5 +29,10 @@ class Subsidiary(models.Model):
     IconCardBGColor = models.CharField(max_length=6, default="FFFFFF")
     tag = models.IntegerField(choices=Tags, default=0)
     link = models.URLField()
+    order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['order']
+
     def __str__(self):
         return "Subsidiary "+ self.name

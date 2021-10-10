@@ -72,6 +72,10 @@ class Tag(models.Model):
         return self.name
 class Team(models.Model):
     name = models.CharField(max_length=15)
+    order = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ['order']
     icon = models.ImageField(
         verbose_name=_('Team Logo'),
         upload_to=upload_Team_Logo,

@@ -71,6 +71,7 @@ INSTALLED_APPS = [
     'Announcements',
     'interstellar',
     'Landing',
+    'NRI',
     'django_crontab',
     'rest_framework',
     

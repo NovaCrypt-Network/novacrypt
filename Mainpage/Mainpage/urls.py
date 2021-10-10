@@ -36,6 +36,7 @@ urlpatterns = [
     path('partners/',include('Partners.urls'),name="Partners"),
     path('sponsors/',include('Sponsors.urls'),name="Sponsors"),
     path('subsidiaries/',include('Subsidiaries.urls'),name="Subsidiaries"),
+    path('nri/',include('NRI.urls'),name="NRI"),
     path('announcement/',include('Announcements.urls'),name="Announcements"),
     path('teammembers/',include('TeamMembers.urls'),name="TeamMembers"),
     path('api/interstellar/',include('interstellar.urls'),name="Interstellar"),

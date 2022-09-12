@@ -38,7 +38,7 @@ urlpatterns = [
     path('subsidiaries/',include('Subsidiaries.urls'),name="Subsidiaries"),
     path('nri/',include('NRI.urls'),name="NRI"),
     path('announcement/',include('Announcements.urls'),name="Announcements"),
-    path('teammembers/',include('TeamMembers.urls'),name="TeamMembers"),
+    #path('teammembers/',include('TeamMembers.urls'),name="TeamMembers"),
     path('api/interstellar/',include('interstellar.urls'),name="Interstellar"),
     path('admin/', admin.site.urls),
     path('verification/', include('verify_email.urls')),
